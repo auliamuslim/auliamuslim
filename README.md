@@ -61,7 +61,7 @@
 
 | Language | Share | |
 |---|---|---|
-| **PHP / Laravel** | <img src="https://progress-bar.xyz/71/?width=160&color=E11D2E" alt="71%"/> | `63 repos` |
+| **PHP / Laravel** | <img src="https://progress-bar.xyz/71/?width=160&color=E11D2E" alt="71%"/> | `58 repos` |
 | **Python** | <img src="https://progress-bar.xyz/7/?width=160&color=E11D2E" alt="7%"/> | `6 repos` |
 | **JavaScript** | <img src="https://progress-bar.xyz/7/?width=160&color=E11D2E" alt="7%"/> | `6 repos` |
 | **HTML / CSS** | <img src="https://progress-bar.xyz/6/?width=160&color=E11D2E" alt="6%"/> | `5 repos` |
