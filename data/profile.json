@@ -1,0 +1,308 @@
+{
+  "generated": "2026-10-16",
+  "note": "Aggregated from all repositories owned by or contributed to by @auliamuslim (private repos included). Counts only commits authored by Aulia or by Claude Code sessions in Aulia's own repositories; upstream and other collaborators are excluded. Client names are intentionally omitted.",
+  "tiles": [
+    {
+      "label": "Repositories",
+      "value": "108",
+      "note": "93 with custom work"
+    },
+    {
+      "label": "Commits",
+      "value": "13,852",
+      "note": "private repos included"
+    },
+    {
+      "label": "Active days",
+      "value": "414",
+      "note": "days with ≥ 1 commit"
+    },
+    {
+      "label": "In production",
+      "value": "65",
+      "note": "live systems & sites"
+    },
+    {
+      "label": "AI-paired",
+      "value": "70%",
+      "note": "via Claude Code",
+      "accent": "ai"
+    }
+  ],
+  "activity": {
+    "title": "Commits per month — every repository, private included",
+    "subtitle": "13,852 commits since Mar 2025 · Claude Code pairing from Nov 2025 · Oct 2026 is month-to-date"
+  },
+  "monthly": [
+    {
+      "month": "2025-03",
+      "human": 7,
+      "ai": 0,
+      "label": "Mar '25"
+    },
+    {
+      "month": "2025-04",
+      "human": 17,
+      "ai": 0,
+      "label": null
+    },
+    {
+      "month": "2025-05",
+      "human": 76,
+      "ai": 0,
+      "label": null
+    },
+    {
+      "month": "2025-06",
+      "human": 86,
+      "ai": 0,
+      "label": "Jun '25"
+    },
+    {
+      "month": "2025-07",
+      "human": 89,
+      "ai": 0,
+      "label": null
+    },
+    {
+      "month": "2025-08",
+      "human": 85,
+      "ai": 0,
+      "label": null
+    },
+    {
+      "month": "2025-09",
+      "human": 75,
+      "ai": 0,
+      "label": "Sep '25"
+    },
+    {
+      "month": "2025-10",
+      "human": 32,
+      "ai": 0,
+      "label": null
+    },
+    {
+      "month": "2025-11",
+      "human": 114,
+      "ai": 254,
+      "label": null
+    },
+    {
+      "month": "2025-12",
+      "human": 210,
+      "ai": 326,
+      "label": "Dec '25"
+    },
+    {
+      "month": "2026-01",
+      "human": 234,
+      "ai": 398,
+      "label": null
+    },
+    {
+      "month": "2026-02",
+      "human": 288,
+      "ai": 540,
+      "label": null
+    },
+    {
+      "month": "2026-03",
+      "human": 343,
+      "ai": 569,
+      "label": "Mar '26"
+    },
+    {
+      "month": "2026-04",
+      "human": 346,
+      "ai": 767,
+      "label": null
+    },
+    {
+      "month": "2026-05",
+      "human": 292,
+      "ai": 1352,
+      "label": null
+    },
+    {
+      "month": "2026-06",
+      "human": 338,
+      "ai": 1201,
+      "label": "Jun '26"
+    },
+    {
+      "month": "2026-07",
+      "human": 502,
+      "ai": 1158,
+      "label": null
+    },
+    {
+      "month": "2026-08",
+      "human": 389,
+      "ai": 1513,
+      "label": null
+    },
+    {
+      "month": "2026-09",
+      "human": 432,
+      "ai": 1019,
+      "label": "Sep '26"
+    },
+    {
+      "month": "2026-10",
+      "human": 189,
+      "ai": 595,
+      "label": null
+    }
+  ],
+  "domains": {
+    "title": "Where the work goes",
+    "subtitle": "Commits per domain across the 93 project repositories",
+    "rows": [
+      {
+        "label": "AI, ML & Automation",
+        "value": 3980,
+        "display": "3,980 commits · 7 repos"
+      },
+      {
+        "label": "Government, ERP & Enterprise Ops",
+        "value": 2843,
+        "display": "2,843 commits · 9 repos"
+      },
+      {
+        "label": "Industry Platforms & SaaS",
+        "value": 1740,
+        "display": "1,740 commits · 10 repos"
+      },
+      {
+        "label": "Logistics & Shipping",
+        "value": 1387,
+        "display": "1,387 commits · 8 repos"
+      },
+      {
+        "label": "E-Commerce & WooCommerce",
+        "value": 1057,
+        "display": "1,057 commits · 17 repos"
+      },
+      {
+        "label": "Talent Assessment & Recruitment",
+        "value": 900,
+        "display": "900 commits · 4 repos"
+      },
+      {
+        "label": "Higher-Education & EdTech",
+        "value": 738,
+        "display": "738 commits · 9 repos"
+      },
+      {
+        "label": "Membership, Events & Email",
+        "value": 489,
+        "display": "489 commits · 8 repos"
+      },
+      {
+        "label": "Payments, Accounting & POS",
+        "value": 329,
+        "display": "329 commits · 14 repos"
+      },
+      {
+        "label": "Corporate Web, CMS & WP Tooling",
+        "value": 185,
+        "display": "185 commits · 7 repos"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Core stack footprint",
+    "subtitle": "Number of projects using each technology",
+    "rows": [
+      {
+        "label": "WordPress & WooCommerce",
+        "value": 42,
+        "display": "42 projects"
+      },
+      {
+        "label": "MySQL / MariaDB",
+        "value": 34,
+        "display": "34 projects"
+      },
+      {
+        "label": "Laravel",
+        "value": 22,
+        "display": "22 projects"
+      },
+      {
+        "label": "Tailwind CSS",
+        "value": 12,
+        "display": "12 projects"
+      },
+      {
+        "label": "Python",
+        "value": 11,
+        "display": "11 projects"
+      },
+      {
+        "label": "Docker",
+        "value": 10,
+        "display": "10 projects"
+      },
+      {
+        "label": "GitHub Actions CI",
+        "value": 10,
+        "display": "10 projects"
+      },
+      {
+        "label": "Next.js / React",
+        "value": 8,
+        "display": "8 projects"
+      },
+      {
+        "label": "TypeScript",
+        "value": 8,
+        "display": "8 projects"
+      },
+      {
+        "label": "PostgreSQL",
+        "value": 7,
+        "display": "7 projects"
+      },
+      {
+        "label": "Vue 3",
+        "value": 6,
+        "display": "6 projects"
+      },
+      {
+        "label": "Flutter",
+        "value": 5,
+        "display": "5 projects"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "year": "2013",
+      "title": "Hello, GitHub",
+      "text": "Account created; first steps into version control and open source."
+    },
+    {
+      "year": "2016",
+      "title": "Research lab",
+      "text": "Unity math-education game for Android & Windows at ITB's LSKK lab."
+    },
+    {
+      "year": "2025",
+      "title": "Client platforms",
+      "text": "ERP, talent assessment, omnichannel WooCommerce and government lab systems."
+    },
+    {
+      "year": "2026 H1",
+      "title": "AI-native",
+      "text": "Claude Code as daily pair: AI ops hub, legal-tech, trading bot.",
+      "accent": "ai"
+    },
+    {
+      "year": "2026 H2",
+      "title": "Ecosystems",
+      "text": "University suite, civic SuperApp, supply-chain SaaS at scale."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="244" viewBox="0 0 860 244" role="img" aria-label="The journey">
+<title>The journey</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}.m{fill:#59636e}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
+<rect x="0.5" y="0.5" width="859" height="243" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+<text x="28" y="40" font-size="17" font-weight="700">The journey</text>
+<text x="28" y="62" font-size="12.5" class="m">From research-lab prototypes to production platforms</text>
+
+<line x1="95" x2="765" y1="112" y2="112" stroke="#d1d9e0" stroke-width="2"/>
+<g class="fd" style="animation-delay:0.00s">
+<circle cx="125.0" cy="112" r="9" fill="#ffffff" stroke="#E11D2E" stroke-width="2"/>
+<circle cx="125.0" cy="112" r="4" fill="#E11D2E"/>
+<text x="125.0" y="90" font-size="15" font-weight="800" text-anchor="middle" class="n">2013</text>
+<text x="125.0" y="146" font-size="12.5" font-weight="700" text-anchor="middle">Hello, GitHub</text>
+<text x="125.0" y="166" font-size="11.5" class="m" text-anchor="middle">Account created; first</text>
+<text x="125.0" y="182" font-size="11.5" class="m" text-anchor="middle">steps into version</text>
+<text x="125.0" y="198" font-size="11.5" class="m" text-anchor="middle">control and open source.</text>
+</g>
+<g class="fd" style="animation-delay:0.12s">
+<circle cx="277.5" cy="112" r="9" fill="#ffffff" stroke="#E11D2E" stroke-width="2"/>
+<circle cx="277.5" cy="112" r="4" fill="#E11D2E"/>
+<text x="277.5" y="90" font-size="15" font-weight="800" text-anchor="middle" class="n">2016</text>
+<text x="277.5" y="146" font-size="12.5" font-weight="700" text-anchor="middle">Research lab</text>
+<text x="277.5" y="166" font-size="11.5" class="m" text-anchor="middle">Unity math-education</text>
+<text x="277.5" y="182" font-size="11.5" class="m" text-anchor="middle">game for Android &amp;</text>
+<text x="277.5" y="198" font-size="11.5" class="m" text-anchor="middle">Windows at ITB's LSKK</text>
+<text x="277.5" y="214" font-size="11.5" class="m" text-anchor="middle">lab.</text>
+</g>
+<g class="fd" style="animation-delay:0.24s">
+<circle cx="430.0" cy="112" r="9" fill="#ffffff" stroke="#E11D2E" stroke-width="2"/>
+<circle cx="430.0" cy="112" r="4" fill="#E11D2E"/>
+<text x="430.0" y="90" font-size="15" font-weight="800" text-anchor="middle" class="n">2025</text>
+<text x="430.0" y="146" font-size="12.5" font-weight="700" text-anchor="middle">Client platforms</text>
+<text x="430.0" y="166" font-size="11.5" class="m" text-anchor="middle">ERP, talent assessment,</text>
+<text x="430.0" y="182" font-size="11.5" class="m" text-anchor="middle">omnichannel WooCommerce</text>
+<text x="430.0" y="198" font-size="11.5" class="m" text-anchor="middle">and government lab</text>
+<text x="430.0" y="214" font-size="11.5" class="m" text-anchor="middle">systems.</text>
+</g>
+<g class="fd" style="animation-delay:0.36s">
+<circle cx="582.5" cy="112" r="9" fill="#ffffff" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="582.5" cy="112" r="4" fill="#7C3AED"/>
+<text x="582.5" y="90" font-size="15" font-weight="800" text-anchor="middle" class="n">2026 H1</text>
+<text x="582.5" y="146" font-size="12.5" font-weight="700" text-anchor="middle">AI-native</text>
+<text x="582.5" y="166" font-size="11.5" class="m" text-anchor="middle">Claude Code as daily</text>
+<text x="582.5" y="182" font-size="11.5" class="m" text-anchor="middle">pair: AI ops hub,</text>
+<text x="582.5" y="198" font-size="11.5" class="m" text-anchor="middle">legal-tech, trading bot.</text>
+</g>
+<g class="fd" style="animation-delay:0.48s">
+<circle cx="735.0" cy="112" r="9" fill="#ffffff" stroke="#E11D2E" stroke-width="2"/>
+<circle cx="735.0" cy="112" r="4" fill="#E11D2E"/>
+<text x="735.0" y="90" font-size="15" font-weight="800" text-anchor="middle" class="n">2026 H2</text>
+<text x="735.0" y="146" font-size="12.5" font-weight="700" text-anchor="middle">Ecosystems</text>
+<text x="735.0" y="166" font-size="11.5" class="m" text-anchor="middle">University suite, civic</text>
+<text x="735.0" y="182" font-size="11.5" class="m" text-anchor="middle">SuperApp, supply-chain</text>
+<text x="735.0" y="198" font-size="11.5" class="m" text-anchor="middle">SaaS at scale.</text>
+</g></svg>
