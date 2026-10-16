@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="124" viewBox="0 0 860 124" role="img" aria-label="Talent Assessment &amp; Recruitment">
+<title>Talent Assessment &amp; Recruitment</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#e6edf3}.m{fill:#9198a1}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
+<rect x="0.5" y="0.5" width="859" height="123" rx="12" fill="#0d1117" stroke="#3d444d"/>
+<rect x="1" y="18" width="4" height="88" rx="2" fill="#F2545B"/>
+<text x="28" y="36" font-size="11" font-weight="700" class="m n" letter-spacing="1">CATEGORY 04 / 10</text>
+<text x="28" y="64" font-size="20" font-weight="800">Talent Assessment &amp; Recruitment</text>
+<text x="28" y="88" font-size="12.5" class="m">Measuring, ranking and developing people with AI-assisted</text>
+<text x="28" y="105" font-size="12.5" class="m">assessment</text>
+<text x="520" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">REPOS</text>
+<text x="520" y="60" font-size="21" font-weight="800" class="n">4</text>
+<text x="624" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">COMMITS</text>
+<text x="624" y="60" font-size="21" font-weight="800" class="n">900</text>
+<text x="728" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">LIVE</text>
+<text x="728" y="60" font-size="21" font-weight="800" class="n">2</text>
+<line x1="520" x2="832" y1="100.5" y2="100.5" stroke="#21262d"/>
+<rect class="col" style="animation-delay:0.00s" x="520.0" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.03s" x="535.6" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.06s" x="551.2" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.09s" x="566.8" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.12s" x="582.4" y="94.0" width="12.6" height="6.0" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.15s" x="598.0" y="98.0" width="12.6" height="2.0" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.18s" x="613.6" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.21s" x="629.2" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.24s" x="644.8" y="87.5" width="12.6" height="12.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.27s" x="660.4" y="90.3" width="12.6" height="9.7" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.30s" x="676.0" y="90.9" width="12.6" height="9.1" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.33s" x="691.6" y="87.3" width="12.6" height="12.7" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.36s" x="707.2" y="85.7" width="12.6" height="14.3" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.39s" x="722.8" y="89.7" width="12.6" height="10.3" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.42s" x="738.4" y="74.0" width="12.6" height="26.0" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.45s" x="754.0" y="95.5" width="12.6" height="4.5" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.48s" x="769.6" y="96.6" width="12.6" height="3.4" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.51s" x="785.2" y="86.1" width="12.6" height="13.9" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.54s" x="800.8" y="93.0" width="12.6" height="7.0" rx="1.5" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.57s" x="816.4" y="94.5" width="12.6" height="5.5" rx="1.5" fill="#F2545B"/>
+<text x="520" y="115" font-size="10" class="m">Mar '25</text>
+<text x="676" y="115" font-size="10" class="m" text-anchor="middle">commits / month</text>
+<text x="832" y="115" font-size="10" class="m" text-anchor="end">Oct '26</text></svg>
