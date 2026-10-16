@@ -504,20 +504,37 @@ def hero_terminal():
 
 
 # ------------------------------------------------------------- README section
+def chips(stack):
+    # non-breaking spaces keep each tag on one line ("PHP&nbsp;8.1")
+    return " ".join(f"<code>{escape(part.strip()).replace(' ', '&nbsp;')}</code>" for part in stack.split("·"))
+
+
+def status_label(p):
+    n = p.get("count", 1)
+    if not p["live"]:
+        return "⚪ <sub>delivered</sub>"
+    lc = p.get("live_count", n)
+    return "🟢 <sub>live</sub>" if lc == n else f"🟢 <sub>{lc}/{n} live</sub>"
+
+
 def project_rows(projects):
-    rows = ["| Project | Main function | What makes it notable |", "|---|---|---|"]
+    """Full-width HTML table: GitHub sizes tables to their content, so the
+    long description cells stretch every table edge to edge."""
+    rows = ['<table>', '<thead><tr>',
+            '<th align="left" width="30%">Project</th>',
+            '<th align="left" width="32%">Main function</th>',
+            '<th align="left" width="38%">What makes it notable</th>',
+            '</tr></thead>', '<tbody>']
     for p in projects:
         n = p.get("count", 1)
-        if p["live"]:
-            lc = p.get("live_count", n)
-            status = "🟢" if lc == n else f"🟢 <sub>{lc}/{n} live</sub>"
-        else:
-            status = "⚪"
-        name = f"[{p['name']}]({p['url']})" if p.get("url") else p["name"]
-        count = f" ×{n}" if n > 1 else ""
+        name = f'<a href="{p["url"]}">{escape(p["name"])}</a>' if p.get("url") else escape(p["name"])
+        count = f" <sub>×{n}</sub>" if n > 1 else ""
         public = " 🔓" if p.get("public") else ""
-        rows.append(f"| {status} **{name}**{count}{public}<br/><sub>{p['stack']} · {p['year']}</sub> "
-                    f"| {p['function']} | {p['highlights']} |")
+        rows.append(
+            f'<tr><td valign="top"><b>{name}</b>{count}{public}<br/>{status_label(p)} <sub>· since {p["year"]}</sub><br/>{chips(p["stack"])}</td>'
+            f'<td valign="top">{escape(p["function"])}</td>'
+            f'<td valign="top">{escape(p["highlights"])}</td></tr>')
+    rows += ["</tbody>", "</table>"]
     return "\n".join(rows)
 
 
@@ -563,11 +580,71 @@ def readme_stack_table():
     spec = DATA["stack_commits"]
     total = sum(r["value"] for r in spec["rows"])
     repos = sum(r["repos"] for r in spec["rows"])
-    rows = ["| Main stack | Repos | Commits | Share |", "|---|--:|--:|--:|"]
+    rows = ['<table>', '<thead><tr>',
+            '<th align="left" width="26%">Main stack</th>',
+            '<th align="right" width="8%">Repos</th>',
+            '<th align="right" width="11%">Commits</th>',
+            '<th align="right" width="9%">Share</th>',
+            '<th align="left" width="46%">Typical projects</th>',
+            '</tr></thead>', '<tbody>']
     for r in spec["rows"]:
-        rows.append(f"| {r['label']} | {r['repos']} | {fmt(r['value'])} | {100 * r['value'] / total:.1f}% |")
-    rows.append(f"| **Total** | **{repos}** | **{fmt(total)}** | **100%** |")
+        rows.append(f'<tr><td><b>{escape(r["label"])}</b></td><td align="right">{r["repos"]}</td>'
+                    f'<td align="right"><code>{fmt(r["value"])}</code></td>'
+                    f'<td align="right">{100 * r["value"] / total:.1f}%</td><td>{escape(r["examples"])}</td></tr>')
+    rows.append(f'<tr><td><b>Total</b></td><td align="right"><b>{repos}</b></td>'
+                f'<td align="right"><b><code>{fmt(total)}</code></b></td><td align="right"><b>100%</b></td>'
+                f'<td><sub>All 93 project repos</sub></td></tr>')
+    rows += ["</tbody>", "</table>"]
     return "\n".join(rows)
+
+
+def readme_tldr(catalog):
+    t, w, pr = DATA["totals"], DATA["window"], DATA["profile"]
+    cats = catalog["categories"]
+    stack = DATA["stack_commits"]["rows"]
+    return (
+        f'> **TL;DR** — {pr["name"]} is a {pr["role"].lower()} at {pr["company"]} ({pr["location"]}) who builds '
+        f'business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, '
+        f'e-commerce and AI automation. Across **{len(cats)} domains** there are **108 repositories** '
+        f'(93 project repos, 65 in production) and **{fmt(t["commits"])} commits**, '
+        f'{t["ai_share"]}% of them pair-programmed with Claude Code. Main stacks by commits: '
+        + ", ".join(f'{r["label"]} ({fmt(r["value"])})' for r in stack[:5])
+        + f'. Since Dec 2025: {fmt(w["commits"])} commits on {w["active_days"]} active days.'
+    )
+
+
+def readme_ai_profile(catalog):
+    t, w, pr = DATA["totals"], DATA["window"], DATA["profile"]
+    q = lambda v: '"' + str(v).replace('"', "'") + '"'
+    out = ["<details>", "<summary><b>🤖 Machine-readable profile</b> — structured summary for AI assistants, "
+           "recruiters and tools</summary>", "", "```yaml",
+           f"name: {q(pr['name'])}", f"github: {pr['github']}", f"role: {q(pr['role'])}",
+           f"company: {q(pr['company'])}", f"website: {pr['website']}", f"location: {pr['location']}",
+           f"linkedin: {pr['linkedin']}", f"email: {pr['email']}", f"on_github_since: {pr['on_github_since']}",
+           f"open_to: {pr['open_to']}", f"updated: {DATA['generated']}", "stats:",
+           "  repositories: 108", "  project_repos: 93", "  live_systems: 65",
+           f"  commits_total: {t['commits']}", f"  commits_ai_paired_pct: {t['ai_share']}",
+           f"  repos_with_ai_pairing: {t['ai_repos']}", f"  active_days: {t['active_days']}",
+           f"  window_since: {w['start']}", f"  window_commits: {w['commits']}",
+           f"  window_active_days: {w['active_days']}", f"  window_longest_streak_days: {w['longest_streak']}",
+           "focus:"]
+    out += [f"  - {q(f)}" for f in pr["focus"]]
+    out.append("domains:")
+    for c in catalog["categories"]:
+        act = DATA["category_activity"][c["key"]]
+        out += [f"  - name: {q(c['title'])}", f"    repos: {repo_total(c['projects'])}",
+                f"    live: {live_total(c['projects'])}", f"    commits: {act['commits']}",
+                f"    purpose: {q(c['tagline'])}"]
+    out.append("main_stacks:")
+    for r in DATA["stack_commits"]["rows"]:
+        out.append(f"  - {{stack: {q(r['label'])}, repos: {r['repos']}, commits: {r['value']}}}")
+    out.append("ai_in_products:")
+    out += [f"  - {q(a)}" for a in pr["ai_in_products"]]
+    out.append("top_projects_since_dec_2025:")
+    out += [f"  - {{name: {q(r['label'])}, domain: {q(r['tag'])}, commits: {r['value']}}}"
+            for r in DATA["top_projects"]["rows"]]
+    out += ["note: \"Client names are withheld; most work is private client work under NDA.\"", "```", "", "</details>"]
+    return "\n".join(out)
 
 
 def inject_readme(marker, section):
@@ -606,8 +683,10 @@ def main():
     (OUT / "banner-header.svg").write_text(banner_header())
     (OUT / "banner-footer.svg").write_text(banner_footer())
     print("wrote assets/hero-terminal.svg, banner-header.svg, banner-footer.svg")
+    inject_readme("TLDR", readme_tldr(catalog))
     inject_readme("PROJECTS", readme_projects(catalog))
     inject_readme("STACK", readme_stack_table())
+    inject_readme("AI-PROFILE", readme_ai_profile(catalog))
 
 
 if __name__ == "__main__":

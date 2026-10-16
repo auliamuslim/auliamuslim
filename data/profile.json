@@ -245,55 +245,64 @@
         "label": "Laravel",
         "value": 3470,
         "repos": 21,
-        "display": "3,470 commits · 21 repos"
+        "display": "3,470 commits · 21 repos",
+        "examples": "Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite"
       },
       {
         "label": "n8n + Node.js automation",
         "value": 3438,
         "repos": 1,
-        "display": "3,438 commits · 1 repo"
+        "display": "3,438 commits · 1 repo",
+        "examples": "AI document automation & ops hub"
       },
       {
         "label": "WordPress / WooCommerce",
         "value": 1884,
         "repos": 39,
-        "display": "1,884 commits · 39 repos"
+        "display": "1,884 commits · 39 repos",
+        "examples": "Loyalty store · product-authentication suite · membership automation"
       },
       {
         "label": "Perfex CRM / CodeIgniter",
         "value": 1860,
         "repos": 3,
-        "display": "1,860 commits · 3 repos"
+        "display": "1,860 commits · 3 repos",
+        "examples": "Two government lab ERPs · CRM ↔ FluentCRM sync"
       },
       {
         "label": "Native PHP + Vue / JS",
         "value": 1825,
         "repos": 10,
-        "display": "1,825 commits · 10 repos"
+        "display": "1,825 commits · 10 repos",
+        "examples": "Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS"
       },
       {
         "label": "TypeScript: Next.js, Node, Hono",
         "value": 595,
         "repos": 7,
-        "display": "595 commits · 7 repos"
+        "display": "595 commits · 7 repos",
+        "examples": "Civic SuperApp · sports-arena POS backend & admin · mining digital twin"
       },
       {
         "label": "Python: ML, data, Flask",
         "value": 546,
         "repos": 6,
-        "display": "546 commits · 6 repos"
+        "display": "546 commits · 6 repos",
+        "examples": "AI CV screening · crypto trading engine · RAG tutor · catalogue import"
       },
       {
         "label": "Flutter / Dart",
         "value": 47,
         "repos": 2,
-        "display": "47 commits · 2 repos"
+        "display": "47 commits · 2 repos",
+        "examples": "Ice-rink member app · venue POS app"
       },
       {
         "label": "Other: SQL, Apps Script, email",
         "value": 44,
         "repos": 4,
-        "display": "44 commits · 4 repos"
+        "display": "44 commits · 4 repos",
+        "examples": "Contact automation · reporting feeder kit · newsletters"
       }
     ]
   },
@@ -1701,5 +1710,33 @@
   "banner": {
     "name": "Aulia Muslim Hidayatullah",
     "tagline": "Software Engineer  •  ERP · SaaS · AI Automation  •  Indonesia"
+  },
+  "profile": {
+    "name": "Aulia Muslim Hidayatullah",
+    "github": "auliamuslim",
+    "role": "Software Engineer",
+    "company": "Newtype",
+    "website": "https://newtype.co.id",
+    "location": "Indonesia",
+    "linkedin": "https://www.linkedin.com/in/auliamuslim/",
+    "email": "auliamuslim@gmail.com",
+    "on_github_since": 2013,
+    "open_to": "collaboration",
+    "focus": [
+      "Government & enterprise ERP / CRM",
+      "University ecosystems",
+      "SaaS platforms",
+      "Logistics & courier SaaS",
+      "E-commerce, payments & POS",
+      "AI automation & LLM products"
+    ],
+    "ai_in_products": [
+      "RAG learning assistant",
+      "GPT-4o assessment reports",
+      "Claude consultation summaries & agents",
+      "LLM-adaptive testing",
+      "ML trading signals (LightGBM)",
+      "Speech-to-sign-language"
+    ]
   }
 }

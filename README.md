@@ -10,6 +10,10 @@
 <sub><a href="#-about-me">About</a> · <a href="#-portfolio-at-a-glance">At a glance</a> · <a href="#projects">Projects by category</a> · <a href="#-flagship-deep-dives">Flagships</a> · <a href="#-engineering-activity">Activity</a> · <a href="#-how-i-build">How I build</a> · <a href="#-tech-stack--integrations">Stack</a> · <a href="#-contact">Contact</a></sub>
 </div>
 
+<!-- TLDR:START -->
+> **TL;DR** — Aulia Muslim Hidayatullah is a software engineer at Newtype (Indonesia) who builds business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation. Across **10 domains** there are **108 repositories** (93 project repos, 65 in production) and **13,913 commits**, 70% of them pair-programmed with Claude Code. Main stacks by commits: Laravel (3,470), n8n + Node.js automation (3,438), WordPress / WooCommerce (1,884), Perfex CRM / CodeIgniter (1,860), Native PHP + Vue / JS (1,825). Since Dec 2025: 13,062 commits on 275 active days.
+<!-- TLDR:END -->
+
 ## 👋 About Me
 
 <table>
@@ -87,17 +91,24 @@
   <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,847 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Government testing-lab ERP / CRM**<br/><sub>Perfex · CodeIgniter 3 · PHP 8.1 · Vue 3 · 2025</sub> | Runs a state lab's testing services end to end, from request to work order, invoice and revenue report | 25 custom modules · service-reporting & treasury APIs · bank SNAP VA · 3,000+ assertions |
-| 🟢 **Textile-testing lab ERP / CRM**<br/><sub>Perfex · CodeIgniter 3 · MariaDB · 2026</sub> | Digitises a government textile lab's service lifecycle for clients and staff | Service-coded work orders · approvals · client tracking portal · 130+ tables |
-| 🟢 **ISP modular ERP**<br/><sub>Laravel 11 · Alpine.js · Tailwind · 2025</sub> | Operates an internet provider: subscribers, field jobs, billing, HR and accounting | 25 modules · survey / install / dismantle work orders · prorated recurring billing |
-| 🟢 **Food supply-chain governance SaaS**<br/><sub>Laravel 11 · Inertia · React 19 · TypeScript · 2026</sub> | Governs procurement between village cooperatives, school-meal kitchens and suppliers | Price ceilings · QC goods receipt · daily invoicing · audited payouts · AI insights |
-| ⚪ **CRM ↔ FluentCRM sync**<br/><sub>Perfex · CodeIgniter 3 · WordPress · 2026</sub> | Keeps one CRM and several marketing sites in sync | Bi-directional contact & tag sync · exhibition lead import · hardened endpoints |
-| ⚪ **HRIS & payroll suite**<br/><sub>Laravel 12 · Vue 3 · 2026</sub> | Manages staff records, attendance, leave and payroll | Shifts · salary components · self-service portal · offboarding |
-| ⚪ **HR & attendance suite + mobile app**<br/><sub>Laravel 10 · Flutter · 2026</sub> | Tracks attendance from QR, NFC and biometric devices | Payroll & overtime · leave workflows · Flutter employee app |
-| 🟢 **Fleet & vehicle booking PWA**<br/><sub>Laravel 10 · PWA · 2025</sub> | Books vehicles and keeps a fleet maintained | Driver, fuel & expense ledgers · maintenance work orders · public-information module |
-| ⚪ **Stock-exchange → CRM lead pipeline**<br/><sub>Python · pandas · Neo4j · 2026</sub> | Turns listed-company data into CRM-ready B2B leads | 957 company leads · director & shareholder graph · CRM CSV converter |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Government testing-lab ERP / CRM</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Perfex</code> <code>CodeIgniter&nbsp;3</code> <code>PHP&nbsp;8.1</code> <code>Vue&nbsp;3</code></td><td valign="top">Runs a state lab's testing services end to end, from request to work order, invoice and revenue report</td><td valign="top">25 custom modules · service-reporting &amp; treasury APIs · bank SNAP VA · 3,000+ assertions</td></tr>
+<tr><td valign="top"><b>Textile-testing lab ERP / CRM</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Perfex</code> <code>CodeIgniter&nbsp;3</code> <code>MariaDB</code></td><td valign="top">Digitises a government textile lab's service lifecycle for clients and staff</td><td valign="top">Service-coded work orders · approvals · client tracking portal · 130+ tables</td></tr>
+<tr><td valign="top"><b>ISP modular ERP</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;11</code> <code>Alpine.js</code> <code>Tailwind</code></td><td valign="top">Operates an internet provider: subscribers, field jobs, billing, HR and accounting</td><td valign="top">25 modules · survey / install / dismantle work orders · prorated recurring billing</td></tr>
+<tr><td valign="top"><b>Food supply-chain governance SaaS</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;11</code> <code>Inertia</code> <code>React&nbsp;19</code> <code>TypeScript</code></td><td valign="top">Governs procurement between village cooperatives, school-meal kitchens and suppliers</td><td valign="top">Price ceilings · QC goods receipt · daily invoicing · audited payouts · AI insights</td></tr>
+<tr><td valign="top"><b>CRM ↔ FluentCRM sync</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Perfex</code> <code>CodeIgniter&nbsp;3</code> <code>WordPress</code></td><td valign="top">Keeps one CRM and several marketing sites in sync</td><td valign="top">Bi-directional contact &amp; tag sync · exhibition lead import · hardened endpoints</td></tr>
+<tr><td valign="top"><b>HRIS &amp; payroll suite</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;12</code> <code>Vue&nbsp;3</code></td><td valign="top">Manages staff records, attendance, leave and payroll</td><td valign="top">Shifts · salary components · self-service portal · offboarding</td></tr>
+<tr><td valign="top"><b>HR &amp; attendance suite + mobile app</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;10</code> <code>Flutter</code></td><td valign="top">Tracks attendance from QR, NFC and biometric devices</td><td valign="top">Payroll &amp; overtime · leave workflows · Flutter employee app</td></tr>
+<tr><td valign="top"><b>Fleet &amp; vehicle booking PWA</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;10</code> <code>PWA</code></td><td valign="top">Books vehicles and keeps a fleet maintained</td><td valign="top">Driver, fuel &amp; expense ledgers · maintenance work orders · public-information module</td></tr>
+<tr><td valign="top"><b>Stock-exchange → CRM lead pipeline</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Python</code> <code>pandas</code> <code>Neo4j</code></td><td valign="top">Turns listed-company data into CRM-ready B2B leads</td><td valign="top">957 company leads · director &amp; shareholder graph · CRM CSV converter</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -108,17 +119,24 @@
   <img width="100%" alt="Higher-Education &amp; EdTech: 9 repositories, 738 commits, 6 live. The student lifecycle, digitised: admission, academics, finance, exams and learning" src="assets/cat-edu-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **University academic system (SIAKAD)**<br/><sub>Laravel 8 · MariaDB Galera · 2026</sub> | The campus hub: curriculum, classes, course registration, grades and transcripts | Two-way PDDikti Neo Feeder sync · ~116 queue jobs · org-scoped RBAC |
-| 🟢 **Admissions + finance + academic monorepo**<br/><sub>Laravel 8 · Redis · Passport · 2026</sub> | Takes applicants from sign-up to student ID and first invoice | Seven-stage admissions funnel · Midtrans billing · OAuth2 state APIs |
-| 🟢 **University finance & billing**<br/><sub>MariaDB · Midtrans · 2026</sub> | Bills tuition and gates exams on payment status | 69-table schema · four-level chart of accounts · instalments · gateway logs |
-| 🟢 **Computer-based admission exam (CAT)**<br/><sub>MariaDB · Laravel · 2026</sub> | Runs proctored entrance exams with automatic scoring | Question banks & batches · camera proctoring · multi-level scoring |
-| 🟢 **University LMS "AI Class"**<br/><sub>Laravel 8 · S3 · 2026</sub> | Delivers courses, quizzes and assignments for six user roles | Bloom-tagged quiz bank · queued academic-system sync · embedded AI tutor |
-| ⚪ **Higher-ed reporting feeder kit**<br/><sub>Docker · PostgreSQL · Nginx · 2026</sub> | Installs and upgrades the national higher-ed reporting app | Dockerised installer · verified 3.0 → 3.1 upgrade · backup & rollback |
-| ⚪ **School library management plugin**<br/><sub>WordPress · 2025</sub> | Lends books and tracks returns for school libraries | Branches & bookcases · late fines · CSV import · validation fixes |
-| ⚪ **LMS dynamic profile fields**<br/><sub>WordPress · Tutor LMS · 2025</sub> | Adds custom student and instructor profiles to an LMS | Nine field types · public profiles · searchable student directory |
-| 🟢 **Course registration & enrolment**<br/><sub>WooCommerce · ACF · 2025</sub> | Sells training programmes and enrols buyers automatically | Prerequisite checks · LMS enrolment API · 70–94% faster pages |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>University academic system (SIAKAD)</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;8</code> <code>MariaDB&nbsp;Galera</code></td><td valign="top">The campus hub: curriculum, classes, course registration, grades and transcripts</td><td valign="top">Two-way PDDikti Neo Feeder sync · ~116 queue jobs · org-scoped RBAC</td></tr>
+<tr><td valign="top"><b>Admissions + finance + academic monorepo</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;8</code> <code>Redis</code> <code>Passport</code></td><td valign="top">Takes applicants from sign-up to student ID and first invoice</td><td valign="top">Seven-stage admissions funnel · Midtrans billing · OAuth2 state APIs</td></tr>
+<tr><td valign="top"><b>University finance &amp; billing</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>MariaDB</code> <code>Midtrans</code></td><td valign="top">Bills tuition and gates exams on payment status</td><td valign="top">69-table schema · four-level chart of accounts · instalments · gateway logs</td></tr>
+<tr><td valign="top"><b>Computer-based admission exam (CAT)</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>MariaDB</code> <code>Laravel</code></td><td valign="top">Runs proctored entrance exams with automatic scoring</td><td valign="top">Question banks &amp; batches · camera proctoring · multi-level scoring</td></tr>
+<tr><td valign="top"><b>University LMS "AI Class"</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;8</code> <code>S3</code></td><td valign="top">Delivers courses, quizzes and assignments for six user roles</td><td valign="top">Bloom-tagged quiz bank · queued academic-system sync · embedded AI tutor</td></tr>
+<tr><td valign="top"><b>Higher-ed reporting feeder kit</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Docker</code> <code>PostgreSQL</code> <code>Nginx</code></td><td valign="top">Installs and upgrades the national higher-ed reporting app</td><td valign="top">Dockerised installer · verified 3.0 → 3.1 upgrade · backup &amp; rollback</td></tr>
+<tr><td valign="top"><b>School library management plugin</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>WordPress</code></td><td valign="top">Lends books and tracks returns for school libraries</td><td valign="top">Branches &amp; bookcases · late fines · CSV import · validation fixes</td></tr>
+<tr><td valign="top"><b>LMS dynamic profile fields</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>WordPress</code> <code>Tutor&nbsp;LMS</code></td><td valign="top">Adds custom student and instructor profiles to an LMS</td><td valign="top">Nine field types · public profiles · searchable student directory</td></tr>
+<tr><td valign="top"><b>Course registration &amp; enrolment</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code> <code>ACF</code></td><td valign="top">Sells training programmes and enrols buyers automatically</td><td valign="top">Prerequisite checks · LMS enrolment API · 70–94% faster pages</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -129,15 +147,22 @@
   <img width="100%" alt="AI, ML &amp; Automation: 7 repositories, 3,995 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **AI document automation & ops hub**<br/><sub>n8n · Node.js · Claude · Gemini · 2026</sub> | Turns meetings, recordings and chat commands into finished documents | 215-node n8n flow · 19 Discord commands · video → user guide · 7,700+ checks |
-| 🟢 **Algorithmic crypto trading engine**<br/><sub>Python · ccxt · LightGBM · Optuna · 2026</sub> | Trades crypto automatically under strict risk limits | DCA, grid & formula strategies · LightGBM filter · 8+ exchanges · ~1,000 tests |
-| ⚪ **AI incident-response platform**<br/><sub>NestJS · Next.js · Prisma · n8n · 2026</sub> | Triages production incidents for a microservice fleet | Claude incident-commander agent · log triage with redaction · n8n war rooms |
-| 🟢 **RAG learning assistant**<br/><sub>Flask · LangChain · ChromaDB · 2026</sub> | Answers students' questions from the campus knowledge base | OpenAI + ChromaDB retrieval · per-user memory · one-tag embed widget |
-| 🟢 **AI competency recommender**<br/><sub>PHP 8.1 · OpenAI · 2025</sub> | Generates personal development plans per competency and level | GPT plans streamed over SSE · response caching · rate limiting |
-| ⚪ **Ops knowledge base & AI CV screening**<br/><sub>Python · Claude Code skills · 2026</sub> | Documents company operations and shortlists job applicants | 44 guide volumes · 1,000+ CVs screened · auto Top-10 reports |
-| 🟢 **Contact master-list automation**<br/><sub>Google Apps Script · 2026</sub> | Keeps a community's contact lists in sync automatically | Hub-and-spoke Sheets sync · four Apps Script projects · event imports |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>AI document automation &amp; ops hub</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>n8n</code> <code>Node.js</code> <code>Claude</code> <code>Gemini</code></td><td valign="top">Turns meetings, recordings and chat commands into finished documents</td><td valign="top">215-node n8n flow · 19 Discord commands · video → user guide · 7,700+ checks</td></tr>
+<tr><td valign="top"><b>Algorithmic crypto trading engine</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Python</code> <code>ccxt</code> <code>LightGBM</code> <code>Optuna</code></td><td valign="top">Trades crypto automatically under strict risk limits</td><td valign="top">DCA, grid &amp; formula strategies · LightGBM filter · 8+ exchanges · ~1,000 tests</td></tr>
+<tr><td valign="top"><b>AI incident-response platform</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>NestJS</code> <code>Next.js</code> <code>Prisma</code> <code>n8n</code></td><td valign="top">Triages production incidents for a microservice fleet</td><td valign="top">Claude incident-commander agent · log triage with redaction · n8n war rooms</td></tr>
+<tr><td valign="top"><b>RAG learning assistant</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Flask</code> <code>LangChain</code> <code>ChromaDB</code></td><td valign="top">Answers students' questions from the campus knowledge base</td><td valign="top">OpenAI + ChromaDB retrieval · per-user memory · one-tag embed widget</td></tr>
+<tr><td valign="top"><b>AI competency recommender</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>PHP&nbsp;8.1</code> <code>OpenAI</code></td><td valign="top">Generates personal development plans per competency and level</td><td valign="top">GPT plans streamed over SSE · response caching · rate limiting</td></tr>
+<tr><td valign="top"><b>Ops knowledge base &amp; AI CV screening</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Python</code> <code>Claude&nbsp;Code&nbsp;skills</code></td><td valign="top">Documents company operations and shortlists job applicants</td><td valign="top">44 guide volumes · 1,000+ CVs screened · auto Top-10 reports</td></tr>
+<tr><td valign="top"><b>Contact master-list automation</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Google&nbsp;Apps&nbsp;Script</code></td><td valign="top">Keeps a community's contact lists in sync automatically</td><td valign="top">Hub-and-spoke Sheets sync · four Apps Script projects · event imports</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -148,12 +173,19 @@
   <img width="100%" alt="Talent Assessment &amp; Recruitment: 4 repositories, 900 commits, 2 live. Measuring, ranking and developing people with AI-assisted assessment" src="assets/cat-talent-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Enterprise talent discovery platform**<br/><sub>PHP 8.1 · PostgreSQL · Redis · 2025</sub> | Assesses employees for a corporate group's talent programme | Multi-format tests · webcam proctoring · GPT-4o reports · AI companion · Entra ID SSO |
-| 🟢 **Corporate assessment platform**<br/><sub>PHP · PostgreSQL · OpenAI · 2026</sub> | Runs the same assessment engine for a second organisation | Rebrand · session checks on 255 endpoints · SQL-injection fixes |
-| ⚪ **AI adaptive testing (CAT) engine**<br/><sub>PHP · OpenAI · 2025</sub> | Adapts test difficulty to each candidate in real time | LLM picks question groups · ten difficulty levels · token analytics |
-| ⚪ **ATS screening pipeline & test kit**<br/><sub>Python · Laravel 11 · 2026</sub> | Screens applicants and scores technical tests | 94 CVs ranked · scoring rubric · reference Laravel & WordPress solutions |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Enterprise talent discovery platform</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>PHP&nbsp;8.1</code> <code>PostgreSQL</code> <code>Redis</code></td><td valign="top">Assesses employees for a corporate group's talent programme</td><td valign="top">Multi-format tests · webcam proctoring · GPT-4o reports · AI companion · Entra ID SSO</td></tr>
+<tr><td valign="top"><b>Corporate assessment platform</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>PHP</code> <code>PostgreSQL</code> <code>OpenAI</code></td><td valign="top">Runs the same assessment engine for a second organisation</td><td valign="top">Rebrand · session checks on 255 endpoints · SQL-injection fixes</td></tr>
+<tr><td valign="top"><b>AI adaptive testing (CAT) engine</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>PHP</code> <code>OpenAI</code></td><td valign="top">Adapts test difficulty to each candidate in real time</td><td valign="top">LLM picks question groups · ten difficulty levels · token analytics</td></tr>
+<tr><td valign="top"><b>ATS screening pipeline &amp; test kit</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Python</code> <code>Laravel&nbsp;11</code></td><td valign="top">Screens applicants and scores technical tests</td><td valign="top">94 CVs ranked · scoring rubric · reference Laravel &amp; WordPress solutions</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -164,18 +196,25 @@
   <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,755 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Lawyer-on-demand marketplace**<br/><sub>Vue 3 PWA · PHP · LiveKit · 2026</sub> | Connects people and SMEs with verified lawyers | Chat & video consults · case tenders · six gateways · Claude summaries |
-| 🟢 **Civic organisation SuperApp**<br/><sub>Hono · Drizzle · Next.js · Expo · 2026</sub> | Runs nationwide membership, engagement and a command centre | 10 modules · QR e-member card · regional maps · 344 tests |
-| 🟢 **Donation & social-foundation platform**<br/><sub>Laravel 12 · Sentry · 2025</sub> | Raises funds for campaigns, communities and events | Six in-house gateways · AI blog drafts · auto social sharing · 615 tests |
-| 🟢 **Sign-language accessibility SaaS**<br/><sub>PHP 8 · Web Components · HLS · 2025</sub> | Makes websites accessible to the Deaf community | Text & speech → BISINDO video · widget, extension, plugin & API |
-| ⚪ **Telehealth & wellness platform**<br/><sub>PHP 8.2 · Docker · 2026</sub> | Delivers doctor consults, counselling and wellness programmes | Own zero-dependency framework · e-prescriptions · payment ledger · 214 tests |
-| 🟢 **Grant-partner form portal**<br/><sub>Laravel 11 · 2025</sub> | Collects reports from community grant partners | Form builder · auto-save drafts · photo galleries · role-based exports |
-| ⚪ **Game top-up & voucher platform**<br/><sub>Laravel 12 · Vue 3 · Filament · 2026</sub> | Sells game top-ups and digital vouchers | Gateway & supplier failover · five-tier reseller H2H API · PWA |
-| ⚪ **Binary MLM & multi-store commerce**<br/><sub>Laravel 11 · 2025</sub> | Runs a network-marketing business with an online shop | Binary BV tree · wallets · new multi-store extension |
-| ⚪ **Mining digital-twin 3D dashboard**<br/><sub>Next.js 16 · Three.js · 2025</sub> | Visualises a mine site and its fleet in 3D | Simulated live fleet · KPI analytics · admin with audit log |
-| ⚪ **Cybersecurity services site**<br/><sub>React 19 · Vite · 2026</sub> | Sells managed security services with live demos | DDoS, WAF & VAPT dashboards · Gemini threat analyser |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Lawyer-on-demand marketplace</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Vue&nbsp;3&nbsp;PWA</code> <code>PHP</code> <code>LiveKit</code></td><td valign="top">Connects people and SMEs with verified lawyers</td><td valign="top">Chat &amp; video consults · case tenders · six gateways · Claude summaries</td></tr>
+<tr><td valign="top"><b>Civic organisation SuperApp</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Hono</code> <code>Drizzle</code> <code>Next.js</code> <code>Expo</code></td><td valign="top">Runs nationwide membership, engagement and a command centre</td><td valign="top">10 modules · QR e-member card · regional maps · 344 tests</td></tr>
+<tr><td valign="top"><b>Donation &amp; social-foundation platform</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;12</code> <code>Sentry</code></td><td valign="top">Raises funds for campaigns, communities and events</td><td valign="top">Six in-house gateways · AI blog drafts · auto social sharing · 615 tests</td></tr>
+<tr><td valign="top"><b>Sign-language accessibility SaaS</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>PHP&nbsp;8</code> <code>Web&nbsp;Components</code> <code>HLS</code></td><td valign="top">Makes websites accessible to the Deaf community</td><td valign="top">Text &amp; speech → BISINDO video · widget, extension, plugin &amp; API</td></tr>
+<tr><td valign="top"><b>Telehealth &amp; wellness platform</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>PHP&nbsp;8.2</code> <code>Docker</code></td><td valign="top">Delivers doctor consults, counselling and wellness programmes</td><td valign="top">Own zero-dependency framework · e-prescriptions · payment ledger · 214 tests</td></tr>
+<tr><td valign="top"><b>Grant-partner form portal</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;11</code></td><td valign="top">Collects reports from community grant partners</td><td valign="top">Form builder · auto-save drafts · photo galleries · role-based exports</td></tr>
+<tr><td valign="top"><b>Game top-up &amp; voucher platform</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;12</code> <code>Vue&nbsp;3</code> <code>Filament</code></td><td valign="top">Sells game top-ups and digital vouchers</td><td valign="top">Gateway &amp; supplier failover · five-tier reseller H2H API · PWA</td></tr>
+<tr><td valign="top"><b>Binary MLM &amp; multi-store commerce</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;11</code></td><td valign="top">Runs a network-marketing business with an online shop</td><td valign="top">Binary BV tree · wallets · new multi-store extension</td></tr>
+<tr><td valign="top"><b>Mining digital-twin 3D dashboard</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>Next.js&nbsp;16</code> <code>Three.js</code></td><td valign="top">Visualises a mine site and its fleet in 3D</td><td valign="top">Simulated live fleet · KPI analytics · admin with audit log</td></tr>
+<tr><td valign="top"><b>Cybersecurity services site</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>React&nbsp;19</code> <code>Vite</code></td><td valign="top">Sells managed security services with live demos</td><td valign="top">DDoS, WAF &amp; VAPT dashboards · Gemini threat analyser</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -186,14 +225,21 @@
   <img width="100%" alt="Logistics &amp; Shipping: 8 repositories, 1,387 commits, 5 live. Moving parcels: courier SaaS, live tracking and shipping-rate engines" src="assets/cat-logi-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Multi-tenant courier & parcel SaaS**<br/><sub>Laravel 10 · Stancl Tenancy · 2025</sub> | Runs courier branches, merchants and parcel tracking | Subdomain tenancy · WhatsApp queues · 33-status bridge · 130 test files |
-| 🟢 **Freight-forwarder websites** ×3<br/><sub>Laravel · Blade · 2026</sub> | Lets importers track China → Indonesia shipments | Company sites · deep-link tracking via the SaaS widget · deploy bundles |
-| ⚪ **White-label shipping-rates plugin**<br/><sub>WooCommerce · RajaOngkir · 2026</sub> | Rebrands an official shipping-rates plugin without changing behaviour | Equivalence test gates · update kill switch · four AI subagents |
-| ⚪ **Courier-rate plugin + checkout bridge**<br/><sub>WooCommerce · RajaOngkir · 2026</sub> | Shows live courier rates at checkout | 26 domestic & 5 international couriers · plugin-conflict bridge |
-| ⚪ **Multi-courier shipping stack**<br/><sub>WooCommerce · 2026</sub> | Calculates rates, generates AWBs and tracks parcels | Multi-courier rates · AWB generation · reverse-engineered docs |
-| 🟢 **Hacked-site incident response**<br/><sub>WordPress · PHP · 2026</sub> | Cleaned and hardened a compromised courier website | Root-cause forensics · backdoor removal · Safe Browsing flag cleared |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Multi-tenant courier &amp; parcel SaaS</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;10</code> <code>Stancl&nbsp;Tenancy</code></td><td valign="top">Runs courier branches, merchants and parcel tracking</td><td valign="top">Subdomain tenancy · WhatsApp queues · 33-status bridge · 130 test files</td></tr>
+<tr><td valign="top"><b>Freight-forwarder websites</b> <sub>×3</sub><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel</code> <code>Blade</code></td><td valign="top">Lets importers track China → Indonesia shipments</td><td valign="top">Company sites · deep-link tracking via the SaaS widget · deploy bundles</td></tr>
+<tr><td valign="top"><b>White-label shipping-rates plugin</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>WooCommerce</code> <code>RajaOngkir</code></td><td valign="top">Rebrands an official shipping-rates plugin without changing behaviour</td><td valign="top">Equivalence test gates · update kill switch · four AI subagents</td></tr>
+<tr><td valign="top"><b>Courier-rate plugin + checkout bridge</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>WooCommerce</code> <code>RajaOngkir</code></td><td valign="top">Shows live courier rates at checkout</td><td valign="top">26 domestic &amp; 5 international couriers · plugin-conflict bridge</td></tr>
+<tr><td valign="top"><b>Multi-courier shipping stack</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>WooCommerce</code></td><td valign="top">Calculates rates, generates AWBs and tracks parcels</td><td valign="top">Multi-courier rates · AWB generation · reverse-engineered docs</td></tr>
+<tr><td valign="top"><b>Hacked-site incident response</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>WordPress</code> <code>PHP</code></td><td valign="top">Cleaned and hardened a compromised courier website</td><td valign="top">Root-cause forensics · backdoor removal · Safe Browsing flag cleared</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -204,23 +250,30 @@
   <img width="100%" alt="E-Commerce &amp; WooCommerce: 17 repositories, 1,084 commits, 14 live. Selling more: loyalty, catalogues, checkout and storefront engineering" src="assets/cat-shop-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Loyalty & brand-protection store**<br/><sub>WooCommerce · Elementor Pro · 2025</sub> | Rewards customers for buying genuine products | 37-table loyalty engine · QR / NFC tag scans · fraud rules · webhooks |
-| 🟢 **Product-authentication plugin suite**<br/><sub>WordPress · WooCommerce · 2025</sub> | Verifies product authenticity and awards loyalty points | Nine plugins · anti-counterfeit API · scratch-and-win · WCAG 2.1 AA |
-| 🟢 **In-house Elementor widget suite**<br/><sub>Elementor · PHP · 2026</sub> | Replaces seven page-builder add-ons with one plugin | 20 widgets · scheduled flash sales · AJAX product filter |
-| ⚪ **Web-AR product catalogue**<br/><sub>WooCommerce · Model Viewer · 2025</sub> | Shows products in augmented reality on phones | GLB / USDZ models · hotspots · QR codes · engagement analytics |
-| 🟢 **B2B export catalogue & quotations**<br/><sub>Laravel 8 · 2025</sub> | Lets overseas buyers request quotations online | Cart-to-quotation · PDF & Excel quotes · order tracking |
-| 🟢 **Excel → WooCommerce import pipeline**<br/><sub>Python · openpyxl · 2026</sub> | Loads a retailer's inventory master into the store | 57-column mapping · reconciliation · verification reports |
-| 🟢 **Product-recommendation quiz**<br/><sub>PHP · MySQL · 2025</sub> | Recommends the right product and captures leads | Weighted scoring · emailed results · analytics · PHPUnit |
-| 🟢 **Storefront child themes** ×3<br/><sub>Woodmart · Astra · 2025</sub> | Keep three client storefronts fast and stable | 500 / 504 root-cause fixes · PayNow & POS hooks · 69 template refreshes |
-| 🟢 **SKU-restricted coupons**<br/><sub>WooCommerce · 2025</sub> | Limits coupons to specific product SKUs | Per-product discount display · AJAX cart filtering |
-| 🟢 **Guest-checkout defaults**<br/><sub>WooCommerce · 2025</sub> | Makes payment rules work for guest buyers | Default guest info · forced-country mode · order-pay support |
-| 🟢 **Smart Coupons customisation**<br/><sub>WooCommerce · 2025</sub> | Brands gift cards and store-credit emails | QR codes on coupons · quarterly expiry reminders |
-| ⚪ **Spending-limits extension**<br/><sub>WooCommerce · 2025</sub> | Caps what B2B buyers can spend per period | Group budgets · custom periods · audit log & reports |
-| 🟢 **AI shopping chatbot (client build)**<br/><sub>WooCommerce · 2025</sub> | Helps shoppers find products and orders in chat | OpenAI / Dialogflow bot · notification & styling patches |
-| ⚪ **Shopee ↔ WooCommerce connector**<br/><sub>WooCommerce · Shopee API · 2025</sub> | Lists store products on the Shopee marketplace | Inventory & price sync · order import · PHP 8.2 patch |
-| 🟢 **Payment confirmation emails**<br/><sub>WooCommerce · 2025</sub> | Confirms payments to customers automatically | Auto-send on status change · iCal links · HitPay & PayNow flows |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Loyalty &amp; brand-protection store</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code> <code>Elementor&nbsp;Pro</code></td><td valign="top">Rewards customers for buying genuine products</td><td valign="top">37-table loyalty engine · QR / NFC tag scans · fraud rules · webhooks</td></tr>
+<tr><td valign="top"><b>Product-authentication plugin suite</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WordPress</code> <code>WooCommerce</code></td><td valign="top">Verifies product authenticity and awards loyalty points</td><td valign="top">Nine plugins · anti-counterfeit API · scratch-and-win · WCAG 2.1 AA</td></tr>
+<tr><td valign="top"><b>In-house Elementor widget suite</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Elementor</code> <code>PHP</code></td><td valign="top">Replaces seven page-builder add-ons with one plugin</td><td valign="top">20 widgets · scheduled flash sales · AJAX product filter</td></tr>
+<tr><td valign="top"><b>Web-AR product catalogue</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code> <code>Model&nbsp;Viewer</code></td><td valign="top">Shows products in augmented reality on phones</td><td valign="top">GLB / USDZ models · hotspots · QR codes · engagement analytics</td></tr>
+<tr><td valign="top"><b>B2B export catalogue &amp; quotations</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Laravel&nbsp;8</code></td><td valign="top">Lets overseas buyers request quotations online</td><td valign="top">Cart-to-quotation · PDF &amp; Excel quotes · order tracking</td></tr>
+<tr><td valign="top"><b>Excel → WooCommerce import pipeline</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Python</code> <code>openpyxl</code></td><td valign="top">Loads a retailer's inventory master into the store</td><td valign="top">57-column mapping · reconciliation · verification reports</td></tr>
+<tr><td valign="top"><b>Product-recommendation quiz</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>PHP</code> <code>MySQL</code></td><td valign="top">Recommends the right product and captures leads</td><td valign="top">Weighted scoring · emailed results · analytics · PHPUnit</td></tr>
+<tr><td valign="top"><b>Storefront child themes</b> <sub>×3</sub><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>Woodmart</code> <code>Astra</code></td><td valign="top">Keep three client storefronts fast and stable</td><td valign="top">500 / 504 root-cause fixes · PayNow &amp; POS hooks · 69 template refreshes</td></tr>
+<tr><td valign="top"><b>SKU-restricted coupons</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Limits coupons to specific product SKUs</td><td valign="top">Per-product discount display · AJAX cart filtering</td></tr>
+<tr><td valign="top"><b>Guest-checkout defaults</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Makes payment rules work for guest buyers</td><td valign="top">Default guest info · forced-country mode · order-pay support</td></tr>
+<tr><td valign="top"><b>Smart Coupons customisation</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Brands gift cards and store-credit emails</td><td valign="top">QR codes on coupons · quarterly expiry reminders</td></tr>
+<tr><td valign="top"><b>Spending-limits extension</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Caps what B2B buyers can spend per period</td><td valign="top">Group budgets · custom periods · audit log &amp; reports</td></tr>
+<tr><td valign="top"><b>AI shopping chatbot (client build)</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Helps shoppers find products and orders in chat</td><td valign="top">OpenAI / Dialogflow bot · notification &amp; styling patches</td></tr>
+<tr><td valign="top"><b>Shopee ↔ WooCommerce connector</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code> <code>Shopee&nbsp;API</code></td><td valign="top">Lists store products on the Shopee marketplace</td><td valign="top">Inventory &amp; price sync · order import · PHP 8.2 patch</td></tr>
+<tr><td valign="top"><b>Payment confirmation emails</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Confirms payments to customers automatically</td><td valign="top">Auto-send on status change · iCal links · HitPay &amp; PayNow flows</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -231,13 +284,20 @@
   <img width="100%" alt="Payments, Accounting &amp; POS: 14 repositories, 329 commits, 11 live. Collecting money and keeping the books: gateways, accounting sync and point of sale" src="assets/cat-pay-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **WooCommerce ↔ Xero sync** ×2<br/><sub>WooCommerce · Xero API · 2025</sub> | Posts store orders and payments into Xero | Store credit as payments · self-healing invoices · duplicate guards |
-| 🟢 **Singapore PayNow QR gateway**<br/><sub>WooCommerce · 2025</sub> | Takes fee-free bank payments via dynamic QR codes | SGQR codes · order-pay & POS support · PHP 8.2 hardening |
-| ⚪ **Payment Fees Pro**<br/><sub>WooCommerce · 2025</sub> | Passes card-processing fees on to shoppers | Per-gateway % + fixed fees · live AJAX recalculation |
-| 🟢 **OpenPOS omnichannel add-ons** ×4<br/><sub>OpenPOS · WooCommerce · 2025</sub> | Connects the shop counter with the online store | Order locking · public e-receipts · composite products · Pay-on-Website |
-| 🟢 <sub>4/6 live</sub> **Sports-arena POS ecosystem** ×6<br/><sub>Bun · Hono · Next.js · Flutter · 2025</sub> | Runs POS, bookings, memberships and entry gates for sports venues | Audits & hardening across six apps · Midtrans Core API migration · CI & tests |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>WooCommerce ↔ Xero sync</b> <sub>×2</sub><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code> <code>Xero&nbsp;API</code></td><td valign="top">Posts store orders and payments into Xero</td><td valign="top">Store credit as payments · self-healing invoices · duplicate guards</td></tr>
+<tr><td valign="top"><b>Singapore PayNow QR gateway</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Takes fee-free bank payments via dynamic QR codes</td><td valign="top">SGQR codes · order-pay &amp; POS support · PHP 8.2 hardening</td></tr>
+<tr><td valign="top"><b>Payment Fees Pro</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>WooCommerce</code></td><td valign="top">Passes card-processing fees on to shoppers</td><td valign="top">Per-gateway % + fixed fees · live AJAX recalculation</td></tr>
+<tr><td valign="top"><b>OpenPOS omnichannel add-ons</b> <sub>×4</sub><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>OpenPOS</code> <code>WooCommerce</code></td><td valign="top">Connects the shop counter with the online store</td><td valign="top">Order locking · public e-receipts · composite products · Pay-on-Website</td></tr>
+<tr><td valign="top"><b>Sports-arena POS ecosystem</b> <sub>×6</sub><br/>🟢 <sub>4/6 live</sub> <sub>· since 2025</sub><br/><code>Bun</code> <code>Hono</code> <code>Next.js</code> <code>Flutter</code></td><td valign="top">Runs POS, bookings, memberships and entry gates for sports venues</td><td valign="top">Audits &amp; hardening across six apps · Midtrans Core API migration · CI &amp; tests</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -248,14 +308,21 @@
   <img width="100%" alt="Membership, Events &amp; Email: 8 repositories, 489 commits, 6 live. Growing and retaining audiences: memberships, events and newsletters" src="assets/cat-mkt-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Membership & store-credit automation**<br/><sub>PMPro · FluentCRM · 2026</sub> | Turns purchases into memberships, credits and CRM journeys | Tiered store credit · 8 FluentCRM triggers · 105-scenario email tests |
-| ⚪ **Branded membership email templates**<br/><sub>PMPro · 2025</sub> | Gives every membership email one consistent brand | 24+ email types · global wp_mail wrapper · test sender |
-| 🟢 **Canva → FluentCRM importer**<br/><sub>WordPress · FluentCRM · 2026</sub> | Imports Canva-designed emails as CRM templates | ZIP / HTML import · image de-duplication · merge-tag wiring · v7.2 |
-| 🟢 **Newsletter campaigns** ×2<br/><sub>HTML email · 2025</sub> | Ships seasonal campaigns that render in every inbox | Canva → FluentCRM JSON · Gmail- and Outlook-safe HTML |
-| 🟢 <sub>1/2 live</sub> **Eventbrite integrations** ×2<br/><sub>WordPress · Eventbrite API · 2025</sub> | Shows live Eventbrite events on websites | Five layouts · live search · timezone & popup fixes |
-| 🟢 **Recurring-events fix**<br/><sub>WooEvents · 2025</sub> | Sells recurring workshop dates without duplicates | Root-caused duplicated date variations |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Membership &amp; store-credit automation</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>PMPro</code> <code>FluentCRM</code></td><td valign="top">Turns purchases into memberships, credits and CRM journeys</td><td valign="top">Tiered store credit · 8 FluentCRM triggers · 105-scenario email tests</td></tr>
+<tr><td valign="top"><b>Branded membership email templates</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>PMPro</code></td><td valign="top">Gives every membership email one consistent brand</td><td valign="top">24+ email types · global wp_mail wrapper · test sender</td></tr>
+<tr><td valign="top"><b>Canva → FluentCRM importer</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>WordPress</code> <code>FluentCRM</code></td><td valign="top">Imports Canva-designed emails as CRM templates</td><td valign="top">ZIP / HTML import · image de-duplication · merge-tag wiring · v7.2</td></tr>
+<tr><td valign="top"><b>Newsletter campaigns</b> <sub>×2</sub><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>HTML&nbsp;email</code></td><td valign="top">Ships seasonal campaigns that render in every inbox</td><td valign="top">Canva → FluentCRM JSON · Gmail- and Outlook-safe HTML</td></tr>
+<tr><td valign="top"><b>Eventbrite integrations</b> <sub>×2</sub><br/>🟢 <sub>1/2 live</sub> <sub>· since 2025</sub><br/><code>WordPress</code> <code>Eventbrite&nbsp;API</code></td><td valign="top">Shows live Eventbrite events on websites</td><td valign="top">Five layouts · live search · timezone &amp; popup fixes</td></tr>
+<tr><td valign="top"><b>Recurring-events fix</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WooEvents</code></td><td valign="top">Sells recurring workshop dates without duplicates</td><td valign="top">Root-caused duplicated date variations</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -266,13 +333,20 @@
   <img width="100%" alt="Corporate Web, CMS &amp; WordPress Tooling: 7 repositories, 185 commits, 6 live. Publishing and protecting: corporate sites, custom CMS and WordPress tooling" src="assets/cat-web-light.svg"/>
 </picture>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **Industrial-estate site & native CMS**<br/><sub>PHP 8.1 · Flutter Web · 2026</sub> | Markets an industrial estate with its own CMS and news portal | From-scratch PHP CMS & REST API · llms.txt · 224 tests |
-| 🟢 **Corporate group website CMS**<br/><sub>Laravel 10 · AdminLTE · 2026</sub> | Publishes a business group's news, careers and reports | Whistleblowing section · chunked video uploads past the WAF |
-| 🟢 **Page & media visibility control**<br/><sub>WordPress · 2025</sub> | Restricts pages and files to the right people | Role / user rules · protected media URLs · robots control |
-| ⚪ **WordPress audit hub**<br/><sub>PHP · cURL · 2025</sub> | Audits any WordPress site from a single page | REST discovery · SEO, GDPR & SSL audits · API tester |
-| 🟢 **WordPress plugin toolkit** ×3<br/><sub>WordPress · 2025</sub> | Fixes common WordPress production pains | Early-translation fixer · asset-cleanup patch · Gravity Forms notification tester |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Industrial-estate site &amp; native CMS</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>PHP&nbsp;8.1</code> <code>Flutter&nbsp;Web</code></td><td valign="top">Markets an industrial estate with its own CMS and news portal</td><td valign="top">From-scratch PHP CMS &amp; REST API · llms.txt · 224 tests</td></tr>
+<tr><td valign="top"><b>Corporate group website CMS</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;10</code> <code>AdminLTE</code></td><td valign="top">Publishes a business group's news, careers and reports</td><td valign="top">Whistleblowing section · chunked video uploads past the WAF</td></tr>
+<tr><td valign="top"><b>Page &amp; media visibility control</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WordPress</code></td><td valign="top">Restricts pages and files to the right people</td><td valign="top">Role / user rules · protected media URLs · robots control</td></tr>
+<tr><td valign="top"><b>WordPress audit hub</b><br/>⚪ <sub>delivered</sub> <sub>· since 2025</sub><br/><code>PHP</code> <code>cURL</code></td><td valign="top">Audits any WordPress site from a single page</td><td valign="top">REST discovery · SEO, GDPR &amp; SSL audits · API tester</td></tr>
+<tr><td valign="top"><b>WordPress plugin toolkit</b> <sub>×3</sub><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>WordPress</code></td><td valign="top">Fixes common WordPress production pains</td><td valign="top">Early-translation fixer · asset-cleanup patch · Gravity Forms notification tester</td></tr>
+</tbody>
+</table>
 
 <div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>
 
@@ -280,11 +354,18 @@
 
 **🤝 Collaborations & open source** <sub>— 3 repos</sub>
 
-| Project | Main function | What makes it notable |
-|---|---|---|
-| 🟢 **B2G e-procurement & multi-vendor marketplace**<br/><sub>Laravel 12 · Flutter · 2026</sub> | Lets government buyers procure from SME vendors | Core collaborator, 176 commits · procurement state machine · VAT engine · bank VA |
-| ⚪ **Multi-vendor marketplace mobile app**<br/><sub>React Native · Expo · 2019</sub> | Native shopping app for a medical-equipment marketplace | Web-build configuration |
-| ⚪ **[Pathfinding Adventures](https://github.com/lskk/Pathfinding_Adventures)** 🔓<br/><sub>Unity · 2016</sub> | Teaches grade-8 coordinate systems through play | 2D platformer & turn-based modes · Android & Windows builds · ITB's LSKK lab |
+<table>
+<thead><tr>
+<th align="left" width="30%">Project</th>
+<th align="left" width="32%">Main function</th>
+<th align="left" width="38%">What makes it notable</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>B2G e-procurement &amp; multi-vendor marketplace</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Laravel&nbsp;12</code> <code>Flutter</code></td><td valign="top">Lets government buyers procure from SME vendors</td><td valign="top">Core collaborator, 176 commits · procurement state machine · VAT engine · bank VA</td></tr>
+<tr><td valign="top"><b>Multi-vendor marketplace mobile app</b><br/>⚪ <sub>delivered</sub> <sub>· since 2019</sub><br/><code>React&nbsp;Native</code> <code>Expo</code></td><td valign="top">Native shopping app for a medical-equipment marketplace</td><td valign="top">Web-build configuration</td></tr>
+<tr><td valign="top"><b><a href="https://github.com/lskk/Pathfinding_Adventures">Pathfinding Adventures</a></b> 🔓<br/>⚪ <sub>delivered</sub> <sub>· since 2016</sub><br/><code>Unity</code></td><td valign="top">Teaches grade-8 coordinate systems through play</td><td valign="top">2D platformer &amp; turn-based modes · Android &amp; Windows builds · ITB's LSKK lab</td></tr>
+</tbody>
+</table>
 <!-- PROJECTS:END -->
 
 <sub>Not listed: 8 version-pinned plugin / theme baselines and 6 archives or placeholders.</sub>
@@ -482,13 +563,12 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 </picture>
 
 <div align="center">
-<img src="https://streak-stats.demolab.com?user=auliamuslim&background=FFFFFF&border=C4B5FD&stroke=E5E7EB&ring=7C3AED&fire=F59E0B&currStreakNum=7C3AED&sideNums=0EA5E9&currStreakLabel=E11D2E&sideLabels=E11D2E&dates=9CA3AF" alt="GitHub Streak"/><br/>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/auliamuslim/auliamuslim/output/github-snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/auliamuslim/auliamuslim/output/github-snake.svg"/>
   <img width="92%" alt="Contribution snake" src="https://raw.githubusercontent.com/auliamuslim/auliamuslim/output/github-snake.svg"/>
 </picture><br/>
-<sub>📈 The streak card and snake come from GitHub's own contribution calendar.</sub>
+<sub>🐍 Contribution snake, redrawn daily from GitHub's contribution calendar.</sub>
 </div>
 
 ## 🧭 How I Build
@@ -517,18 +597,27 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 </picture>
 
 <!-- STACK:START -->
-| Main stack | Repos | Commits | Share |
-|---|--:|--:|--:|
-| Laravel | 21 | 3,470 | 25.3% |
-| n8n + Node.js automation | 1 | 3,438 | 25.1% |
-| WordPress / WooCommerce | 39 | 1,884 | 13.7% |
-| Perfex CRM / CodeIgniter | 3 | 1,860 | 13.6% |
-| Native PHP + Vue / JS | 10 | 1,825 | 13.3% |
-| TypeScript: Next.js, Node, Hono | 7 | 595 | 4.3% |
-| Python: ML, data, Flask | 6 | 546 | 4.0% |
-| Flutter / Dart | 2 | 47 | 0.3% |
-| Other: SQL, Apps Script, email | 4 | 44 | 0.3% |
-| **Total** | **93** | **13,709** | **100%** |
+<table>
+<thead><tr>
+<th align="left" width="26%">Main stack</th>
+<th align="right" width="8%">Repos</th>
+<th align="right" width="11%">Commits</th>
+<th align="right" width="9%">Share</th>
+<th align="left" width="46%">Typical projects</th>
+</tr></thead>
+<tbody>
+<tr><td><b>Laravel</b></td><td align="right">21</td><td align="right"><code>3,470</code></td><td align="right">25.3%</td><td>Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite</td></tr>
+<tr><td><b>n8n + Node.js automation</b></td><td align="right">1</td><td align="right"><code>3,438</code></td><td align="right">25.1%</td><td>AI document automation &amp; ops hub</td></tr>
+<tr><td><b>WordPress / WooCommerce</b></td><td align="right">39</td><td align="right"><code>1,884</code></td><td align="right">13.7%</td><td>Loyalty store · product-authentication suite · membership automation</td></tr>
+<tr><td><b>Perfex CRM / CodeIgniter</b></td><td align="right">3</td><td align="right"><code>1,860</code></td><td align="right">13.6%</td><td>Two government lab ERPs · CRM ↔ FluentCRM sync</td></tr>
+<tr><td><b>Native PHP + Vue / JS</b></td><td align="right">10</td><td align="right"><code>1,825</code></td><td align="right">13.3%</td><td>Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS</td></tr>
+<tr><td><b>TypeScript: Next.js, Node, Hono</b></td><td align="right">7</td><td align="right"><code>595</code></td><td align="right">4.3%</td><td>Civic SuperApp · sports-arena POS backend &amp; admin · mining digital twin</td></tr>
+<tr><td><b>Python: ML, data, Flask</b></td><td align="right">6</td><td align="right"><code>546</code></td><td align="right">4.0%</td><td>AI CV screening · crypto trading engine · RAG tutor · catalogue import</td></tr>
+<tr><td><b>Flutter / Dart</b></td><td align="right">2</td><td align="right"><code>47</code></td><td align="right">0.3%</td><td>Ice-rink member app · venue POS app</td></tr>
+<tr><td><b>Other: SQL, Apps Script, email</b></td><td align="right">4</td><td align="right"><code>44</code></td><td align="right">0.3%</td><td>Contact automation · reporting feeder kit · newsletters</td></tr>
+<tr><td><b>Total</b></td><td align="right"><b>93</b></td><td align="right"><b><code>13,709</code></b></td><td align="right"><b>100%</b></td><td><sub>All 93 project repos</sub></td></tr>
+</tbody>
+</table>
 <!-- STACK:END -->
 
 <sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,709 commits in the 93 project repos. The remaining 204 of the 13,913 total come from collaborations and plugin baselines.</sub>
@@ -554,6 +643,125 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 <a href="https://www.linkedin.com/in/auliamuslim/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a> <a href="mailto:auliamuslim@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a> <a href="https://newtype.co.id"><img src="https://img.shields.io/badge/newtype.co.id-E70011?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a> <img src="https://img.shields.io/badge/Indonesia-FFFFFF?style=for-the-badge&labelColor=E70011&label=%F0%9F%87%AE%F0%9F%87%A9" alt="Indonesia"/>
 
-<sub>Stats last refreshed 16 Oct 2026 · charts generated by <a href="scripts/render_profile_assets.py"><code>scripts/render_profile_assets.py</code></a> from <a href="data/profile.json"><code>data/profile.json</code></a></sub>
+
+<!-- AI-PROFILE:START -->
+<details>
+<summary><b>🤖 Machine-readable profile</b> — structured summary for AI assistants, recruiters and tools</summary>
+
+```yaml
+name: "Aulia Muslim Hidayatullah"
+github: auliamuslim
+role: "Software Engineer"
+company: "Newtype"
+website: https://newtype.co.id
+location: Indonesia
+linkedin: https://www.linkedin.com/in/auliamuslim/
+email: auliamuslim@gmail.com
+on_github_since: 2013
+open_to: collaboration
+updated: 2026-10-16
+stats:
+  repositories: 108
+  project_repos: 93
+  live_systems: 65
+  commits_total: 13913
+  commits_ai_paired_pct: 70
+  repos_with_ai_pairing: 77
+  active_days: 411
+  window_since: 2025-12-01
+  window_commits: 13062
+  window_active_days: 275
+  window_longest_streak_days: 34
+focus:
+  - "Government & enterprise ERP / CRM"
+  - "University ecosystems"
+  - "SaaS platforms"
+  - "Logistics & courier SaaS"
+  - "E-commerce, payments & POS"
+  - "AI automation & LLM products"
+domains:
+  - name: "Government, ERP & Enterprise Ops"
+    repos: 9
+    live: 5
+    commits: 2847
+    purpose: "Back-office systems that run operations: work orders, billing, HR, fleet and procurement"
+  - name: "Higher-Education & EdTech"
+    repos: 9
+    live: 6
+    commits: 738
+    purpose: "The student lifecycle, digitised: admission, academics, finance, exams and learning"
+  - name: "AI, ML & Automation"
+    repos: 7
+    live: 5
+    commits: 3995
+    purpose: "LLMs, agents and machine learning put to work on real operations"
+  - name: "Talent Assessment & Recruitment"
+    repos: 4
+    live: 2
+    commits: 900
+    purpose: "Measuring, ranking and developing people with AI-assisted assessment"
+  - name: "Industry Platforms & SaaS"
+    repos: 10
+    live: 5
+    commits: 1755
+    purpose: "Vertical products for legal, health, civic, social impact, accessibility and gaming"
+  - name: "Logistics & Shipping"
+    repos: 8
+    live: 5
+    commits: 1387
+    purpose: "Moving parcels: courier SaaS, live tracking and shipping-rate engines"
+  - name: "E-Commerce & WooCommerce"
+    repos: 17
+    live: 14
+    commits: 1084
+    purpose: "Selling more: loyalty, catalogues, checkout and storefront engineering"
+  - name: "Payments, Accounting & POS"
+    repos: 14
+    live: 11
+    commits: 329
+    purpose: "Collecting money and keeping the books: gateways, accounting sync and point of sale"
+  - name: "Membership, Events & Email"
+    repos: 8
+    live: 6
+    commits: 489
+    purpose: "Growing and retaining audiences: memberships, events and newsletters"
+  - name: "Corporate Web, CMS & WordPress Tooling"
+    repos: 7
+    live: 6
+    commits: 185
+    purpose: "Publishing and protecting: corporate sites, custom CMS and WordPress tooling"
+main_stacks:
+  - {stack: "Laravel", repos: 21, commits: 3470}
+  - {stack: "n8n + Node.js automation", repos: 1, commits: 3438}
+  - {stack: "WordPress / WooCommerce", repos: 39, commits: 1884}
+  - {stack: "Perfex CRM / CodeIgniter", repos: 3, commits: 1860}
+  - {stack: "Native PHP + Vue / JS", repos: 10, commits: 1825}
+  - {stack: "TypeScript: Next.js, Node, Hono", repos: 7, commits: 595}
+  - {stack: "Python: ML, data, Flask", repos: 6, commits: 546}
+  - {stack: "Flutter / Dart", repos: 2, commits: 47}
+  - {stack: "Other: SQL, Apps Script, email", repos: 4, commits: 44}
+ai_in_products:
+  - "RAG learning assistant"
+  - "GPT-4o assessment reports"
+  - "Claude consultation summaries & agents"
+  - "LLM-adaptive testing"
+  - "ML trading signals (LightGBM)"
+  - "Speech-to-sign-language"
+top_projects_since_dec_2025:
+  - {name: "AI document automation & ops hub", domain: "AI & automation", commits: 3438}
+  - {name: "Government testing-lab ERP / CRM", domain: "Gov & ERP", commits: 1780}
+  - {name: "Multi-tenant courier & parcel SaaS", domain: "Logistics", commits: 1229}
+  - {name: "Enterprise talent discovery platform", domain: "Talent", commits: 621}
+  - {name: "ISP modular ERP", domain: "Gov & ERP", commits: 504}
+  - {name: "Food supply-chain governance SaaS", domain: "Gov & ERP", commits: 463}
+  - {name: "Civic organisation SuperApp", domain: "SaaS platforms", commits: 463}
+  - {name: "Donation & social-foundation platform", domain: "SaaS platforms", commits: 420}
+  - {name: "Lawyer-on-demand marketplace", domain: "SaaS platforms", commits: 403}
+  - {name: "Membership & store-credit automation", domain: "Membership & email", commits: 351}
+note: "Client names are withheld; most work is private client work under NDA."
+```
+
+</details>
+<!-- AI-PROFILE:END -->
 
 <img width="100%" src="assets/banner-footer.svg" alt=""/>
