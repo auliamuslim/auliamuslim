@@ -10,25 +10,52 @@
 <text x="520" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">REPOS</text>
 <text x="520" y="60" font-size="21" font-weight="800" class="n">9</text>
 <text x="624" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">COMMITS</text>
-<text x="624" y="60" font-size="21" font-weight="800" class="n">2,843</text>
+<text x="624" y="60" font-size="21" font-weight="800" class="n">2,847</text>
 <text x="728" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">LIVE</text>
 <text x="728" y="60" font-size="21" font-weight="800" class="n">5</text>
 <line x1="520" x2="832" y1="100.5" y2="100.5" stroke="#21262d"/>
-<rect class="col" style="animation-delay:0.03s" x="535.6" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.15s" x="598.0" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.18s" x="613.6" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.24s" x="644.8" y="98.5" width="12.6" height="1.5" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.27s" x="660.4" y="91.2" width="12.6" height="8.8" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.30s" x="676.0" y="98.4" width="12.6" height="1.6" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.33s" x="691.6" y="95.3" width="12.6" height="4.7" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.36s" x="707.2" y="96.9" width="12.6" height="3.1" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.39s" x="722.8" y="90.5" width="12.6" height="9.5" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.42s" x="738.4" y="88.0" width="12.6" height="12.0" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.45s" x="754.0" y="74.0" width="12.6" height="26.0" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.48s" x="769.6" y="87.7" width="12.6" height="12.3" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.51s" x="785.2" y="90.0" width="12.6" height="10.0" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.54s" x="800.8" y="87.6" width="12.6" height="12.4" rx="1.5" fill="#F2545B"/>
-<rect class="col" style="animation-delay:0.57s" x="816.4" y="97.2" width="12.6" height="2.8" rx="1.5" fill="#F2545B"/>
-<text x="520" y="115" font-size="10" class="m">Mar '25</text>
-<text x="676" y="115" font-size="10" class="m" text-anchor="middle">commits / month</text>
-<text x="832" y="115" font-size="10" class="m" text-anchor="end">Oct '26</text></svg>
+<rect class="col" style="animation-delay:0.00s" x="520.0" y="98.4" width="4.8" height="1.6" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.01s" x="526.8" y="82.8" width="4.8" height="17.2" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.04s" x="540.3" y="88.5" width="4.8" height="11.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.06s" x="547.1" y="96.0" width="4.8" height="4.0" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.12s" x="574.3" y="93.7" width="4.8" height="6.3" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.14s" x="581.0" y="98.4" width="4.8" height="1.6" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.15s" x="587.8" y="93.0" width="4.8" height="7.0" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.16s" x="594.6" y="95.3" width="4.8" height="4.7" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.18s" x="601.4" y="94.8" width="4.8" height="5.2" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.20s" x="608.2" y="98.5" width="4.8" height="1.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.21s" x="615.0" y="96.6" width="4.8" height="3.4" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.22s" x="621.7" y="96.8" width="4.8" height="3.2" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.24s" x="628.5" y="97.6" width="4.8" height="2.4" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.26s" x="635.3" y="98.3" width="4.8" height="1.7" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.27s" x="642.1" y="94.7" width="4.8" height="5.3" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.28s" x="648.9" y="87.5" width="4.8" height="12.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.30s" x="655.7" y="85.2" width="4.8" height="14.8" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.32s" x="662.4" y="93.1" width="4.8" height="6.9" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.33s" x="669.2" y="95.1" width="4.8" height="4.9" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.34s" x="676.0" y="95.4" width="4.8" height="4.6" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.36s" x="682.8" y="80.5" width="4.8" height="19.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.38s" x="689.6" y="84.5" width="4.8" height="15.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.39s" x="696.3" y="74.0" width="4.8" height="26.0" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.40s" x="703.1" y="79.0" width="4.8" height="21.0" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.42s" x="709.9" y="80.0" width="4.8" height="20.0" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.43s" x="716.7" y="74.1" width="4.8" height="25.9" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.45s" x="723.5" y="85.5" width="4.8" height="14.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.46s" x="730.3" y="89.4" width="4.8" height="10.6" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.48s" x="737.0" y="84.2" width="4.8" height="15.8" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.49s" x="743.8" y="93.7" width="4.8" height="6.3" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.51s" x="750.6" y="90.2" width="4.8" height="9.8" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.53s" x="757.4" y="88.2" width="4.8" height="11.8" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.54s" x="764.2" y="86.1" width="4.8" height="13.9" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.55s" x="771.0" y="98.0" width="4.8" height="2.0" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.57s" x="777.7" y="92.5" width="4.8" height="7.5" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.58s" x="784.5" y="79.3" width="4.8" height="20.7" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.60s" x="791.3" y="87.4" width="4.8" height="12.6" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.61s" x="798.1" y="89.1" width="4.8" height="10.9" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.63s" x="804.9" y="96.7" width="4.8" height="3.3" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.65s" x="811.7" y="93.1" width="4.8" height="6.9" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.66s" x="818.4" y="95.4" width="4.8" height="4.6" rx="1" fill="#F2545B"/>
+<rect class="col" style="animation-delay:0.67s" x="825.2" y="95.3" width="4.8" height="4.7" rx="1" fill="#F2545B"/>
+<text x="520" y="115" font-size="10" class="m">Dec '25</text>
+<text x="676" y="115" font-size="10" class="m" text-anchor="middle">commits / week</text>
+<text x="832" y="115" font-size="10" class="m" text-anchor="end">now</text></svg>

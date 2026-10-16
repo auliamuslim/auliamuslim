@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" viewBox="0 0 860 190" role="img" aria-label="Aulia Muslim Hidayatullah — Software Engineer  •  ERP · SaaS · AI Automation  •  Indonesia">
+<title>Aulia Muslim Hidayatullah</title>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#ffffff}
+@keyframes flow{from{transform:translateX(0)}to{transform:translateX(-860px)}}
+@keyframes sheen{from{transform:translateX(-860px)}to{transform:translateX(860px)}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.f1{animation:flow 9s linear infinite}.f2{animation:flow 14s linear infinite}
+.sh{animation:sheen 6s ease-in-out infinite}.t{animation:rise .9s ease-out both}
+@media (prefers-reduced-motion:reduce){.f1,.f2,.sh,.t{animation:none}}
+</style>
+<defs>
+<clipPath id="card"><rect width="860" height="190" rx="14"/></clipPath>
+<linearGradient id="gl" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<g clip-path="url(#card)">
+<rect width="860" height="190" fill="#ffffff"/>
+<path class="f2" d="M0 0 H1720 V138 Q1648.2 152 1576.5 138 T1433.0 138 Q1361.2 152 1289.5 138 T1146.0 138 Q1074.2 152 1002.5 138 T859.0 138 Q787.2 152 715.5 138 T572.0 138 Q500.2 152 428.5 138 T285.0 138 Q213.2 152 141.5 138 T-2.0 138 Z" fill="#E70011" fill-opacity=".35"/>
+<path class="f1" d="M0 0 H1720 V128 Q1666.2 140 1612.5 128 T1505.0 128 Q1451.2 140 1397.5 128 T1290.0 128 Q1236.2 140 1182.5 128 T1075.0 128 Q1021.2 140 967.5 128 T860.0 128 Q806.2 140 752.5 128 T645.0 128 Q591.2 140 537.5 128 T430.0 128 Q376.2 140 322.5 128 T215.0 128 Q161.2 140 107.5 128 T0.0 128 Z" fill="#E70011"/>
+<rect class="sh" x="0" y="0" width="387" height="148" fill="url(#gl)"/>
+<text class="t" x="430.0" y="70" font-size="40" font-weight="800" text-anchor="middle" letter-spacing=".3">Aulia Muslim Hidayatullah</text>
+<text class="t" style="animation-delay:.25s" x="430.0" y="102" font-size="16" font-weight="600" text-anchor="middle" fill-opacity=".95">Software Engineer  •  ERP · SaaS · AI Automation  •  Indonesia</text>
+</g>
+<rect x=".5" y=".5" width="859" height="189" rx="14" fill="none" stroke="#d1d9e0" stroke-opacity=".6"/>
+</svg>
