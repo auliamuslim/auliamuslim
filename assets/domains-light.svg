@@ -8,38 +8,38 @@
 <text x="28" y="107" font-size="13">AI, ML &amp; Automation</text>
 <rect x="268" y="95" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
 <rect class="bar" style="animation-delay:0.00s" x="268" y="95" width="378.4" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="108" font-size="12.5" font-weight="700" class="n">3,995 commits · 7 repos</text>
+<text x="658.4" y="108" font-size="12.5" font-weight="700" class="n">4,009 commits · 7 repos</text>
 <text x="28" y="137" font-size="13">Government, ERP &amp; Enterprise Ops</text>
 <rect x="268" y="125" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.05s" x="268" y="125" width="269.7" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="138" font-size="12.5" font-weight="700" class="n">2,847 commits · 9 repos</text>
+<rect class="bar" style="animation-delay:0.05s" x="268" y="125" width="269.0" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="138" font-size="12.5" font-weight="700" class="n">2,850 commits · 9 repos</text>
 <text x="28" y="167" font-size="13">Industry Platforms &amp; SaaS</text>
 <rect x="268" y="155" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.10s" x="268" y="155" width="166.2" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="168" font-size="12.5" font-weight="700" class="n">1,755 commits · 10 repos</text>
+<rect class="bar" style="animation-delay:0.10s" x="268" y="155" width="167.0" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="168" font-size="12.5" font-weight="700" class="n">1,769 commits · 10 repos</text>
 <text x="28" y="197" font-size="13">Logistics &amp; Shipping</text>
 <rect x="268" y="185" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.15s" x="268" y="185" width="131.4" height="16" rx="4" fill="#E11D2E"/>
+<rect class="bar" style="animation-delay:0.15s" x="268" y="185" width="130.9" height="16" rx="4" fill="#E11D2E"/>
 <text x="658.4" y="198" font-size="12.5" font-weight="700" class="n">1,387 commits · 8 repos</text>
 <text x="28" y="227" font-size="13">E-Commerce &amp; WooCommerce</text>
 <rect x="268" y="215" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.20s" x="268" y="215" width="102.7" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="228" font-size="12.5" font-weight="700" class="n">1,084 commits · 17 repos</text>
+<rect class="bar" style="animation-delay:0.20s" x="268" y="215" width="102.5" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="228" font-size="12.5" font-weight="700" class="n">1,086 commits · 17 repos</text>
 <text x="28" y="257" font-size="13">Talent Assessment &amp; Recruitment</text>
 <rect x="268" y="245" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.25s" x="268" y="245" width="85.2" height="16" rx="4" fill="#E11D2E"/>
+<rect class="bar" style="animation-delay:0.25s" x="268" y="245" width="84.9" height="16" rx="4" fill="#E11D2E"/>
 <text x="658.4" y="258" font-size="12.5" font-weight="700" class="n">900 commits · 4 repos</text>
 <text x="28" y="287" font-size="13">Higher-Education &amp; EdTech</text>
 <rect x="268" y="275" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.30s" x="268" y="275" width="69.9" height="16" rx="4" fill="#E11D2E"/>
+<rect class="bar" style="animation-delay:0.30s" x="268" y="275" width="69.7" height="16" rx="4" fill="#E11D2E"/>
 <text x="658.4" y="288" font-size="12.5" font-weight="700" class="n">738 commits · 9 repos</text>
 <text x="28" y="317" font-size="13">Membership, Events &amp; Email</text>
 <rect x="268" y="305" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.35s" x="268" y="305" width="46.3" height="16" rx="4" fill="#E11D2E"/>
+<rect class="bar" style="animation-delay:0.35s" x="268" y="305" width="46.2" height="16" rx="4" fill="#E11D2E"/>
 <text x="658.4" y="318" font-size="12.5" font-weight="700" class="n">489 commits · 8 repos</text>
 <text x="28" y="347" font-size="13">Payments, Accounting &amp; POS</text>
 <rect x="268" y="335" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.40s" x="268" y="335" width="31.2" height="16" rx="4" fill="#E11D2E"/>
+<rect class="bar" style="animation-delay:0.40s" x="268" y="335" width="31.1" height="16" rx="4" fill="#E11D2E"/>
 <text x="658.4" y="348" font-size="12.5" font-weight="700" class="n">329 commits · 14 repos</text>
 <text x="28" y="377" font-size="13">Corporate Web, CMS &amp; WP Tooling</text>
 <rect x="268" y="365" width="378.4" height="16" rx="4" fill="#f6f8fa"/>

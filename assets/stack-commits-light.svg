@@ -3,7 +3,7 @@
 <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}.m{fill:#59636e}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
 <rect x="0.5" y="0.5" width="859" height="383" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
 <text x="28" y="40" font-size="17" font-weight="700">Core stack — commits per project type</text>
-<text x="28" y="62" font-size="12.5" class="m">Each of the 93 project repos counted once, under its main stack · 13,709 commits</text>
+<text x="28" y="62" font-size="12.5" class="m">Each of the 93 project repos counted once, under its main stack · 13,742 commits</text>
 
 <text x="28" y="107" font-size="13">Laravel</text>
 <rect x="268" y="95" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
@@ -11,28 +11,28 @@
 <text x="658.4" y="108" font-size="12.5" font-weight="700" class="n">3,470 commits · 21 repos</text>
 <text x="28" y="137" font-size="13">n8n + Node.js automation</text>
 <rect x="268" y="125" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.05s" x="268" y="125" width="374.9" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="138" font-size="12.5" font-weight="700" class="n">3,438 commits · 1 repo</text>
+<rect class="bar" style="animation-delay:0.05s" x="268" y="125" width="375.8" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="138" font-size="12.5" font-weight="700" class="n">3,446 commits · 1 repo</text>
 <text x="28" y="167" font-size="13">WordPress / WooCommerce</text>
 <rect x="268" y="155" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.10s" x="268" y="155" width="205.4" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="168" font-size="12.5" font-weight="700" class="n">1,884 commits · 39 repos</text>
+<rect class="bar" style="animation-delay:0.10s" x="268" y="155" width="205.7" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="168" font-size="12.5" font-weight="700" class="n">1,886 commits · 39 repos</text>
 <text x="28" y="197" font-size="13">Perfex CRM / CodeIgniter</text>
 <rect x="268" y="185" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.15s" x="268" y="185" width="202.8" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="198" font-size="12.5" font-weight="700" class="n">1,860 commits · 3 repos</text>
+<rect class="bar" style="animation-delay:0.15s" x="268" y="185" width="203.2" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="198" font-size="12.5" font-weight="700" class="n">1,863 commits · 3 repos</text>
 <text x="28" y="227" font-size="13">Native PHP + Vue / JS</text>
 <rect x="268" y="215" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.20s" x="268" y="215" width="199.0" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="228" font-size="12.5" font-weight="700" class="n">1,825 commits · 10 repos</text>
+<rect class="bar" style="animation-delay:0.20s" x="268" y="215" width="199.5" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="228" font-size="12.5" font-weight="700" class="n">1,829 commits · 10 repos</text>
 <text x="28" y="257" font-size="13">TypeScript: Next.js, Node, Hono</text>
 <rect x="268" y="245" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.25s" x="268" y="245" width="64.9" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="258" font-size="12.5" font-weight="700" class="n">595 commits · 7 repos</text>
+<rect class="bar" style="animation-delay:0.25s" x="268" y="245" width="66.0" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="258" font-size="12.5" font-weight="700" class="n">605 commits · 7 repos</text>
 <text x="28" y="287" font-size="13">Python: ML, data, Flask</text>
 <rect x="268" y="275" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.30s" x="268" y="275" width="59.5" height="16" rx="4" fill="#E11D2E"/>
-<text x="658.4" y="288" font-size="12.5" font-weight="700" class="n">546 commits · 6 repos</text>
+<rect class="bar" style="animation-delay:0.30s" x="268" y="275" width="60.2" height="16" rx="4" fill="#E11D2E"/>
+<text x="658.4" y="288" font-size="12.5" font-weight="700" class="n">552 commits · 6 repos</text>
 <text x="28" y="317" font-size="13">Flutter / Dart</text>
 <rect x="268" y="305" width="378.4" height="16" rx="4" fill="#f6f8fa"/>
 <rect class="bar" style="animation-delay:0.35s" x="268" y="305" width="5.1" height="16" rx="4" fill="#E11D2E"/>
