@@ -495,8 +495,30 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 </div>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-commits-dark.svg"/>
+  <img width="100%" alt="Commits per main stack: Laravel 3,470 across 21 repos; n8n and Node.js automation 3,426 in 1 repo; WordPress and WooCommerce 1,857 across 39 repos; Perfex CRM and CodeIgniter 1,856 across 3 repos; native PHP with Vue or JS 1,825 across 10 repos; TypeScript 580 across 7 repos; Python 543 across 6 repos; Flutter 47 across 2 repos; other 44 across 4 repos" src="assets/stack-commits-light.svg"/>
+</picture>
+
+<!-- STACK:START -->
+| Main stack | Repos | Commits | Share |
+|---|--:|--:|--:|
+| Laravel | 21 | 3,470 | 25.4% |
+| n8n + Node.js automation | 1 | 3,426 | 25.1% |
+| WordPress / WooCommerce | 39 | 1,857 | 13.6% |
+| Perfex CRM / CodeIgniter | 3 | 1,856 | 13.6% |
+| Native PHP + Vue / JS | 10 | 1,825 | 13.4% |
+| TypeScript: Next.js, Node, Hono | 7 | 580 | 4.2% |
+| Python: ML, data, Flask | 6 | 543 | 4.0% |
+| Flutter / Dart | 2 | 47 | 0.3% |
+| Other: SQL, Apps Script, email | 4 | 44 | 0.3% |
+| **Total** | **93** | **13,648** | **100%** |
+<!-- STACK:END -->
+
+<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,648 commits in the 93 project repos. The remaining commits of the 13,852 total come from collaborations and plugin baselines.</sub>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg"/>
-  <img width="100%" alt="Projects per technology: WordPress and WooCommerce 42, MySQL or MariaDB 34, Laravel 22, Tailwind CSS 12, Python 11, Docker 10, GitHub Actions 10, Next.js or React 8, TypeScript 8, PostgreSQL 7, Vue 3 6, Flutter 5" src="assets/languages-light.svg"/>
+  <img width="100%" alt="Project repos using each technology: WordPress and WooCommerce 42, MySQL or MariaDB 34, Laravel 22, Tailwind CSS 12, Python 11, Docker 10, GitHub Actions 10, Next.js or React 8, TypeScript 8, PostgreSQL 7, Vue 3 6, Flutter 5" src="assets/languages-light.svg"/>
 </picture>
 
 | Area | Integrations shipped |
