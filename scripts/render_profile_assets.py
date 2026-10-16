@@ -341,6 +341,167 @@ def banner_footer():
 '''
 
 
+# ---------------------------------------------------------------- impact wall
+def impact_wall(t):
+    items = DATA["impact"]
+    cols, gap, top, ch = 4, 12, 92, 104
+    cw = (W - 56 - gap * (cols - 1)) / cols
+    rows = math.ceil(len(items) / cols)
+    out = [heading(t, "Impact highlights", "Concrete numbers from shipped work · measured from the repositories")]
+    for i, it in enumerate(items):
+        x = 28 + (i % cols) * (cw + gap)
+        y = top + (i // cols) * (ch + gap)
+        out.append(f'<g class="fd" style="animation-delay:{i*0.07:.2f}s">'
+                   f'<rect x="{x:.1f}" y="{y}" width="{cw:.1f}" height="{ch}" rx="10" fill="{t["track"]}" stroke="{t["border"]}"/>'
+                   f'<rect x="{x:.1f}" y="{y+16}" width="3" height="{ch-32}" rx="1.5" fill="{t["s1"]}"/>'
+                   f'<text x="{x+18:.1f}" y="{y+42}" font-size="28" font-weight="800" class="n" fill="{t["s1"]}" style="fill:{t["s1"]}">{escape(it["value"])}</text>'
+                   f'<text x="{x+18:.1f}" y="{y+64}" font-size="12.5" font-weight="700">{escape(it["label"])}</text>'
+                   f'<text x="{x+18:.1f}" y="{y+82}" font-size="10.5" class="m">{escape(it["note"])}</text></g>')
+    return svg(top + rows * (ch + gap) + 16, "\n".join(out), t, "Impact highlights")
+
+
+# --------------------------------------------------------------- now shipping
+def now_shipping(t):
+    import datetime as dt
+    ns = DATA["now_shipping"]
+    rows = ns["rows"]
+    start = dt.date.fromisoformat(ns["start"])
+    end = dt.date.fromisoformat(ns["end"])
+    abbr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    sub = (f'{fmt(ns["total"])} commits from {start.day} {abbr[start.month-1]} to {end.day} {abbr[end.month-1]} '
+           f'{end.year} · the four busiest projects right now')
+    out = [heading(t, "Now shipping — last 30 days", sub)]
+    # pulsing live dot next to the title
+    dot = 28 + 9.6 * len("Now shipping — last 30 days") + 14
+    out.append(f'<circle cx="{dot:.0f}" cy="34" r="5" fill="{t["s1"]}"/>'
+               f'<circle class="pulse" cx="{dot:.0f}" cy="34" r="5" fill="none" stroke="{t["s1"]}" stroke-width="2"/>')
+    cols, gap, top, ch = len(rows), 12, 86, 150
+    cw = (W - 56 - gap * (cols - 1)) / cols
+    vmax = max(max(r["daily"]) for r in rows) or 1
+    for i, r in enumerate(rows):
+        x = 28 + i * (cw + gap)
+        out.append(f'<rect x="{x:.1f}" y="{top}" width="{cw:.1f}" height="{ch}" rx="10" fill="{t["track"]}" stroke="{t["border"]}"/>')
+        lines = wrap(r["name"], int((cw - 28) / 6.6))[:2]
+        for j, line in enumerate(lines):
+            out.append(f'<text x="{x+14:.1f}" y="{top+24+j*15}" font-size="12.5" font-weight="700">{escape(line)}</text>')
+        out.append(f'<text x="{x+14:.1f}" y="{top+24+len(lines)*15}" font-size="10.5" class="m">{escape(r["tag"])}</text>')
+        out.append(f'<text x="{x+14:.1f}" y="{top+90}" font-size="24" font-weight="800" class="n">{fmt(r["commits"])}</text>')
+        out.append(f'<text x="{x+14 + 15.5*len(fmt(r["commits"])):.1f}" y="{top+90}" font-size="11" class="m">commits</text>')
+        sx0, sx1, base, sh = x + 14, x + cw - 14, top + ch - 14, 30
+        slot = (sx1 - sx0) / len(r["daily"])
+        for k, v in enumerate(r["daily"]):
+            if v:
+                bh = max(1.5, sh * v / vmax)
+                out.append(f'<rect class="col" style="animation-delay:{k*0.02:.2f}s" x="{sx0 + k*slot:.1f}" y="{base-bh:.1f}" '
+                           f'width="{max(1.5, slot-1.2):.1f}" height="{bh:.1f}" rx="1" fill="{t["s1"]}"/>')
+        out.append(f'<line x1="{sx0:.1f}" x2="{sx1:.1f}" y1="{base+0.5}" y2="{base+0.5}" stroke="{t["grid"]}"/>')
+    doc = svg(top + ch + 22, "\n".join(out), t, "Now shipping")
+    return doc.replace("@media (prefers-reduced-motion:reduce)",
+                       "@keyframes pulse{0%{r:5;opacity:.9}100%{r:13;opacity:0}}.pulse{animation:pulse 1.6s ease-out infinite}"
+                       "@media (prefers-reduced-motion:reduce){.pulse{animation:none}}"
+                       "@media (prefers-reduced-motion:reduce)", 1)
+
+
+# ----------------------------------------------------------- project universe
+TREE = {
+    "light": {"ramp": ["#fde2e4", "#fbbcc2", "#f48b95", "#e3303d", "#a3101d"], "ink": ["#1f2328"] * 3 + ["#ffffff"] * 2},
+    "dark": {"ramp": ["#3a1418", "#5c1a22", "#8f1d29", "#d4303d", "#ff8a93"], "ink": ["#e6edf3"] * 4 + ["#0d1117"]},
+}
+BUCKETS = [10, 50, 200, 800]
+
+
+def squarify(areas, x, y, w, h):
+    rects, i = [], 0
+
+    def worst(row, side):
+        s = sum(row)
+        return max(max(side * side * r / (s * s), (s * s) / (side * side * r)) for r in row)
+
+    while i < len(areas):
+        side = min(w, h)
+        row = [areas[i]]
+        i += 1
+        while i < len(areas) and worst(row + [areas[i]], side) <= worst(row, side):
+            row.append(areas[i])
+            i += 1
+        s = sum(row)
+        if w >= h:
+            cw = s / h if h else 0
+            yy = y
+            for a in row:
+                rh = a / cw if cw else 0
+                rects.append((x, yy, cw, rh))
+                yy += rh
+            x += cw
+            w -= cw
+        else:
+            rh = s / w if w else 0
+            xx = x
+            for a in row:
+                rw = a / rh if rh else 0
+                rects.append((xx, y, rw, rh))
+                xx += rw
+            y += rh
+            h -= rh
+    return rects
+
+
+def universe(t, mode, catalog):
+    pal = TREE[mode]
+    titles = {c["key"]: c["title"] for c in catalog["categories"]}
+    groups = {}
+    for u in DATA["universe"]:
+        groups.setdefault(u["cat"], []).append(u)
+    weight = lambda c: math.sqrt(max(c, 1)) + 3
+    cats = sorted(groups, key=lambda k: -sum(weight(u["commits"]) for u in groups[k]))
+    x0, y0, tw, th = 28, 92, W - 56, 600
+    cat_w = [sum(weight(u["commits"]) for u in groups[k]) for k in cats]
+    scale = tw * th / sum(cat_w)
+    crects = squarify([v * scale for v in cat_w], x0, y0, tw, th)
+    out = [heading(t, "Project universe — every project, grouped by domain",
+                   "Tile area grows with commits (square-root scale) · darker red = more commits · 76 catalogue entries, 93 repos")]
+    for k, (cx, cy, cw, chh) in zip(cats, crects):
+        g = 3
+        cx, cy, cw, chh = cx + g / 2, cy + g / 2, cw - g, chh - g
+        total = sum(u["commits"] for u in groups[k])
+        out.append(f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cw:.1f}" height="{chh:.1f}" rx="6" fill="{t["track"]}" stroke="{t["border"]}"/>')
+        label = titles[k]
+        maxc = int((cw - 12) / 6.3)
+        head = label if len(label) <= maxc else label[:max(0, maxc - 1)] + "…"
+        out.append(f'<text x="{cx+7:.1f}" y="{cy+14:.1f}" font-size="10.5" font-weight="700" class="m">{escape(head)}</text>')
+        items = sorted(groups[k], key=lambda u: -u["commits"])
+        iw = [weight(u["commits"]) for u in items]
+        ix, iy, iww, ihh = cx + 3, cy + 20, cw - 6, chh - 23
+        s2 = iww * ihh / sum(iw)
+        for u, (rx, ry, rw, rh) in zip(items, squarify([v * s2 for v in iw], ix, iy, iww, ihh)):
+            lvl = sum(u["commits"] >= b for b in BUCKETS)
+            rx, ry, rw, rh = rx + 1, ry + 1, max(0, rw - 2), max(0, rh - 2)
+            out.append(f'<rect class="fd" x="{rx:.1f}" y="{ry:.1f}" width="{rw:.1f}" height="{rh:.1f}" rx="3" fill="{pal["ramp"][lvl]}">'
+                       f'<title>{escape(u["name"])}: {fmt(u["commits"])} commits</title></rect>')
+            if rw >= 56 and rh >= 22:
+                n = max(4, int((rw - 10) / 5.7))
+                lines = wrap(u["name"], n)
+                room = 1 if rh < 44 else 2 if rh < 70 else 3
+                shown = lines[:room]
+                if len(lines) > room:
+                    last = shown[-1]
+                    shown[-1] = (last if len(last) < n else last[:n - 1]) + "…"
+                ink = pal["ink"][lvl]
+                for j, line in enumerate(shown):
+                    out.append(f'<text x="{rx+5:.1f}" y="{ry+14+j*12:.1f}" font-size="10" font-weight="600" style="fill:{ink}">{escape(line[:n])}</text>')
+                cy2 = ry + 14 + len(shown) * 12 + 2
+                if cy2 + 4 <= ry + rh:
+                    out.append(f'<text x="{rx+5:.1f}" y="{cy2:.1f}" font-size="10" class="n" style="fill:{ink};opacity:.85">{fmt(u["commits"])}</text>')
+    ly = y0 + th + 22
+    labels = ["1–9", "10–49", "50–199", "200–799", "800+ commits"]
+    lx = 28
+    for i, lab in enumerate(labels):
+        out.append(f'<rect x="{lx}" y="{ly-10}" width="12" height="12" rx="2.5" fill="{pal["ramp"][i]}"/>')
+        out.append(f'<text x="{lx+17}" y="{ly}" font-size="10.5" class="m">{lab}</text>')
+        lx += 17 + 7 * len(lab) + 16
+    return svg(ly + 16, "\n".join(out), t, "Project universe")
+
+
 # -------------------------------------------------------------------------- bars
 def bars(t, spec):
     rows = spec["rows"]
@@ -550,6 +711,9 @@ def readme_projects(catalog):
     out.append(f"<sub>{total_repos} project repositories in {len(cats)} categories. Each row leads with the "
                "project's <b>main function</b>, then what makes it notable. 🟢 in production · "
                "⚪ delivered, internal or staging · ×N groups sibling repositories.</sub>\n")
+    out.append(pic("universe", "Project universe treemap: every catalogued project grouped by domain, tile area "
+                   "growing with commits. Largest: " + "; ".join(
+                       f'{u["name"]} {fmt(u["commits"])}' for u in sorted(DATA["universe"], key=lambda u: -u["commits"])[:8])))
     out.append("<table>")
     for i in range(0, len(cats), 2):
         out.append("<tr>")
@@ -647,6 +811,87 @@ def readme_ai_profile(catalog):
     return "\n".join(out)
 
 
+def alt_attr(text):
+    return escape(text, {'"': "&quot;"})
+
+
+def pic(name, alt):
+    return (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg"/>\n'
+            f'  <img width="100%" alt="{alt_attr(alt)}" src="assets/{name}-light.svg"/>\n</picture>\n')
+
+
+def readme_glance():
+    t, ns = DATA["totals"], DATA["now_shipping"]
+    impact = "; ".join(f'{i["value"]} {i["label"]} ({i["note"]})' for i in DATA["impact"])
+    return "\n".join([
+        pic("stats", f'108 repositories, {fmt(t["commits"])} commits, {t["active_days"]} active days, '
+                     f'65 systems in production, {t["ai_share"]}% of commits paired with Claude Code'),
+        pic("now-shipping", f'Now shipping, last 30 days: {fmt(ns["total"])} commits. Busiest: '
+            + "; ".join(f'{r["name"]} {fmt(r["commits"])}' for r in ns["rows"])),
+        pic("impact", "Impact highlights: " + impact),
+        pic("timeline", "Journey: 2013 joined GitHub, 2016 research lab, 2025 client platforms, "
+                        "2026 AI-native development and ecosystems at scale"),
+    ])
+
+
+def readme_activity():
+    import datetime as dt
+    w = DATA["window"]
+    abbr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    end = dt.date.fromisoformat(w["end"])
+    bd = dt.date.fromisoformat(w["busiest_day"])
+    peak = max(DATA["weekly"], key=lambda x: x["human"] + x["ai"])
+    pkd = dt.date.fromisoformat(peak["week"])
+    grid = DATA["punchcard"]
+    best = max(((d, h) for d in range(7) for h in range(24)), key=lambda q: grid[q[0]][q[1]])
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    return "\n".join([
+        "<sub>Every chart counts all repositories I own or contribute to, private ones included: my own commits plus "
+        "Claude Code sessions in my repositories. Upstream and other contributors are excluded. "
+        f"Window: <b>1 Dec 2025 → {end.day} {abbr[end.month-1]} {end.year}</b>, times in WIB (UTC+7).</sub>\n",
+        pic("activity", f'Weekly commits since December 2025, hand-written vs Claude Code: {fmt(w["commits"])} commits, '
+                        f'peak week of {fmt(peak["human"] + peak["ai"])} starting {pkd.day} {abbr[pkd.month-1]} {pkd.year}'),
+        pic("heatmap", f'Daily commit calendar since December 2025: {fmt(w["commits"])} commits on {w["active_days"]} of '
+                       f'{w["days"]} days, longest streak {w["longest_streak"]} days, busiest day {bd.day} '
+                       f'{abbr[bd.month-1]} {bd.year} with {w["busiest_count"]} commits'),
+        pic("punchcard", f'Commits by weekday and hour in WIB since December 2025; busiest slot '
+                         f'{days[best[0]]} {best[1]:02d}:00'),
+        pic("top-projects", "Most active projects since December 2025: "
+            + "; ".join(f'{r["label"]} {fmt(r["value"])}' for r in DATA["top_projects"]["rows"])),
+        pic("domains", "All-time commits per domain: "
+            + "; ".join(f'{r["label"]} {fmt(r["value"])}' for r in DATA["domains"]["rows"])),
+    ])
+
+
+def sync_numbers():
+    """Keep the few hand-written figures in README.md in step with the data."""
+    import re
+    path = ROOT / "README.md"
+    text = path.read_text()
+    t = DATA["totals"]
+    stack_total = sum(r["value"] for r in DATA["stack_commits"]["rows"])
+    subs = [
+        (r"badge/Commits-[\d.]+k-", f'badge/Commits-{t["commits"] / 1000:.1f}k-'),
+        (r'alt="[\d.]+k commits"', f'alt="{t["commits"] / 1000:.1f}k commits"'),
+        (r"Terminal intro: 108 repos, 93 projects, [\d,]+ commits, 65 live systems, \d+% AI-paired",
+         f'Terminal intro: 108 repos, 93 projects, {fmt(t["commits"])} commits, 65 live systems, {t["ai_share"]}% AI-paired'),
+        (r"\d+% of [\d,]+ commits paired with Claude Code across \d+ repositories",
+         f'{t["ai_share"]}% of {fmt(t["commits"])} commits paired with Claude Code across {t["ai_repos"]} repositories'),
+        (r"add up to the [\d,]+ commits in the 93 project repos\. The remaining \d+ of the [\d,]+ total",
+         f'add up to the {fmt(stack_total)} commits in the 93 project repos. The remaining '
+         f'{t["commits"] - stack_total} of the {fmt(t["commits"])} total'),
+        (r'alt="Commits per main stack: [^"]*"',
+         'alt="Commits per main stack: ' + alt_attr("; ".join(
+             f'{r["label"]} {fmt(r["value"])} across {r["repos"]} repo{"s" if r["repos"] != 1 else ""}'
+             for r in DATA["stack_commits"]["rows"])) + '"'),
+    ]
+    for pattern, repl in subs:
+        text, n = re.subn(pattern, lambda m, r=repl: r, text)
+        if not n:
+            print(f"warning: no match for {pattern[:40]}")
+    path.write_text(text)
+
+
 def inject_readme(marker, section):
     path = ROOT / "README.md"
     text = path.read_text()
@@ -676,17 +921,26 @@ def main():
         for mode, theme in THEMES.items():
             (OUT / f"{name}-{mode}.svg").write_text(fn(theme))
             print(f"wrote assets/{name}-{mode}.svg")
+    charts["impact"] = impact_wall
+    charts["now-shipping"] = now_shipping
+    for name in ("impact", "now-shipping"):
+        for mode, theme in THEMES.items():
+            (OUT / f"{name}-{mode}.svg").write_text(charts[name](theme))
     for mode, theme in THEMES.items():
         (OUT / f"heatmap-{mode}.svg").write_text(heatmap(theme, mode))
-        print(f"wrote assets/heatmap-{mode}.svg")
+        (OUT / f"universe-{mode}.svg").write_text(universe(theme, mode, catalog))
+        print(f"wrote assets/heatmap-{mode}.svg, universe-{mode}.svg")
     (OUT / "hero-terminal.svg").write_text(hero_terminal())
     (OUT / "banner-header.svg").write_text(banner_header())
     (OUT / "banner-footer.svg").write_text(banner_footer())
     print("wrote assets/hero-terminal.svg, banner-header.svg, banner-footer.svg")
     inject_readme("TLDR", readme_tldr(catalog))
+    inject_readme("GLANCE", readme_glance())
+    inject_readme("ACTIVITY", readme_activity())
     inject_readme("PROJECTS", readme_projects(catalog))
     inject_readme("STACK", readme_stack_table())
     inject_readme("AI-PROFILE", readme_ai_profile(catalog))
+    sync_numbers()
 
 
 if __name__ == "__main__":
