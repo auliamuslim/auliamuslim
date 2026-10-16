@@ -1,3 +1,6 @@
+# Renders the contribution-snake animation shown in the profile README and
+# publishes it to the `output` branch. Runs daily, on demand, and whenever
+# this workflow itself changes.
 name: Generate contribution snake
 
 on:
@@ -7,10 +10,15 @@ on:
   push:
     branches:
       - main
-      - claude/optimistic-babbage-sbwue4
+    paths:
+      - .github/workflows/snake.yml
 
 permissions:
   contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:

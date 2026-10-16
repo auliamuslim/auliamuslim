@@ -212,8 +212,8 @@
     ]
   },
   "languages": {
-    "title": "Core stack footprint",
-    "subtitle": "Number of projects using each technology",
+    "title": "Technologies across projects",
+    "subtitle": "Number of project repos that use each technology (a repo can use several)",
     "rows": [
       {
         "label": "WordPress & WooCommerce",
@@ -599,6 +599,66 @@
         "claude-code --stats",
         "**70%** of commits AI-paired across **77** repositories"
       ]
+    ]
+  },
+  "stack_commits": {
+    "title": "Core stack — commits per project type",
+    "subtitle": "Each of the 93 project repos counted once, under its main stack · 13,648 commits",
+    "rows": [
+      {
+        "label": "Laravel",
+        "value": 3470,
+        "repos": 21,
+        "display": "3,470 commits · 21 repos"
+      },
+      {
+        "label": "n8n + Node.js automation",
+        "value": 3426,
+        "repos": 1,
+        "display": "3,426 commits · 1 repo"
+      },
+      {
+        "label": "WordPress / WooCommerce",
+        "value": 1857,
+        "repos": 39,
+        "display": "1,857 commits · 39 repos"
+      },
+      {
+        "label": "Perfex CRM / CodeIgniter",
+        "value": 1856,
+        "repos": 3,
+        "display": "1,856 commits · 3 repos"
+      },
+      {
+        "label": "Native PHP + Vue / JS",
+        "value": 1825,
+        "repos": 10,
+        "display": "1,825 commits · 10 repos"
+      },
+      {
+        "label": "TypeScript: Next.js, Node, Hono",
+        "value": 580,
+        "repos": 7,
+        "display": "580 commits · 7 repos"
+      },
+      {
+        "label": "Python: ML, data, Flask",
+        "value": 543,
+        "repos": 6,
+        "display": "543 commits · 6 repos"
+      },
+      {
+        "label": "Flutter / Dart",
+        "value": 47,
+        "repos": 2,
+        "display": "47 commits · 2 repos"
+      },
+      {
+        "label": "Other: SQL, Apps Script, email",
+        "value": 44,
+        "repos": 4,
+        "display": "44 commits · 4 repos"
+      }
     ]
   }
 }

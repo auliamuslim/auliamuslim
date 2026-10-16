@@ -373,13 +373,24 @@ def readme_projects(catalog):
     return "\n".join(out)
 
 
-def inject_readme(section):
+def readme_stack_table():
+    spec = DATA["stack_commits"]
+    total = sum(r["value"] for r in spec["rows"])
+    repos = sum(r["repos"] for r in spec["rows"])
+    rows = ["| Main stack | Repos | Commits | Share |", "|---|--:|--:|--:|"]
+    for r in spec["rows"]:
+        rows.append(f"| {r['label']} | {r['repos']} | {fmt(r['value'])} | {100 * r['value'] / total:.1f}% |")
+    rows.append(f"| **Total** | **{repos}** | **{fmt(total)}** | **100%** |")
+    return "\n".join(rows)
+
+
+def inject_readme(marker, section):
     path = ROOT / "README.md"
     text = path.read_text()
-    start, end = "<!-- PROJECTS:START -->", "<!-- PROJECTS:END -->"
+    start, end = f"<!-- {marker}:START -->", f"<!-- {marker}:END -->"
     a, b = text.index(start) + len(start), text.index(end)
     path.write_text(text[:a] + "\n" + section + "\n" + text[b:])
-    print("updated README.md project catalogue")
+    print(f"updated README.md {marker.lower()} section")
 
 
 def main():
@@ -389,6 +400,7 @@ def main():
         "stats": stats_card,
         "activity": activity,
         "domains": lambda t: bars(t, DATA["domains"]),
+        "stack-commits": lambda t: bars(t, DATA["stack_commits"]),
         "languages": lambda t: bars(t, DATA["languages"]),
         "timeline": timeline,
     }
@@ -401,7 +413,8 @@ def main():
             print(f"wrote assets/{name}-{mode}.svg")
     (OUT / "hero-terminal.svg").write_text(hero_terminal())
     print("wrote assets/hero-terminal.svg")
-    inject_readme(readme_projects(catalog))
+    inject_readme("PROJECTS", readme_projects(catalog))
+    inject_readme("STACK", readme_stack_table())
 
 
 if __name__ == "__main__":
