@@ -1,11 +1,11 @@
 <div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&color=0:B31312,45:E11D2E,100:FF6B6B&text=Aulia%20Muslim%20Hidayatullah&fontSize=38&fontColor=ffffff&fontAlignY=32&desc=Software%20Engineer%20%E2%80%A2%20ERP%20%C2%B7%20SaaS%20%C2%B7%20AI%20Automation%20%E2%80%A2%20Indonesia%20%F0%9F%87%AE%F0%9F%87%A9&descSize=16&descAlignY=54&animation=fadeIn" alt="Aulia Muslim Hidayatullah"/>
-<img width="100%" src="assets/hero-terminal.svg" alt="Terminal intro: 108 repos, 93 projects, 13,852 commits, 65 live systems, 70% AI-paired"/><br/>
-<img src="https://img.shields.io/badge/Repositories-108-FFFFFF?style=for-the-badge&labelColor=E11D2E" alt="108 repositories"/>
-<img src="https://img.shields.io/badge/Commits-13.8k-FFFFFF?style=for-the-badge&labelColor=E11D2E" alt="13.8k commits"/>
-<img src="https://img.shields.io/badge/Live_Systems-65-FFFFFF?style=for-the-badge&labelColor=E11D2E" alt="65 live systems"/>
+<img width="100%" src="assets/banner-header.svg" alt="Aulia Muslim Hidayatullah — Software Engineer, ERP · SaaS · AI Automation, Indonesia"/>
+<img width="100%" src="assets/hero-terminal.svg" alt="Terminal intro: 108 repos, 93 projects, 13,913 commits, 65 live systems, 70% AI-paired"/><br/>
+<img src="https://img.shields.io/badge/Repositories-108-FFFFFF?style=for-the-badge&labelColor=E70011" alt="108 repositories"/>
+<img src="https://img.shields.io/badge/Commits-13.9k-FFFFFF?style=for-the-badge&labelColor=E70011" alt="13.9k commits"/>
+<img src="https://img.shields.io/badge/Live_Systems-65-FFFFFF?style=for-the-badge&labelColor=E70011" alt="65 live systems"/>
 <img src="https://img.shields.io/badge/AI--Paired-70%25-FFFFFF?style=for-the-badge&labelColor=7C3AED" alt="70% AI-paired"/>
-<img src="https://img.shields.io/badge/On_GitHub_Since-2013-FFFFFF?style=for-the-badge&labelColor=E11D2E" alt="On GitHub since 2013"/>
+<img src="https://img.shields.io/badge/On_GitHub_Since-2013-FFFFFF?style=for-the-badge&labelColor=E70011" alt="On GitHub since 2013"/>
 <br/>
 <sub><a href="#-about-me">About</a> · <a href="#-portfolio-at-a-glance">At a glance</a> · <a href="#projects">Projects by category</a> · <a href="#-flagship-deep-dives">Flagships</a> · <a href="#-engineering-activity">Activity</a> · <a href="#-how-i-build">How I build</a> · <a href="#-tech-stack--integrations">Stack</a> · <a href="#-contact">Contact</a></sub>
 </div>
@@ -42,7 +42,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"/>
-  <img width="100%" alt="108 repositories, 13,852 commits, 414 active days, 65 systems in production, 70% of commits paired with Claude Code" src="assets/stats-light.svg"/>
+  <img width="100%" alt="108 repositories, 13,913 commits, 411 active days, 65 systems in production, 70% of commits paired with Claude Code" src="assets/stats-light.svg"/>
 </picture>
 
 <picture>
@@ -59,19 +59,19 @@
 
 <table>
 <tr>
-<td width="50%" valign="top"><a href="#cat-gov"><b>🏛️ Government, ERP &amp; Enterprise Ops</b></a><br/><sub>9 repos · 2,843 commits · 5 live</sub><br/>Back-office systems that run operations: work orders, billing, HR, fleet and procurement</td>
+<td width="50%" valign="top"><a href="#cat-gov"><b>🏛️ Government, ERP &amp; Enterprise Ops</b></a><br/><sub>9 repos · 2,847 commits · 5 live</sub><br/>Back-office systems that run operations: work orders, billing, HR, fleet and procurement</td>
 <td width="50%" valign="top"><a href="#cat-edu"><b>🎓 Higher-Education &amp; EdTech</b></a><br/><sub>9 repos · 738 commits · 6 live</sub><br/>The student lifecycle, digitised: admission, academics, finance, exams and learning</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-ai"><b>🤖 AI, ML &amp; Automation</b></a><br/><sub>7 repos · 3,980 commits · 5 live</sub><br/>LLMs, agents and machine learning put to work on real operations</td>
+<td width="50%" valign="top"><a href="#cat-ai"><b>🤖 AI, ML &amp; Automation</b></a><br/><sub>7 repos · 3,995 commits · 5 live</sub><br/>LLMs, agents and machine learning put to work on real operations</td>
 <td width="50%" valign="top"><a href="#cat-talent"><b>🧠 Talent Assessment &amp; Recruitment</b></a><br/><sub>4 repos · 900 commits · 2 live</sub><br/>Measuring, ranking and developing people with AI-assisted assessment</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-saas"><b>🧩 Industry Platforms &amp; SaaS</b></a><br/><sub>10 repos · 1,740 commits · 5 live</sub><br/>Vertical products for legal, health, civic, social impact, accessibility and gaming</td>
+<td width="50%" valign="top"><a href="#cat-saas"><b>🧩 Industry Platforms &amp; SaaS</b></a><br/><sub>10 repos · 1,755 commits · 5 live</sub><br/>Vertical products for legal, health, civic, social impact, accessibility and gaming</td>
 <td width="50%" valign="top"><a href="#cat-logi"><b>🚚 Logistics &amp; Shipping</b></a><br/><sub>8 repos · 1,387 commits · 5 live</sub><br/>Moving parcels: courier SaaS, live tracking and shipping-rate engines</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-shop"><b>🛒 E-Commerce &amp; WooCommerce</b></a><br/><sub>17 repos · 1,057 commits · 14 live</sub><br/>Selling more: loyalty, catalogues, checkout and storefront engineering</td>
+<td width="50%" valign="top"><a href="#cat-shop"><b>🛒 E-Commerce &amp; WooCommerce</b></a><br/><sub>17 repos · 1,084 commits · 14 live</sub><br/>Selling more: loyalty, catalogues, checkout and storefront engineering</td>
 <td width="50%" valign="top"><a href="#cat-pay"><b>💳 Payments, Accounting &amp; POS</b></a><br/><sub>14 repos · 329 commits · 11 live</sub><br/>Collecting money and keeping the books: gateways, accounting sync and point of sale</td>
 </tr>
 <tr>
@@ -84,7 +84,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-gov-dark.svg"/>
-  <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,843 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
+  <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,847 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
 </picture>
 
 | Project | Main function | What makes it notable |
@@ -126,7 +126,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-ai-dark.svg"/>
-  <img width="100%" alt="AI, ML &amp; Automation: 7 repositories, 3,980 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
+  <img width="100%" alt="AI, ML &amp; Automation: 7 repositories, 3,995 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
 </picture>
 
 | Project | Main function | What makes it notable |
@@ -161,7 +161,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-saas-dark.svg"/>
-  <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,740 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
+  <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,755 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
 </picture>
 
 | Project | Main function | What makes it notable |
@@ -201,7 +201,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-shop-dark.svg"/>
-  <img width="100%" alt="E-Commerce &amp; WooCommerce: 17 repositories, 1,057 commits, 14 live. Selling more: loyalty, catalogues, checkout and storefront engineering" src="assets/cat-shop-light.svg"/>
+  <img width="100%" alt="E-Commerce &amp; WooCommerce: 17 repositories, 1,084 commits, 14 live. Selling more: loyalty, catalogues, checkout and storefront engineering" src="assets/cat-shop-light.svg"/>
 </picture>
 
 | Project | Main function | What makes it notable |
@@ -454,14 +454,31 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 ## 📈 Engineering Activity
 
+<sub>Every chart below counts all repositories I own or contribute to, private ones included: my own commits plus Claude Code sessions in my repositories. Upstream and other contributors are excluded. Window: <b>1 Dec 2025 → 16 Oct 2026</b>, times in WIB (UTC+7).</sub>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg"/>
-  <img width="100%" alt="Monthly commits from March 2025 to October 2026, split into hand-written and Claude Code pair-programmed commits, peaking at 1,902 in August 2026" src="assets/activity-light.svg"/>
+  <img width="100%" alt="Weekly commits from December 2025 to October 2026, split into hand-written and Claude Code pair-programmed commits. 13,062 commits in total, peak week of 741 commits starting 24 Aug 2026" src="assets/activity-light.svg"/>
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg"/>
+  <img width="100%" alt="Daily commit calendar from December 2025: 13,062 commits on 275 of 320 days, longest streak 34 days, busiest day 27 Aug 2026 with 237 commits" src="assets/heatmap-light.svg"/>
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/punchcard-dark.svg"/>
+  <img width="100%" alt="Commits by weekday and hour in WIB since December 2025; busiest slot Tuesday 14:00" src="assets/punchcard-light.svg"/>
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/top-projects-dark.svg"/>
+  <img width="100%" alt="Most active projects since December 2025: AI document automation &amp; ops hub 3,438; Government testing-lab ERP / CRM 1,780; Multi-tenant courier &amp; parcel SaaS 1,229; Enterprise talent discovery platform 621; ISP modular ERP 504; Food supply-chain governance SaaS 463; Civic organisation SuperApp 463; Donation &amp; social-foundation platform 420; Lawyer-on-demand marketplace 403; Membership &amp; store-credit automation 351" src="assets/top-projects-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/domains-dark.svg"/>
-  <img width="100%" alt="Commits per domain: AI and automation 3,980; government and ERP 2,843; industry platforms 1,740; logistics 1,387; e-commerce 1,057; talent assessment 900; higher education 738; membership and email 489; payments and POS 329; corporate web 185" src="assets/domains-light.svg"/>
+  <img width="100%" alt="Commits per domain, all time: AI, ML &amp; Automation 3,995; Government, ERP &amp; Enterprise Ops 2,847; Industry Platforms &amp; SaaS 1,755; Logistics &amp; Shipping 1,387; E-Commerce &amp; WooCommerce 1,084; Talent Assessment &amp; Recruitment 900; Higher-Education &amp; EdTech 738; Membership, Events &amp; Email 489; Payments, Accounting &amp; POS 329; Corporate Web, CMS &amp; WP Tooling 185" src="assets/domains-light.svg"/>
 </picture>
 
 <div align="center">
@@ -471,14 +488,14 @@ Doctor consultations, counselling, fitness and nutrition programmes.
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/auliamuslim/auliamuslim/output/github-snake.svg"/>
   <img width="92%" alt="Contribution snake" src="https://raw.githubusercontent.com/auliamuslim/auliamuslim/output/github-snake.svg"/>
 </picture><br/>
-<sub>📈 Charts count every repository I own or contribute to, private ones included: my own commits plus Claude Code sessions in my repositories. Upstream and other contributors are excluded.</sub>
+<sub>📈 The streak card and snake come from GitHub's own contribution calendar.</sub>
 </div>
 
 ## 🧭 How I Build
 
 | | |
 |---|---|
-| 🤖 **AI-native workflow** | 70% of 13,852 commits paired with Claude Code across 77 repositories; 37 repos carry `CLAUDE.md` / `AGENTS.md` specs, custom subagents and skills |
+| 🤖 **AI-native workflow** | 70% of 13,913 commits paired with Claude Code across 77 repositories; 37 repos carry `CLAUDE.md` / `AGENTS.md` specs, custom subagents and skills |
 | 🧠 **AI inside the product** | 15+ products ship AI: RAG tutors, GPT-4o reports, Claude summaries &amp; agents, LLM-adaptive testing, ML trading signals, speech-to-sign |
 | 🧪 **Tests before trust** | 10k+ automated tests and checks across the portfolio; CI on GitHub Actions; multi-round code and security reviews before launch |
 | 🔐 **Security by habit** | Webhook signature checks, idempotency keys, rate limits, CSP / SRI, PII-redacting logs, and audits of inherited codebases |
@@ -496,25 +513,25 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-commits-dark.svg"/>
-  <img width="100%" alt="Commits per main stack: Laravel 3,470 across 21 repos; n8n and Node.js automation 3,426 in 1 repo; WordPress and WooCommerce 1,857 across 39 repos; Perfex CRM and CodeIgniter 1,856 across 3 repos; native PHP with Vue or JS 1,825 across 10 repos; TypeScript 580 across 7 repos; Python 543 across 6 repos; Flutter 47 across 2 repos; other 44 across 4 repos" src="assets/stack-commits-light.svg"/>
+  <img width="100%" alt="Commits per main stack: Laravel 3,470 across 21 repos; n8n + Node.js automation 3,438 across 1 repo; WordPress / WooCommerce 1,884 across 39 repos; Perfex CRM / CodeIgniter 1,860 across 3 repos; Native PHP + Vue / JS 1,825 across 10 repos; TypeScript: Next.js, Node, Hono 595 across 7 repos; Python: ML, data, Flask 546 across 6 repos; Flutter / Dart 47 across 2 repos; Other: SQL, Apps Script, email 44 across 4 repos" src="assets/stack-commits-light.svg"/>
 </picture>
 
 <!-- STACK:START -->
 | Main stack | Repos | Commits | Share |
 |---|--:|--:|--:|
-| Laravel | 21 | 3,470 | 25.4% |
-| n8n + Node.js automation | 1 | 3,426 | 25.1% |
-| WordPress / WooCommerce | 39 | 1,857 | 13.6% |
-| Perfex CRM / CodeIgniter | 3 | 1,856 | 13.6% |
-| Native PHP + Vue / JS | 10 | 1,825 | 13.4% |
-| TypeScript: Next.js, Node, Hono | 7 | 580 | 4.2% |
-| Python: ML, data, Flask | 6 | 543 | 4.0% |
+| Laravel | 21 | 3,470 | 25.3% |
+| n8n + Node.js automation | 1 | 3,438 | 25.1% |
+| WordPress / WooCommerce | 39 | 1,884 | 13.7% |
+| Perfex CRM / CodeIgniter | 3 | 1,860 | 13.6% |
+| Native PHP + Vue / JS | 10 | 1,825 | 13.3% |
+| TypeScript: Next.js, Node, Hono | 7 | 595 | 4.3% |
+| Python: ML, data, Flask | 6 | 546 | 4.0% |
 | Flutter / Dart | 2 | 47 | 0.3% |
 | Other: SQL, Apps Script, email | 4 | 44 | 0.3% |
-| **Total** | **93** | **13,648** | **100%** |
+| **Total** | **93** | **13,709** | **100%** |
 <!-- STACK:END -->
 
-<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,648 commits in the 93 project repos. The remaining commits of the 13,852 total come from collaborations and plugin baselines.</sub>
+<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,709 commits in the 93 project repos. The remaining 204 of the 13,913 total come from collaborations and plugin baselines.</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg"/>
@@ -535,8 +552,8 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 ## 📫 Contact
 
-<a href="https://www.linkedin.com/in/auliamuslim/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a> <a href="mailto:auliamuslim@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a> <a href="https://newtype.co.id"><img src="https://img.shields.io/badge/newtype.co.id-E11D2E?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a> <img src="https://img.shields.io/badge/Indonesia-FFFFFF?style=for-the-badge&labelColor=E11D2E&label=%F0%9F%87%AE%F0%9F%87%A9" alt="Indonesia"/>
+<a href="https://www.linkedin.com/in/auliamuslim/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a> <a href="mailto:auliamuslim@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a> <a href="https://newtype.co.id"><img src="https://img.shields.io/badge/newtype.co.id-E70011?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a> <img src="https://img.shields.io/badge/Indonesia-FFFFFF?style=for-the-badge&labelColor=E70011&label=%F0%9F%87%AE%F0%9F%87%A9" alt="Indonesia"/>
 
 <sub>Stats last refreshed 16 Oct 2026 · charts generated by <a href="scripts/render_profile_assets.py"><code>scripts/render_profile_assets.py</code></a> from <a href="data/profile.json"><code>data/profile.json</code></a></sub>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=70&color=0:FF6B6B,55:E11D2E,100:B31312&section=footer" alt=""/>
+<img width="100%" src="assets/banner-footer.svg" alt=""/>

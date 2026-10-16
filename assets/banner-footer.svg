@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="72" viewBox="0 0 860 72" role="img" aria-label="Merah putih footer wave">
+<style>@keyframes flow{from{transform:translateX(0)}to{transform:translateX(-860px)}}.f1{animation:flow 10s linear infinite}
+@media (prefers-reduced-motion:reduce){.f1{animation:none}}</style>
+<defs><clipPath id="c"><rect width="860" height="72" rx="12"/></clipPath></defs>
+<g clip-path="url(#c)"><path class="f1" d="M0 72 V34 Q53.8 25 107.5 34 T215.0 34 Q268.8 25 322.5 34 T430.0 34 Q483.8 25 537.5 34 T645.0 34 Q698.8 25 752.5 34 T860.0 34 Q913.8 25 967.5 34 T1075.0 34 Q1128.8 25 1182.5 34 T1290.0 34 Q1343.8 25 1397.5 34 T1505.0 34 Q1558.8 25 1612.5 34 T1720.0 34 V72 Z" fill="#E70011"/></g>
+</svg>
