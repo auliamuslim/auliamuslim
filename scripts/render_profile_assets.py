@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Render the profile README charts from data/profile.json.
+"""Render the profile README charts and project catalogue.
 
-Every chart is written twice (assets/<name>-light.svg and -dark.svg) so the
-README can swap them with <picture> to follow the viewer's GitHub theme.
+Reads data/profile.json (aggregated stats) and data/projects.json (the
+anonymised project catalogue). Every chart is written twice
+(assets/<name>-light.svg and -dark.svg) so the README can swap them with
+<picture> to follow the viewer's GitHub theme, and the catalogue tables are
+regenerated between the PROJECTS markers in README.md.
 Only the Python standard library is used.
 
     python3 scripts/render_profile_assets.py
@@ -213,8 +216,175 @@ def timeline(t):
     return svg(height, "\n".join(out), t, "The journey")
 
 
+# ------------------------------------------------------------- category banner
+def live_total(projects):
+    return sum(p.get("live_count", p.get("count", 1)) for p in projects if p["live"])
+
+
+def repo_total(projects):
+    return sum(p.get("count", 1) for p in projects)
+
+
+def category_banner(t, cat, idx, total):
+    act = DATA["category_activity"][cat["key"]]
+    months = DATA["category_months"]
+    height = 124
+    out = [
+        f'<rect x="1" y="18" width="4" height="{height-36}" rx="2" fill="{t["s1"]}"/>',
+        f'<text x="28" y="36" font-size="11" font-weight="700" class="m n" letter-spacing="1">'
+        f'CATEGORY {idx:02d} / {total:02d}</text>',
+        f'<text x="28" y="64" font-size="20" font-weight="800">{escape(cat["title"])}</text>',
+    ]
+    for j, line in enumerate(wrap(cat["tagline"], 62)[:2]):
+        out.append(f'<text x="28" y="{88 + j*17}" font-size="12.5" class="m">{escape(line)}</text>')
+    # stats
+    stats = [("REPOS", fmt(repo_total(cat["projects"]))), ("COMMITS", fmt(act["commits"])),
+             ("LIVE", fmt(live_total(cat["projects"])))]
+    sx = 520
+    for k, (label, value) in enumerate(stats):
+        x = sx + k * 104
+        out.append(f'<text x="{x}" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">{label}</text>')
+        out.append(f'<text x="{x}" y="60" font-size="21" font-weight="800" class="n">{value}</text>')
+    # sparkline of monthly commits
+    series = act["monthly"]
+    smax = max(series) or 1
+    x0, x1, base, h = 520, W - 28, 100, 26
+    slot = (x1 - x0) / len(series)
+    bw = max(3, slot - 3)
+    out.append(f'<line x1="{x0}" x2="{x1}" y1="{base+0.5}" y2="{base+0.5}" stroke="{t["grid"]}"/>')
+    for i, v in enumerate(series):
+        bh = max(1.5, h * v / smax) if v else 0
+        if bh:
+            out.append(f'<rect class="col" style="animation-delay:{i*0.03:.2f}s" x="{x0 + i*slot:.1f}" '
+                       f'y="{base-bh:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="1.5" fill="{t["s1"]}"/>')
+    first, last = months[0], months[-1]
+    abbr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    lab = lambda m: f"{abbr[int(m[5:7]) - 1]} '{m[2:4]}"
+    out.append(f'<text x="{x0}" y="{base+15}" font-size="10" class="m">{lab(first)}</text>')
+    out.append(f'<text x="{(x0+x1)/2:.0f}" y="{base+15}" font-size="10" class="m" text-anchor="middle">commits / month</text>')
+    out.append(f'<text x="{x1}" y="{base+15}" font-size="10" class="m" text-anchor="end">{lab(last)}</text>')
+    return svg(height, "\n".join(out), t, cat["title"])
+
+
+# ------------------------------------------------------------------ hero terminal
+def hero_terminal():
+    h = DATA["hero"]
+    red, violet, fg, mute = "#F2545B", "#B49CF6", "#e6edf3", "#9198a1"
+    lines = []
+    for cmd, output in h["lines"]:
+        lines.append(("cmd", cmd))
+        lines.append(("out", output))
+    top, step = 66, 25
+    height = top + step * len(lines) + 14
+    body = [
+        f'<rect x="0.5" y="0.5" width="{W-1}" height="{height-1}" rx="12" fill="#0d1117" stroke="#30363d"/>',
+        f'<path d="M0.5 36 H{W-0.5}" stroke="#30363d"/>',
+        '<circle cx="24" cy="18" r="6" fill="#ff5f57"/><circle cx="44" cy="18" r="6" fill="#febc2e"/>'
+        '<circle cx="64" cy="18" r="6" fill="#28c840"/>',
+        f'<text x="{W/2}" y="22" font-size="12" fill="{mute}" text-anchor="middle" class="n">{escape(h["title"])}</text>',
+    ]
+    delay = 0.3
+    for i, (kind, text) in enumerate(lines):
+        y = top + i * step
+        if kind == "cmd":
+            body.append(f'<text x="28" y="{y}" font-size="15" class="n type" style="animation-delay:{delay:.2f}s">'
+                        f'<tspan fill="{red}" font-weight="700">$ </tspan><tspan fill="{fg}">{escape(text)}</tspan></text>')
+            delay += 0.9
+        else:
+            parts = text.split("**")
+            bold = ' font-weight="700"'
+            spans = "".join(
+                f'<tspan fill="{fg if k % 2 else mute}"{bold if k % 2 else ""}>{escape(c)}</tspan>'
+                for k, c in enumerate(parts))
+            body.append(f'<text x="28" y="{y}" font-size="14" class="n show" style="animation-delay:{delay:.2f}s">{spans}</text>')
+            delay += 0.45
+    cy = top + (len(lines) - 1) * step
+    body.append(f'<rect class="cur" x="{28 + 8.6 * (len(lines[-1][1].replace("**", "")) + 1):.0f}" y="{cy-13}" '
+                f'width="9" height="17" fill="{violet}" style="animation-delay:{delay:.2f}s"/>')
+    style = (
+        f"<style>text{{font-family:{MONO}}}.n{{font-family:{MONO}}}"
+        "@keyframes type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}"
+        "@keyframes show{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}"
+        "@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}"
+        ".type{animation:type .8s steps(28,end) both}.show{animation:show .4s ease-out both}"
+        ".cur{animation:blink 1s step-end infinite}"
+        "@media (prefers-reduced-motion:reduce){.type,.show,.cur{animation:none}}</style>"
+    )
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{height}" viewBox="0 0 {W} {height}" '
+        f'role="img" aria-label="{escape(h["alt"])}">\n<title>{escape(h["alt"])}</title>\n{style}\n'
+        + "\n".join(body) + "\n</svg>\n"
+    )
+
+
+# ------------------------------------------------------------- README section
+def project_rows(projects):
+    rows = ["| Project | Main function | What makes it notable |", "|---|---|---|"]
+    for p in projects:
+        n = p.get("count", 1)
+        if p["live"]:
+            lc = p.get("live_count", n)
+            status = "🟢" if lc == n else f"🟢 <sub>{lc}/{n} live</sub>"
+        else:
+            status = "⚪"
+        name = f"[{p['name']}]({p['url']})" if p.get("url") else p["name"]
+        count = f" ×{n}" if n > 1 else ""
+        public = " 🔓" if p.get("public") else ""
+        rows.append(f"| {status} **{name}**{count}{public}<br/><sub>{p['stack']} · {p['year']}</sub> "
+                    f"| {p['function']} | {p['highlights']} |")
+    return "\n".join(rows)
+
+
+def picture(name, alt):
+    return (f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg"/>\n'
+            f'  <img width="100%" alt="{escape(alt, {chr(34): "&quot;"})}" src="assets/{name}-light.svg"/>\n</picture>')
+
+
+def readme_projects(catalog):
+    cats = catalog["categories"]
+    out = []
+    total_repos = sum(repo_total(c["projects"]) for c in cats)
+    out.append(f"<sub>{total_repos} project repositories in {len(cats)} categories. Each row leads with the "
+               "project's <b>main function</b>, then what makes it notable. 🟢 in production · "
+               "⚪ delivered, internal or staging · ×N groups sibling repositories.</sub>\n")
+    out.append("<table>")
+    for i in range(0, len(cats), 2):
+        out.append("<tr>")
+        for c in cats[i:i + 2]:
+            act = DATA["category_activity"][c["key"]]
+            out.append(
+                f'<td width="50%" valign="top"><a href="#cat-{c["key"]}"><b>{c["emoji"]} {escape(c["title"])}</b></a><br/>'
+                f'<sub>{repo_total(c["projects"])} repos · {fmt(act["commits"])} commits · '
+                f'{live_total(c["projects"])} live</sub><br/>{escape(c["tagline"])}</td>')
+        out.append("</tr>")
+    out.append("</table>\n")
+    for c in cats:
+        act = DATA["category_activity"][c["key"]]
+        alt = (f'{c["title"]}: {repo_total(c["projects"])} repositories, {fmt(act["commits"])} commits, '
+               f'{live_total(c["projects"])} live. {c["tagline"]}')
+        out.append(f'<a id="cat-{c["key"]}"></a>\n')
+        out.append(picture(f"cat-{c['key']}", alt) + "\n")
+        out.append(project_rows(c["projects"]) + "\n")
+        out.append('<div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>\n')
+    collab = catalog["collaborations"]
+    out.append('<a id="cat-collab"></a>\n')
+    out.append(f"**🤝 Collaborations & open source** <sub>— {len(collab)} repos</sub>\n")
+    out.append(project_rows(collab))
+    return "\n".join(out)
+
+
+def inject_readme(section):
+    path = ROOT / "README.md"
+    text = path.read_text()
+    start, end = "<!-- PROJECTS:START -->", "<!-- PROJECTS:END -->"
+    a, b = text.index(start) + len(start), text.index(end)
+    path.write_text(text[:a] + "\n" + section + "\n" + text[b:])
+    print("updated README.md project catalogue")
+
+
 def main():
     OUT.mkdir(exist_ok=True)
+    catalog = json.loads((ROOT / "data" / "projects.json").read_text())
     charts = {
         "stats": stats_card,
         "activity": activity,
@@ -222,10 +392,16 @@ def main():
         "languages": lambda t: bars(t, DATA["languages"]),
         "timeline": timeline,
     }
+    total = len(catalog["categories"])
+    for i, cat in enumerate(catalog["categories"], 1):
+        charts[f"cat-{cat['key']}"] = lambda t, c=cat, i=i: category_banner(t, c, i, total)
     for name, fn in charts.items():
         for mode, theme in THEMES.items():
             (OUT / f"{name}-{mode}.svg").write_text(fn(theme))
             print(f"wrote assets/{name}-{mode}.svg")
+    (OUT / "hero-terminal.svg").write_text(hero_terminal())
+    print("wrote assets/hero-terminal.svg")
+    inject_readme(readme_projects(catalog))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,146 @@
+{
+  "note": "Public, anonymised project catalogue. Client names are intentionally omitted. live = running in production; count > 1 groups sibling repositories.",
+  "categories": [
+    {
+      "key": "gov", "emoji": "🏛️", "title": "Government, ERP & Enterprise Ops",
+      "tagline": "Back-office systems that run operations: work orders, billing, HR, fleet and procurement",
+      "projects": [
+        {"name": "Government testing-lab ERP / CRM", "live": true, "function": "Runs a state lab's testing services end to end, from request to work order, invoice and revenue report", "highlights": "25 custom modules · service-reporting & treasury APIs · bank SNAP VA · 3,000+ assertions", "stack": "Perfex · CodeIgniter 3 · PHP 8.1 · Vue 3", "year": 2025},
+        {"name": "Textile-testing lab ERP / CRM", "live": true, "function": "Digitises a government textile lab's service lifecycle for clients and staff", "highlights": "Service-coded work orders · approvals · client tracking portal · 130+ tables", "stack": "Perfex · CodeIgniter 3 · MariaDB", "year": 2026},
+        {"name": "ISP modular ERP", "live": true, "function": "Operates an internet provider: subscribers, field jobs, billing, HR and accounting", "highlights": "25 modules · survey / install / dismantle work orders · prorated recurring billing", "stack": "Laravel 11 · Alpine.js · Tailwind", "year": 2025},
+        {"name": "Food supply-chain governance SaaS", "live": true, "function": "Governs procurement between village cooperatives, school-meal kitchens and suppliers", "highlights": "Price ceilings · QC goods receipt · daily invoicing · audited payouts · AI insights", "stack": "Laravel 11 · Inertia · React 19 · TypeScript", "year": 2026},
+        {"name": "CRM ↔ FluentCRM sync", "live": false, "function": "Keeps one CRM and several marketing sites in sync", "highlights": "Bi-directional contact & tag sync · exhibition lead import · hardened endpoints", "stack": "Perfex · CodeIgniter 3 · WordPress", "year": 2026},
+        {"name": "HRIS & payroll suite", "live": false, "function": "Manages staff records, attendance, leave and payroll", "highlights": "Shifts · salary components · self-service portal · offboarding", "stack": "Laravel 12 · Vue 3", "year": 2026},
+        {"name": "HR & attendance suite + mobile app", "live": false, "function": "Tracks attendance from QR, NFC and biometric devices", "highlights": "Payroll & overtime · leave workflows · Flutter employee app", "stack": "Laravel 10 · Flutter", "year": 2026},
+        {"name": "Fleet & vehicle booking PWA", "live": true, "function": "Books vehicles and keeps a fleet maintained", "highlights": "Driver, fuel & expense ledgers · maintenance work orders · public-information module", "stack": "Laravel 10 · PWA", "year": 2025},
+        {"name": "Stock-exchange → CRM lead pipeline", "live": false, "function": "Turns listed-company data into CRM-ready B2B leads", "highlights": "957 company leads · director & shareholder graph · CRM CSV converter", "stack": "Python · pandas · Neo4j", "year": 2026}
+      ]
+    },
+    {
+      "key": "edu", "emoji": "🎓", "title": "Higher-Education & EdTech",
+      "tagline": "The student lifecycle, digitised: admission, academics, finance, exams and learning",
+      "projects": [
+        {"name": "University academic system (SIAKAD)", "live": true, "function": "The campus hub: curriculum, classes, course registration, grades and transcripts", "highlights": "Two-way PDDikti Neo Feeder sync · ~116 queue jobs · org-scoped RBAC", "stack": "Laravel 8 · MariaDB Galera", "year": 2026},
+        {"name": "Admissions + finance + academic monorepo", "live": true, "function": "Takes applicants from sign-up to student ID and first invoice", "highlights": "Seven-stage admissions funnel · Midtrans billing · OAuth2 state APIs", "stack": "Laravel 8 · Redis · Passport", "year": 2026},
+        {"name": "University finance & billing", "live": true, "function": "Bills tuition and gates exams on payment status", "highlights": "69-table schema · four-level chart of accounts · instalments · gateway logs", "stack": "MariaDB · Midtrans", "year": 2026},
+        {"name": "Computer-based admission exam (CAT)", "live": true, "function": "Runs proctored entrance exams with automatic scoring", "highlights": "Question banks & batches · camera proctoring · multi-level scoring", "stack": "MariaDB · Laravel", "year": 2026},
+        {"name": "University LMS \"AI Class\"", "live": true, "function": "Delivers courses, quizzes and assignments for six user roles", "highlights": "Bloom-tagged quiz bank · queued academic-system sync · embedded AI tutor", "stack": "Laravel 8 · S3", "year": 2026},
+        {"name": "Higher-ed reporting feeder kit", "live": false, "function": "Installs and upgrades the national higher-ed reporting app", "highlights": "Dockerised installer · verified 3.0 → 3.1 upgrade · backup & rollback", "stack": "Docker · PostgreSQL · Nginx", "year": 2026},
+        {"name": "School library management plugin", "live": false, "function": "Lends books and tracks returns for school libraries", "highlights": "Branches & bookcases · late fines · CSV import · validation fixes", "stack": "WordPress", "year": 2025},
+        {"name": "LMS dynamic profile fields", "live": false, "function": "Adds custom student and instructor profiles to an LMS", "highlights": "Nine field types · public profiles · searchable student directory", "stack": "WordPress · Tutor LMS", "year": 2025},
+        {"name": "Course registration & enrolment", "live": true, "function": "Sells training programmes and enrols buyers automatically", "highlights": "Prerequisite checks · LMS enrolment API · 70–94% faster pages", "stack": "WooCommerce · ACF", "year": 2025}
+      ]
+    },
+    {
+      "key": "ai", "emoji": "🤖", "title": "AI, ML & Automation",
+      "tagline": "LLMs, agents and machine learning put to work on real operations",
+      "projects": [
+        {"name": "AI document automation & ops hub", "live": true, "function": "Turns meetings, recordings and chat commands into finished documents", "highlights": "215-node n8n flow · 19 Discord commands · video → user guide · 7,700+ checks", "stack": "n8n · Node.js · Claude · Gemini", "year": 2026},
+        {"name": "Algorithmic crypto trading engine", "live": true, "function": "Trades crypto automatically under strict risk limits", "highlights": "DCA, grid & formula strategies · LightGBM filter · 8+ exchanges · ~1,000 tests", "stack": "Python · ccxt · LightGBM · Optuna", "year": 2026},
+        {"name": "AI incident-response platform", "live": false, "function": "Triages production incidents for a microservice fleet", "highlights": "Claude incident-commander agent · log triage with redaction · n8n war rooms", "stack": "NestJS · Next.js · Prisma · n8n", "year": 2026},
+        {"name": "RAG learning assistant", "live": true, "function": "Answers students' questions from the campus knowledge base", "highlights": "OpenAI + ChromaDB retrieval · per-user memory · one-tag embed widget", "stack": "Flask · LangChain · ChromaDB", "year": 2026},
+        {"name": "AI competency recommender", "live": true, "function": "Generates personal development plans per competency and level", "highlights": "GPT plans streamed over SSE · response caching · rate limiting", "stack": "PHP 8.1 · OpenAI", "year": 2025},
+        {"name": "Ops knowledge base & AI CV screening", "live": false, "function": "Documents company operations and shortlists job applicants", "highlights": "44 guide volumes · 1,000+ CVs screened · auto Top-10 reports", "stack": "Python · Claude Code skills", "year": 2026},
+        {"name": "Contact master-list automation", "live": true, "function": "Keeps a community's contact lists in sync automatically", "highlights": "Hub-and-spoke Sheets sync · four Apps Script projects · event imports", "stack": "Google Apps Script", "year": 2026}
+      ]
+    },
+    {
+      "key": "talent", "emoji": "🧠", "title": "Talent Assessment & Recruitment",
+      "tagline": "Measuring, ranking and developing people with AI-assisted assessment",
+      "projects": [
+        {"name": "Enterprise talent discovery platform", "live": true, "function": "Assesses employees for a corporate group's talent programme", "highlights": "Multi-format tests · webcam proctoring · GPT-4o reports · AI companion · Entra ID SSO", "stack": "PHP 8.1 · PostgreSQL · Redis", "year": 2025},
+        {"name": "Corporate assessment platform", "live": true, "function": "Runs the same assessment engine for a second organisation", "highlights": "Rebrand · session checks on 255 endpoints · SQL-injection fixes", "stack": "PHP · PostgreSQL · OpenAI", "year": 2026},
+        {"name": "AI adaptive testing (CAT) engine", "live": false, "function": "Adapts test difficulty to each candidate in real time", "highlights": "LLM picks question groups · ten difficulty levels · token analytics", "stack": "PHP · OpenAI", "year": 2025},
+        {"name": "ATS screening pipeline & test kit", "live": false, "function": "Screens applicants and scores technical tests", "highlights": "94 CVs ranked · scoring rubric · reference Laravel & WordPress solutions", "stack": "Python · Laravel 11", "year": 2026}
+      ]
+    },
+    {
+      "key": "saas", "emoji": "🧩", "title": "Industry Platforms & SaaS",
+      "tagline": "Vertical products for legal, health, civic, social impact, accessibility and gaming",
+      "projects": [
+        {"name": "Lawyer-on-demand marketplace", "live": true, "function": "Connects people and SMEs with verified lawyers", "highlights": "Chat & video consults · case tenders · six gateways · Claude summaries", "stack": "Vue 3 PWA · PHP · LiveKit", "year": 2026},
+        {"name": "Civic organisation SuperApp", "live": true, "function": "Runs nationwide membership, engagement and a command centre", "highlights": "10 modules · QR e-member card · regional maps · 344 tests", "stack": "Hono · Drizzle · Next.js · Expo", "year": 2026},
+        {"name": "Donation & social-foundation platform", "live": true, "function": "Raises funds for campaigns, communities and events", "highlights": "Six in-house gateways · AI blog drafts · auto social sharing · 615 tests", "stack": "Laravel 12 · Sentry", "year": 2025},
+        {"name": "Sign-language accessibility SaaS", "live": true, "function": "Makes websites accessible to the Deaf community", "highlights": "Text & speech → BISINDO video · widget, extension, plugin & API", "stack": "PHP 8 · Web Components · HLS", "year": 2025},
+        {"name": "Telehealth & wellness platform", "live": false, "function": "Delivers doctor consults, counselling and wellness programmes", "highlights": "Own zero-dependency framework · e-prescriptions · payment ledger · 214 tests", "stack": "PHP 8.2 · Docker", "year": 2026},
+        {"name": "Grant-partner form portal", "live": true, "function": "Collects reports from community grant partners", "highlights": "Form builder · auto-save drafts · photo galleries · role-based exports", "stack": "Laravel 11", "year": 2025},
+        {"name": "Game top-up & voucher platform", "live": false, "function": "Sells game top-ups and digital vouchers", "highlights": "Gateway & supplier failover · five-tier reseller H2H API · PWA", "stack": "Laravel 12 · Vue 3 · Filament", "year": 2026},
+        {"name": "Binary MLM & multi-store commerce", "live": false, "function": "Runs a network-marketing business with an online shop", "highlights": "Binary BV tree · wallets · new multi-store extension", "stack": "Laravel 11", "year": 2025},
+        {"name": "Mining digital-twin 3D dashboard", "live": false, "function": "Visualises a mine site and its fleet in 3D", "highlights": "Simulated live fleet · KPI analytics · admin with audit log", "stack": "Next.js 16 · Three.js", "year": 2025},
+        {"name": "Cybersecurity services site", "live": false, "function": "Sells managed security services with live demos", "highlights": "DDoS, WAF & VAPT dashboards · Gemini threat analyser", "stack": "React 19 · Vite", "year": 2026}
+      ]
+    },
+    {
+      "key": "logi", "emoji": "🚚", "title": "Logistics & Shipping",
+      "tagline": "Moving parcels: courier SaaS, live tracking and shipping-rate engines",
+      "projects": [
+        {"name": "Multi-tenant courier & parcel SaaS", "live": true, "function": "Runs courier branches, merchants and parcel tracking", "highlights": "Subdomain tenancy · WhatsApp queues · 33-status bridge · 130 test files", "stack": "Laravel 10 · Stancl Tenancy", "year": 2025},
+        {"name": "Freight-forwarder websites", "count": 3, "live": true, "function": "Lets importers track China → Indonesia shipments", "highlights": "Company sites · deep-link tracking via the SaaS widget · deploy bundles", "stack": "Laravel · Blade", "year": 2026},
+        {"name": "White-label shipping-rates plugin", "live": false, "function": "Rebrands an official shipping-rates plugin without changing behaviour", "highlights": "Equivalence test gates · update kill switch · four AI subagents", "stack": "WooCommerce · RajaOngkir", "year": 2026},
+        {"name": "Courier-rate plugin + checkout bridge", "live": false, "function": "Shows live courier rates at checkout", "highlights": "26 domestic & 5 international couriers · plugin-conflict bridge", "stack": "WooCommerce · RajaOngkir", "year": 2026},
+        {"name": "Multi-courier shipping stack", "live": false, "function": "Calculates rates, generates AWBs and tracks parcels", "highlights": "Multi-courier rates · AWB generation · reverse-engineered docs", "stack": "WooCommerce", "year": 2026},
+        {"name": "Hacked-site incident response", "live": true, "function": "Cleaned and hardened a compromised courier website", "highlights": "Root-cause forensics · backdoor removal · Safe Browsing flag cleared", "stack": "WordPress · PHP", "year": 2026}
+      ]
+    },
+    {
+      "key": "shop", "emoji": "🛒", "title": "E-Commerce & WooCommerce",
+      "tagline": "Selling more: loyalty, catalogues, checkout and storefront engineering",
+      "projects": [
+        {"name": "Loyalty & brand-protection store", "live": true, "function": "Rewards customers for buying genuine products", "highlights": "37-table loyalty engine · QR / NFC tag scans · fraud rules · webhooks", "stack": "WooCommerce · Elementor Pro", "year": 2025},
+        {"name": "Product-authentication plugin suite", "live": true, "function": "Verifies product authenticity and awards loyalty points", "highlights": "Nine plugins · anti-counterfeit API · scratch-and-win · WCAG 2.1 AA", "stack": "WordPress · WooCommerce", "year": 2025},
+        {"name": "In-house Elementor widget suite", "live": true, "function": "Replaces seven page-builder add-ons with one plugin", "highlights": "20 widgets · scheduled flash sales · AJAX product filter", "stack": "Elementor · PHP", "year": 2026},
+        {"name": "Web-AR product catalogue", "live": false, "function": "Shows products in augmented reality on phones", "highlights": "GLB / USDZ models · hotspots · QR codes · engagement analytics", "stack": "WooCommerce · Model Viewer", "year": 2025},
+        {"name": "B2B export catalogue & quotations", "live": true, "function": "Lets overseas buyers request quotations online", "highlights": "Cart-to-quotation · PDF & Excel quotes · order tracking", "stack": "Laravel 8", "year": 2025},
+        {"name": "Excel → WooCommerce import pipeline", "live": true, "function": "Loads a retailer's inventory master into the store", "highlights": "57-column mapping · reconciliation · verification reports", "stack": "Python · openpyxl", "year": 2026},
+        {"name": "Product-recommendation quiz", "live": true, "function": "Recommends the right product and captures leads", "highlights": "Weighted scoring · emailed results · analytics · PHPUnit", "stack": "PHP · MySQL", "year": 2025},
+        {"name": "Storefront child themes", "count": 3, "live": true, "function": "Keep three client storefronts fast and stable", "highlights": "500 / 504 root-cause fixes · PayNow & POS hooks · 69 template refreshes", "stack": "Woodmart · Astra", "year": 2025},
+        {"name": "SKU-restricted coupons", "live": true, "function": "Limits coupons to specific product SKUs", "highlights": "Per-product discount display · AJAX cart filtering", "stack": "WooCommerce", "year": 2025},
+        {"name": "Guest-checkout defaults", "live": true, "function": "Makes payment rules work for guest buyers", "highlights": "Default guest info · forced-country mode · order-pay support", "stack": "WooCommerce", "year": 2025},
+        {"name": "Smart Coupons customisation", "live": true, "function": "Brands gift cards and store-credit emails", "highlights": "QR codes on coupons · quarterly expiry reminders", "stack": "WooCommerce", "year": 2025},
+        {"name": "Spending-limits extension", "live": false, "function": "Caps what B2B buyers can spend per period", "highlights": "Group budgets · custom periods · audit log & reports", "stack": "WooCommerce", "year": 2025},
+        {"name": "AI shopping chatbot (client build)", "live": true, "function": "Helps shoppers find products and orders in chat", "highlights": "OpenAI / Dialogflow bot · notification & styling patches", "stack": "WooCommerce", "year": 2025},
+        {"name": "Shopee ↔ WooCommerce connector", "live": false, "function": "Lists store products on the Shopee marketplace", "highlights": "Inventory & price sync · order import · PHP 8.2 patch", "stack": "WooCommerce · Shopee API", "year": 2025},
+        {"name": "Payment confirmation emails", "live": true, "function": "Confirms payments to customers automatically", "highlights": "Auto-send on status change · iCal links · HitPay & PayNow flows", "stack": "WooCommerce", "year": 2025}
+      ]
+    },
+    {
+      "key": "pay", "emoji": "💳", "title": "Payments, Accounting & POS",
+      "tagline": "Collecting money and keeping the books: gateways, accounting sync and point of sale",
+      "projects": [
+        {"name": "WooCommerce ↔ Xero sync", "count": 2, "live": true, "function": "Posts store orders and payments into Xero", "highlights": "Store credit as payments · self-healing invoices · duplicate guards", "stack": "WooCommerce · Xero API", "year": 2025},
+        {"name": "Singapore PayNow QR gateway", "live": true, "function": "Takes fee-free bank payments via dynamic QR codes", "highlights": "SGQR codes · order-pay & POS support · PHP 8.2 hardening", "stack": "WooCommerce", "year": 2025},
+        {"name": "Payment Fees Pro", "live": false, "function": "Passes card-processing fees on to shoppers", "highlights": "Per-gateway % + fixed fees · live AJAX recalculation", "stack": "WooCommerce", "year": 2025},
+        {"name": "OpenPOS omnichannel add-ons", "count": 4, "live": true, "function": "Connects the shop counter with the online store", "highlights": "Order locking · public e-receipts · composite products · Pay-on-Website", "stack": "OpenPOS · WooCommerce", "year": 2025},
+        {"name": "Sports-arena POS ecosystem", "count": 6, "live": true, "live_count": 4, "function": "Runs POS, bookings, memberships and entry gates for sports venues", "highlights": "Audits & hardening across six apps · Midtrans Core API migration · CI & tests", "stack": "Bun · Hono · Next.js · Flutter", "year": 2025}
+      ]
+    },
+    {
+      "key": "mkt", "emoji": "📣", "title": "Membership, Events & Email",
+      "tagline": "Growing and retaining audiences: memberships, events and newsletters",
+      "projects": [
+        {"name": "Membership & store-credit automation", "live": true, "function": "Turns purchases into memberships, credits and CRM journeys", "highlights": "Tiered store credit · 8 FluentCRM triggers · 105-scenario email tests", "stack": "PMPro · FluentCRM", "year": 2026},
+        {"name": "Branded membership email templates", "live": false, "function": "Gives every membership email one consistent brand", "highlights": "24+ email types · global wp_mail wrapper · test sender", "stack": "PMPro", "year": 2025},
+        {"name": "Canva → FluentCRM importer", "live": true, "function": "Imports Canva-designed emails as CRM templates", "highlights": "ZIP / HTML import · image de-duplication · merge-tag wiring · v7.2", "stack": "WordPress · FluentCRM", "year": 2026},
+        {"name": "Newsletter campaigns", "count": 2, "live": true, "function": "Ships seasonal campaigns that render in every inbox", "highlights": "Canva → FluentCRM JSON · Gmail- and Outlook-safe HTML", "stack": "HTML email", "year": 2025},
+        {"name": "Eventbrite integrations", "count": 2, "live": true, "live_count": 1, "function": "Shows live Eventbrite events on websites", "highlights": "Five layouts · live search · timezone & popup fixes", "stack": "WordPress · Eventbrite API", "year": 2025},
+        {"name": "Recurring-events fix", "live": true, "function": "Sells recurring workshop dates without duplicates", "highlights": "Root-caused duplicated date variations", "stack": "WooEvents", "year": 2025}
+      ]
+    },
+    {
+      "key": "web", "emoji": "🌐", "title": "Corporate Web, CMS & WordPress Tooling",
+      "tagline": "Publishing and protecting: corporate sites, custom CMS and WordPress tooling",
+      "projects": [
+        {"name": "Industrial-estate site & native CMS", "live": true, "function": "Markets an industrial estate with its own CMS and news portal", "highlights": "From-scratch PHP CMS & REST API · llms.txt · 224 tests", "stack": "PHP 8.1 · Flutter Web", "year": 2026},
+        {"name": "Corporate group website CMS", "live": true, "function": "Publishes a business group's news, careers and reports", "highlights": "Whistleblowing section · chunked video uploads past the WAF", "stack": "Laravel 10 · AdminLTE", "year": 2026},
+        {"name": "Page & media visibility control", "live": true, "function": "Restricts pages and files to the right people", "highlights": "Role / user rules · protected media URLs · robots control", "stack": "WordPress", "year": 2025},
+        {"name": "WordPress audit hub", "live": false, "function": "Audits any WordPress site from a single page", "highlights": "REST discovery · SEO, GDPR & SSL audits · API tester", "stack": "PHP · cURL", "year": 2025},
+        {"name": "WordPress plugin toolkit", "count": 3, "live": true, "function": "Fixes common WordPress production pains", "highlights": "Early-translation fixer · asset-cleanup patch · Gravity Forms notification tester", "stack": "WordPress", "year": 2025}
+      ]
+    }
+  ],
+  "collaborations": [
+    {"name": "B2G e-procurement & multi-vendor marketplace", "live": true, "function": "Lets government buyers procure from SME vendors", "highlights": "Core collaborator, 176 commits · procurement state machine · VAT engine · bank VA", "stack": "Laravel 12 · Flutter", "year": 2026},
+    {"name": "Multi-vendor marketplace mobile app", "live": false, "function": "Native shopping app for a medical-equipment marketplace", "highlights": "Web-build configuration", "stack": "React Native · Expo", "year": 2019},
+    {"name": "Pathfinding Adventures", "url": "https://github.com/lskk/Pathfinding_Adventures", "public": true, "live": false, "function": "Teaches grade-8 coordinate systems through play", "highlights": "2D platformer & turn-based modes · Android & Windows builds · ITB's LSKK lab", "stack": "Unity", "year": 2016}
+  ]
+}
