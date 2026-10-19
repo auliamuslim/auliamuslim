@@ -9,7 +9,7 @@
     },
     {
       "label": "Commits",
-      "value": "14,129",
+      "value": "14,192",
       "note": "private repos included"
     },
     {
@@ -31,7 +31,7 @@
   ],
   "activity": {
     "title": "Weekly commits — Dec 2025 to now, every repository",
-    "subtitle": "13,278 commits in 47 weeks · 73% paired with Claude Code · current week is week-to-date"
+    "subtitle": "13,341 commits in 47 weeks · 73% paired with Claude Code · current week is week-to-date"
   },
   "domains": {
     "title": "Where the work goes",
@@ -39,18 +39,18 @@
     "rows": [
       {
         "label": "AI, ML & Automation",
-        "value": 4062,
-        "display": "4,062 commits · 8 repos"
+        "value": 4078,
+        "display": "4,078 commits · 8 repos"
       },
       {
         "label": "Government, ERP & Enterprise Ops",
-        "value": 2852,
-        "display": "2,852 commits · 9 repos"
+        "value": 2876,
+        "display": "2,876 commits · 9 repos"
       },
       {
         "label": "Industry Platforms & SaaS",
-        "value": 1865,
-        "display": "1,865 commits · 10 repos"
+        "value": 1883,
+        "display": "1,883 commits · 10 repos"
       },
       {
         "label": "Logistics & Shipping",
@@ -64,8 +64,8 @@
       },
       {
         "label": "Talent Assessment & Recruitment",
-        "value": 900,
-        "display": "900 commits · 4 repos"
+        "value": 905,
+        "display": "905 commits · 4 repos"
       },
       {
         "label": "Higher-Education & EdTech",
@@ -157,47 +157,52 @@
   },
   "timeline": [
     {
-      "year": "2013",
-      "title": "Hello, GitHub",
-      "text": "Account created; first steps into version control and open source."
+      "year": "2010",
+      "title": "Informatics",
+      "text": "Diploma in informatics management at Telkom University; first web builds."
     },
     {
-      "year": "2016",
-      "title": "Research lab",
-      "text": "Unity math-education game for Android & Windows at ITB's LSKK lab."
+      "year": "2012",
+      "title": "Newtype",
+      "text": "CTO & R&D lead for government, campus and private clients."
     },
     {
-      "year": "2025",
-      "title": "Client platforms",
-      "text": "ERP, talent assessment, omnichannel WooCommerce and government lab systems."
+      "year": "2015",
+      "title": "ITB & SE Asia",
+      "text": "M.T. in digital media & game at ITB; e-learning across Southeast Asia."
     },
     {
-      "year": "2026 H1",
+      "year": "2019",
+      "title": "Product & ops",
+      "text": "COO and product owner of an HR and e-learning SaaS for four years."
+    },
+    {
+      "year": "2021",
+      "title": "Growth engineering",
+      "text": "Full stack plus SEO, GEO & AEO for 20+ accounts in three countries."
+    },
+    {
+      "year": "2026",
       "title": "AI-native",
-      "text": "Claude Code as daily pair: AI ops hub, legal-tech, trading bot.",
+      "text": "Claude Code as daily pair · VR, 3D GIS and agents at scale.",
       "accent": "ai"
-    },
-    {
-      "year": "2026 H2",
-      "title": "Ecosystems",
-      "text": "University suite, civic SuperApp, supply-chain SaaS at scale."
     }
   ],
   "category_activity": {
     "gov": {
-      "commits": 2852
+      "commits": 2876
     },
     "edu": {
       "commits": 752
     },
     "ai": {
-      "commits": 4062
+      "commits": 4078
     },
     "talent": {
-      "commits": 900
+      "commits": 905
     },
     "saas": {
-      "commits": 1865
+      "commits": 1883
     },
     "logi": {
       "commits": 1387
@@ -217,15 +222,15 @@
   },
   "hero": {
     "title": "aulia@newtype: ~",
-    "alt": "Terminal: Aulia Muslim Hidayatullah, Software Engineer at Newtype, Indonesia. 109 repos, 94 projects, 14,129 commits, 65 live systems. Government ERP, campus systems, SaaS, logistics, commerce and AI. 70% of commits AI-paired across 78 repositories.",
+    "alt": "Terminal: Aulia Muslim Hidayatullah, Senior Full Stack & AI Automation Engineer, Bandung, Indonesia. 109 repos, 94 projects, 14,192 commits, 65 live systems. Government ERP, campus systems, SaaS, logistics, commerce and AI. 70% of commits AI-paired across 78 repositories.",
     "lines": [
       [
         "whoami",
-        "**Aulia Muslim Hidayatullah** · Software Engineer @ Newtype · Indonesia"
+        "**Aulia Muslim Hidayatullah** · Senior Full Stack & AI Automation Engineer · Bandung"
       ],
       [
         "portfolio --summary",
-        "**109** repos · **94** projects · **14,129** commits · **65** live systems"
+        "**109** repos · **94** projects · **14,192** commits · **65** live systems"
       ],
       [
         "portfolio --domains",
@@ -234,26 +239,30 @@
       [
         "claude-code --stats",
         "**70%** of commits AI-paired across **78** repositories"
+      ],
+      [
+        "career --summary",
+        "**15+** years · CTO @ Newtype since 2012 · AI engineer @ KOMINA · M.T. ITB"
       ]
     ]
   },
   "stack_commits": {
     "title": "Core stack — commits per project type",
-    "subtitle": "Each of the 94 project repos counted once, under its main stack · 13,925 commits",
+    "subtitle": "Each of the 94 project repos counted once, under its main stack · 13,988 commits",
     "rows": [
       {
         "label": "Laravel",
-        "value": 3503,
+        "value": 3511,
         "repos": 21,
         "examples": "Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite",
-        "display": "3,503 commits · 21 repos"
+        "display": "3,511 commits · 21 repos"
       },
       {
         "label": "n8n + Node.js automation",
-        "value": 3487,
+        "value": 3503,
         "repos": 1,
         "examples": "AI document automation & ops hub",
-        "display": "3,487 commits · 1 repo"
+        "display": "3,503 commits · 1 repo"
       },
       {
         "label": "WordPress / WooCommerce",
@@ -264,24 +273,24 @@
       },
       {
         "label": "Perfex CRM / CodeIgniter",
-        "value": 1865,
+        "value": 1881,
         "repos": 3,
         "examples": "Two government lab ERPs · CRM ↔ FluentCRM sync",
-        "display": "1,865 commits · 3 repos"
+        "display": "1,881 commits · 3 repos"
       },
       {
         "label": "Native PHP + Vue / JS",
-        "value": 1840,
+        "value": 1845,
         "repos": 10,
         "examples": "Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS",
-        "display": "1,840 commits · 10 repos"
+        "display": "1,845 commits · 10 repos"
       },
       {
         "label": "TypeScript: Next.js, Node, Hono",
-        "value": 673,
+        "value": 691,
         "repos": 8,
         "examples": "Civic SuperApp · sports-arena POS backend & admin · mining digital twin",
-        "display": "673 commits · 8 repos"
+        "display": "691 commits · 8 repos"
       },
       {
         "label": "Python: ML, data, Flask",
@@ -307,9 +316,9 @@
     ]
   },
   "totals": {
-    "commits": 14129,
-    "human": 4231,
-    "ai": 9898,
+    "commits": 14192,
+    "human": 4261,
+    "ai": 9931,
     "active_days": 413,
     "ai_repos": 78,
     "ai_share": 70
@@ -317,9 +326,9 @@
   "window": {
     "start": "2025-12-01",
     "end": "2026-10-19",
-    "commits": 13278,
-    "ai": 9644,
-    "human": 3634,
+    "commits": 13341,
+    "ai": 9677,
+    "human": 3664,
     "active_days": 277,
     "days": 323,
     "longest_streak": 34,
@@ -601,13 +610,13 @@
     {
       "week": "2026-10-12",
       "human": 158,
-      "ai": 547,
+      "ai": 546,
       "label": null
     },
     {
       "week": "2026-10-19",
-      "human": 3,
-      "ai": 5,
+      "human": 33,
+      "ai": 39,
       "label": null
     }
   ],
@@ -932,9 +941,9 @@
     88,
     118,
     133,
-    156,
+    155,
     0,
-    8
+    72
   ],
   "punchcard": [
     [
@@ -946,15 +955,15 @@
       27,
       58,
       125,
-      214,
-      266,
-      240,
-      213,
-      120,
-      150,
-      147,
-      158,
-      144,
+      224,
+      284,
+      246,
+      218,
+      123,
+      155,
+      151,
+      161,
+      154,
       99,
       46,
       28,
@@ -1086,7 +1095,7 @@
       63,
       49,
       33,
-      13,
+      12,
       22,
       42,
       21,
@@ -1127,14 +1136,14 @@
       {
         "label": "AI document automation & ops hub",
         "tag": "AI & automation",
-        "value": 3487,
-        "display": "3,487 commits"
+        "value": 3503,
+        "display": "3,503 commits"
       },
       {
         "label": "Government testing-lab ERP / CRM",
         "tag": "Gov & ERP",
-        "value": 1785,
-        "display": "1,785 commits"
+        "value": 1801,
+        "display": "1,801 commits"
       },
       {
         "label": "Multi-tenant courier & parcel SaaS",
@@ -1145,20 +1154,20 @@
       {
         "label": "Enterprise talent discovery platform",
         "tag": "Talent",
-        "value": 621,
-        "display": "621 commits"
+        "value": 625,
+        "display": "625 commits"
       },
       {
         "label": "Civic organisation SuperApp",
         "tag": "SaaS platforms",
-        "value": 539,
-        "display": "539 commits"
+        "value": 557,
+        "display": "557 commits"
       },
       {
         "label": "ISP modular ERP",
         "tag": "Gov & ERP",
-        "value": 504,
-        "display": "504 commits"
+        "value": 512,
+        "display": "512 commits"
       },
       {
         "label": "Food supply-chain governance SaaS",
@@ -1282,8 +1291,8 @@
       23,
       48,
       32,
-      38,
-      0
+      37,
+      25
     ],
     "edu": [
       4,
@@ -1381,7 +1390,7 @@
       60,
       38,
       223,
-      1
+      17
     ],
     "talent": [
       22,
@@ -1430,7 +1439,7 @@
       15,
       16,
       12,
-      0
+      5
     ],
     "saas": [
       0,
@@ -1479,7 +1488,7 @@
       15,
       63,
       131,
-      4
+      22
     ],
     "logi": [
       10,
@@ -1729,26 +1738,29 @@
   },
   "banner": {
     "name": "Aulia Muslim Hidayatullah",
-    "tagline": "Software Engineer  •  ERP · SaaS · AI Automation  •  Indonesia"
+    "tagline": "Senior Full Stack & AI Automation Engineer  •  SRE  •  SEO · GEO · AEO  •  Bandung"
   },
   "profile": {
     "name": "Aulia Muslim Hidayatullah",
     "github": "auliamuslim",
-    "role": "Software Engineer",
-    "company": "Newtype",
+    "role": "Senior Full Stack & AI Automation Engineer",
+    "company": "PT Newtype Tekno Pioneer (CTO & R&D Lead) · KOMINA (Full Stack & AI Engineer)",
     "website": "https://newtype.co.id",
-    "location": "Indonesia",
+    "location": "Bandung, Indonesia",
     "linkedin": "https://www.linkedin.com/in/auliamuslim/",
     "email": "auliamuslim@gmail.com",
     "on_github_since": 2013,
-    "open_to": "collaboration",
+    "open_to": "Senior full stack, SRE or AI automation roles · remote or hybrid",
     "focus": [
       "Government & enterprise ERP / CRM",
       "University ecosystems",
       "SaaS platforms",
       "Logistics & courier SaaS",
       "E-commerce, payments & POS",
-      "AI automation & LLM products"
+      "AI automation & LLM products",
+      "Site reliability & infrastructure",
+      "SEO, GEO & AEO",
+      "GIS, VR & 3D"
     ],
     "ai_in_products": [
       "RAG learning assistant",
@@ -1756,14 +1768,16 @@
       "Claude consultation summaries & agents",
       "LLM-adaptive testing",
       "ML trading signals (LightGBM)",
-      "Speech-to-sign-language"
+      "Speech-to-sign-language",
+      "VR training assistant (Meta Quest + Claude)",
+      "Map area → 3D GLB (Juno 3D GIS)"
     ]
   },
   "universe": [
     {
       "cat": "gov",
       "name": "Government testing-lab ERP / CRM",
-      "commits": 1815,
+      "commits": 1831,
       "live": true
     },
     {
@@ -1775,7 +1789,7 @@
     {
       "cat": "gov",
       "name": "ISP modular ERP",
-      "commits": 507,
+      "commits": 515,
       "live": true
     },
     {
@@ -1871,7 +1885,7 @@
     {
       "cat": "ai",
       "name": "AI document automation & ops hub",
-      "commits": 3487,
+      "commits": 3503,
       "live": true
     },
     {
@@ -1919,13 +1933,13 @@
     {
       "cat": "talent",
       "name": "Enterprise talent discovery platform",
-      "commits": 765,
+      "commits": 769,
       "live": true
     },
     {
       "cat": "talent",
       "name": "Corporate assessment platform",
-      "commits": 112,
+      "commits": 113,
       "live": true
     },
     {
@@ -1949,7 +1963,7 @@
     {
       "cat": "saas",
       "name": "Civic organisation SuperApp",
-      "commits": 539,
+      "commits": 557,
       "live": true
     },
     {
@@ -2226,12 +2240,12 @@
   "now_shipping": {
     "start": "2026-09-20",
     "end": "2026-10-19",
-    "total": 1308,
+    "total": 1371,
     "rows": [
       {
         "name": "AI document automation & ops hub",
         "tag": "AI & automation",
-        "commits": 340,
+        "commits": 356,
         "daily": [
           0,
           0,
@@ -2262,7 +2276,7 @@
           39,
           38,
           0,
-          0
+          16
         ]
       },
       {
@@ -2305,7 +2319,7 @@
       {
         "name": "Government testing-lab ERP / CRM",
         "tag": "Gov & ERP",
-        "commits": 97,
+        "commits": 113,
         "daily": [
           0,
           0,
@@ -2334,15 +2348,15 @@
           5,
           15,
           10,
-          2,
+          1,
           0,
-          0
+          17
         ]
       },
       {
         "name": "Civic organisation SuperApp",
         "tag": "SaaS platforms",
-        "commits": 92,
+        "commits": 110,
         "daily": [
           0,
           0,
@@ -2373,7 +2387,7 @@
           27,
           60,
           0,
-          4
+          22
         ]
       }
     ]
@@ -2382,7 +2396,7 @@
     {
       "value": "215",
       "label": "workflow nodes",
-      "note": "in one AI document-automation hub"
+      "note": "in one AI automation hub"
     },
     {
       "value": "81",

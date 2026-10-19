@@ -1,9 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="160" viewBox="0 0 860 160" role="img" aria-label="Portfolio at a glance">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="192" viewBox="0 0 860 192" role="img" aria-label="Portfolio at a glance">
 <title>Portfolio at a glance</title>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#e6edf3}.m{fill:#9198a1}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
-<rect x="0.5" y="0.5" width="859" height="159" rx="12" fill="#0d1117" stroke="#3d444d"/>
-<g class="fd" style="animation-delay:0.00s"><rect x="28.0" y="28" width="151.2" height="104" rx="10" fill="#151b23" stroke="#3d444d"/><rect x="28.0" y="46" width="3" height="68" rx="1.5" fill="#F2545B"/><text x="46.0" y="58" font-size="11.5" font-weight="600" class="m" letter-spacing=".4">REPOSITORIES</text><text x="46.0" y="94" font-size="30" font-weight="800" class="n">109</text><text x="46.0" y="116" font-size="11" class="m">94 with custom work</text></g>
-<g class="fd" style="animation-delay:0.08s"><rect x="191.2" y="28" width="151.2" height="104" rx="10" fill="#151b23" stroke="#3d444d"/><rect x="191.2" y="46" width="3" height="68" rx="1.5" fill="#F2545B"/><text x="209.2" y="58" font-size="11.5" font-weight="600" class="m" letter-spacing=".4">COMMITS</text><text x="209.2" y="94" font-size="30" font-weight="800" class="n">14,129</text><text x="209.2" y="116" font-size="11" class="m">private repos included</text></g>
-<g class="fd" style="animation-delay:0.16s"><rect x="354.4" y="28" width="151.2" height="104" rx="10" fill="#151b23" stroke="#3d444d"/><rect x="354.4" y="46" width="3" height="68" rx="1.5" fill="#F2545B"/><text x="372.4" y="58" font-size="11.5" font-weight="600" class="m" letter-spacing=".4">ACTIVE DAYS</text><text x="372.4" y="94" font-size="30" font-weight="800" class="n">413</text><text x="372.4" y="116" font-size="11" class="m">days with ≥ 1 commit</text></g>
-<g class="fd" style="animation-delay:0.24s"><rect x="517.6" y="28" width="151.2" height="104" rx="10" fill="#151b23" stroke="#3d444d"/><rect x="517.6" y="46" width="3" height="68" rx="1.5" fill="#F2545B"/><text x="535.6" y="58" font-size="11.5" font-weight="600" class="m" letter-spacing=".4">IN PRODUCTION</text><text x="535.6" y="94" font-size="30" font-weight="800" class="n">65</text><text x="535.6" y="116" font-size="11" class="m">live systems &amp; sites</text></g>
-<g class="fd" style="animation-delay:0.32s"><rect x="680.8" y="28" width="151.2" height="104" rx="10" fill="#151b23" stroke="#3d444d"/><rect x="680.8" y="46" width="3" height="68" rx="1.5" fill="#9B7BF0"/><text x="698.8" y="58" font-size="11.5" font-weight="600" class="m" letter-spacing=".4">AI-PAIRED</text><text x="698.8" y="94" font-size="30" font-weight="800" class="n">70%</text><text x="698.8" y="116" font-size="11" class="m">via Claude Code</text></g></svg>
+<rect x="0.5" y="0.5" width="859" height="191" rx="12" fill="#0d1117" stroke="#3d444d"/>
+<g class="fd" style="animation-delay:0.00s"><rect x="24.0" y="24" width="152.8" height="132" rx="12" fill="#151b23" stroke="#3d444d"/><text x="40.0" y="50" font-size="12" font-weight="600" class="m">Repositories</text><text x="40.0" y="86" font-size="30" font-weight="700">109</text><text x="40.0" y="105" font-size="11" class="m">94 with custom work</text>
+<text x="160.8" y="50" font-size="11" font-weight="600" class="m" text-anchor="end">86%</text>
+<rect x="40.0" y="132" width="120.8" height="6" rx="3" fill="#2a1215"/>
+<rect class="bar" x="40.0" y="132" width="104.2" height="6" rx="3" fill="#F2545B"/>
+</g>
+<g class="fd" style="animation-delay:0.08s"><rect x="188.8" y="24" width="152.8" height="132" rx="12" fill="#151b23" stroke="#3d444d"/><text x="204.8" y="50" font-size="12" font-weight="600" class="m">Commits</text><text x="204.8" y="86" font-size="30" font-weight="700">14,192</text><text x="204.8" y="105" font-size="11" class="m">private repos included</text>
+<path d="M204.8 132.9C206.9 132.7 209.0 132.8 211.2 132.1C213.3 131.5 215.4 129.2 217.5 129.2C219.6 129.2 221.8 129.7 223.9 130.6C226.0 131.5 228.1 134.5 230.2 134.5C232.4 134.5 234.5 133.9 236.6 132.9C238.7 132.0 240.8 128.6 242.9 128.6C245.1 128.6 247.2 129.1 249.3 129.7C251.4 130.3 253.5 132.3 255.7 132.3C257.8 132.3 259.9 132.0 262.0 131.7C264.1 131.3 266.3 130.3 268.4 130.3C270.5 130.3 272.6 131.7 274.7 131.7C276.9 131.7 279.0 120.0 281.1 120.0C283.2 120.0 285.3 130.5 287.5 130.5C289.6 130.5 291.7 127.4 293.8 127.4C295.9 127.4 298.0 131.9 300.2 133.3C302.3 134.7 304.4 136.0 306.5 136.0C308.6 136.0 310.8 134.7 312.9 134.7C315.0 134.7 317.1 134.7 319.2 134.7C321.4 134.6 323.5 125.6 325.6 121.1L325.6 142L204.8 142Z" fill="#F2545B" fill-opacity=".12"/>
+<path d="M204.8 132.9C206.9 132.7 209.0 132.8 211.2 132.1C213.3 131.5 215.4 129.2 217.5 129.2C219.6 129.2 221.8 129.7 223.9 130.6C226.0 131.5 228.1 134.5 230.2 134.5C232.4 134.5 234.5 133.9 236.6 132.9C238.7 132.0 240.8 128.6 242.9 128.6C245.1 128.6 247.2 129.1 249.3 129.7C251.4 130.3 253.5 132.3 255.7 132.3C257.8 132.3 259.9 132.0 262.0 131.7C264.1 131.3 266.3 130.3 268.4 130.3C270.5 130.3 272.6 131.7 274.7 131.7C276.9 131.7 279.0 120.0 281.1 120.0C283.2 120.0 285.3 130.5 287.5 130.5C289.6 130.5 291.7 127.4 293.8 127.4C295.9 127.4 298.0 131.9 300.2 133.3C302.3 134.7 304.4 136.0 306.5 136.0C308.6 136.0 310.8 134.7 312.9 134.7C315.0 134.7 317.1 134.7 319.2 134.7C321.4 134.6 323.5 125.6 325.6 121.1" fill="none" stroke="#F2545B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="325.6" cy="121.1" r="4" fill="#F2545B" stroke="#151b23" stroke-width="2"/>
+</g>
+<g class="fd" style="animation-delay:0.16s"><rect x="353.6" y="24" width="152.8" height="132" rx="12" fill="#151b23" stroke="#3d444d"/><text x="369.6" y="50" font-size="12" font-weight="600" class="m">Active days</text><text x="369.6" y="86" font-size="30" font-weight="700">413</text><text x="369.6" y="105" font-size="11" class="m">days with ≥ 1 commit</text>
+<rect class="col" style="animation-delay:0.00s" x="369.6" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.02s" x="375.6" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.04s" x="381.7" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.06s" x="387.7" y="123.1" width="4.0" height="18.9" rx="1.5" fill="#F2545B" fill-opacity="0.91"/>
+<rect class="col" style="animation-delay:0.08s" x="393.8" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.10s" x="399.8" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.12s" x="405.8" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.14s" x="411.9" y="126.3" width="4.0" height="15.7" rx="1.5" fill="#F2545B" fill-opacity="0.81"/>
+<rect class="col" style="animation-delay:0.16s" x="417.9" y="126.3" width="4.0" height="15.7" rx="1.5" fill="#F2545B" fill-opacity="0.81"/>
+<rect class="col" style="animation-delay:0.18s" x="424.0" y="126.3" width="4.0" height="15.7" rx="1.5" fill="#F2545B" fill-opacity="0.81"/>
+<rect class="col" style="animation-delay:0.20s" x="430.0" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.22s" x="436.0" y="126.3" width="4.0" height="15.7" rx="1.5" fill="#F2545B" fill-opacity="0.81"/>
+<rect class="col" style="animation-delay:0.24s" x="442.1" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.26s" x="448.1" y="123.1" width="4.0" height="18.9" rx="1.5" fill="#F2545B" fill-opacity="0.91"/>
+<rect class="col" style="animation-delay:0.28s" x="454.2" y="126.3" width="4.0" height="15.7" rx="1.5" fill="#F2545B" fill-opacity="0.81"/>
+<rect class="col" style="animation-delay:0.30s" x="460.2" y="123.1" width="4.0" height="18.9" rx="1.5" fill="#F2545B" fill-opacity="0.91"/>
+<rect class="col" style="animation-delay:0.32s" x="466.2" y="120.0" width="4.0" height="22.0" rx="1.5" fill="#F2545B" fill-opacity="1.00"/>
+<rect class="col" style="animation-delay:0.34s" x="472.3" y="123.1" width="4.0" height="18.9" rx="1.5" fill="#F2545B" fill-opacity="0.91"/>
+<rect class="col" style="animation-delay:0.36s" x="478.3" y="126.3" width="4.0" height="15.7" rx="1.5" fill="#F2545B" fill-opacity="0.81"/>
+<rect class="col" style="animation-delay:0.38s" x="484.4" y="123.1" width="4.0" height="18.9" rx="1.5" fill="#F2545B" fill-opacity="0.91"/>
+</g>
+<g class="fd" style="animation-delay:0.24s"><rect x="518.4" y="24" width="152.8" height="132" rx="12" fill="#151b23" stroke="#3d444d"/><text x="534.4" y="50" font-size="12" font-weight="600" class="m">In production</text><text x="534.4" y="86" font-size="30" font-weight="700">65</text><text x="534.4" y="105" font-size="11" class="m">live systems &amp; sites</text>
+<text x="655.2" y="50" font-size="11" font-weight="600" class="m" text-anchor="end">69%</text>
+<rect x="534.4" y="132" width="120.8" height="6" rx="3" fill="#2a1215"/>
+<rect class="bar" x="534.4" y="132" width="83.5" height="6" rx="3" fill="#F2545B"/>
+</g>
+<g class="fd" style="animation-delay:0.32s"><rect x="683.2" y="24" width="152.8" height="132" rx="12" fill="#151b23" stroke="#3d444d"/><text x="699.2" y="50" font-size="12" font-weight="600" class="m">AI-paired</text><text x="699.2" y="86" font-size="30" font-weight="700">70%</text><text x="699.2" y="105" font-size="11" class="m">via Claude Code</text>
+<rect x="699.2" y="132" width="120.8" height="6" rx="3" fill="#221a3d"/>
+<rect class="bar" x="699.2" y="132" width="84.6" height="6" rx="3" fill="#9B7BF0"/>
+</g>
+<text x="24" y="178" font-size="10.5" class="m">Sparklines: last 20 full weeks · meters: share of repositories with custom work, of project repos in production, and of commits paired with Claude Code</text></svg>

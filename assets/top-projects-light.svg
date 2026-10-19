@@ -1,67 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="490" viewBox="0 0 860 490" role="img" aria-label="Most active projects — Dec 2025 to now">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="506" viewBox="0 0 860 506" role="img" aria-label="Most active projects — Dec 2025 to now">
 <title>Most active projects — Dec 2025 to now</title>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}.m{fill:#59636e}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
-<rect x="0.5" y="0.5" width="859" height="489" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+<rect x="0.5" y="0.5" width="859" height="505" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
 <text x="28" y="40" font-size="17" font-weight="700">Most active projects — Dec 2025 to now</text>
 <text x="28" y="62" font-size="12.5" class="m">Commits per project in the window · client names withheld</text>
 
+<line x1="328" x2="328" y1="90" y2="484" stroke="#d1d9e0"/>
 <text x="28" y="106" font-size="11" font-weight="700" class="m n">01</text>
-<text x="52" y="106" font-size="13">AI document automation &amp; ops hub</text>
+<text x="52" y="106" font-size="13" font-weight="600">AI document automation &amp; ops hub</text>
 <text x="52" y="121" font-size="10.5" class="m">AI &amp; automation</text>
-<rect x="328" y="98" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.00s" x="328" y="98" width="399.8" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="111" font-size="12.5" font-weight="700" class="n">3,487 commits</text>
-<text x="28" y="144" font-size="11" font-weight="700" class="m n">02</text>
-<text x="52" y="144" font-size="13">Government testing-lab ERP / CRM</text>
-<text x="52" y="159" font-size="10.5" class="m">Gov &amp; ERP</text>
-<rect x="328" y="136" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.05s" x="328" y="136" width="204.7" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="149" font-size="12.5" font-weight="700" class="n">1,785 commits</text>
-<text x="28" y="182" font-size="11" font-weight="700" class="m n">03</text>
-<text x="52" y="182" font-size="13">Multi-tenant courier &amp; parcel SaaS</text>
-<text x="52" y="197" font-size="10.5" class="m">Logistics</text>
-<rect x="328" y="174" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.10s" x="328" y="174" width="140.9" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="187" font-size="12.5" font-weight="700" class="n">1,229 commits</text>
-<text x="28" y="220" font-size="11" font-weight="700" class="m n">04</text>
-<text x="52" y="220" font-size="13">Enterprise talent discovery platform</text>
-<text x="52" y="235" font-size="10.5" class="m">Talent</text>
-<rect x="328" y="212" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.15s" x="328" y="212" width="71.2" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="225" font-size="12.5" font-weight="700" class="n">621 commits</text>
-<text x="28" y="258" font-size="11" font-weight="700" class="m n">05</text>
-<text x="52" y="258" font-size="13">Civic organisation SuperApp</text>
-<text x="52" y="273" font-size="10.5" class="m">SaaS platforms</text>
-<rect x="328" y="250" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.20s" x="328" y="250" width="61.8" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="263" font-size="12.5" font-weight="700" class="n">539 commits</text>
-<text x="28" y="296" font-size="11" font-weight="700" class="m n">06</text>
-<text x="52" y="296" font-size="13">ISP modular ERP</text>
-<text x="52" y="311" font-size="10.5" class="m">Gov &amp; ERP</text>
-<rect x="328" y="288" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.25s" x="328" y="288" width="57.8" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="301" font-size="12.5" font-weight="700" class="n">504 commits</text>
-<text x="28" y="334" font-size="11" font-weight="700" class="m n">07</text>
-<text x="52" y="334" font-size="13">Food supply-chain governance SaaS</text>
-<text x="52" y="349" font-size="10.5" class="m">Gov &amp; ERP</text>
-<rect x="328" y="326" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.30s" x="328" y="326" width="53.1" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="339" font-size="12.5" font-weight="700" class="n">463 commits</text>
-<text x="28" y="372" font-size="11" font-weight="700" class="m n">08</text>
-<text x="52" y="372" font-size="13">Donation &amp; social-foundation platform</text>
-<text x="52" y="387" font-size="10.5" class="m">SaaS platforms</text>
-<rect x="328" y="364" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.35s" x="328" y="364" width="50.3" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="377" font-size="12.5" font-weight="700" class="n">439 commits</text>
-<text x="28" y="410" font-size="11" font-weight="700" class="m n">09</text>
-<text x="52" y="410" font-size="13">Lawyer-on-demand marketplace</text>
-<text x="52" y="425" font-size="10.5" class="m">SaaS platforms</text>
-<rect x="328" y="402" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.40s" x="328" y="402" width="47.9" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="415" font-size="12.5" font-weight="700" class="n">418 commits</text>
-<text x="28" y="448" font-size="11" font-weight="700" class="m n">10</text>
-<text x="52" y="448" font-size="13">Loyalty &amp; brand-protection store</text>
-<text x="52" y="463" font-size="10.5" class="m">E-commerce</text>
-<rect x="328" y="440" width="399.8" height="16" rx="4" fill="#f6f8fa"/>
-<rect class="bar" style="animation-delay:0.45s" x="328" y="440" width="41.5" height="16" rx="4" fill="#E11D2E"/>
-<text x="739.8" y="453" font-size="12.5" font-weight="700" class="n">362 commits</text></svg>
+<path class="bar" style="animation-delay:0.00s" d="M328.0 102.0H724.4A4.0 4.0 0 0 1 728.4 106.0V108.0A4.0 4.0 0 0 1 724.4 112.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="738.4" y="111" font-size="12" font-weight="700">3,503 commits</text>
+<text x="28" y="146" font-size="11" font-weight="700" class="m n">02</text>
+<text x="52" y="146" font-size="13" font-weight="600">Government testing-lab ERP / CRM</text>
+<text x="52" y="161" font-size="10.5" class="m">Gov &amp; ERP</text>
+<path class="bar" style="animation-delay:0.05s" d="M328.0 142.0H529.9A4.0 4.0 0 0 1 533.9 146.0V148.0A4.0 4.0 0 0 1 529.9 152.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="543.9" y="151" font-size="12" font-weight="700">1,801 commits</text>
+<text x="28" y="186" font-size="11" font-weight="700" class="m n">03</text>
+<text x="52" y="186" font-size="13" font-weight="600">Multi-tenant courier &amp; parcel SaaS</text>
+<text x="52" y="201" font-size="10.5" class="m">Logistics</text>
+<path class="bar" style="animation-delay:0.10s" d="M328.0 182.0H464.5A4.0 4.0 0 0 1 468.5 186.0V188.0A4.0 4.0 0 0 1 464.5 192.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="478.5" y="191" font-size="12" font-weight="700">1,229 commits</text>
+<text x="28" y="226" font-size="11" font-weight="700" class="m n">04</text>
+<text x="52" y="226" font-size="13" font-weight="600">Enterprise talent discovery platform</text>
+<text x="52" y="241" font-size="10.5" class="m">Talent</text>
+<path class="bar" style="animation-delay:0.15s" d="M328.0 222.0H395.4A4.0 4.0 0 0 1 399.4 226.0V228.0A4.0 4.0 0 0 1 395.4 232.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="409.4" y="231" font-size="12" font-weight="700">625 commits</text>
+<text x="28" y="266" font-size="11" font-weight="700" class="m n">05</text>
+<text x="52" y="266" font-size="13" font-weight="600">Civic organisation SuperApp</text>
+<text x="52" y="281" font-size="10.5" class="m">SaaS platforms</text>
+<path class="bar" style="animation-delay:0.20s" d="M328.0 262.0H387.7A4.0 4.0 0 0 1 391.7 266.0V268.0A4.0 4.0 0 0 1 387.7 272.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="401.7" y="271" font-size="12" font-weight="700">557 commits</text>
+<text x="28" y="306" font-size="11" font-weight="700" class="m n">06</text>
+<text x="52" y="306" font-size="13" font-weight="600">ISP modular ERP</text>
+<text x="52" y="321" font-size="10.5" class="m">Gov &amp; ERP</text>
+<path class="bar" style="animation-delay:0.25s" d="M328.0 302.0H382.5A4.0 4.0 0 0 1 386.5 306.0V308.0A4.0 4.0 0 0 1 382.5 312.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="396.5" y="311" font-size="12" font-weight="700">512 commits</text>
+<text x="28" y="346" font-size="11" font-weight="700" class="m n">07</text>
+<text x="52" y="346" font-size="13" font-weight="600">Food supply-chain governance SaaS</text>
+<text x="52" y="361" font-size="10.5" class="m">Gov &amp; ERP</text>
+<path class="bar" style="animation-delay:0.30s" d="M328.0 342.0H376.9A4.0 4.0 0 0 1 380.9 346.0V348.0A4.0 4.0 0 0 1 376.9 352.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="390.9" y="351" font-size="12" font-weight="700">463 commits</text>
+<text x="28" y="386" font-size="11" font-weight="700" class="m n">08</text>
+<text x="52" y="386" font-size="13" font-weight="600">Donation &amp; social-foundation platform</text>
+<text x="52" y="401" font-size="10.5" class="m">SaaS platforms</text>
+<path class="bar" style="animation-delay:0.35s" d="M328.0 382.0H374.2A4.0 4.0 0 0 1 378.2 386.0V388.0A4.0 4.0 0 0 1 374.2 392.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="388.2" y="391" font-size="12" font-weight="700">439 commits</text>
+<text x="28" y="426" font-size="11" font-weight="700" class="m n">09</text>
+<text x="52" y="426" font-size="13" font-weight="600">Lawyer-on-demand marketplace</text>
+<text x="52" y="441" font-size="10.5" class="m">SaaS platforms</text>
+<path class="bar" style="animation-delay:0.40s" d="M328.0 422.0H371.8A4.0 4.0 0 0 1 375.8 426.0V428.0A4.0 4.0 0 0 1 371.8 432.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="385.8" y="431" font-size="12" font-weight="700">418 commits</text>
+<text x="28" y="466" font-size="11" font-weight="700" class="m n">10</text>
+<text x="52" y="466" font-size="13" font-weight="600">Loyalty &amp; brand-protection store</text>
+<text x="52" y="481" font-size="10.5" class="m">E-commerce</text>
+<path class="bar" style="animation-delay:0.45s" d="M328.0 462.0H365.4A4.0 4.0 0 0 1 369.4 466.0V468.0A4.0 4.0 0 0 1 365.4 472.0H328.0Z" fill="#E11D2E"/>
+<text class="fd" x="379.4" y="471" font-size="12" font-weight="700">362 commits</text></svg>

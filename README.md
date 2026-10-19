@@ -1,17 +1,18 @@
 <div align="center">
-<img width="100%" src="assets/banner-header.svg" alt="Aulia Muslim Hidayatullah — Software Engineer, ERP · SaaS · AI Automation, Indonesia"/>
-<img width="100%" src="assets/hero-terminal.svg" alt="Terminal intro: 109 repos, 94 projects, 14,129 commits, 65 live systems, 70% AI-paired"/><br/>
+<img width="100%" src="assets/banner-header.svg" alt="Aulia Muslim Hidayatullah — Senior Full Stack &amp; AI Automation Engineer, SRE, SEO · GEO · AEO, Bandung, Indonesia"/>
+<img width="100%" src="assets/hero-terminal.svg" alt="Terminal intro: 109 repos, 94 projects, 14,192 commits, 65 live systems, 70% AI-paired"/><br/>
+<img src="https://img.shields.io/badge/Experience-15%2B_years-FFFFFF?style=for-the-badge&labelColor=E70011" alt="15+ years experience"/>
 <img src="https://img.shields.io/badge/Repositories-109-FFFFFF?style=for-the-badge&labelColor=E70011" alt="109 repositories"/>
-<img src="https://img.shields.io/badge/Commits-14.1k-FFFFFF?style=for-the-badge&labelColor=E70011" alt="14.1k commits"/>
+<img src="https://img.shields.io/badge/Commits-14.2k-FFFFFF?style=for-the-badge&labelColor=E70011" alt="14.2k commits"/>
 <img src="https://img.shields.io/badge/Live_Systems-65-FFFFFF?style=for-the-badge&labelColor=E70011" alt="65 live systems"/>
 <img src="https://img.shields.io/badge/AI--Paired-70%25-FFFFFF?style=for-the-badge&labelColor=7C3AED" alt="70% AI-paired"/>
 <img src="https://img.shields.io/badge/On_GitHub_Since-2013-FFFFFF?style=for-the-badge&labelColor=E70011" alt="On GitHub since 2013"/>
 <br/>
-<sub><a href="#-about-me">About</a> · <a href="#-portfolio-at-a-glance">At a glance</a> · <a href="#projects">Projects by category</a> · <a href="#-flagship-deep-dives">Flagships</a> · <a href="#-beyond-github">Beyond GitHub</a> · <a href="#-engineering-activity">Activity</a> · <a href="#-how-i-build">How I build</a> · <a href="#-tech-stack--integrations">Stack</a> · <a href="#-contact">Contact</a></sub>
+<sub><a href="#-about-me">About</a> · <a href="#-portfolio-at-a-glance">At a glance</a> · <a href="#-experience">Experience</a> · <a href="#projects">Projects by category</a> · <a href="#-flagship-deep-dives">Flagships</a> · <a href="#-beyond-github">Beyond GitHub</a> · <a href="#-engineering-activity">Activity</a> · <a href="#-how-i-build">How I build</a> · <a href="#-tech-stack--integrations">Stack</a> · <a href="#-education-certifications--leadership">Education</a> · <a href="#-contact">Contact</a></sub>
 </div>
 
 <!-- TLDR:START -->
-> **TL;DR** — Aulia Muslim Hidayatullah is a software engineer at Newtype (Indonesia) who builds business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation. Across **10 domains** there are **109 repositories** (94 project repos, 65 in production) and **14,129 commits**, 70% of them pair-programmed with Claude Code. Main stacks by commits: Laravel (3,503), n8n + Node.js automation (3,487), WordPress / WooCommerce (1,904), Perfex CRM / CodeIgniter (1,865), Native PHP + Vue / JS (1,840). Since Dec 2025: 13,278 commits on 277 active days. Beyond GitHub, 183 of 370 Claude Code sessions produced decks, estimates, guides, compliance studies, server work, content and data operations.
+> **TL;DR** — Aulia Muslim Hidayatullah is a senior full stack & AI automation engineer in Bandung, Indonesia with 15+ years of shipping software, currently full stack & AI engineer at KOMINA and CTO & R&D lead at PT Newtype Tekno Pioneer. Builds business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation, and runs the infrastructure behind them. Across **10 domains** there are **109 repositories** (94 project repos, 65 in production) and **14,192 commits**, 70% of them pair-programmed with Claude Code. Main stacks by commits: Laravel (3,511), n8n + Node.js automation (3,503), WordPress / WooCommerce (1,904), Perfex CRM / CodeIgniter (1,881), Native PHP + Vue / JS (1,845). Since Dec 2025: 13,341 commits on 277 active days. Beyond GitHub, 183 of 370 Claude Code sessions produced decks, estimates, guides, compliance studies, server work, content and data operations, and SEO, GEO and AEO work covers 33 brands since 2021. M.T. from Institut Teknologi Bandung. Open to senior full stack, SRE or AI automation roles · remote or hybrid.
 <!-- TLDR:END -->
 
 ## 👋 About Me
@@ -21,15 +22,17 @@
     <td width="160" align="center" valign="top">
       <a href="https://github.com/auliamuslim"><img src="https://avatars.githubusercontent.com/u/5130100?v=4" width="140" alt="Aulia Muslim Hidayatullah"/></a><br/>
       <sub><b>@auliamuslim</b></sub><br/>
-      <img src="https://img.shields.io/badge/Open_to-Collaborate-0CA30C?style=flat-square" alt="Open to collaborate"/>
+      <img src="https://img.shields.io/badge/Open_to-Senior_·_SRE_·_AI_roles-0CA30C?style=flat-square" alt="Open to senior full stack, SRE or AI automation roles"/>
     </td>
     <td width="44%" valign="top">
-      💼 <b>Role</b> — Software Engineer @ <a href="https://newtype.co.id">Newtype</a><br/>
-      📍 <b>Base</b> — Indonesia 🇮🇩<br/>
-      🗓️ <b>On GitHub</b> — since 2013 · research-lab roots (2016)<br/>
+      💼 <b>Role</b> — Senior Full Stack &amp; AI Automation Engineer<br/>
+      🏢 <b>Now</b> — CTO &amp; R&amp;D Lead @ <a href="https://newtype.co.id">Newtype</a> · Full Stack &amp; AI Engineer @ KOMINA<br/>
+      📍 <b>Base</b> — Bandung, Indonesia 🇮🇩 · remote or hybrid<br/>
+      🗓️ <b>Experience</b> — 15+ years · on GitHub since 2013<br/>
+      🎓 <b>Education</b> — M.T., Institut Teknologi Bandung<br/>
       🧠 <b>Portfolio</b> — 109 repos · 94 shipped projects · 65 live<br/>
       🧪 <b>Quality</b> — 10k+ automated tests &amp; checks<br/>
-      🎯 <b>Focus</b> — business platforms &amp; AI automation
+      🎯 <b>Focus</b> — business platforms, AI automation, SRE, SEO / GEO / AEO
     </td>
     <td valign="top">
       🏛️ Government &amp; enterprise <b>ERP / CRM</b> wired to national APIs<br/>
@@ -37,6 +40,9 @@
       🤖 <b>AI products</b> — RAG, LLM reports, agents, ML trading signals<br/>
       🛒 <b>Commerce &amp; POS</b> — WooCommerce, Xero, PayNow, OpenPOS, loyalty<br/>
       🚚 <b>Logistics SaaS</b> — multi-tenant courier ops &amp; live tracking<br/>
+      ☁️ <b>SRE &amp; infra</b> — AWS, GCP, Cloudflare, Docker, Coolify, Galera recovery<br/>
+      🔎 <b>SEO · GEO · AEO</b> — 33 brands in Indonesia, Australia &amp; Belgium<br/>
+      🥽 <b>VR, GIS &amp; 3D</b> — Meta Quest assistant, map-to-3D GLB plugin<br/>
       🔒 Mostly <b>private client work</b> under NDA — <a href="mailto:auliamuslim@gmail.com">ask for a walkthrough</a>
     </td>
   </tr>
@@ -47,27 +53,59 @@
 <!-- GLANCE:START -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"/>
-  <img width="100%" alt="109 repositories, 14,129 commits, 413 active days, 65 systems in production, 70% of commits paired with Claude Code" src="assets/stats-light.svg"/>
+  <img width="100%" alt="109 repositories, 14,192 commits, 413 active days, 65 systems in production, 70% of commits paired with Claude Code" src="assets/stats-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/now-shipping-dark.svg"/>
-  <img width="100%" alt="Now shipping, last 30 days: 1,308 commits. Busiest: AI document automation &amp; ops hub 340; Loyalty &amp; brand-protection store 166; Government testing-lab ERP / CRM 97; Civic organisation SuperApp 92" src="assets/now-shipping-light.svg"/>
+  <img width="100%" alt="Now shipping, last 30 days: 1,371 commits. Busiest: AI document automation &amp; ops hub 356; Loyalty &amp; brand-protection store 166; Government testing-lab ERP / CRM 113; Civic organisation SuperApp 110" src="assets/now-shipping-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/impact-dark.svg"/>
-  <img width="100%" alt="Impact highlights: 215 workflow nodes (in one AI document-automation hub); 81 gov API endpoints (wired into a state-lab ERP); 6 campus systems (linked by OAuth2 &amp; one DB cluster); 10k+ automated checks (tests across the portfolio); 70+ third-party APIs (payments, gov, AI, messaging); 15+ AI-powered products (RAG, agents, LLM reports, ML); 8+ crypto exchanges (traded by one ML-filtered engine); 1,000+ CVs screened (with an AI recruitment pipeline)" src="assets/impact-light.svg"/>
+  <img width="100%" alt="Impact highlights: 215 workflow nodes (in one AI automation hub); 81 gov API endpoints (wired into a state-lab ERP); 6 campus systems (linked by OAuth2 &amp; one DB cluster); 10k+ automated checks (tests across the portfolio); 70+ third-party APIs (payments, gov, AI, messaging); 15+ AI-powered products (RAG, agents, LLM reports, ML); 8+ crypto exchanges (traded by one ML-filtered engine); 1,000+ CVs screened (with an AI recruitment pipeline)" src="assets/impact-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg"/>
-  <img width="100%" alt="Journey: 2013 joined GitHub, 2016 research lab, 2025 client platforms, 2026 AI-native development and ecosystems at scale" src="assets/timeline-light.svg"/>
+  <img width="100%" alt="Journey: 2010 Informatics: Diploma in informatics management at Telkom University; first web builds.; 2012 Newtype: CTO &amp; R&amp;D lead for government, campus and private clients.; 2015 ITB &amp; SE Asia: M.T. in digital media &amp; game at ITB; e-learning across Southeast Asia.; 2019 Product &amp; ops: COO and product owner of an HR and e-learning SaaS for four years.; 2021 Growth engineering: Full stack plus SEO, GEO &amp; AEO for 20+ accounts in three countries.; 2026 AI-native: Claude Code as daily pair · VR, 3D GIS and agents at scale." src="assets/timeline-light.svg"/>
 </picture>
 
 <!-- GLANCE:END -->
 
 <a id="projects"></a>
+
+## 💼 Experience
+
+<!-- EXPERIENCE:START -->
+<sub>15+ years across engineering, product and operations · clients in Indonesia, Singapore, Australia and Belgium · now: Full Stack & AI Engineer at KOMINA and Chief Technology Officer & R&D Lead at PT Newtype Tekno Pioneer. 🟢 = current role. Open to senior full stack, SRE or AI automation roles · remote or hybrid.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/career-dark.svg"/>
+  <img width="100%" alt="Career timeline: 11 roles and 3 degrees from 2010 to now. Full Stack &amp; AI Engineer, Komando Imersif Indonesia (KOMINA), Apr 2026 – now; Chief Technology Officer &amp; R&amp;D Lead, PT Newtype Tekno Pioneer, Nov 2012 – now; Full Stack Developer &amp; SEO Engineer, Peter &amp; Co, Jun 2021 – Oct 2026; Full Stack Developer, Glints (Singapore clients), Jun 2025 – Mar 2026; Chief Operating Officer, Happy Play Indonesia, May 2023 – Dec 2023; COO &amp; Product Owner, Worklife &amp; Beyond (ESQ Group), Feb 2019 – May 2023; Business Development Manager, Digital Creativa Asia, Mar 2018 – Feb 2019; Lecturer, Computer Science, Universitas Internasional Batam, Aug 2016 – May 2017; Digital Consultant, Gofit Inspirasi Indonesia, Mar 2016 – Oct 2017; Senior Web Developer, Siskom Digital Pte. Ltd, Mar 2015 – Jan 2016; Full Stack Developer, SEAMEO SEAMOLEC, Oct 2014 – Oct 2017" src="assets/career-light.svg"/>
+</picture>
+
+<table>
+<thead><tr>
+<th align="left" width="30%">Role &amp; organisation</th>
+<th align="left" width="16%">Period</th>
+<th align="left" width="54%">Highlights</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Full Stack &amp; AI Engineer</b> 🟢<br/><sub>Komando Imersif Indonesia (KOMINA) · remote</sub></td><td valign="top"><sub>Apr 2026 – now</sub></td><td valign="top"><sub>• Built a Meta Quest VR assistant (Unity, Claude API) for military and law-enforcement training<br/>• Automated report writing with n8n: recordings and forms become minutes and user guides in Google Docs, covered by 7,700+ checks<br/>• Created Juno 3D GIS, a GeoLibre plugin that turns any map area into a 3D GLB model, now past 50 releases<br/>• Runs the Ubuntu servers for n8n, GeoLibre and QGIS Server</sub></td></tr>
+<tr><td valign="top"><b>Chief Technology Officer &amp; R&amp;D Lead</b> 🟢<br/><sub>PT Newtype Tekno Pioneer</sub></td><td valign="top"><sub>Nov 2012 – now</sub></td><td valign="top"><sub>• Leads engineering for government, university and private clients; 65 of 109 repositories are in production<br/>• Shipped a donation platform, an online academy, a lawyer marketplace and a multi-vendor store<br/>• Deploys on 3 cloud providers with Docker, Coolify and GitHub Actions, with backups and fast rollback</sub></td></tr>
+<tr><td valign="top"><b>Full Stack Developer &amp; SEO Engineer</b><br/><sub>Peter &amp; Co · freelance</sub></td><td valign="top"><sub>Jun 2021 – Oct 2026</sub></td><td valign="top"><sub>• Grew organic traffic 30–60% for top clients across 20+ web, SEO, GEO and AEO accounts in Indonesia, Australia and Belgium<br/>• Delivered an ISP ERP/CRM in Laravel 11 covering billing, work orders, HR and accounting<br/>• Cut manual client reporting by about 80% with a Python invoice and PDF report generator<br/>• Recovered 3 web apps after a client's server was attacked; managed servers for 5+ client groups on AWS and GCP</sub></td></tr>
+<tr><td valign="top"><b>Full Stack Developer</b><br/><sub>Glints (Singapore clients)</sub></td><td valign="top"><sub>Jun 2025 – Mar 2026</sub></td><td valign="top"><sub>• Kept 7+ Singapore WooCommerce, CRM and membership sites fast on WP Engine by tuning PHP, Redis and MySQL<br/>• Cut plugin HTTP calls by over 60% with a custom plugin and fixed recurring 504 errors on two LMS sites<br/>• Set up 39 ActiveCampaign automations and built a lifestyle store with Shopee, POS and PayNow</sub></td></tr>
+<tr><td valign="top"><b>Chief Operating Officer</b><br/><sub>Happy Play Indonesia</sub></td><td valign="top"><sub>May 2023 – Dec 2023</sub></td><td valign="top"><sub>• Delivered 216% more projects in four months after introducing KPI tracking<br/>• Set up the company CRM, launched the company website and secured the server to an A+ headers rating</sub></td></tr>
+<tr><td valign="top"><b>COO &amp; Product Owner</b><br/><sub>Worklife &amp; Beyond (ESQ Group)</sub></td><td valign="top"><sub>Feb 2019 – May 2023</sub></td><td valign="top"><sub>• Owned the HC Apps HR and e-learning product for 4 years, used by enterprise customers<br/>• Brought Scrum and BPMN to a team of 4 functions (DevOps, QA, implementation, support), shortening delivery times</sub></td></tr>
+<tr><td valign="top"><b>Business Development Manager</b><br/><sub>Digital Creativa Asia</sub></td><td valign="top"><sub>Mar 2018 – Feb 2019</sub></td><td valign="top"><sub>• Won new clients in retail, FMCG and tech, and oversaw web and social media work for key accounts</sub></td></tr>
+<tr><td valign="top"><b>Lecturer, Computer Science</b><br/><sub>Universitas Internasional Batam</sub></td><td valign="top"><sub>Aug 2016 – May 2017</sub></td><td valign="top"><sub>• Taught 4 courses (web, networking, databases, multimedia) and ran the campus web server and Moodle LMS</sub></td></tr>
+<tr><td valign="top"><b>Digital Consultant</b><br/><sub>Gofit Inspirasi Indonesia</sub></td><td valign="top"><sub>Mar 2016 – Oct 2017</sub></td><td valign="top"><sub>• Advised corporate clients on digital strategy and managed their hosting, domains and SSL</sub></td></tr>
+<tr><td valign="top"><b>Senior Web Developer</b><br/><sub>Siskom Digital Pte. Ltd</sub></td><td valign="top"><sub>Mar 2015 – Jan 2016</sub></td><td valign="top"><sub>• Connected enterprise websites to ERP, CRM, SMS gateway and payment services for clients in Singapore and Indonesia</sub></td></tr>
+<tr><td valign="top"><b>Full Stack Developer</b><br/><sub>SEAMEO SEAMOLEC</sub></td><td valign="top"><sub>Oct 2014 – Oct 2017</sub></td><td valign="top"><sub>• Built distance-learning platforms used across Southeast Asia, including a VMOOC with partner institutions in Ho Chi Minh City</sub></td></tr>
+</tbody>
+</table>
+<!-- EXPERIENCE:END -->
 
 ## 🗂️ Projects by Category
 
@@ -76,20 +114,20 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/universe-dark.svg"/>
-  <img width="100%" alt="Project universe treemap: every catalogued project grouped by domain, tile area growing with commits. Largest: AI document automation &amp; ops hub 3,487; Government testing-lab ERP / CRM 1,815; Multi-tenant courier &amp; parcel SaaS 1,277; Enterprise talent discovery platform 765; Civic organisation SuperApp 539; ISP modular ERP 507; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 439" src="assets/universe-light.svg"/>
+  <img width="100%" alt="Project universe treemap: every catalogued project grouped by domain, tile area growing with commits. Largest: AI document automation &amp; ops hub 3,503; Government testing-lab ERP / CRM 1,831; Multi-tenant courier &amp; parcel SaaS 1,277; Enterprise talent discovery platform 769; Civic organisation SuperApp 557; ISP modular ERP 515; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 439" src="assets/universe-light.svg"/>
 </picture>
 
 <table>
 <tr>
-<td width="50%" valign="top"><a href="#cat-gov"><b>🏛️ Government, ERP &amp; Enterprise Ops</b></a><br/><sub>9 repos · 2,852 commits · 5 live</sub><br/>Back-office systems that run operations: work orders, billing, HR, fleet and procurement</td>
+<td width="50%" valign="top"><a href="#cat-gov"><b>🏛️ Government, ERP &amp; Enterprise Ops</b></a><br/><sub>9 repos · 2,876 commits · 5 live</sub><br/>Back-office systems that run operations: work orders, billing, HR, fleet and procurement</td>
 <td width="50%" valign="top"><a href="#cat-edu"><b>🎓 Higher-Education &amp; EdTech</b></a><br/><sub>9 repos · 752 commits · 6 live</sub><br/>The student lifecycle, digitised: admission, academics, finance, exams and learning</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-ai"><b>🤖 AI, ML &amp; Automation</b></a><br/><sub>8 repos · 4,062 commits · 5 live</sub><br/>LLMs, agents and machine learning put to work on real operations</td>
-<td width="50%" valign="top"><a href="#cat-talent"><b>🧠 Talent Assessment &amp; Recruitment</b></a><br/><sub>4 repos · 900 commits · 2 live</sub><br/>Measuring, ranking and developing people with AI-assisted assessment</td>
+<td width="50%" valign="top"><a href="#cat-ai"><b>🤖 AI, ML &amp; Automation</b></a><br/><sub>8 repos · 4,078 commits · 5 live</sub><br/>LLMs, agents and machine learning put to work on real operations</td>
+<td width="50%" valign="top"><a href="#cat-talent"><b>🧠 Talent Assessment &amp; Recruitment</b></a><br/><sub>4 repos · 905 commits · 2 live</sub><br/>Measuring, ranking and developing people with AI-assisted assessment</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-saas"><b>🧩 Industry Platforms &amp; SaaS</b></a><br/><sub>10 repos · 1,865 commits · 5 live</sub><br/>Vertical products for legal, health, civic, social impact, accessibility and gaming</td>
+<td width="50%" valign="top"><a href="#cat-saas"><b>🧩 Industry Platforms &amp; SaaS</b></a><br/><sub>10 repos · 1,883 commits · 5 live</sub><br/>Vertical products for legal, health, civic, social impact, accessibility and gaming</td>
 <td width="50%" valign="top"><a href="#cat-logi"><b>🚚 Logistics &amp; Shipping</b></a><br/><sub>8 repos · 1,387 commits · 5 live</sub><br/>Moving parcels: courier SaaS, live tracking and shipping-rate engines</td>
 </tr>
 <tr>
@@ -106,7 +144,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-gov-dark.svg"/>
-  <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,852 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
+  <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,876 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
 </picture>
 
 <table>
@@ -162,7 +200,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-ai-dark.svg"/>
-  <img width="100%" alt="AI, ML &amp; Automation: 8 repositories, 4,062 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
+  <img width="100%" alt="AI, ML &amp; Automation: 8 repositories, 4,078 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
 </picture>
 
 <table>
@@ -189,7 +227,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-talent-dark.svg"/>
-  <img width="100%" alt="Talent Assessment &amp; Recruitment: 4 repositories, 900 commits, 2 live. Measuring, ranking and developing people with AI-assisted assessment" src="assets/cat-talent-light.svg"/>
+  <img width="100%" alt="Talent Assessment &amp; Recruitment: 4 repositories, 905 commits, 2 live. Measuring, ranking and developing people with AI-assisted assessment" src="assets/cat-talent-light.svg"/>
 </picture>
 
 <table>
@@ -212,7 +250,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-saas-dark.svg"/>
-  <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,865 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
+  <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,883 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
 </picture>
 
 <table>
@@ -391,7 +429,7 @@
 
 ## 🚀 Flagship Deep-Dives
 
-<sub>Twelve builds from the catalogue above, in more depth. Client names are withheld; every number is measured from the repositories themselves. 🟢 = running in production.</sub>
+<sub>Fourteen builds from the catalogue above, in more depth. Client names are withheld; every number is measured from the repositories themselves. 🟢 = running in production.</sub>
 
 <table>
 <tr>
@@ -550,6 +588,32 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+**🗺️ Juno 3D GIS — Map Area to 3D Model** 🟢<br/>
+<code>GeoLibre</code> <code>OpenStreetMap</code> <code>glTF&nbsp;/&nbsp;GLB</code> <code>Node.js</code> <code>QGIS</code> <sub>· 2026</sub>
+
+A GeoLibre plugin that exports any map area as a 3D GLB model that opens in Blender, Unity and QGIS.
+- Buildings, roads, terrain and trees as separate objects, each carrying its own data
+- Roads follow the terrain; missing buildings generated from settlement data
+- 50+ releases (v4.87) · 111 test suites
+- Ships with a Node sync server and a WordPress plugin
+
+</td>
+<td valign="top">
+
+**🥽 VR Training Assistant &amp; Simulations**<br/>
+<code>Unity</code> <code>Meta&nbsp;Quest</code> <code>Claude&nbsp;API</code> <code>Three.js</code> <code>glTF</code> <sub>· since 2016</sub>
+
+Immersive training where an AI voice assistant walks trainees through procedures.
+- Meta Quest assistant on the Claude API for military &amp; law-enforcement training
+- Anesthesia-machine VR training: guide book and product requirements
+- Commuter-train simulator · 3D apartment-booking walkthrough in Three.js
+- Roots: a Unity education game at a university research lab (2016)
+
+</td>
+</tr>
 </table>
 
 ## 🧾 Beyond GitHub
@@ -577,6 +641,7 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 <tr><td valign="top"><b>📣 Marketing, content &amp; growth ops</b><br/><sub>Content calendars · CRM</sub></td><td valign="top">Helping brands reach people, not only shipping features</td><td valign="top"><sub>Social-media plans for three brands · writer roster for article production · newsletter &amp; CRM email templates · SEO + generative-engine (GEO) optimisation · event &amp; contact sheets for a members' club</sub></td><td valign="top" align="right"><code>18</code>&nbsp;<sub>sessions</sub></td></tr>
 <tr><td valign="top"><b>📊 Strategy, proposals &amp; pitch decks</b><br/><sub>Decks · PDFs · Canva</sub></td><td valign="top">Turning a goal into a plan people can approve: research, proposals, roadmaps and budgets</td><td valign="top"><sub>CEO pitch from a portfolio review · VR safety-training proposal &amp; internal deck · company-profile presentations · budget plan (RAB) + function audit for a civic super-app · PRD for an admissions email system · AI-companion &amp; agency pitch decks (46 slides each)</sub></td><td valign="top" align="right"><code>16</code>&nbsp;<sub>sessions</sub><br/><code>8</code>&nbsp;<sub>designs</sub></td></tr>
 <tr><td valign="top"><b>⚖️ Government &amp; regulatory know-how</b><br/><sub>State portals · specs</sub></td><td valign="top">Making systems fit Indonesian rules and state platforms</td><td valign="top"><sub>LKPP / INAPROC procurement flows · electronic-system operator (PSE) registration · SIPPT &amp; BIOS government APIs · PDDIKTI reporting reconciliation · tax formats in finance reports &amp; e-procurement · scholarship tuition (UKT) rules · retail price-ceiling (HET) rules</sub></td><td valign="top" align="right"><code>15</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>🔎 SEO, GEO &amp; AEO</b><br/><sub>Search Console · Analytics · Ahrefs</sub></td><td valign="top">Getting client sites found in search engines and cited in AI-generated answers</td><td valign="top"><sub>Monthly SEO, GEO &amp; AEO reports since 2021 · keyword research, backlinks &amp; technical audits · Schema, AEO &amp; GEO landing pages · organic traffic up 30–60% for top clients · retail, F&amp;B, legal, logistics, manufacturing and health brands in Indonesia, Australia and Belgium</sub></td><td valign="top" align="right"><code>33</code>&nbsp;<sub>brands</sub></td></tr>
 <tr><td valign="top"><b>🎨 Brand, design &amp; event collateral</b><br/><sub>Canva</sub></td><td valign="top">Visuals for clients, hiring campaigns and live events</td><td valign="top"><sub>Hiring posters &amp; social posts for engineering roles · event-venue signage: welcome, zoning &amp; activity boards · company profiles &amp; business cards · product presentation for an online store</sub></td><td valign="top" align="right"><code>15</code>&nbsp;<sub>designs</sub></td></tr>
 </tbody>
 </table>
@@ -589,27 +654,32 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg"/>
-  <img width="100%" alt="Weekly commits since December 2025, hand-written vs Claude Code: 13,278 commits, peak week of 741 starting 24 Aug 2026" src="assets/activity-light.svg"/>
+  <img width="100%" alt="Weekly commits since December 2025, hand-written vs Claude Code: 13,341 commits, peak week of 741 starting 24 Aug 2026" src="assets/activity-light.svg"/>
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/growth-dark.svg"/>
+  <img width="100%" alt="Cumulative commits since 1 December 2025, reaching 13,341; 73% paired with Claude Code" src="assets/growth-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg"/>
-  <img width="100%" alt="Daily commit calendar since December 2025: 13,278 commits on 277 of 323 days, longest streak 34 days, busiest day 27 Aug 2026 with 237 commits" src="assets/heatmap-light.svg"/>
+  <img width="100%" alt="Daily commit calendar since December 2025: 13,341 commits on 277 of 323 days, longest streak 34 days, busiest day 27 Aug 2026 with 237 commits" src="assets/heatmap-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/punchcard-dark.svg"/>
-  <img width="100%" alt="Commits by weekday and hour in WIB since December 2025; busiest slot Tuesday 14:00" src="assets/punchcard-light.svg"/>
+  <img width="100%" alt="Commits by weekday and hour in WIB since December 2025; busiest slot Monday 09:00" src="assets/punchcard-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/top-projects-dark.svg"/>
-  <img width="100%" alt="Most active projects since December 2025: AI document automation &amp; ops hub 3,487; Government testing-lab ERP / CRM 1,785; Multi-tenant courier &amp; parcel SaaS 1,229; Enterprise talent discovery platform 621; Civic organisation SuperApp 539; ISP modular ERP 504; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 439; Lawyer-on-demand marketplace 418; Loyalty &amp; brand-protection store 362" src="assets/top-projects-light.svg"/>
+  <img width="100%" alt="Most active projects since December 2025: AI document automation &amp; ops hub 3,503; Government testing-lab ERP / CRM 1,801; Multi-tenant courier &amp; parcel SaaS 1,229; Enterprise talent discovery platform 625; Civic organisation SuperApp 557; ISP modular ERP 512; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 439; Lawyer-on-demand marketplace 418; Loyalty &amp; brand-protection store 362" src="assets/top-projects-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/domains-dark.svg"/>
-  <img width="100%" alt="All-time commits per domain: AI, ML &amp; Automation 4,062; Government, ERP &amp; Enterprise Ops 2,852; Industry Platforms &amp; SaaS 1,865; Logistics &amp; Shipping 1,387; E-Commerce &amp; WooCommerce 1,104; Talent Assessment &amp; Recruitment 900; Higher-Education &amp; EdTech 752; Membership, Events &amp; Email 489; Payments, Accounting &amp; POS 329; Corporate Web, CMS &amp; WP Tooling 185" src="assets/domains-light.svg"/>
+  <img width="100%" alt="All-time commits per domain: AI, ML &amp; Automation 4,078; Government, ERP &amp; Enterprise Ops 2,876; Industry Platforms &amp; SaaS 1,883; Logistics &amp; Shipping 1,387; E-Commerce &amp; WooCommerce 1,104; Talent Assessment &amp; Recruitment 905; Higher-Education &amp; EdTech 752; Membership, Events &amp; Email 489; Payments, Accounting &amp; POS 329; Corporate Web, CMS &amp; WP Tooling 185" src="assets/domains-light.svg"/>
 </picture>
 
 <!-- ACTIVITY:END -->
@@ -627,12 +697,13 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 | | |
 |---|---|
-| 🤖 **AI-native workflow** | 70% of 14,129 commits paired with Claude Code across 78 repositories; 37 repos carry `CLAUDE.md` / `AGENTS.md` specs, custom subagents and skills |
+| 🤖 **AI-native workflow** | 70% of 14,192 commits paired with Claude Code across 78 repositories; 37 repos carry `CLAUDE.md` / `AGENTS.md` specs, custom subagents and skills |
 | 🧠 **AI inside the product** | 15+ products ship AI: RAG tutors, GPT-4o reports, Claude summaries &amp; agents, LLM-adaptive testing, ML trading signals, speech-to-sign |
 | 🧪 **Tests before trust** | 10k+ automated tests and checks across the portfolio; CI on GitHub Actions; multi-round code and security reviews before launch |
 | 🔐 **Security by habit** | Webhook signature checks, idempotency keys, rate limits, CSP / SRI, PII-redacting logs, and audits of inherited codebases |
 | 🔌 **Integration-heavy** | 70+ third-party APIs shipped, from national government services to payment gateways, accounting, marketplaces and messaging |
-| 🚢 **Ship &amp; operate** | Docker, cPanel and HestiaCP deploys with backups, health checks and one-command rollback |
+| 🔎 **Found in search &amp; AI answers** | SEO, GEO and AEO for 33 brands since 2021: Schema markup, Core Web Vitals and answer-engine optimisation built into the sites I ship |
+| 🚢 **Ship &amp; operate** | AWS, Google Cloud and Cloudflare; Docker, Coolify, cPanel and HestiaCP deploys with backups, health checks and one-command rollback; recovery of attacked servers |
 
 <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude Code"/> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI"/> <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini"/> <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n"/> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain"/> <img src="https://img.shields.io/badge/RAG_%26_Agents-7C3AED?style=for-the-badge" alt="RAG and agents"/> <img src="https://img.shields.io/badge/LightGBM_%2B_Optuna-0EA5E9?style=for-the-badge" alt="LightGBM and Optuna"/>
 
@@ -645,7 +716,7 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-commits-dark.svg"/>
-  <img width="100%" alt="Commits per main stack: Laravel 3,503 across 21 repos; n8n + Node.js automation 3,487 across 1 repo; WordPress / WooCommerce 1,904 across 39 repos; Perfex CRM / CodeIgniter 1,865 across 3 repos; Native PHP + Vue / JS 1,840 across 10 repos; TypeScript: Next.js, Node, Hono 673 across 8 repos; Python: ML, data, Flask 562 across 6 repos; Flutter / Dart 47 across 2 repos; Other: SQL, Apps Script, email 44 across 4 repos" src="assets/stack-commits-light.svg"/>
+  <img width="100%" alt="Commits per main stack: Laravel 3,511 across 21 repos; n8n + Node.js automation 3,503 across 1 repo; WordPress / WooCommerce 1,904 across 39 repos; Perfex CRM / CodeIgniter 1,881 across 3 repos; Native PHP + Vue / JS 1,845 across 10 repos; TypeScript: Next.js, Node, Hono 691 across 8 repos; Python: ML, data, Flask 562 across 6 repos; Flutter / Dart 47 across 2 repos; Other: SQL, Apps Script, email 44 across 4 repos" src="assets/stack-commits-light.svg"/>
 </picture>
 
 <!-- STACK:START -->
@@ -658,21 +729,21 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 <th align="left" width="46%">Typical projects</th>
 </tr></thead>
 <tbody>
-<tr><td><b>Laravel</b></td><td align="right">21</td><td align="right"><code>3,503</code></td><td align="right">25.2%</td><td>Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite</td></tr>
-<tr><td><b>n8n + Node.js automation</b></td><td align="right">1</td><td align="right"><code>3,487</code></td><td align="right">25.0%</td><td>AI document automation &amp; ops hub</td></tr>
-<tr><td><b>WordPress / WooCommerce</b></td><td align="right">39</td><td align="right"><code>1,904</code></td><td align="right">13.7%</td><td>Loyalty store · product-authentication suite · membership automation</td></tr>
-<tr><td><b>Perfex CRM / CodeIgniter</b></td><td align="right">3</td><td align="right"><code>1,865</code></td><td align="right">13.4%</td><td>Two government lab ERPs · CRM ↔ FluentCRM sync</td></tr>
-<tr><td><b>Native PHP + Vue / JS</b></td><td align="right">10</td><td align="right"><code>1,840</code></td><td align="right">13.2%</td><td>Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS</td></tr>
-<tr><td><b>TypeScript: Next.js, Node, Hono</b></td><td align="right">8</td><td align="right"><code>673</code></td><td align="right">4.8%</td><td>Civic SuperApp · sports-arena POS backend &amp; admin · mining digital twin</td></tr>
+<tr><td><b>Laravel</b></td><td align="right">21</td><td align="right"><code>3,511</code></td><td align="right">25.1%</td><td>Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite</td></tr>
+<tr><td><b>n8n + Node.js automation</b></td><td align="right">1</td><td align="right"><code>3,503</code></td><td align="right">25.0%</td><td>AI document automation &amp; ops hub</td></tr>
+<tr><td><b>WordPress / WooCommerce</b></td><td align="right">39</td><td align="right"><code>1,904</code></td><td align="right">13.6%</td><td>Loyalty store · product-authentication suite · membership automation</td></tr>
+<tr><td><b>Perfex CRM / CodeIgniter</b></td><td align="right">3</td><td align="right"><code>1,881</code></td><td align="right">13.4%</td><td>Two government lab ERPs · CRM ↔ FluentCRM sync</td></tr>
+<tr><td><b>Native PHP + Vue / JS</b></td><td align="right">10</td><td align="right"><code>1,845</code></td><td align="right">13.2%</td><td>Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS</td></tr>
+<tr><td><b>TypeScript: Next.js, Node, Hono</b></td><td align="right">8</td><td align="right"><code>691</code></td><td align="right">4.9%</td><td>Civic SuperApp · sports-arena POS backend &amp; admin · mining digital twin</td></tr>
 <tr><td><b>Python: ML, data, Flask</b></td><td align="right">6</td><td align="right"><code>562</code></td><td align="right">4.0%</td><td>AI CV screening · crypto trading engine · RAG tutor · catalogue import</td></tr>
 <tr><td><b>Flutter / Dart</b></td><td align="right">2</td><td align="right"><code>47</code></td><td align="right">0.3%</td><td>Ice-rink member app · venue POS app</td></tr>
 <tr><td><b>Other: SQL, Apps Script, email</b></td><td align="right">4</td><td align="right"><code>44</code></td><td align="right">0.3%</td><td>Contact automation · reporting feeder kit · newsletters</td></tr>
-<tr><td><b>Total</b></td><td align="right"><b>94</b></td><td align="right"><b><code>13,925</code></b></td><td align="right"><b>100%</b></td><td><sub>All 94 project repos</sub></td></tr>
+<tr><td><b>Total</b></td><td align="right"><b>94</b></td><td align="right"><b><code>13,988</code></b></td><td align="right"><b>100%</b></td><td><sub>All 94 project repos</sub></td></tr>
 </tbody>
 </table>
 <!-- STACK:END -->
 
-<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,925 commits in the 94 project repos. The remaining 204 of the 14,129 total come from collaborations and plugin baselines.</sub>
+<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,988 commits in the 94 project repos. The remaining 204 of the 14,192 total come from collaborations and plugin baselines.</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg"/>
@@ -689,6 +760,64 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 | ☁️ **Cloud &amp; ops** | AWS S3 · Google Cloud Storage · Cloudflare R2 · Google Workspace APIs · Sentry · IndexNow · Google Indexing API |
 | 📈 **Markets** | Binance · Bybit · OKX · KuCoin · Gate.io · MEXC · Indodax · Tokocrypto (via ccxt) |
 
+**🧩 Skills matrix**
+
+<!-- SKILLS:START -->
+<table>
+<thead><tr>
+<th align="left" width="24%">Skill area</th>
+<th align="left" width="76%">Tools &amp; techniques</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>🤖 AI &amp; automation</b></td><td>Claude API · Claude Code · OpenAI (GPT-4o, Whisper) · Google Gemini · LangChain · RAG · n8n · Ollama</td></tr>
+<tr><td valign="top"><b>🧑‍💻 Languages &amp; frameworks</b></td><td>TypeScript · JavaScript · Node.js · React · Next.js · Vue.js · NestJS · Hono · Tailwind CSS · Python (FastAPI, Flask) · PHP · Laravel · WordPress / WooCommerce · SQL · REST · GraphQL</td></tr>
+<tr><td valign="top"><b>📱 Mobile</b></td><td>Flutter · React Native (Expo) · PWA</td></tr>
+<tr><td valign="top"><b>☁️ Cloud, DevOps &amp; SRE</b></td><td>AWS (EC2, S3, RDS, Route53, CloudFront, IAM, VPC, Lambda) · Google Cloud · Cloudflare · Docker · Kubernetes · Terraform · Ansible · GitHub Actions · Coolify · Linux · Nginx · Datadog · Sentry</td></tr>
+<tr><td valign="top"><b>🗄️ Databases</b></td><td>PostgreSQL · MySQL · MariaDB Galera · Redis · ChromaDB</td></tr>
+<tr><td valign="top"><b>🔌 Integrations</b></td><td>Midtrans · Xendit · Stripe · PayNow · QRIS · Xero · Shopify · WhatsApp API · LiveKit · Microsoft Entra ID · PDDikti</td></tr>
+<tr><td valign="top"><b>🗺️ GIS, VR &amp; 3D</b></td><td>GeoLibre · QGIS · OpenStreetMap · glTF / GLB · Three.js · Unity · Meta Quest</td></tr>
+<tr><td valign="top"><b>🔎 SEO, GEO &amp; AEO</b></td><td>Technical &amp; on-page SEO · Generative Engine Optimization · Answer Engine Optimization · Schema markup · Core Web Vitals · backlink strategy · Search Console · Analytics · Tag Manager · Ahrefs · Semrush · Screaming Frog</td></tr>
+<tr><td valign="top"><b>🧭 Ways of working</b></td><td>Agile / Scrum · product ownership · BPMN · automated testing · code review</td></tr>
+</tbody>
+</table>
+<!-- SKILLS:END -->
+
+## 🎓 Education, Certifications &amp; Leadership
+
+<!-- EDUCATION:START -->
+<table>
+<thead><tr>
+<th align="left" width="34%">Degree</th>
+<th align="left" width="30%">Field</th>
+<th align="left" width="24%">School</th>
+<th align="right" width="12%">Years</th>
+</tr></thead>
+<tbody>
+<tr><td><b>Master of Engineering (M.T.)</b></td><td>Digital Media Technology &amp; Game</td><td>Institut Teknologi Bandung</td><td align="right"><sub>2015–2018</sub></td></tr>
+<tr><td><b>Diploma IV, S.S.T. (Bachelor's equivalent)</b></td><td>Computer Network Engineering</td><td>Institut Teknologi Bandung</td><td align="right"><sub>2013–2015</sub></td></tr>
+<tr><td><b>Diploma III</b></td><td>Informatics Management</td><td>Telkom University</td><td align="right"><sub>2010–2013</sub></td></tr>
+</tbody>
+</table>
+
+<table>
+<thead><tr>
+<th align="left" width="22%">Certifications</th>
+<th align="left" width="78%">Credential · year</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>Cloud &amp; security</b></td><td><code>CompTIA&nbsp;Cloud&nbsp;Essentials&nbsp;·&nbsp;2016</code> <code>ISO&nbsp;27001:2013&nbsp;Internal&nbsp;Auditing&nbsp;·&nbsp;2016</code> <code>IT&nbsp;Service&nbsp;Management&nbsp;(Quint)&nbsp;·&nbsp;2016</code> <code>Web&nbsp;Penetration&nbsp;Testing&nbsp;&amp;&nbsp;Bug&nbsp;Bounty&nbsp;·&nbsp;2018</code> <code>DevOps&nbsp;Foundations:&nbsp;DevSecOps&nbsp;·&nbsp;2022</code></td></tr>
+<tr><td valign="top"><b>Agile &amp; product</b></td><td><code>Agile&nbsp;Scrum&nbsp;Fundamentals&nbsp;·&nbsp;2019</code> <code>BPMN&nbsp;Foundations&nbsp;·&nbsp;2019</code> <code>Jira&nbsp;Foundations&nbsp;·&nbsp;2020</code> <code>Product&nbsp;Management&nbsp;Bootcamp&nbsp;(MySkill)&nbsp;·&nbsp;2024</code></td></tr>
+<tr><td valign="top"><b>AI</b></td><td><code>AI&nbsp;tools&nbsp;training:&nbsp;Claude&nbsp;Code,&nbsp;Gemini,&nbsp;NotebookLM&nbsp;(Credify&nbsp;Academy)</code></td></tr>
+</tbody>
+</table>
+
+| | |
+|---|---|
+| 🏅 **IT Compartment Head** · ARDIN Indonesia, West Java chapter | IT systems, infrastructure and member data · current |
+| 🏅 **Speaker** · SEO Masterclass, Mezink Academy | Search engine optimisation masterclass · 2022 |
+| 🗣️ **Languages** | Indonesian (Native) · English (Professional · TOEFL ITP 587) |
+<!-- EDUCATION:END -->
+
 > 💬 *“Talk is cheap. Show me the code.”* — **Linus Torvalds**
 
 ## 📫 Contact
@@ -703,25 +832,25 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 ```yaml
 name: "Aulia Muslim Hidayatullah"
 github: auliamuslim
-role: "Software Engineer"
-company: "Newtype"
+role: "Senior Full Stack & AI Automation Engineer"
+company: "PT Newtype Tekno Pioneer (CTO & R&D Lead) · KOMINA (Full Stack & AI Engineer)"
 website: https://newtype.co.id
-location: Indonesia
+location: Bandung, Indonesia
 linkedin: https://www.linkedin.com/in/auliamuslim/
 email: auliamuslim@gmail.com
 on_github_since: 2013
-open_to: collaboration
+open_to: Senior full stack, SRE or AI automation roles · remote or hybrid
 updated: 2026-10-19
 stats:
   repositories: 109
   project_repos: 94
   live_systems: 65
-  commits_total: 14129
+  commits_total: 14192
   commits_ai_paired_pct: 70
   repos_with_ai_pairing: 78
   active_days: 413
   window_since: 2025-12-01
-  window_commits: 13278
+  window_commits: 13341
   window_active_days: 277
   window_longest_streak_days: 34
 focus:
@@ -731,11 +860,14 @@ focus:
   - "Logistics & courier SaaS"
   - "E-commerce, payments & POS"
   - "AI automation & LLM products"
+  - "Site reliability & infrastructure"
+  - "SEO, GEO & AEO"
+  - "GIS, VR & 3D"
 domains:
   - name: "Government, ERP & Enterprise Ops"
     repos: 9
     live: 5
-    commits: 2852
+    commits: 2876
     purpose: "Back-office systems that run operations: work orders, billing, HR, fleet and procurement"
   - name: "Higher-Education & EdTech"
     repos: 9
@@ -745,17 +877,17 @@ domains:
   - name: "AI, ML & Automation"
     repos: 8
     live: 5
-    commits: 4062
+    commits: 4078
     purpose: "LLMs, agents and machine learning put to work on real operations"
   - name: "Talent Assessment & Recruitment"
     repos: 4
     live: 2
-    commits: 900
+    commits: 905
     purpose: "Measuring, ranking and developing people with AI-assisted assessment"
   - name: "Industry Platforms & SaaS"
     repos: 10
     live: 5
-    commits: 1865
+    commits: 1883
     purpose: "Vertical products for legal, health, civic, social impact, accessibility and gaming"
   - name: "Logistics & Shipping"
     repos: 8
@@ -783,15 +915,66 @@ domains:
     commits: 185
     purpose: "Publishing and protecting: corporate sites, custom CMS and WordPress tooling"
 main_stacks:
-  - {stack: "Laravel", repos: 21, commits: 3503}
-  - {stack: "n8n + Node.js automation", repos: 1, commits: 3487}
+  - {stack: "Laravel", repos: 21, commits: 3511}
+  - {stack: "n8n + Node.js automation", repos: 1, commits: 3503}
   - {stack: "WordPress / WooCommerce", repos: 39, commits: 1904}
-  - {stack: "Perfex CRM / CodeIgniter", repos: 3, commits: 1865}
-  - {stack: "Native PHP + Vue / JS", repos: 10, commits: 1840}
-  - {stack: "TypeScript: Next.js, Node, Hono", repos: 8, commits: 673}
+  - {stack: "Perfex CRM / CodeIgniter", repos: 3, commits: 1881}
+  - {stack: "Native PHP + Vue / JS", repos: 10, commits: 1845}
+  - {stack: "TypeScript: Next.js, Node, Hono", repos: 8, commits: 691}
   - {stack: "Python: ML, data, Flask", repos: 6, commits: 562}
   - {stack: "Flutter / Dart", repos: 2, commits: 47}
   - {stack: "Other: SQL, Apps Script, email", repos: 4, commits: 44}
+career:
+  headline: "Senior Full Stack & AI Automation Engineer"
+  location: "Bandung, Indonesia"
+  years_experience: "15+"
+  open_to: "Senior full stack, SRE or AI automation roles · remote or hybrid"
+  experience:
+    - {role: "Full Stack & AI Engineer", org: "Komando Imersif Indonesia (KOMINA)", from: "2026-04", to: "present"}
+    - {role: "Chief Technology Officer & R&D Lead", org: "PT Newtype Tekno Pioneer", from: "2012-11", to: "present"}
+    - {role: "Full Stack Developer & SEO Engineer", org: "Peter & Co", from: "2021-06", to: "2026-10"}
+    - {role: "Full Stack Developer", org: "Glints (Singapore clients)", from: "2025-06", to: "2026-03"}
+    - {role: "Chief Operating Officer", org: "Happy Play Indonesia", from: "2023-05", to: "2023-12"}
+    - {role: "COO & Product Owner", org: "Worklife & Beyond (ESQ Group)", from: "2019-02", to: "2023-05"}
+    - {role: "Business Development Manager", org: "Digital Creativa Asia", from: "2018-03", to: "2019-02"}
+    - {role: "Lecturer, Computer Science", org: "Universitas Internasional Batam", from: "2016-08", to: "2017-05"}
+    - {role: "Digital Consultant", org: "Gofit Inspirasi Indonesia", from: "2016-03", to: "2017-10"}
+    - {role: "Senior Web Developer", org: "Siskom Digital Pte. Ltd", from: "2015-03", to: "2016-01"}
+    - {role: "Full Stack Developer", org: "SEAMEO SEAMOLEC", from: "2014-10", to: "2017-10"}
+  education:
+    - {degree: "Master of Engineering (M.T.)", field: "Digital Media Technology & Game", school: "Institut Teknologi Bandung", years: "2015-2018"}
+    - {degree: "Diploma IV, S.S.T. (Bachelor's equivalent)", field: "Computer Network Engineering", school: "Institut Teknologi Bandung", years: "2013-2015"}
+    - {degree: "Diploma III", field: "Informatics Management", school: "Telkom University", years: "2010-2013"}
+  certifications:
+    - {name: "CompTIA Cloud Essentials", year: 2016}
+    - {name: "ISO 27001:2013 Internal Auditing", year: 2016}
+    - {name: "IT Service Management (Quint)", year: 2016}
+    - {name: "Web Penetration Testing & Bug Bounty", year: 2018}
+    - {name: "DevOps Foundations: DevSecOps", year: 2022}
+    - {name: "Agile Scrum Fundamentals", year: 2019}
+    - {name: "BPMN Foundations", year: 2019}
+    - {name: "Jira Foundations", year: 2020}
+    - {name: "Product Management Bootcamp (MySkill)", year: 2024}
+    - {name: "AI tools training: Claude Code, Gemini, NotebookLM (Credify Academy)", year: null}
+  languages: ["Indonesian (Native)", "English (Professional · TOEFL ITP 587)"]
+  leadership:
+    - "IT Compartment Head, ARDIN Indonesia, West Java chapter (current)"
+    - "Speaker, SEO Masterclass, Mezink Academy (2022)"
+skills:
+  ai_automation: "Claude API · Claude Code · OpenAI (GPT-4o, Whisper) · Google Gemini · LangChain · RAG · n8n · Ollama"
+  languages_frameworks: "TypeScript · JavaScript · Node.js · React · Next.js · Vue.js · NestJS · Hono · Tailwind CSS · Python (FastAPI, Flask) · PHP · Laravel · WordPress / WooCommerce · SQL · REST · GraphQL"
+  mobile: "Flutter · React Native (Expo) · PWA"
+  cloud_devops_sre: "AWS (EC2, S3, RDS, Route53, CloudFront, IAM, VPC, Lambda) · Google Cloud · Cloudflare · Docker · Kubernetes · Terraform · Ansible · GitHub Actions · Coolify · Linux · Nginx · Datadog · Sentry"
+  databases: "PostgreSQL · MySQL · MariaDB Galera · Redis · ChromaDB"
+  integrations: "Midtrans · Xendit · Stripe · PayNow · QRIS · Xero · Shopify · WhatsApp API · LiveKit · Microsoft Entra ID · PDDikti"
+  gis_vr_3d: "GeoLibre · QGIS · OpenStreetMap · glTF / GLB · Three.js · Unity · Meta Quest"
+  seo_geo_aeo: "Technical & on-page SEO · Generative Engine Optimization · Answer Engine Optimization · Schema markup · Core Web Vitals · backlink strategy · Search Console · Analytics · Tag Manager · Ahrefs · Semrush · Screaming Frog"
+  ways_of_working: "Agile / Scrum · product ownership · BPMN · automated testing · code review"
+seo_geo_aeo:
+  brands: 33
+  since: 2021
+  markets: "Indonesia · Australia · Belgium"
+  outcome: "30–60% organic traffic growth for top clients"
 beyond_github:
   claude_code_sessions: 370
   sessions_with_non_code_deliverables: 183
@@ -803,6 +986,7 @@ beyond_github:
     - {name: "Marketing, content & growth ops", sessions: 18, lives_in: "Content calendars · CRM"}
     - {name: "Strategy, proposals & pitch decks", sessions: 16, designs: 8, lives_in: "Decks · PDFs · Canva"}
     - {name: "Government & regulatory know-how", sessions: 15, lives_in: "State portals · specs"}
+    - {name: "SEO, GEO & AEO", brands: 33, lives_in: "Search Console · Analytics · Ahrefs"}
     - {name: "Brand, design & event collateral", designs: 15, lives_in: "Canva"}
 ai_in_products:
   - "RAG learning assistant"
@@ -811,13 +995,15 @@ ai_in_products:
   - "LLM-adaptive testing"
   - "ML trading signals (LightGBM)"
   - "Speech-to-sign-language"
+  - "VR training assistant (Meta Quest + Claude)"
+  - "Map area → 3D GLB (Juno 3D GIS)"
 top_projects_since_dec_2025:
-  - {name: "AI document automation & ops hub", domain: "AI & automation", commits: 3487}
-  - {name: "Government testing-lab ERP / CRM", domain: "Gov & ERP", commits: 1785}
+  - {name: "AI document automation & ops hub", domain: "AI & automation", commits: 3503}
+  - {name: "Government testing-lab ERP / CRM", domain: "Gov & ERP", commits: 1801}
   - {name: "Multi-tenant courier & parcel SaaS", domain: "Logistics", commits: 1229}
-  - {name: "Enterprise talent discovery platform", domain: "Talent", commits: 621}
-  - {name: "Civic organisation SuperApp", domain: "SaaS platforms", commits: 539}
-  - {name: "ISP modular ERP", domain: "Gov & ERP", commits: 504}
+  - {name: "Enterprise talent discovery platform", domain: "Talent", commits: 625}
+  - {name: "Civic organisation SuperApp", domain: "SaaS platforms", commits: 557}
+  - {name: "ISP modular ERP", domain: "Gov & ERP", commits: 512}
   - {name: "Food supply-chain governance SaaS", domain: "Gov & ERP", commits: 463}
   - {name: "Donation & social-foundation platform", domain: "SaaS platforms", commits: 439}
   - {name: "Lawyer-on-demand marketplace", domain: "SaaS platforms", commits: 418}

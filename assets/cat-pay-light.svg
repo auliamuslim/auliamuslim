@@ -4,15 +4,15 @@
 <rect x="0.5" y="0.5" width="859" height="123" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
 <rect x="1" y="18" width="4" height="88" rx="2" fill="#E11D2E"/>
 <text x="28" y="36" font-size="11" font-weight="700" class="m n" letter-spacing="1">CATEGORY 08 / 10</text>
-<text x="28" y="64" font-size="20" font-weight="800">Payments, Accounting &amp; POS</text>
+<text x="28" y="64" font-size="20" font-weight="700">Payments, Accounting &amp; POS</text>
 <text x="28" y="88" font-size="12.5" class="m">Collecting money and keeping the books: gateways, accounting</text>
 <text x="28" y="105" font-size="12.5" class="m">sync and point of sale</text>
 <text x="520" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">REPOS</text>
-<text x="520" y="60" font-size="21" font-weight="800" class="n">14</text>
+<text x="520" y="60" font-size="22" font-weight="700">14</text>
 <text x="624" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">COMMITS</text>
-<text x="624" y="60" font-size="21" font-weight="800" class="n">329</text>
+<text x="624" y="60" font-size="22" font-weight="700">329</text>
 <text x="728" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">LIVE</text>
-<text x="728" y="60" font-size="21" font-weight="800" class="n">11</text>
+<text x="728" y="60" font-size="22" font-weight="700">11</text>
 <line x1="520" x2="832" y1="100.5" y2="100.5" stroke="#eaeef2"/>
 <rect class="col" style="animation-delay:0.03s" x="533.3" y="98.5" width="4.6" height="1.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.04s" x="539.9" y="92.3" width="4.6" height="7.7" rx="1" fill="#E11D2E"/>
