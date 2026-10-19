@@ -20,18 +20,19 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "profile.json").read_text())
 C = DATA["counts"]
 BEYOND = json.loads((ROOT / "data" / "beyond.json").read_text())
+CV = json.loads((ROOT / "data" / "cv.json").read_text())
 OUT = ROOT / "assets"
 
 THEMES = {
     "light": {
         "bg": "#ffffff", "border": "#d1d9e0", "text": "#1f2328", "muted": "#59636e",
         "grid": "#eaeef2", "track": "#f6f8fa", "s1": "#E11D2E", "s2": "#7C3AED",
-        "soft": "#fde8ea",
+        "soft": "#fde8ea", "soft2": "#ede9fe", "edu": "#6e7781",
     },
     "dark": {
         "bg": "#0d1117", "border": "#3d444d", "text": "#e6edf3", "muted": "#9198a1",
         "grid": "#21262d", "track": "#151b23", "s1": "#F2545B", "s2": "#9B7BF0",
-        "soft": "#2a1215",
+        "soft": "#2a1215", "soft2": "#221a3d", "edu": "#768390",
     },
 }
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
@@ -69,30 +70,132 @@ def heading(t, title, subtitle):
     )
 
 
+# --------------------------------------------------------------------- shapes
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def compact(v):
+    if v >= 1000:
+        s = f"{v / 1000:.1f}".rstrip("0").rstrip(".")
+        return f"{s}K"
+    return f"{int(v)}"
+
+
+def bar_path(x, y, w, h, r=4):
+    """Horizontal bar: square at the baseline, 4px rounded data-end."""
+    r = max(0.0, min(r, h / 2, w / 2))
+    return (f"M{x:.1f} {y:.1f}H{x + w - r:.1f}A{r:.1f} {r:.1f} 0 0 1 {x + w:.1f} {y + r:.1f}"
+            f"V{y + h - r:.1f}A{r:.1f} {r:.1f} 0 0 1 {x + w - r:.1f} {y + h:.1f}H{x:.1f}Z")
+
+
+def mono_segments(pts):
+    """Monotone cubic (Fritsch-Carlson) through pts, as bezier segments; never overshoots."""
+    n = len(pts)
+    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+    d = [(ys[i + 1] - ys[i]) / (xs[i + 1] - xs[i]) for i in range(n - 1)]
+    m = [d[0]] + [0.0 if d[i - 1] * d[i] <= 0 else (d[i - 1] + d[i]) / 2 for i in range(1, n - 1)] + [d[-1]]
+    for i in range(n - 1):
+        if d[i] == 0:
+            m[i] = m[i + 1] = 0.0
+            continue
+        a, b = m[i] / d[i], m[i + 1] / d[i]
+        s = a * a + b * b
+        if s > 9:
+            k = 3 / math.sqrt(s)
+            m[i], m[i + 1] = k * a * d[i], k * b * d[i]
+    segs = []
+    for i in range(n - 1):
+        h = xs[i + 1] - xs[i]
+        segs.append(((xs[i], ys[i]), (xs[i] + h / 3, ys[i] + m[i] * h / 3),
+                     (xs[i + 1] - h / 3, ys[i + 1] - m[i + 1] * h / 3), (xs[i + 1], ys[i + 1])))
+    return segs
+
+
+def seg_path(segs):
+    p = f"M{segs[0][0][0]:.1f} {segs[0][0][1]:.1f}"
+    for _, c1, c2, p1 in segs:
+        p += f"C{c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p1[0]:.1f} {p1[1]:.1f}"
+    return p
+
+
+def seg_path_rev(segs):
+    p = f"L{segs[-1][3][0]:.1f} {segs[-1][3][1]:.1f}"
+    for p0, c1, c2, _ in reversed(segs):
+        p += f"C{c2[0]:.1f} {c2[1]:.1f} {c1[0]:.1f} {c1[1]:.1f} {p0[0]:.1f} {p0[1]:.1f}"
+    return p
+
+
+def legend(t, items, right):
+    """Legend row in the heading band, right-aligned: (color, label) pairs."""
+    out, x = [], right
+    for color, label in reversed(items):
+        x -= 6.9 * len(label)
+        out.append(f'<text x="{x:.0f}" y="44" font-size="12" class="m">{escape(label)}</text>')
+        x -= 20
+        out.append(f'<rect x="{x:.0f}" y="37" width="14" height="4" rx="2" fill="{color}"/>')
+        x -= 18
+    return out
+
+
+def reveal(cid, x, y, w, h):
+    """Clip that wipes a chart in from the left (skipped under reduced motion)."""
+    return (f'<clipPath id="{cid}"><rect class="bar" x="{x}" y="{y}" width="{w}" height="{h}"/></clipPath>')
+
+
 # --------------------------------------------------------------------------- stats
+def weekly_active_days():
+    days = DATA["daily"]
+    return [sum(1 for v in days[i:i + 7] if v) for i in range(0, len(days), 7)]
+
+
 def stats_card(t):
     tiles = DATA["tiles"]
+    weekly = DATA["weekly"]
     n = len(tiles)
-    pad, gap, top, h = 28, 12, 28, 104
+    pad, gap, top, h = 24, 12, 24, 132
     tw = (W - 2 * pad - gap * (n - 1)) / n
+    full = weekly[:-1]  # the current week is still in progress
+    commits_wk = [w["human"] + w["ai"] for w in full][-20:]
+    active_wk = weekly_active_days()[:-1][-20:]
+    meters = {"Repositories": (C["project_repos"] / C["repositories"], "s1", "soft"),
+              "In production": (C["live"] / C["project_repos"], "s1", "soft"),
+              "AI-paired": (DATA["totals"]["ai_share"] / 100, "s2", "soft2")}
     out = []
     for i, tile in enumerate(tiles):
         x = pad + i * (tw + gap)
-        accent = t["s2"] if tile.get("accent") == "ai" else t["s1"]
-        out.append(
-            f'<g class="fd" style="animation-delay:{i*0.08:.2f}s">'
-            f'<rect x="{x:.1f}" y="{top}" width="{tw:.1f}" height="{h}" rx="10" '
-            f'fill="{t["track"]}" stroke="{t["border"]}"/>'
-            f'<rect x="{x:.1f}" y="{top+18}" width="3" height="{h-36}" rx="1.5" fill="{accent}"/>'
-            f'<text x="{x+18:.1f}" y="{top+30}" font-size="11.5" font-weight="600" class="m" '
-            f'letter-spacing=".4">{escape(tile["label"].upper())}</text>'
-            f'<text x="{x+18:.1f}" y="{top+66}" font-size="30" font-weight="800" class="n">'
-            f'{escape(tile["value"])}</text>'
-            f'<text x="{x+18:.1f}" y="{top+88}" font-size="11" class="m">{escape(tile["note"])}</text>'
-            f"</g>"
-        )
-    height = top + h + 28
-    return svg(height, "\n".join(out), t, "Portfolio at a glance")
+        ix, iw = x + 16, tw - 32
+        out.append(f'<g class="fd" style="animation-delay:{i*0.08:.2f}s">'
+                   f'<rect x="{x:.1f}" y="{top}" width="{tw:.1f}" height="{h}" rx="12" fill="{t["track"]}" stroke="{t["border"]}"/>'
+                   f'<text x="{ix:.1f}" y="{top+26}" font-size="12" font-weight="600" class="m">{escape(tile["label"])}</text>'
+                   f'<text x="{ix:.1f}" y="{top+62}" font-size="30" font-weight="700">{escape(tile["value"])}</text>'
+                   f'<text x="{ix:.1f}" y="{top+81}" font-size="11" class="m">{escape(tile["note"])}</text>')
+        vy, vh = top + 96, 22
+        if tile["label"] in meters:
+            ratio, key, soft = meters[tile["label"]]
+            my = vy + 12
+            if not tile["value"].endswith("%"):
+                out.append(f'<text x="{ix + iw:.1f}" y="{top+26}" font-size="11" font-weight="600" class="m" text-anchor="end">{round(ratio*100)}%</text>')
+            out.append(f'<rect x="{ix:.1f}" y="{my}" width="{iw:.1f}" height="6" rx="3" fill="{t[soft]}"/>')
+            out.append(f'<rect class="bar" x="{ix:.1f}" y="{my}" width="{iw*ratio:.1f}" height="6" rx="3" fill="{t[key]}"/>')
+        elif tile["label"] == "Commits":
+            vmax = max(commits_wk) or 1
+            pts = [(ix + iw * k / (len(commits_wk) - 1), vy + vh - vh * v / vmax) for k, v in enumerate(commits_wk)]
+            segs = mono_segments(pts)
+            out.append(f'<path d="{seg_path(segs)}L{ix+iw:.1f} {vy+vh}L{ix:.1f} {vy+vh}Z" fill="{t["s1"]}" fill-opacity=".12"/>')
+            out.append(f'<path d="{seg_path(segs)}" fill="none" stroke="{t["s1"]}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>')
+            ex, ey = pts[-1]
+            out.append(f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="4" fill="{t["s1"]}" stroke="{t["track"]}" stroke-width="2"/>')
+        elif tile["label"] == "Active days":
+            slot = iw / len(active_wk)
+            for k, v in enumerate(active_wk):
+                bh = max(2, vh * v / 7)
+                out.append(f'<rect class="col" style="animation-delay:{k*0.02:.2f}s" x="{ix + k*slot:.1f}" y="{vy+vh-bh:.1f}" '
+                           f'width="{max(2, slot-2):.1f}" height="{bh:.1f}" rx="1.5" fill="{t["s1"]}" fill-opacity="{0.35 + 0.65*v/7:.2f}"/>')
+        out.append("</g>")
+    cap = (f'Sparklines: last {len(commits_wk)} full weeks · meters: share of repositories with custom work, '
+           'of project repos in production, and of commits paired with Claude Code')
+    out.append(f'<text x="{pad}" y="{top+h+22}" font-size="10.5" class="m">{escape(cap)}</text>')
+    return svg(top + h + 36, "\n".join(out), t, "Portfolio at a glance")
 
 
 # ------------------------------------------------------------------------ activity
@@ -106,58 +209,110 @@ def nice_max(v):
     return 10 * mag
 
 
+def nice_top(v, n=4):
+    """Axis top whose n equal steps are round numbers (1, 2, 2.5, 3, 4 or 5 × 10^k)."""
+    raw = max(v, 1) / n
+    mag = 10 ** math.floor(math.log10(raw))
+    step = next(m * mag for m in (1, 2, 2.5, 3, 4, 5, 10) if m * mag >= raw)
+    return step * n
+
+
 def activity(t):
     weeks = DATA["weekly"]
-    left, right, top, bottom = 64, 28, 104, 46
-    height = 372
-    ph = height - top - bottom
-    pw = W - left - right
-    totals = [w["human"] + w["ai"] for w in weeks]
-    ymax = nice_max(max(totals))
-    n = len(weeks)
-    slot = pw / n
-    bw = max(3, min(22, slot - 4))
+    left, right, top, bottom = 56, 28, 100, 44
+    height = 380
+    ph, pw = height - top - bottom, W - left - right
     base = top + ph
+    totals = [w["human"] + w["ai"] for w in weeks]
+    ymax = nice_top(max(totals) * 1.1)
+    n = len(weeks)
+    X = lambda i: left + pw * i / (n - 1)
+    Y = lambda v: base - ph * v / ymax
     out = [heading(t, DATA["activity"]["title"], DATA["activity"]["subtitle"])]
-    lx = W - right
-    for key, label in [("s2", "AI pair (Claude Code)"), ("s1", "Hand-written")]:
-        lx -= 7.2 * len(label)
-        out.append(f'<text x="{lx:.0f}" y="44" font-size="12.5" class="m">{escape(label)}</text>')
-        lx -= 18
-        out.append(f'<rect x="{lx:.0f}" y="34" width="12" height="12" rx="3" fill="{t[key]}"/>')
-        lx -= 20
-    for i in range(5):
-        v = ymax * i / 4
-        y = base - ph * i / 4
-        out.append(f'<line x1="{left}" x2="{W-right}" y1="{y:.1f}" y2="{y:.1f}" stroke="{t["grid"]}"/>')
-        out.append(f'<text x="{left-10}" y="{y+4:.1f}" font-size="11" class="m n" text-anchor="end">{fmt(int(v))}</text>')
-    peak = max(range(n), key=lambda i: totals[i])
+    out += legend(t, [(t["s1"], "Hand-written"), (t["s2"], "AI pair (Claude Code)")], W - right)
+    for k in range(5):
+        v = ymax * k / 4
+        out.append(f'<line x1="{left}" x2="{W-right}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" stroke="{t["grid"]}"/>')
+        out.append(f'<text x="{left-10}" y="{Y(v)+4:.1f}" font-size="11" class="m n" text-anchor="end">{compact(v)}</text>')
     for i, w in enumerate(weeks):
-        cx = left + slot * i + slot / 2
-        x = cx - bw / 2
-        hh = ph * w["human"] / ymax
-        ha = ph * w["ai"] / ymax
-        delay = f"animation-delay:{i*0.015:.2f}s"
-        r = min(3, bw / 2)
-        if w["human"]:
-            out.append(f'<rect class="col" style="{delay}" x="{x:.1f}" y="{base-hh:.1f}" width="{bw:.1f}" height="{hh:.1f}" rx="{r:.1f}" fill="{t["s1"]}"/>')
-        if w["ai"]:
-            gap = 2 if w["human"] else 0
-            out.append(f'<rect class="col" style="{delay}" x="{x:.1f}" y="{base-hh-ha:.1f}" width="{bw:.1f}" height="{max(0, ha-gap):.1f}" rx="{r:.1f}" fill="{t["s2"]}"/>')
         if w.get("label"):
-            out.append(f'<line x1="{x-2:.1f}" x2="{x-2:.1f}" y1="{base}" y2="{base+5}" stroke="{t["border"]}"/>')
-            out.append(f'<text x="{x-2:.1f}" y="{base+19}" font-size="11" class="m">{escape(w["label"])}</text>')
-        if i == peak:
-            out.append(f'<text x="{cx:.1f}" y="{base-hh-ha-20:.1f}" font-size="10.5" class="m" text-anchor="middle">peak week</text>')
-            out.append(f'<text x="{cx:.1f}" y="{base-hh-ha-7:.1f}" font-size="11.5" font-weight="700" class="n" text-anchor="middle">{fmt(totals[i])}</text>')
-    full = totals[:-1] if len(totals) > 1 else totals
+            out.append(f'<line x1="{X(i):.1f}" x2="{X(i):.1f}" y1="{base}" y2="{base+5}" stroke="{t["border"]}"/>')
+            out.append(f'<text x="{X(i):.1f}" y="{base+19}" font-size="11" class="m" text-anchor="middle">{escape(w["label"])}</text>')
+    hum = mono_segments([(X(i), Y(w["human"])) for i, w in enumerate(weeks)])
+    tot = mono_segments([(X(i), Y(v)) for i, v in enumerate(totals)])
+    out.append("<defs>" + reveal("rv-act", left - 6, top - 30, pw + 12, ph + 36) + "</defs>")
+    out.append('<g clip-path="url(#rv-act)">')
+    out.append(f'<path d="{seg_path(hum)}L{X(n-1):.1f} {base}L{X(0):.1f} {base}Z" fill="{t["s1"]}" fill-opacity=".14"/>')
+    out.append(f'<path d="{seg_path(tot)}{seg_path_rev(hum)}Z" fill="{t["s2"]}" fill-opacity=".14"/>')
+    out.append(f'<path d="{seg_path(hum)}" fill="none" stroke="{t["s1"]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
+    out.append(f'<path d="{seg_path(tot)}" fill="none" stroke="{t["s2"]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
+    out.append("</g>")
+    full = totals[:-1] if n > 1 else totals
     avg = sum(full) / len(full)
-    ya = base - ph * avg / ymax
-    out.append(f'<line x1="{left}" x2="{W-right}" y1="{ya:.1f}" y2="{ya:.1f}" stroke="{t["text"]}" stroke-opacity=".45"/>')
-    out.append(f'<rect x="{left+4}" y="{ya-17:.1f}" width="104" height="15" rx="3" fill="{t["bg"]}" fill-opacity=".85"/>')
-    out.append(f'<text x="{left+8}" y="{ya-6:.1f}" font-size="11" font-weight="700" class="n">avg {fmt(round(avg))} / week</text>')
+    out.append(f'<line x1="{left}" x2="{W-right}" y1="{Y(avg):.1f}" y2="{Y(avg):.1f}" stroke="{t["muted"]}" stroke-opacity=".7"/>')
+    out.append(f'<text x="{left+8}" y="{Y(avg)-6:.1f}" font-size="11" font-weight="600" class="m">avg {fmt(round(avg))} / week</text>')
+    peak = max(range(n), key=lambda i: totals[i])
+    px, py = X(peak), Y(totals[peak])
+    pk = __import__("datetime").date.fromisoformat(weeks[peak]["week"])
+    label = f'peak {fmt(totals[peak])} · week of {pk.day} {MONTHS[pk.month-1]}'
+    anchor = "end" if px > W - 160 else "middle"
+    out.append(f'<circle class="fd" cx="{px:.1f}" cy="{py:.1f}" r="4.5" fill="{t["s2"]}" stroke="{t["bg"]}" stroke-width="2"/>')
+    out.append(f'<text class="fd" x="{px:.1f}" y="{py-12:.1f}" font-size="11.5" font-weight="700" text-anchor="{anchor}">{escape(label)}</text>')
     out.append(f'<line x1="{left}" x2="{W-right}" y1="{base}" y2="{base}" stroke="{t["border"]}"/>')
     return svg(height, "\n".join(out), t, DATA["activity"]["title"])
+
+
+# ------------------------------------------------------------------------ growth
+def growth(t):
+    import datetime as dt
+    w = DATA["window"]
+    days = DATA["daily"]
+    start = dt.date.fromisoformat(w["start"])
+    cum, run = [], 0
+    for v in days:
+        run += v
+        cum.append(run)
+    total, n = cum[-1], len(cum)
+    left, right, top, bottom = 56, 104, 100, 44
+    height = 340
+    ph, pw = height - top - bottom, W - left - right
+    base = top + ph
+    ymax = nice_top(total * 1.08)
+    X = lambda i: left + pw * i / (n - 1)
+    Y = lambda v: base - ph * v / ymax
+    share = round(100 * w["ai"] / max(1, w["commits"]))
+    sub = (f'{fmt(total)} commits in {n} days · {round(total / n)} a day on average · '
+           f'{share}% paired with Claude Code')
+    out = [heading(t, "Momentum — cumulative commits since Dec 2025", sub)]
+    for k in range(5):
+        v = ymax * k / 4
+        out.append(f'<line x1="{left}" x2="{left+pw}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" stroke="{t["grid"]}"/>')
+        out.append(f'<text x="{left-10}" y="{Y(v)+4:.1f}" font-size="11" class="m n" text-anchor="end">{compact(v)}</text>')
+    for i in range(n):
+        d = start + dt.timedelta(days=i)
+        if d.day == 1:
+            out.append(f'<line x1="{X(i):.1f}" x2="{X(i):.1f}" y1="{base}" y2="{base+5}" stroke="{t["border"]}"/>')
+            lab = MONTHS[d.month - 1] + (f" '{str(d.year)[2:]}" if d.month == 1 or i == 0 else "")
+            out.append(f'<text x="{X(i):.1f}" y="{base+19}" font-size="11" class="m" text-anchor="middle">{lab}</text>')
+    line = "M" + "L".join(f"{X(i):.1f} {Y(v):.1f}" for i, v in enumerate(cum))
+    out.append("<defs>" + reveal("rv-gr", left - 6, top - 30, pw + 12, ph + 36) + "</defs>")
+    out.append('<g clip-path="url(#rv-gr)">')
+    out.append(f'<path d="{line}L{X(n-1):.1f} {base}L{X(0):.1f} {base}Z" fill="{t["s1"]}" fill-opacity=".12"/>')
+    out.append(f'<path d="{line}" fill="none" stroke="{t["s1"]}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
+    for k, mark in enumerate(m for m in (1000, 5000, 10000) if m <= total):
+        i = next(j for j, v in enumerate(cum) if v >= mark)
+        d = start + dt.timedelta(days=i)
+        x, y = X(i), Y(cum[i])
+        out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="{t["s1"]}" stroke="{t["bg"]}" stroke-width="2"/>')
+        out.append(f'<text x="{x-8:.1f}" y="{y-24:.1f}" font-size="11.5" font-weight="700" text-anchor="end">{compact(mark)}</text>')
+        out.append(f'<text x="{x-8:.1f}" y="{y-11:.1f}" font-size="10.5" class="m" text-anchor="end">{d.day} {MONTHS[d.month-1]}</text>')
+    out.append("</g>")
+    ex, ey = X(n - 1), Y(total)
+    out.append(f'<circle class="fd" cx="{ex:.1f}" cy="{ey:.1f}" r="5" fill="{t["s1"]}" stroke="{t["bg"]}" stroke-width="2"/>')
+    out.append(f'<text class="fd" x="{ex+12:.1f}" y="{ey+2:.1f}" font-size="15" font-weight="700">{fmt(total)}</text>')
+    out.append(f'<text class="fd m" x="{ex+12:.1f}" y="{ey+17:.1f}" font-size="10.5">commits</text>')
+    out.append(f'<line x1="{left}" x2="{left+pw}" y1="{base}" y2="{base}" stroke="{t["border"]}"/>')
+    return svg(height, "\n".join(out), t, "Momentum — cumulative commits")
 
 
 # ----------------------------------------------------------------------- heatmap
@@ -217,7 +372,7 @@ def heatmap(t, mode):
     kw = (W - 56) / len(kpis)
     for k, (val, lab) in enumerate(kpis):
         x = 28 + k * kw
-        out.append(f'<text x="{x}" y="{ky}" font-size="20" font-weight="800" class="n">{escape(val)}</text>')
+        out.append(f'<text x="{x}" y="{ky}" font-size="21" font-weight="700">{escape(val)}</text>')
         out.append(f'<text x="{x}" y="{ky+18}" font-size="11" class="m">{escape(lab)}</text>')
     return svg(ky + 40, "\n".join(out), t, "Daily commit calendar")
 
@@ -255,25 +410,26 @@ def punchcard(t):
     return svg(fy + 22, "\n".join(out), t, "When I ship")
 
 
-# --------------------------------------------------------------- ranked projects
+# --------------------------------------------------------------- ranked bars
 def rank_bars(t, spec):
     rows = spec["rows"]
-    top, row_h, label_w = 96, 38, 300
-    height = top + row_h * len(rows) + 14
+    top, row_h, label_w, bh = 96, 40, 300, 10
+    height = top + row_h * len(rows) + 10
     vmax = max(r["value"] for r in rows)
     x0 = 28 + label_w
-    value_w = 8 + 7.4 * max(len(r["display"]) for r in rows)
+    value_w = 10 + 7.2 * max(len(r["display"]) for r in rows)
     track_w = W - x0 - 28 - value_w
     out = [heading(t, spec["title"], spec["subtitle"])]
+    out.append(f'<line x1="{x0}" x2="{x0}" y1="{top-6}" y2="{top + row_h*len(rows) - 12}" stroke="{t["border"]}"/>')
     for i, r in enumerate(rows):
         y = top + i * row_h
         w = max(4, track_w * r["value"] / vmax)
+        by = y + 6
         out.append(f'<text x="28" y="{y+10}" font-size="11" font-weight="700" class="m n">{i+1:02d}</text>')
-        out.append(f'<text x="52" y="{y+10}" font-size="13">{escape(r["label"])}</text>')
+        out.append(f'<text x="52" y="{y+10}" font-size="13" font-weight="600">{escape(r["label"])}</text>')
         out.append(f'<text x="52" y="{y+25}" font-size="10.5" class="m">{escape(r["tag"])}</text>')
-        out.append(f'<rect x="{x0}" y="{y+2}" width="{track_w:.1f}" height="16" rx="4" fill="{t["track"]}"/>')
-        out.append(f'<rect class="bar" style="animation-delay:{i*0.05:.2f}s" x="{x0}" y="{y+2}" width="{w:.1f}" height="16" rx="4" fill="{t["s1"]}"/>')
-        out.append(f'<text x="{x0+track_w+12:.1f}" y="{y+15}" font-size="12.5" font-weight="700" class="n">{escape(r["display"])}</text>')
+        out.append(f'<path class="bar" style="animation-delay:{i*0.05:.2f}s" d="{bar_path(x0, by, w, bh)}" fill="{t["s1"]}"/>')
+        out.append(f'<text class="fd" x="{x0 + w + 10:.1f}" y="{by + 9}" font-size="12" font-weight="700">{escape(r["display"])}</text>')
     return svg(height, "\n".join(out), t, spec["title"])
 
 
@@ -355,11 +511,11 @@ def impact_wall(t):
         x = 28 + (i % cols) * (cw + gap)
         y = top + (i // cols) * (ch + gap)
         out.append(f'<g class="fd" style="animation-delay:{i*0.07:.2f}s">'
-                   f'<rect x="{x:.1f}" y="{y}" width="{cw:.1f}" height="{ch}" rx="10" fill="{t["track"]}" stroke="{t["border"]}"/>'
-                   f'<rect x="{x:.1f}" y="{y+16}" width="3" height="{ch-32}" rx="1.5" fill="{t["s1"]}"/>'
-                   f'<text x="{x+18:.1f}" y="{y+42}" font-size="28" font-weight="800" class="n" fill="{t["s1"]}" style="fill:{t["s1"]}">{escape(it["value"])}</text>'
-                   f'<text x="{x+18:.1f}" y="{y+64}" font-size="12.5" font-weight="700">{escape(it["label"])}</text>'
-                   f'<text x="{x+18:.1f}" y="{y+82}" font-size="10.5" class="m">{escape(it["note"])}</text></g>')
+                   f'<rect x="{x:.1f}" y="{y}" width="{cw:.1f}" height="{ch}" rx="12" fill="{t["track"]}" stroke="{t["border"]}"/>'
+                   f'<rect x="{x+18:.1f}" y="{y+52}" width="24" height="3" rx="1.5" fill="{t["s1"]}"/>'
+                   f'<text x="{x+18:.1f}" y="{y+42}" font-size="28" font-weight="700">{escape(it["value"])}</text>'
+                   f'<text x="{x+18:.1f}" y="{y+72}" font-size="12.5" font-weight="700">{escape(it["label"])}</text>'
+                   f'<text x="{x+18:.1f}" y="{y+89}" font-size="10.5" class="m">{escape(it["note"])}</text></g>')
     return svg(top + rows * (ch + gap) + 16, "\n".join(out), t, "Impact highlights")
 
 
@@ -383,13 +539,13 @@ def now_shipping(t):
     vmax = max(max(r["daily"]) for r in rows) or 1
     for i, r in enumerate(rows):
         x = 28 + i * (cw + gap)
-        out.append(f'<rect x="{x:.1f}" y="{top}" width="{cw:.1f}" height="{ch}" rx="10" fill="{t["track"]}" stroke="{t["border"]}"/>')
+        out.append(f'<rect x="{x:.1f}" y="{top}" width="{cw:.1f}" height="{ch}" rx="12" fill="{t["track"]}" stroke="{t["border"]}"/>')
         lines = wrap(r["name"], int((cw - 28) / 6.6))[:2]
         for j, line in enumerate(lines):
             out.append(f'<text x="{x+14:.1f}" y="{top+24+j*15}" font-size="12.5" font-weight="700">{escape(line)}</text>')
         out.append(f'<text x="{x+14:.1f}" y="{top+24+len(lines)*15}" font-size="10.5" class="m">{escape(r["tag"])}</text>')
-        out.append(f'<text x="{x+14:.1f}" y="{top+90}" font-size="24" font-weight="800" class="n">{fmt(r["commits"])}</text>')
-        out.append(f'<text x="{x+14 + 15.5*len(fmt(r["commits"])):.1f}" y="{top+90}" font-size="11" class="m">commits</text>')
+        out.append(f'<text x="{x+14:.1f}" y="{top+90}" font-size="26" font-weight="700">{fmt(r["commits"])}</text>')
+        out.append(f'<text x="{x+22 + 16*len(fmt(r["commits"])):.1f}" y="{top+90}" font-size="11" class="m">commits</text>')
         sx0, sx1, base, sh = x + 14, x + cw - 14, top + ch - 14, 30
         slot = (sx1 - sx0) / len(r["daily"])
         for k, v in enumerate(r["daily"]):
@@ -507,23 +663,96 @@ def universe(t, mode, catalog):
 
 
 # -------------------------------------------------------------------------- bars
-def bars(t, spec):
+def bars(t, spec, share=False):
     rows = spec["rows"]
-    top, row_h, label_w = 92, 30, 240
-    height = top + row_h * len(rows) + 22
+    top, row_h, label_w, bh = 92, 32, 250, 10
+    height = top + row_h * len(rows) + 14
     vmax = max(r["value"] for r in rows)
+    total = sum(r["value"] for r in rows)
     x0 = 28 + label_w
-    value_w = 8 + 7.4 * max(len(r.get("display", str(r["value"]))) for r in rows)
+    disp = [r.get("display", str(r["value"])) for r in rows]
+    pct = [f'{100 * r["value"] / total:.1f}%' for r in rows] if share else [""] * len(rows)
+    value_w = 14 + 7.2 * max(len(d) for d in disp) + 6.4 * max(len(p) for p in pct)
     track_w = W - x0 - 28 - value_w
     out = [heading(t, spec["title"], spec["subtitle"])]
+    out.append(f'<line x1="{x0}" x2="{x0}" y1="{top-4}" y2="{top + row_h*len(rows) - 6}" stroke="{t["border"]}"/>')
     for i, r in enumerate(rows):
         y = top + i * row_h
         w = max(4, track_w * r["value"] / vmax)
-        out.append(f'<text x="28" y="{y+15}" font-size="13">{escape(r["label"])}</text>')
-        out.append(f'<rect x="{x0}" y="{y+3}" width="{track_w}" height="16" rx="4" fill="{t["track"]}"/>')
-        out.append(f'<rect class="bar" style="animation-delay:{i*0.05:.2f}s" x="{x0}" y="{y+3}" width="{w:.1f}" height="16" rx="4" fill="{t["s1"]}"/>')
-        out.append(f'<text x="{x0+track_w+12}" y="{y+16}" font-size="12.5" font-weight="700" class="n">{escape(r.get("display", str(r["value"])))}</text>')
+        by = y + 6
+        out.append(f'<text x="28" y="{by+9}" font-size="13">{escape(r["label"])}</text>')
+        out.append(f'<path class="bar" style="animation-delay:{i*0.05:.2f}s" d="{bar_path(x0, by, w, bh)}" fill="{t["s1"]}"/>')
+        tip = f'<tspan font-weight="700">{escape(disp[i])}</tspan>'
+        if share:
+            tip += f'<tspan class="m" dx="6">{pct[i]}</tspan>'
+        out.append(f'<text class="fd" x="{x0 + w + 10:.1f}" y="{by+9}" font-size="12">{tip}</text>')
     return svg(height, "\n".join(out), t, spec["title"])
+
+
+# ------------------------------------------------------------------- career
+def year_of(s, now, edu=False):
+    if s is None:
+        return now
+    if len(s) == 4:
+        return int(s) + (7 / 12 if edu else 0)
+    return int(s[:4]) + (int(s[5:7]) - 1) / 12
+
+
+def career(t):
+    import datetime as dt
+    end = dt.date.fromisoformat(DATA["window"]["end"])
+    now = end.year + (end.month - 1) / 12 + end.day / 365
+    work = CV["experience"]
+    edu = CV["education"]
+    top, row_h, label_w = 112, 34, 292
+    x0, x1 = 28 + label_w, W - 36
+    y_lo, y_hi = 2010, 2027
+    X = lambda yr: x0 + (x1 - x0) * (yr - y_lo) / (y_hi - y_lo)
+    edu_gap = 30
+    n_rows = len(work) + len(edu)
+    bottom = top + n_rows * row_h + edu_gap
+    out = [heading(t, f'Career timeline — {CV["years"]} years',
+                   f'{len(work)} roles across engineering, product and operations · {len(edu)} degrees · '
+                   'overlapping bars are parallel roles')]
+    out += legend(t, [(t["s1"], "Role"), (t["edu"], "Education")], W - 36)
+    for yr in range(y_lo, y_hi + 1, 2):
+        x = X(yr)
+        out.append(f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{top-12}" y2="{bottom}" stroke="{t["grid"]}"/>')
+        out.append(f'<text x="{x:.1f}" y="{top-20}" font-size="10.5" class="m n" text-anchor="middle">{yr}</text>')
+    xn = X(now)
+    out.append(f'<line x1="{xn:.1f}" x2="{xn:.1f}" y1="{top-12}" y2="{bottom}" stroke="{t["s1"]}" stroke-opacity=".5"/>')
+
+    def period(s, e):
+        f = lambda v: "now" if v is None else (v if len(v) == 4 else f'{MONTHS[int(v[5:7]) - 1]} {v[:4]}')
+        return f"{f(s)} – {f(e)}"
+
+    def row(i, title, sub, start, stop, color, current, y_off=0):
+        y = top + i * row_h + y_off
+        out.append(f'<text x="28" y="{y+13}" font-size="12.5" font-weight="700">{escape(title)}</text>')
+        out.append(f'<text x="28" y="{y+28}" font-size="10.5" class="m">{escape(sub)}</text>')
+        bx, bw = X(start), max(8, X(stop) - X(start))
+        out.append(f'<rect class="bar" style="animation-delay:{i*0.06:.2f}s" x="{bx:.1f}" y="{y+9}" width="{bw:.1f}" '
+                   f'height="12" rx="6" fill="{color}"/>')
+        if current:
+            cx = bx + bw
+            out.append(f'<circle cx="{cx:.1f}" cy="{y+15}" r="5" fill="{color}" stroke="{t["bg"]}" stroke-width="2"/>'
+                       f'<circle class="pulse" cx="{cx:.1f}" cy="{y+15}" r="5" fill="none" stroke="{color}" stroke-width="2"/>')
+
+    for i, e in enumerate(work):
+        org = e.get("short", e["org"])
+        row(i, e["role"], f'{org} · {period(e["start"], e["end"])}',
+            year_of(e["start"], now), year_of(e["end"], now), t["s1"], e["end"] is None)
+    ey = top + len(work) * row_h + 18
+    out.append(f'<text x="28" y="{ey}" font-size="10.5" font-weight="700" class="m" letter-spacing=".8">EDUCATION</text>')
+    out.append(f'<line x1="104" x2="{x1}" y1="{ey-4}" y2="{ey-4}" stroke="{t["grid"]}"/>')
+    for k, e in enumerate(edu):
+        row(len(work) + k, e.get("short", e["degree"]), f'{e["school"]} · {e["start"]} – {e["end"]}',
+            year_of(e["start"], now, True), year_of(e["end"], now, True), t["edu"], False, edu_gap)
+    doc = svg(bottom + 16, "\n".join(out), t, "Career timeline")
+    return doc.replace("@media (prefers-reduced-motion:reduce)",
+                       "@keyframes pulse{0%{r:5;opacity:.9}100%{r:12;opacity:0}}.pulse{animation:pulse 1.6s ease-out infinite}"
+                       "@media (prefers-reduced-motion:reduce){.pulse{animation:none}}"
+                       "@media (prefers-reduced-motion:reduce)", 1)
 
 
 # ---------------------------------------------------------------------- timeline
@@ -546,7 +775,7 @@ def timeline(t):
     left, right = 125, 125
     axis_y = 112
     span = W - left - right
-    out = [heading(t, "The journey", "From research-lab prototypes to production platforms")]
+    out = [heading(t, f'The journey — {CV["years"]} years', "From an informatics diploma to AI-native engineering")]
     out.append(f'<line x1="{left-30}" x2="{W-right+30}" y1="{axis_y}" y2="{axis_y}" stroke="{t["border"]}" stroke-width="2"/>')
     col_w = span / (n - 1) if n > 1 else span
     chars = max(16, int(min(col_w, 2 * left - 20) / 6.2))
@@ -557,7 +786,7 @@ def timeline(t):
         out.append(f'<g class="fd" style="animation-delay:{i*0.12:.2f}s">')
         out.append(f'<circle cx="{x:.1f}" cy="{axis_y}" r="9" fill="{t["bg"]}" stroke="{color}" stroke-width="2"/>')
         out.append(f'<circle cx="{x:.1f}" cy="{axis_y}" r="4" fill="{color}"/>')
-        out.append(f'<text x="{x:.1f}" y="{axis_y-22}" font-size="15" font-weight="800" text-anchor="middle" class="n">{escape(it["year"])}</text>')
+        out.append(f'<text x="{x:.1f}" y="{axis_y-22}" font-size="15" font-weight="700" text-anchor="middle">{escape(it["year"])}</text>')
         out.append(f'<text x="{x:.1f}" y="{axis_y+34}" font-size="12.5" font-weight="700" text-anchor="middle">{escape(it["title"])}</text>')
         lines = wrap(it["text"], chars)
         max_lines = max(max_lines, len(lines))
@@ -584,7 +813,7 @@ def category_banner(t, cat, idx, total):
         f'<rect x="1" y="18" width="4" height="{height-36}" rx="2" fill="{t["s1"]}"/>',
         f'<text x="28" y="36" font-size="11" font-weight="700" class="m n" letter-spacing="1">'
         f'CATEGORY {idx:02d} / {total:02d}</text>',
-        f'<text x="28" y="64" font-size="20" font-weight="800">{escape(cat["title"])}</text>',
+        f'<text x="28" y="64" font-size="20" font-weight="700">{escape(cat["title"])}</text>',
     ]
     for j, line in enumerate(wrap(cat["tagline"], 62)[:2]):
         out.append(f'<text x="28" y="{88 + j*17}" font-size="12.5" class="m">{escape(line)}</text>')
@@ -595,7 +824,7 @@ def category_banner(t, cat, idx, total):
     for k, (label, value) in enumerate(stats):
         x = sx + k * 104
         out.append(f'<text x="{x}" y="36" font-size="10.5" font-weight="700" class="m" letter-spacing=".6">{label}</text>')
-        out.append(f'<text x="{x}" y="60" font-size="21" font-weight="800" class="n">{value}</text>')
+        out.append(f'<text x="{x}" y="60" font-size="22" font-weight="700">{value}</text>')
     # sparkline of weekly commits in the activity window
     series = DATA["category_weekly"][cat["key"]]
     weeks = DATA["category_weeks"]
@@ -784,7 +1013,7 @@ def readme_beyond():
             '<th align="right" width="10%">Volume</th>',
             '</tr></thead>', '<tbody>']
     for c in sorted(BEYOND["categories"], key=lambda c: -c.get("sessions", 0)):
-        vol = "<br/>".join(f'<code>{c[k]}</code>&nbsp;<sub>{k}</sub>' for k in ("sessions", "designs") if k in c)
+        vol = "<br/>".join(f'<code>{c[k]}</code>&nbsp;<sub>{k}</sub>' for k in ("sessions", "designs", "brands") if k in c)
         rows.append(f'<tr><td valign="top"><b>{c["emoji"]} {escape(c["title"])}</b><br/><sub>{escape(c["lives_in"])}</sub></td>'
                     f'<td valign="top">{escape(c["what"])}</td>'
                     f'<td valign="top"><sub>{escape(c["examples"])}</sub></td>'
@@ -801,20 +1030,95 @@ def readme_beyond():
     ])
 
 
+def cv_text(text):
+    return text.replace("{live}", str(C["live"])).replace("{repositories}", str(C["repositories"]))
+
+
+def cv_period(start, end):
+    f = lambda v: "now" if v is None else (v if len(v) == 4 else f'{MONTHS[int(v[5:7]) - 1]} {v[:4]}')
+    return f"{f(start)} – {f(end)}"
+
+
+def readme_experience():
+    exp = CV["experience"]
+    current = [e for e in exp if e["end"] is None]
+    rows = ['<table>', '<thead><tr>',
+            '<th align="left" width="30%">Role &amp; organisation</th>',
+            '<th align="left" width="16%">Period</th>',
+            '<th align="left" width="54%">Highlights</th>',
+            '</tr></thead>', '<tbody>']
+    for e in exp:
+        now = " 🟢" if e["end"] is None else ""
+        mode = f' · {escape(e["mode"].lower())}' if e.get("mode") else ""
+        bullets = "<br/>".join(f"• {escape(cv_text(h))}" for h in e["highlights"])
+        rows.append(f'<tr><td valign="top"><b>{escape(e["role"])}</b>{now}<br/><sub>{escape(e["org"])}{mode}</sub></td>'
+                    f'<td valign="top"><sub>{cv_period(e["start"], e["end"])}</sub></td>'
+                    f'<td valign="top"><sub>{bullets}</sub></td></tr>')
+    rows += ["</tbody>", "</table>"]
+    lead = (f'<sub>{CV["years"]} years across engineering, product and operations · clients in '
+            f'{", ".join(CV["markets"][:-1])} and {CV["markets"][-1]} · now: '
+            + " and ".join(f'{e["role"]} at {e.get("short", e["org"]).split(" · ")[0]}' for e in current)
+            + f'. 🟢 = current role. Open to {CV["open_to"][0].lower() + CV["open_to"][1:]}.</sub>\n')
+    alt = (f'Career timeline: {len(exp)} roles and {len(CV["education"])} degrees from 2010 to now. '
+           + "; ".join(f'{e["role"]}, {e["org"]}, {cv_period(e["start"], e["end"])}' for e in exp))
+    return "\n".join([lead, pic("career", alt), "\n".join(rows)])
+
+
+def readme_education():
+    edu = ['<table>', '<thead><tr>',
+           '<th align="left" width="34%">Degree</th>', '<th align="left" width="30%">Field</th>',
+           '<th align="left" width="24%">School</th>', '<th align="right" width="12%">Years</th>',
+           '</tr></thead>', '<tbody>']
+    for e in CV["education"]:
+        edu.append(f'<tr><td><b>{escape(e["degree"])}</b></td><td>{escape(e["field"])}</td>'
+                   f'<td>{escape(e["school"])}</td><td align="right"><sub>{e["start"]}–{e["end"]}</sub></td></tr>')
+    edu += ["</tbody>", "</table>", ""]
+    groups = {}
+    for c in CV["certifications"]:
+        groups.setdefault(c["group"], []).append(c)
+    certs = ['<table>', '<thead><tr>', '<th align="left" width="22%">Certifications</th>',
+             '<th align="left" width="78%">Credential · year</th>', '</tr></thead>', '<tbody>']
+    for g, items in groups.items():
+        chips_ = " ".join(f'<code>{escape(c["name"]).replace(" ", "&nbsp;")}{"&nbsp;·&nbsp;" + str(c["year"]) if c["year"] else ""}</code>'
+                          for c in items)
+        certs.append(f'<tr><td valign="top"><b>{escape(g)}</b></td><td>{chips_}</td></tr>')
+    certs += ["</tbody>", "</table>", ""]
+    lead = ["| | |", "|---|---|"]
+    for l in CV["leadership"]:
+        lead.append(f'| 🏅 **{escape(l["role"])}** · {escape(l["org"])} | {escape(l["what"])} · {escape(l["when"])} |')
+    lead.append("| 🗣️ **Languages** | " + " · ".join(f'{x["name"]} ({x["level"]})' for x in CV["languages"]) + " |")
+    return "\n".join(edu + certs + lead)
+
+
+def readme_skills():
+    rows = ['<table>', '<thead><tr>', '<th align="left" width="24%">Skill area</th>',
+            '<th align="left" width="76%">Tools &amp; techniques</th>', '</tr></thead>', '<tbody>']
+    for k in CV["skills"]:
+        rows.append(f'<tr><td valign="top"><b>{k["emoji"]} {escape(k["area"])}</b></td><td>{escape(k["items"])}</td></tr>')
+    rows += ["</tbody>", "</table>"]
+    return "\n".join(rows)
+
+
 def readme_tldr(catalog):
     t, w, pr = DATA["totals"], DATA["window"], DATA["profile"]
     cats = catalog["categories"]
     stack = DATA["stack_commits"]["rows"]
+    now = " and ".join(f'{e["role"].lower().replace("chief technology officer", "CTO").replace("r&d", "R&D").replace(" ai ", " AI ")} at '
+                       f'{e.get("short", e["org"]).split(" · ")[0]}' for e in CV["experience"] if e["end"] is None)
+    seo = CV["seo"]
     return (
-        f'> **TL;DR** — {pr["name"]} is a {pr["role"].lower()} at {pr["company"]} ({pr["location"]}) who builds '
-        f'business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, '
-        f'e-commerce and AI automation. Across **{len(cats)} domains** there are **{C["repositories"]} repositories** '
+        f'> **TL;DR** — {pr["name"]} is a {CV["headline"].lower().replace("ai ", "AI ")} in {CV["location"]} with '
+        f'{CV["years"]} years of shipping software, currently {now}. Builds business platforms end to end: '
+        f'government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation, and runs '
+        f'the infrastructure behind them. Across **{len(cats)} domains** there are **{C["repositories"]} repositories** '
         f'({C["project_repos"]} project repos, {C["live"]} in production) and **{fmt(t["commits"])} commits**, '
         f'{t["ai_share"]}% of them pair-programmed with Claude Code. Main stacks by commits: '
         + ", ".join(f'{r["label"]} ({fmt(r["value"])})' for r in stack[:5])
         + f'. Since Dec 2025: {fmt(w["commits"])} commits on {w["active_days"]} active days. '
         f'Beyond GitHub, {BEYOND["non_code_sessions"]} of {BEYOND["sessions"]} Claude Code sessions produced '
-        'decks, estimates, guides, compliance studies, server work, content and data operations.'
+        'decks, estimates, guides, compliance studies, server work, content and data operations, and SEO, GEO and AEO '
+        f'work covers {seo["brands"]} brands since {seo["since"]}. '
+        f'M.T. from Institut Teknologi Bandung. Open to {CV["open_to"][0].lower() + CV["open_to"][1:]}.'
     )
 
 
@@ -844,12 +1148,37 @@ def readme_ai_profile(catalog):
     out.append("main_stacks:")
     for r in DATA["stack_commits"]["rows"]:
         out.append(f"  - {{stack: {q(r['label'])}, repos: {r['repos']}, commits: {r['value']}}}")
+    out.append("career:")
+    out.append(f"  headline: {q(CV['headline'])}")
+    out.append(f"  location: {q(CV['location'])}")
+    out.append(f"  years_experience: {q(CV['years'])}")
+    out.append(f"  open_to: {q(CV['open_to'])}")
+    out.append("  experience:")
+    for e in CV["experience"]:
+        out.append(f"    - {{role: {q(e['role'])}, org: {q(e['org'])}, from: {q(e['start'])}, to: {q(e['end'] or 'present')}}}")
+    out.append("  education:")
+    for e in CV["education"]:
+        out.append(f"    - {{degree: {q(e['degree'])}, field: {q(e['field'])}, school: {q(e['school'])}, years: {q(e['start'] + '-' + e['end'])}}}")
+    out.append("  certifications:")
+    for c in CV["certifications"]:
+        out.append(f"    - {{name: {q(c['name'])}, year: {c['year'] or 'null'}}}")
+    out.append("  languages: [" + ", ".join(q(f"{x['name']} ({x['level']})") for x in CV["languages"]) + "]")
+    out.append("  leadership:")
+    for l in CV["leadership"]:
+        out.append(f"    - {q(l['role'] + ', ' + l['org'] + ' (' + l['when'] + ')')}")
+    out.append("skills:")
+    for k in CV["skills"]:
+        out.append(f"  {k['area'].lower().replace(' & ', '_').replace(', ', '_').replace(' ', '_')}: {q(k['items'])}")
+    seo = CV["seo"]
+    out.append("seo_geo_aeo:")
+    out += [f"  brands: {seo['brands']}", f"  since: {seo['since']}", f"  markets: {q(seo['markets'])}",
+            f"  outcome: {q(seo['growth'])}"]
     out.append("beyond_github:")
     out.append(f"  claude_code_sessions: {BEYOND['sessions']}")
     out.append(f"  sessions_with_non_code_deliverables: {BEYOND['non_code_sessions']}")
     out.append("  categories:")
     for b in BEYOND["categories"]:
-        vol = ", ".join(f"{k}: {b[k]}" for k in ("sessions", "designs") if k in b)
+        vol = ", ".join(f"{k}: {b[k]}" for k in ("sessions", "designs", "brands") if k in b)
         out.append(f"    - {{name: {q(b['title'])}, {vol}, lives_in: {q(b['lives_in'])}}}")
     out.append("ai_in_products:")
     out += [f"  - {q(a)}" for a in pr["ai_in_products"]]
@@ -878,8 +1207,7 @@ def readme_glance():
         pic("now-shipping", f'Now shipping, last 30 days: {fmt(ns["total"])} commits. Busiest: '
             + "; ".join(f'{r["name"]} {fmt(r["commits"])}' for r in ns["rows"])),
         pic("impact", "Impact highlights: " + impact),
-        pic("timeline", "Journey: 2013 joined GitHub, 2016 research lab, 2025 client platforms, "
-                        "2026 AI-native development and ecosystems at scale"),
+        pic("timeline", "Journey: " + "; ".join(f'{i["year"]} {i["title"]}: {i["text"]}' for i in DATA["timeline"])),
     ])
 
 
@@ -900,6 +1228,8 @@ def readme_activity():
         f"Window: <b>1 Dec 2025 → {end.day} {abbr[end.month-1]} {end.year}</b>, times in WIB (UTC+7).</sub>\n",
         pic("activity", f'Weekly commits since December 2025, hand-written vs Claude Code: {fmt(w["commits"])} commits, '
                         f'peak week of {fmt(peak["human"] + peak["ai"])} starting {pkd.day} {abbr[pkd.month-1]} {pkd.year}'),
+        pic("growth", f'Cumulative commits since 1 December 2025, reaching {fmt(w["commits"])}; '
+                      f'{round(100 * w["ai"] / max(1, w["commits"]))}% paired with Claude Code'),
         pic("heatmap", f'Daily commit calendar since December 2025: {fmt(w["commits"])} commits on {w["active_days"]} of '
                        f'{w["days"]} days, longest streak {w["longest_streak"]} days, busiest day {bd.day} '
                        f'{abbr[bd.month-1]} {bd.year} with {w["busiest_count"]} commits'),
@@ -964,8 +1294,10 @@ def main():
         "activity": activity,
         "punchcard": punchcard,
         "top-projects": lambda t: rank_bars(t, DATA["top_projects"]),
-        "domains": lambda t: bars(t, DATA["domains"]),
-        "stack-commits": lambda t: bars(t, DATA["stack_commits"]),
+        "domains": lambda t: bars(t, DATA["domains"], share=True),
+        "stack-commits": lambda t: bars(t, DATA["stack_commits"], share=True),
+        "growth": growth,
+        "career": career,
         "languages": lambda t: bars(t, DATA["languages"]),
         "timeline": timeline,
         "beyond": lambda t: rank_bars(t, beyond_spec()),
@@ -996,6 +1328,9 @@ def main():
     inject_readme("PROJECTS", readme_projects(catalog))
     inject_readme("STACK", readme_stack_table())
     inject_readme("BEYOND", readme_beyond())
+    inject_readme("EXPERIENCE", readme_experience())
+    inject_readme("EDUCATION", readme_education())
+    inject_readme("SKILLS", readme_skills())
     inject_readme("AI-PROFILE", readme_ai_profile(catalog))
     sync_numbers()
 

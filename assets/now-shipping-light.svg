@@ -3,15 +3,15 @@
 <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328}.m{fill:#59636e}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@keyframes pulse{0%{r:5;opacity:.9}100%{r:13;opacity:0}}.pulse{animation:pulse 1.6s ease-out infinite}@media (prefers-reduced-motion:reduce){.pulse{animation:none}}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
 <rect x="0.5" y="0.5" width="859" height="257" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
 <text x="28" y="40" font-size="17" font-weight="700">Now shipping — last 30 days</text>
-<text x="28" y="62" font-size="12.5" class="m">1,308 commits from 20 Sep to 19 Oct 2026 · the four busiest projects right now</text>
+<text x="28" y="62" font-size="12.5" class="m">1,371 commits from 20 Sep to 19 Oct 2026 · the four busiest projects right now</text>
 
 <circle cx="301" cy="34" r="5" fill="#E11D2E"/><circle class="pulse" cx="301" cy="34" r="5" fill="none" stroke="#E11D2E" stroke-width="2"/>
-<rect x="28.0" y="86" width="192.0" height="150" rx="10" fill="#f6f8fa" stroke="#d1d9e0"/>
+<rect x="28.0" y="86" width="192.0" height="150" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
 <text x="42.0" y="110" font-size="12.5" font-weight="700">AI document automation &amp;</text>
 <text x="42.0" y="125" font-size="12.5" font-weight="700">ops hub</text>
 <text x="42.0" y="140" font-size="10.5" class="m">AI &amp; automation</text>
-<text x="42.0" y="176" font-size="24" font-weight="800" class="n">340</text>
-<text x="88.5" y="176" font-size="11" class="m">commits</text>
+<text x="42.0" y="176" font-size="26" font-weight="700">356</text>
+<text x="98.0" y="176" font-size="11" class="m">commits</text>
 <rect class="col" style="animation-delay:0.04s" x="52.9" y="214.5" width="4.3" height="7.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.06s" x="58.4" y="214.0" width="4.3" height="8.0" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.10s" x="69.3" y="219.0" width="4.3" height="3.0" rx="1" fill="#E11D2E"/>
@@ -32,13 +32,14 @@
 <rect class="col" style="animation-delay:0.50s" x="178.7" y="213.5" width="4.3" height="8.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.52s" x="184.1" y="202.5" width="4.3" height="19.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.54s" x="189.6" y="203.0" width="4.3" height="19.0" rx="1" fill="#E11D2E"/>
+<rect class="col" style="animation-delay:0.58s" x="200.5" y="214.0" width="4.3" height="8.0" rx="1" fill="#E11D2E"/>
 <line x1="42.0" x2="206.0" y1="222.5" y2="222.5" stroke="#eaeef2"/>
-<rect x="232.0" y="86" width="192.0" height="150" rx="10" fill="#f6f8fa" stroke="#d1d9e0"/>
+<rect x="232.0" y="86" width="192.0" height="150" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
 <text x="246.0" y="110" font-size="12.5" font-weight="700">Loyalty &amp;</text>
 <text x="246.0" y="125" font-size="12.5" font-weight="700">brand-protection store</text>
 <text x="246.0" y="140" font-size="10.5" class="m">E-commerce</text>
-<text x="246.0" y="176" font-size="24" font-weight="800" class="n">166</text>
-<text x="292.5" y="176" font-size="11" class="m">commits</text>
+<text x="246.0" y="176" font-size="26" font-weight="700">166</text>
+<text x="302.0" y="176" font-size="11" class="m">commits</text>
 <rect class="col" style="animation-delay:0.10s" x="273.3" y="219.5" width="4.3" height="2.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.14s" x="284.3" y="219.5" width="4.3" height="2.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.16s" x="289.7" y="218.5" width="4.3" height="3.5" rx="1" fill="#E11D2E"/>
@@ -57,12 +58,12 @@
 <rect class="col" style="animation-delay:0.52s" x="388.1" y="207.0" width="4.3" height="15.0" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.54s" x="393.6" y="220.5" width="4.3" height="1.5" rx="1" fill="#E11D2E"/>
 <line x1="246.0" x2="410.0" y1="222.5" y2="222.5" stroke="#eaeef2"/>
-<rect x="436.0" y="86" width="192.0" height="150" rx="10" fill="#f6f8fa" stroke="#d1d9e0"/>
+<rect x="436.0" y="86" width="192.0" height="150" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
 <text x="450.0" y="110" font-size="12.5" font-weight="700">Government testing-lab</text>
 <text x="450.0" y="125" font-size="12.5" font-weight="700">ERP / CRM</text>
 <text x="450.0" y="140" font-size="10.5" class="m">Gov &amp; ERP</text>
-<text x="450.0" y="176" font-size="24" font-weight="800" class="n">97</text>
-<text x="481.0" y="176" font-size="11" class="m">commits</text>
+<text x="450.0" y="176" font-size="26" font-weight="700">113</text>
+<text x="506.0" y="176" font-size="11" class="m">commits</text>
 <rect class="col" style="animation-delay:0.10s" x="477.3" y="220.5" width="4.3" height="1.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.14s" x="488.3" y="220.5" width="4.3" height="1.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.18s" x="499.2" y="217.5" width="4.3" height="4.5" rx="1" fill="#E11D2E"/>
@@ -79,15 +80,16 @@
 <rect class="col" style="animation-delay:0.50s" x="586.7" y="214.5" width="4.3" height="7.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.52s" x="592.1" y="217.0" width="4.3" height="5.0" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.54s" x="597.6" y="220.5" width="4.3" height="1.5" rx="1" fill="#E11D2E"/>
+<rect class="col" style="animation-delay:0.58s" x="608.5" y="213.5" width="4.3" height="8.5" rx="1" fill="#E11D2E"/>
 <line x1="450.0" x2="614.0" y1="222.5" y2="222.5" stroke="#eaeef2"/>
-<rect x="640.0" y="86" width="192.0" height="150" rx="10" fill="#f6f8fa" stroke="#d1d9e0"/>
+<rect x="640.0" y="86" width="192.0" height="150" rx="12" fill="#f6f8fa" stroke="#d1d9e0"/>
 <text x="654.0" y="110" font-size="12.5" font-weight="700">Civic organisation</text>
 <text x="654.0" y="125" font-size="12.5" font-weight="700">SuperApp</text>
 <text x="654.0" y="140" font-size="10.5" class="m">SaaS platforms</text>
-<text x="654.0" y="176" font-size="24" font-weight="800" class="n">92</text>
-<text x="685.0" y="176" font-size="11" class="m">commits</text>
+<text x="654.0" y="176" font-size="26" font-weight="700">110</text>
+<text x="710.0" y="176" font-size="11" class="m">commits</text>
 <rect class="col" style="animation-delay:0.36s" x="752.4" y="220.5" width="4.3" height="1.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.52s" x="796.1" y="208.5" width="4.3" height="13.5" rx="1" fill="#E11D2E"/>
 <rect class="col" style="animation-delay:0.54s" x="801.6" y="192.0" width="4.3" height="30.0" rx="1" fill="#E11D2E"/>
-<rect class="col" style="animation-delay:0.58s" x="812.5" y="220.0" width="4.3" height="2.0" rx="1" fill="#E11D2E"/>
+<rect class="col" style="animation-delay:0.58s" x="812.5" y="211.0" width="4.3" height="11.0" rx="1" fill="#E11D2E"/>
 <line x1="654.0" x2="818.0" y1="222.5" y2="222.5" stroke="#eaeef2"/></svg>

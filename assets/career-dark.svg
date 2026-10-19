@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="634" viewBox="0 0 860 634" role="img" aria-label="Career timeline">
+<title>Career timeline</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#e6edf3}.m{fill:#9198a1}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@keyframes pulse{0%{r:5;opacity:.9}100%{r:12;opacity:0}}.pulse{animation:pulse 1.6s ease-out infinite}@media (prefers-reduced-motion:reduce){.pulse{animation:none}}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
+<rect x="0.5" y="0.5" width="859" height="633" rx="12" fill="#0d1117" stroke="#3d444d"/>
+<text x="28" y="40" font-size="17" font-weight="700">Career timeline — 15+ years</text>
+<text x="28" y="62" font-size="12.5" class="m">11 roles across engineering, product and operations · 3 degrees · overlapping bars are parallel roles</text>
+
+<text x="762" y="44" font-size="12" class="m">Education</text>
+<rect x="742" y="37" width="14" height="4" rx="2" fill="#768390"/>
+<text x="696" y="44" font-size="12" class="m">Role</text>
+<rect x="676" y="37" width="14" height="4" rx="2" fill="#F2545B"/>
+<line x1="320.0" x2="320.0" y1="100" y2="618" stroke="#21262d"/>
+<text x="320.0" y="92" font-size="10.5" class="m n" text-anchor="middle">2010</text>
+<line x1="379.3" x2="379.3" y1="100" y2="618" stroke="#21262d"/>
+<text x="379.3" y="92" font-size="10.5" class="m n" text-anchor="middle">2012</text>
+<line x1="438.6" x2="438.6" y1="100" y2="618" stroke="#21262d"/>
+<text x="438.6" y="92" font-size="10.5" class="m n" text-anchor="middle">2014</text>
+<line x1="497.9" x2="497.9" y1="100" y2="618" stroke="#21262d"/>
+<text x="497.9" y="92" font-size="10.5" class="m n" text-anchor="middle">2016</text>
+<line x1="557.2" x2="557.2" y1="100" y2="618" stroke="#21262d"/>
+<text x="557.2" y="92" font-size="10.5" class="m n" text-anchor="middle">2018</text>
+<line x1="616.5" x2="616.5" y1="100" y2="618" stroke="#21262d"/>
+<text x="616.5" y="92" font-size="10.5" class="m n" text-anchor="middle">2020</text>
+<line x1="675.8" x2="675.8" y1="100" y2="618" stroke="#21262d"/>
+<text x="675.8" y="92" font-size="10.5" class="m n" text-anchor="middle">2022</text>
+<line x1="735.1" x2="735.1" y1="100" y2="618" stroke="#21262d"/>
+<text x="735.1" y="92" font-size="10.5" class="m n" text-anchor="middle">2024</text>
+<line x1="794.4" x2="794.4" y1="100" y2="618" stroke="#21262d"/>
+<text x="794.4" y="92" font-size="10.5" class="m n" text-anchor="middle">2026</text>
+<line x1="818.1" x2="818.1" y1="100" y2="618" stroke="#F2545B" stroke-opacity=".5"/>
+<text x="28" y="125" font-size="12.5" font-weight="700">Full Stack &amp; AI Engineer</text>
+<text x="28" y="140" font-size="10.5" class="m">KOMINA · remote · Apr 2026 – now</text>
+<rect class="bar" style="animation-delay:0.00s" x="801.8" y="121" width="16.4" height="12" rx="6" fill="#F2545B"/>
+<circle cx="818.1" cy="127" r="5" fill="#F2545B" stroke="#0d1117" stroke-width="2"/><circle class="pulse" cx="818.1" cy="127" r="5" fill="none" stroke="#F2545B" stroke-width="2"/>
+<text x="28" y="159" font-size="12.5" font-weight="700">Chief Technology Officer &amp; R&amp;D Lead</text>
+<text x="28" y="174" font-size="10.5" class="m">PT Newtype Tekno Pioneer · Nov 2012 – now</text>
+<rect class="bar" style="animation-delay:0.06s" x="404.0" y="155" width="414.1" height="12" rx="6" fill="#F2545B"/>
+<circle cx="818.1" cy="161" r="5" fill="#F2545B" stroke="#0d1117" stroke-width="2"/><circle class="pulse" cx="818.1" cy="161" r="5" fill="none" stroke="#F2545B" stroke-width="2"/>
+<text x="28" y="193" font-size="12.5" font-weight="700">Full Stack Developer &amp; SEO Engineer</text>
+<text x="28" y="208" font-size="10.5" class="m">Peter &amp; Co · freelance · Jun 2021 – Oct 2026</text>
+<rect class="bar" style="animation-delay:0.12s" x="658.5" y="189" width="158.1" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="227" font-size="12.5" font-weight="700">Full Stack Developer</text>
+<text x="28" y="242" font-size="10.5" class="m">Glints (Singapore clients) · Jun 2025 – Mar 2026</text>
+<rect class="bar" style="animation-delay:0.18s" x="777.1" y="223" width="22.2" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="261" font-size="12.5" font-weight="700">Chief Operating Officer</text>
+<text x="28" y="276" font-size="10.5" class="m">Happy Play Indonesia · May 2023 – Dec 2023</text>
+<rect class="bar" style="animation-delay:0.24s" x="715.3" y="257" width="17.3" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="295" font-size="12.5" font-weight="700">COO &amp; Product Owner</text>
+<text x="28" y="310" font-size="10.5" class="m">Worklife &amp; Beyond (ESQ) · Feb 2019 – May 2023</text>
+<rect class="bar" style="animation-delay:0.30s" x="589.3" y="291" width="126.0" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="329" font-size="12.5" font-weight="700">Business Development Manager</text>
+<text x="28" y="344" font-size="10.5" class="m">Digital Creativa Asia · Mar 2018 – Feb 2019</text>
+<rect class="bar" style="animation-delay:0.36s" x="562.1" y="325" width="27.2" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="363" font-size="12.5" font-weight="700">Lecturer, Computer Science</text>
+<text x="28" y="378" font-size="10.5" class="m">Univ. Internasional Batam · Aug 2016 – May 2017</text>
+<rect class="bar" style="animation-delay:0.42s" x="515.2" y="359" width="22.2" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="397" font-size="12.5" font-weight="700">Digital Consultant</text>
+<text x="28" y="412" font-size="10.5" class="m">Gofit Inspirasi Indonesia · Mar 2016 – Oct 2017</text>
+<rect class="bar" style="animation-delay:0.48s" x="502.8" y="393" width="46.9" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="431" font-size="12.5" font-weight="700">Senior Web Developer</text>
+<text x="28" y="446" font-size="10.5" class="m">Siskom Digital Pte. Ltd · Mar 2015 – Jan 2016</text>
+<rect class="bar" style="animation-delay:0.54s" x="473.2" y="427" width="24.7" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="465" font-size="12.5" font-weight="700">Full Stack Developer</text>
+<text x="28" y="480" font-size="10.5" class="m">SEAMEO SEAMOLEC · Oct 2014 – Oct 2017</text>
+<rect class="bar" style="animation-delay:0.60s" x="460.8" y="461" width="88.9" height="12" rx="6" fill="#F2545B"/>
+<text x="28" y="504" font-size="10.5" font-weight="700" class="m" letter-spacing=".8">EDUCATION</text>
+<line x1="104" x2="824" y1="500" y2="500" stroke="#21262d"/>
+<text x="28" y="529" font-size="12.5" font-weight="700">M.T., Digital Media Tech &amp; Game</text>
+<text x="28" y="544" font-size="10.5" class="m">Institut Teknologi Bandung · 2015 – 2018</text>
+<rect class="bar" style="animation-delay:0.66s" x="485.5" y="525" width="88.9" height="12" rx="6" fill="#768390"/>
+<text x="28" y="563" font-size="12.5" font-weight="700">D4 / S.S.T., Computer Network Eng.</text>
+<text x="28" y="578" font-size="10.5" class="m">Institut Teknologi Bandung · 2013 – 2015</text>
+<rect class="bar" style="animation-delay:0.72s" x="426.2" y="559" width="59.3" height="12" rx="6" fill="#768390"/>
+<text x="28" y="597" font-size="12.5" font-weight="700">D3, Informatics Management</text>
+<text x="28" y="612" font-size="10.5" class="m">Telkom University · 2010 – 2013</text>
+<rect class="bar" style="animation-delay:0.78s" x="337.3" y="593" width="88.9" height="12" rx="6" fill="#768390"/></svg>
