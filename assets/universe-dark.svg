@@ -3,242 +3,241 @@
 <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#e6edf3}.m{fill:#9198a1}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
 <rect x="0.5" y="0.5" width="859" height="729" rx="12" fill="#0d1117" stroke="#3d444d"/>
 <text x="28" y="40" font-size="17" font-weight="700">Project universe — every project, grouped by domain</text>
-<text x="28" y="62" font-size="12.5" class="m">Tile area grows with commits (square-root scale) · darker red = more commits · 76 catalogue entries, 93 repos</text>
+<text x="28" y="62" font-size="12.5" class="m">Tile area grows with commits (square-root scale) · darker red = more commits · 77 catalogue entries, 94 repos</text>
 
-<rect x="29.5" y="93.5" width="245.8" height="301.9" rx="6" fill="#151b23" stroke="#3d444d"/>
+<rect x="29.5" y="93.5" width="245.9" height="300.2" rx="6" fill="#151b23" stroke="#3d444d"/>
 <text x="36.5" y="107.5" font-size="10.5" font-weight="700" class="m">E-Commerce &amp; WooCommerce</text>
-<rect class="fd" x="33.5" y="114.5" width="118.5" height="83.0" rx="3" fill="#d4303d"><title>Loyalty &amp; brand-protection store: 369 commits</title></rect>
+<rect class="fd" x="33.5" y="114.5" width="119.0" height="82.9" rx="3" fill="#d4303d"><title>Loyalty &amp; brand-protection store: 380 commits</title></rect>
 <text x="38.5" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Loyalty &amp;</text>
 <text x="38.5" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">brand-protection</text>
 <text x="38.5" y="152.5" font-size="10" font-weight="600" style="fill:#e6edf3">store</text>
-<text x="38.5" y="166.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">369</text>
-<rect class="fd" x="154.0" y="114.5" width="117.3" height="83.0" rx="3" fill="#d4303d"><title>Product-authentication plugin suite: 360 commits</title></rect>
-<text x="159.0" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Product-authentica</text>
-<text x="159.0" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">plugin suite</text>
-<text x="159.0" y="154.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">360</text>
-<rect class="fd" x="33.5" y="199.5" width="75.3" height="74.4" rx="3" fill="#8f1d29"><title>Storefront child themes: 96 commits</title></rect>
-<text x="38.5" y="213.5" font-size="10" font-weight="600" style="fill:#e6edf3">Storefront</text>
-<text x="38.5" y="225.5" font-size="10" font-weight="600" style="fill:#e6edf3">child</text>
-<text x="38.5" y="237.5" font-size="10" font-weight="600" style="fill:#e6edf3">themes</text>
-<text x="38.5" y="251.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">96</text>
-<rect class="fd" x="33.5" y="275.9" width="75.3" height="61.8" rx="3" fill="#8f1d29"><title>Product-recommendation quiz: 59 commits</title></rect>
-<text x="38.5" y="289.9" font-size="10" font-weight="600" style="fill:#e6edf3">Product-rec</text>
-<text x="38.5" y="301.9" font-size="10" font-weight="600" style="fill:#e6edf3">quiz</text>
-<text x="38.5" y="315.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">59</text>
-<rect class="fd" x="33.5" y="339.7" width="75.3" height="51.7" rx="3" fill="#5c1a22"><title>Excel → WooCommerce import pipeline: 36 commits</title></rect>
-<text x="38.5" y="353.7" font-size="10" font-weight="600" style="fill:#e6edf3">Excel →</text>
-<text x="38.5" y="365.7" font-size="10" font-weight="600" style="fill:#e6edf3">WooCommerc…</text>
-<text x="38.5" y="379.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">36</text>
-<rect class="fd" x="110.8" y="199.5" width="52.7" height="71.7" rx="3" fill="#5c1a22"><title>Web-AR product catalogue: 33 commits</title></rect>
-<rect class="fd" x="165.5" y="199.5" width="52.2" height="71.7" rx="3" fill="#5c1a22"><title>Smart Coupons customisation: 32 commits</title></rect>
-<rect class="fd" x="219.7" y="199.5" width="51.6" height="71.7" rx="3" fill="#5c1a22"><title>SKU-restricted coupons: 31 commits</title></rect>
-<rect class="fd" x="110.8" y="273.3" width="52.6" height="64.8" rx="3" fill="#5c1a22"><title>In-house Elementor widget suite: 24 commits</title></rect>
-<rect class="fd" x="110.8" y="340.0" width="52.6" height="51.4" rx="3" fill="#5c1a22"><title>Spending-limits extension: 11 commits</title></rect>
-<rect class="fd" x="165.4" y="273.3" width="55.0" height="49.2" rx="3" fill="#5c1a22"><title>Payment confirmation emails: 11 commits</title></rect>
-<rect class="fd" x="222.4" y="273.3" width="48.9" height="49.2" rx="3" fill="#3a1418"><title>Guest-checkout defaults: 7 commits</title></rect>
-<rect class="fd" x="165.4" y="324.4" width="34.4" height="67.0" rx="3" fill="#3a1418"><title>B2B export catalogue &amp; quotations: 6 commits</title></rect>
-<rect class="fd" x="201.8" y="324.4" width="34.4" height="67.0" rx="3" fill="#3a1418"><title>Shopee ↔ WooCommerce connector: 6 commits</title></rect>
-<rect class="fd" x="238.3" y="324.4" width="33.0" height="67.0" rx="3" fill="#3a1418"><title>AI shopping chatbot (client build): 5 commits</title></rect>
-<rect x="29.5" y="398.4" width="245.8" height="292.1" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="36.5" y="412.4" font-size="10.5" font-weight="700" class="m">Industry Platforms &amp; SaaS</text>
-<rect class="fd" x="33.5" y="419.4" width="121.0" height="90.5" rx="3" fill="#d4303d"><title>Civic organisation SuperApp: 473 commits</title></rect>
-<text x="38.5" y="433.4" font-size="10" font-weight="600" style="fill:#e6edf3">Civic organisation</text>
-<text x="38.5" y="445.4" font-size="10" font-weight="600" style="fill:#e6edf3">SuperApp</text>
-<text x="38.5" y="459.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">473</text>
-<rect class="fd" x="156.5" y="419.4" width="114.8" height="90.5" rx="3" fill="#d4303d"><title>Donation &amp; social-foundation platform: 420 commits</title></rect>
-<text x="161.5" y="433.4" font-size="10" font-weight="600" style="fill:#e6edf3">Donation &amp;</text>
-<text x="161.5" y="445.4" font-size="10" font-weight="600" style="fill:#e6edf3">social-foundation</text>
-<text x="161.5" y="457.4" font-size="10" font-weight="600" style="fill:#e6edf3">platform</text>
-<text x="161.5" y="471.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">420</text>
-<rect class="fd" x="33.5" y="511.9" width="108.4" height="94.5" rx="3" fill="#d4303d"><title>Lawyer-on-demand marketplace: 407 commits</title></rect>
-<text x="38.5" y="525.9" font-size="10" font-weight="600" style="fill:#e6edf3">Lawyer-on-demand</text>
-<text x="38.5" y="537.9" font-size="10" font-weight="600" style="fill:#e6edf3">marketplace</text>
-<text x="38.5" y="551.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">407</text>
-<rect class="fd" x="33.5" y="608.5" width="108.4" height="78.0" rx="3" fill="#d4303d"><title>Sign-language accessibility SaaS: 263 commits</title></rect>
-<text x="38.5" y="622.5" font-size="10" font-weight="600" style="fill:#e6edf3">Sign-language</text>
-<text x="38.5" y="634.5" font-size="10" font-weight="600" style="fill:#e6edf3">accessibility</text>
-<text x="38.5" y="646.5" font-size="10" font-weight="600" style="fill:#e6edf3">SaaS</text>
-<text x="38.5" y="660.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">263</text>
-<rect class="fd" x="143.9" y="511.9" width="65.3" height="78.5" rx="3" fill="#8f1d29"><title>Game top-up &amp; voucher platform: 77 commits</title></rect>
-<text x="148.9" y="525.9" font-size="10" font-weight="600" style="fill:#e6edf3">Game</text>
-<text x="148.9" y="537.9" font-size="10" font-weight="600" style="fill:#e6edf3">top-up &amp;</text>
-<text x="148.9" y="549.9" font-size="10" font-weight="600" style="fill:#e6edf3">voucher…</text>
-<text x="148.9" y="563.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">77</text>
-<rect class="fd" x="211.2" y="511.9" width="60.1" height="78.5" rx="3" fill="#8f1d29"><title>Grant-partner form portal: 62 commits</title></rect>
-<text x="216.2" y="525.9" font-size="10" font-weight="600" style="fill:#e6edf3">Grant-pa</text>
-<text x="216.2" y="537.9" font-size="10" font-weight="600" style="fill:#e6edf3">form</text>
-<text x="216.2" y="549.9" font-size="10" font-weight="600" style="fill:#e6edf3">portal</text>
-<text x="216.2" y="563.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">62</text>
-<rect class="fd" x="143.9" y="592.5" width="75.2" height="51.6" rx="3" fill="#5c1a22"><title>Telehealth &amp; wellness platform: 36 commits</title></rect>
-<text x="148.9" y="606.5" font-size="10" font-weight="600" style="fill:#e6edf3">Telehealth</text>
-<text x="148.9" y="618.5" font-size="10" font-weight="600" style="fill:#e6edf3">&amp; wellness…</text>
-<text x="148.9" y="632.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">36</text>
-<rect class="fd" x="143.9" y="646.1" width="75.2" height="40.4" rx="3" fill="#5c1a22"><title>Mining digital-twin 3D dashboard: 17 commits</title></rect>
-<text x="148.9" y="660.1" font-size="10" font-weight="600" style="fill:#e6edf3">Mining…</text>
-<text x="148.9" y="674.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">17</text>
-<rect class="fd" x="221.2" y="592.5" width="50.1" height="55.1" rx="3" fill="#5c1a22"><title>Binary MLM &amp; multi-store commerce: 12 commits</title></rect>
-<rect class="fd" x="221.2" y="649.5" width="50.1" height="37.0" rx="3" fill="#3a1418"><title>Cybersecurity services site: 2 commits</title></rect>
-<rect x="278.3" y="93.5" width="274.7" height="242.7" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="285.3" y="107.5" font-size="10.5" font-weight="700" class="m">AI, ML &amp; Automation</text>
-<rect class="fd" x="282.3" y="114.5" width="125.2" height="217.7" rx="3" fill="#ff8a93"><title>AI document automation &amp; ops hub: 3,446 commits</title></rect>
-<text x="287.3" y="128.5" font-size="10" font-weight="600" style="fill:#0d1117">AI document</text>
-<text x="287.3" y="140.5" font-size="10" font-weight="600" style="fill:#0d1117">automation &amp; ops hub</text>
-<text x="287.3" y="154.5" font-size="10" class="n" style="fill:#0d1117;opacity:.85">3,446</text>
-<rect class="fd" x="409.5" y="114.5" width="75.9" height="112.5" rx="3" fill="#d4303d"><title>Ops knowledge base &amp; AI CV screening: 279 commits</title></rect>
-<text x="414.5" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Ops</text>
-<text x="414.5" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">knowledge</text>
-<text x="414.5" y="152.5" font-size="10" font-weight="600" style="fill:#e6edf3">base &amp; AI…</text>
-<text x="414.5" y="166.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">279</text>
-<rect class="fd" x="487.4" y="114.5" width="61.6" height="112.5" rx="3" fill="#8f1d29"><title>Algorithmic crypto trading engine: 171 commits</title></rect>
-<text x="492.4" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Algorithm</text>
-<text x="492.4" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">crypto</text>
-<text x="492.4" y="152.5" font-size="10" font-weight="600" style="fill:#e6edf3">trading…</text>
-<text x="492.4" y="166.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">171</text>
-<rect class="fd" x="409.5" y="229.0" width="75.4" height="51.6" rx="3" fill="#5c1a22"><title>AI competency recommender: 38 commits</title></rect>
-<text x="414.5" y="243.0" font-size="10" font-weight="600" style="fill:#e6edf3">AI</text>
-<text x="414.5" y="255.0" font-size="10" font-weight="600" style="fill:#e6edf3">competency…</text>
-<text x="414.5" y="269.0" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">38</text>
-<rect class="fd" x="409.5" y="282.6" width="75.4" height="49.6" rx="3" fill="#5c1a22"><title>RAG learning assistant: 34 commits</title></rect>
-<text x="414.5" y="296.6" font-size="10" font-weight="600" style="fill:#e6edf3">RAG</text>
-<text x="414.5" y="308.6" font-size="10" font-weight="600" style="fill:#e6edf3">learning…</text>
-<text x="414.5" y="322.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">34</text>
-<rect class="fd" x="486.9" y="229.0" width="62.1" height="56.6" rx="3" fill="#5c1a22"><title>Contact master-list automation: 28 commits</title></rect>
-<text x="491.9" y="243.0" font-size="10" font-weight="600" style="fill:#e6edf3">Contact</text>
-<text x="491.9" y="255.0" font-size="10" font-weight="600" style="fill:#e6edf3">master-l…</text>
-<text x="491.9" y="269.0" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">28</text>
-<rect class="fd" x="486.9" y="287.6" width="62.1" height="44.7" rx="3" fill="#5c1a22"><title>AI incident-response platform: 13 commits</title></rect>
-<text x="491.9" y="301.6" font-size="10" font-weight="600" style="fill:#e6edf3">AI</text>
-<text x="491.9" y="313.6" font-size="10" font-weight="600" style="fill:#e6edf3">incident…</text>
-<text x="491.9" y="327.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">13</text>
-<rect x="556.0" y="93.5" width="274.5" height="242.7" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="563.0" y="107.5" font-size="10.5" font-weight="700" class="m">Government, ERP &amp; Enterprise Ops</text>
-<rect class="fd" x="560.0" y="114.5" width="144.5" height="138.9" rx="3" fill="#ff8a93"><title>Government testing-lab ERP / CRM: 1,813 commits</title></rect>
-<text x="565.0" y="128.5" font-size="10" font-weight="600" style="fill:#0d1117">Government testing-lab</text>
-<text x="565.0" y="140.5" font-size="10" font-weight="600" style="fill:#0d1117">ERP / CRM</text>
-<text x="565.0" y="154.5" font-size="10" class="n" style="fill:#0d1117;opacity:.85">1,813</text>
-<rect class="fd" x="560.0" y="255.4" width="144.5" height="76.9" rx="3" fill="#d4303d"><title>ISP modular ERP: 507 commits</title></rect>
-<text x="565.0" y="269.4" font-size="10" font-weight="600" style="fill:#e6edf3">ISP modular ERP</text>
-<text x="565.0" y="283.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">507</text>
-<rect class="fd" x="706.5" y="114.5" width="120.0" height="89.0" rx="3" fill="#d4303d"><title>Food supply-chain governance SaaS: 463 commits</title></rect>
-<text x="711.5" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Food supply-chain</text>
-<text x="711.5" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">governance SaaS</text>
-<text x="711.5" y="154.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">463</text>
-<rect class="fd" x="706.5" y="205.5" width="70.1" height="56.6" rx="3" fill="#5c1a22"><title>CRM ↔ FluentCRM sync: 40 commits</title></rect>
-<text x="711.5" y="219.5" font-size="10" font-weight="600" style="fill:#e6edf3">CRM ↔</text>
-<text x="711.5" y="231.5" font-size="10" font-weight="600" style="fill:#e6edf3">FluentCRM…</text>
-<text x="711.5" y="245.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">40</text>
-<rect class="fd" x="778.6" y="205.5" width="47.9" height="56.6" rx="3" fill="#5c1a22"><title>Stock-exchange → CRM lead pipeline: 12 commits</title></rect>
-<rect class="fd" x="706.5" y="264.1" width="37.8" height="68.1" rx="3" fill="#5c1a22"><title>Textile-testing lab ERP / CRM: 10 commits</title></rect>
-<rect class="fd" x="746.3" y="264.1" width="54.4" height="36.0" rx="3" fill="#3a1418"><title>HRIS &amp; payroll suite: 3 commits</title></rect>
-<rect class="fd" x="746.3" y="302.1" width="54.4" height="30.1" rx="3" fill="#3a1418"><title>HR &amp; attendance suite + mobile app: 1 commits</title></rect>
-<rect class="fd" x="802.7" y="264.1" width="23.8" height="68.1" rx="3" fill="#3a1418"><title>Fleet &amp; vehicle booking PWA: 1 commits</title></rect>
-<rect x="278.3" y="339.2" width="246.7" height="195.5" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="285.3" y="353.2" font-size="10.5" font-weight="700" class="m">Higher-Education &amp; EdTech</text>
-<rect class="fd" x="282.3" y="360.2" width="92.6" height="96.0" rx="3" fill="#d4303d"><title>Admissions + finance + academic monorepo: 329 commits</title></rect>
-<text x="287.3" y="374.2" font-size="10" font-weight="600" style="fill:#e6edf3">Admissions +</text>
-<text x="287.3" y="386.2" font-size="10" font-weight="600" style="fill:#e6edf3">finance +</text>
-<text x="287.3" y="398.2" font-size="10" font-weight="600" style="fill:#e6edf3">academic…</text>
-<text x="287.3" y="412.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">329</text>
-<rect class="fd" x="282.3" y="458.2" width="92.6" height="72.5" rx="3" fill="#8f1d29"><title>Course registration &amp; enrolment: 171 commits</title></rect>
-<text x="287.3" y="472.2" font-size="10" font-weight="600" style="fill:#e6edf3">Course</text>
-<text x="287.3" y="484.2" font-size="10" font-weight="600" style="fill:#e6edf3">registration &amp;</text>
-<text x="287.3" y="496.2" font-size="10" font-weight="600" style="fill:#e6edf3">enrolment</text>
-<text x="287.3" y="510.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">171</text>
-<rect class="fd" x="376.9" y="360.2" width="87.4" height="66.9" rx="3" fill="#8f1d29"><title>University academic system (SIAKAD): 122 commits</title></rect>
-<text x="381.9" y="374.2" font-size="10" font-weight="600" style="fill:#e6edf3">University</text>
-<text x="381.9" y="386.2" font-size="10" font-weight="600" style="fill:#e6edf3">academic…</text>
-<text x="381.9" y="400.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">122</text>
-<rect class="fd" x="466.3" y="360.2" width="54.7" height="66.9" rx="3" fill="#5c1a22"><title>University LMS "AI Class": 35 commits</title></rect>
-<rect class="fd" x="376.9" y="429.1" width="63.5" height="50.2" rx="3" fill="#5c1a22"><title>University finance &amp; billing: 23 commits</title></rect>
-<text x="381.9" y="443.1" font-size="10" font-weight="600" style="fill:#e6edf3">Universit</text>
-<text x="381.9" y="455.1" font-size="10" font-weight="600" style="fill:#e6edf3">finance …</text>
-<text x="381.9" y="469.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">23</text>
-<rect class="fd" x="376.9" y="481.3" width="63.5" height="49.5" rx="3" fill="#5c1a22"><title>Computer-based admission exam (CAT): 22 commits</title></rect>
-<text x="381.9" y="495.3" font-size="10" font-weight="600" style="fill:#e6edf3">Computer-</text>
-<text x="381.9" y="507.3" font-size="10" font-weight="600" style="fill:#e6edf3">admissio…</text>
-<text x="381.9" y="521.3" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">22</text>
-<rect class="fd" x="442.4" y="429.1" width="78.6" height="39.2" rx="3" fill="#5c1a22"><title>LMS dynamic profile fields: 21 commits</title></rect>
-<text x="447.4" y="443.1" font-size="10" font-weight="600" style="fill:#e6edf3">LMS dynamic…</text>
-<text x="447.4" y="457.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">21</text>
-<rect class="fd" x="442.4" y="470.3" width="39.0" height="60.4" rx="3" fill="#3a1418"><title>School library management plugin: 8 commits</title></rect>
-<rect class="fd" x="483.3" y="470.3" width="37.7" height="60.4" rx="3" fill="#3a1418"><title>Higher-ed reporting feeder kit: 7 commits</title></rect>
-<rect x="278.3" y="537.7" width="246.7" height="152.8" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="285.3" y="551.7" font-size="10.5" font-weight="700" class="m">Logistics &amp; Shipping</text>
-<rect class="fd" x="282.3" y="558.7" width="123.5" height="127.8" rx="3" fill="#ff8a93"><title>Multi-tenant courier &amp; parcel SaaS: 1,277 commits</title></rect>
-<text x="287.3" y="572.7" font-size="10" font-weight="600" style="fill:#0d1117">Multi-tenant</text>
-<text x="287.3" y="584.7" font-size="10" font-weight="600" style="fill:#0d1117">courier &amp; parcel</text>
-<text x="287.3" y="596.7" font-size="10" font-weight="600" style="fill:#0d1117">SaaS</text>
-<text x="287.3" y="610.7" font-size="10" class="n" style="fill:#0d1117;opacity:.85">1,277</text>
-<rect class="fd" x="407.8" y="558.7" width="71.2" height="64.0" rx="3" fill="#8f1d29"><title>Freight-forwarder websites: 72 commits</title></rect>
-<text x="412.8" y="572.7" font-size="10" font-weight="600" style="fill:#e6edf3">Freight-fo</text>
-<text x="412.8" y="584.7" font-size="10" font-weight="600" style="fill:#e6edf3">websites</text>
-<text x="412.8" y="598.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">72</text>
-<rect class="fd" x="480.9" y="558.7" width="40.1" height="64.0" rx="3" fill="#5c1a22"><title>White-label shipping-rates plugin: 13 commits</title></rect>
-<rect class="fd" x="407.8" y="624.7" width="41.5" height="61.8" rx="3" fill="#5c1a22"><title>Hacked-site incident response: 13 commits</title></rect>
-<rect class="fd" x="451.3" y="624.7" width="35.2" height="61.8" rx="3" fill="#3a1418"><title>Multi-courier shipping stack: 7 commits</title></rect>
-<rect class="fd" x="488.5" y="624.7" width="32.5" height="61.8" rx="3" fill="#3a1418"><title>Courier-rate plugin + checkout bridge: 5 commits</title></rect>
-<rect x="528.0" y="339.2" width="152.8" height="196.4" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="535.0" y="353.2" font-size="10.5" font-weight="700" class="m">Membership, Events &amp; …</text>
-<rect class="fd" x="532.0" y="360.2" width="90.7" height="98.6" rx="3" fill="#d4303d"><title>Membership &amp; store-credit automation: 351 commits</title></rect>
-<text x="537.0" y="374.2" font-size="10" font-weight="600" style="fill:#e6edf3">Membership &amp;</text>
-<text x="537.0" y="386.2" font-size="10" font-weight="600" style="fill:#e6edf3">store-credit</text>
-<text x="537.0" y="398.2" font-size="10" font-weight="600" style="fill:#e6edf3">automation</text>
-<text x="537.0" y="412.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">351</text>
-<rect class="fd" x="624.7" y="360.2" width="52.1" height="98.6" rx="3" fill="#8f1d29"><title>Canva → FluentCRM importer: 94 commits</title></rect>
-<rect class="fd" x="532.0" y="460.8" width="41.4" height="70.8" rx="3" fill="#5c1a22"><title>Eventbrite integrations: 19 commits</title></rect>
-<rect class="fd" x="575.4" y="460.8" width="35.2" height="70.8" rx="3" fill="#5c1a22"><title>Branded membership email templates: 11 commits</title></rect>
-<rect class="fd" x="612.6" y="460.8" width="64.2" height="36.9" rx="3" fill="#3a1418"><title>Newsletter campaigns: 9 commits</title></rect>
-<text x="617.6" y="474.8" font-size="10" font-weight="600" style="fill:#e6edf3">Newslett…</text>
-<text x="617.6" y="488.8" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">9</text>
-<rect class="fd" x="612.6" y="499.7" width="64.2" height="31.9" rx="3" fill="#3a1418"><title>Recurring-events fix: 5 commits</title></rect>
-<text x="617.6" y="513.7" font-size="10" font-weight="600" style="fill:#e6edf3">Recurrin…</text>
-<rect x="683.8" y="339.2" width="146.7" height="196.4" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="690.8" y="353.2" font-size="10.5" font-weight="700" class="m">Talent Assessment &amp; …</text>
-<rect class="fd" x="687.8" y="360.2" width="138.7" height="91.2" rx="3" fill="#d4303d"><title>Enterprise talent discovery platform: 765 commits</title></rect>
-<text x="692.8" y="374.2" font-size="10" font-weight="600" style="fill:#e6edf3">Enterprise talent</text>
-<text x="692.8" y="386.2" font-size="10" font-weight="600" style="fill:#e6edf3">discovery platform</text>
-<text x="692.8" y="400.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">765</text>
-<rect class="fd" x="687.8" y="453.4" width="70.5" height="78.2" rx="3" fill="#8f1d29"><title>Corporate assessment platform: 112 commits</title></rect>
-<text x="692.8" y="467.4" font-size="10" font-weight="600" style="fill:#e6edf3">Corporate</text>
-<text x="692.8" y="479.4" font-size="10" font-weight="600" style="fill:#e6edf3">assessment</text>
-<text x="692.8" y="491.4" font-size="10" font-weight="600" style="fill:#e6edf3">platform</text>
-<text x="692.8" y="505.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">112</text>
-<rect class="fd" x="760.3" y="453.4" width="66.2" height="38.5" rx="3" fill="#5c1a22"><title>AI adaptive testing (CAT) engine: 12 commits</title></rect>
-<text x="765.3" y="467.4" font-size="10" font-weight="600" style="fill:#e6edf3">AI…</text>
-<text x="765.3" y="481.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">12</text>
-<rect class="fd" x="760.3" y="494.0" width="66.2" height="37.6" rx="3" fill="#5c1a22"><title>ATS screening pipeline &amp; test kit: 11 commits</title></rect>
-<text x="765.3" y="508.0" font-size="10" font-weight="600" style="fill:#e6edf3">ATS…</text>
-<text x="765.3" y="522.0" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">11</text>
-<rect x="528.0" y="538.6" width="169.6" height="151.9" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="535.0" y="552.6" font-size="10.5" font-weight="700" class="m">Payments, Accounting &amp; P…</text>
-<rect class="fd" x="532.0" y="559.6" width="89.8" height="69.6" rx="3" fill="#8f1d29"><title>Sports-arena POS ecosystem: 167 commits</title></rect>
-<text x="537.0" y="573.6" font-size="10" font-weight="600" style="fill:#e6edf3">Sports-arena</text>
-<text x="537.0" y="585.6" font-size="10" font-weight="600" style="fill:#e6edf3">POS ecosystem</text>
-<text x="537.0" y="599.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">167</text>
-<rect class="fd" x="532.0" y="631.2" width="89.8" height="55.3" rx="3" fill="#8f1d29"><title>OpenPOS omnichannel add-ons: 95 commits</title></rect>
-<text x="537.0" y="645.2" font-size="10" font-weight="600" style="fill:#e6edf3">OpenPOS</text>
-<text x="537.0" y="657.2" font-size="10" font-weight="600" style="fill:#e6edf3">omnichannel…</text>
-<text x="537.0" y="671.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">95</text>
-<rect class="fd" x="623.8" y="559.6" width="69.8" height="50.2" rx="3" fill="#5c1a22"><title>Singapore PayNow QR gateway: 37 commits</title></rect>
-<text x="628.8" y="573.6" font-size="10" font-weight="600" style="fill:#e6edf3">Singapore</text>
-<text x="628.8" y="585.6" font-size="10" font-weight="600" style="fill:#e6edf3">PayNow QR…</text>
-<text x="628.8" y="599.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">37</text>
-<rect class="fd" x="623.8" y="611.8" width="69.8" height="43.4" rx="3" fill="#5c1a22"><title>WooCommerce ↔ Xero sync: 24 commits</title></rect>
-<text x="628.8" y="625.8" font-size="10" font-weight="600" style="fill:#e6edf3">WooCommer…</text>
-<text x="628.8" y="639.8" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">24</text>
-<rect class="fd" x="623.8" y="657.2" width="69.8" height="29.3" rx="3" fill="#3a1418"><title>Payment Fees Pro: 6 commits</title></rect>
-<text x="628.8" y="671.2" font-size="10" font-weight="600" style="fill:#e6edf3">Payment…</text>
-<rect x="700.7" y="538.6" width="129.8" height="151.9" rx="6" fill="#151b23" stroke="#3d444d"/>
-<text x="707.7" y="552.6" font-size="10.5" font-weight="700" class="m">Corporate Web, CM…</text>
-<rect class="fd" x="704.7" y="559.6" width="77.4" height="72.9" rx="3" fill="#8f1d29"><title>Industrial-estate site &amp; native CMS: 136 commits</title></rect>
-<text x="709.7" y="573.6" font-size="10" font-weight="600" style="fill:#e6edf3">Industrial-</text>
-<text x="709.7" y="585.6" font-size="10" font-weight="600" style="fill:#e6edf3">site &amp;</text>
-<text x="709.7" y="597.6" font-size="10" font-weight="600" style="fill:#e6edf3">native CMS</text>
-<text x="709.7" y="611.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">136</text>
-<rect class="fd" x="784.1" y="559.6" width="42.4" height="72.9" rx="3" fill="#5c1a22"><title>Corporate group website CMS: 27 commits</title></rect>
-<rect class="fd" x="704.7" y="634.5" width="46.6" height="52.0" rx="3" fill="#5c1a22"><title>WordPress plugin toolkit: 12 commits</title></rect>
-<rect class="fd" x="753.3" y="634.5" width="43.1" height="52.0" rx="3" fill="#3a1418"><title>Page &amp; media visibility control: 9 commits</title></rect>
-<rect class="fd" x="798.4" y="634.5" width="28.1" height="52.0" rx="3" fill="#3a1418"><title>WordPress audit hub: 1 commits</title></rect>
+<text x="38.5" y="166.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">380</text>
+<rect class="fd" x="154.5" y="114.5" width="116.9" height="82.9" rx="3" fill="#d4303d"><title>Product-authentication plugin suite: 365 commits</title></rect>
+<text x="159.5" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Product-authentica</text>
+<text x="159.5" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">plugin suite</text>
+<text x="159.5" y="154.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">365</text>
+<rect class="fd" x="33.5" y="199.4" width="75.2" height="73.8" rx="3" fill="#8f1d29"><title>Storefront child themes: 96 commits</title></rect>
+<text x="38.5" y="213.4" font-size="10" font-weight="600" style="fill:#e6edf3">Storefront</text>
+<text x="38.5" y="225.4" font-size="10" font-weight="600" style="fill:#e6edf3">child</text>
+<text x="38.5" y="237.4" font-size="10" font-weight="600" style="fill:#e6edf3">themes</text>
+<text x="38.5" y="251.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">96</text>
+<rect class="fd" x="33.5" y="275.2" width="75.2" height="61.2" rx="3" fill="#8f1d29"><title>Product-recommendation quiz: 59 commits</title></rect>
+<text x="38.5" y="289.2" font-size="10" font-weight="600" style="fill:#e6edf3">Product-rec</text>
+<text x="38.5" y="301.2" font-size="10" font-weight="600" style="fill:#e6edf3">quiz</text>
+<text x="38.5" y="315.2" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">59</text>
+<rect class="fd" x="33.5" y="338.4" width="75.2" height="51.3" rx="3" fill="#5c1a22"><title>Excel → WooCommerce import pipeline: 36 commits</title></rect>
+<text x="38.5" y="352.4" font-size="10" font-weight="600" style="fill:#e6edf3">Excel →</text>
+<text x="38.5" y="364.4" font-size="10" font-weight="600" style="fill:#e6edf3">WooCommerc…</text>
+<text x="38.5" y="378.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">36</text>
+<rect class="fd" x="110.7" y="199.4" width="52.8" height="70.9" rx="3" fill="#5c1a22"><title>Web-AR product catalogue: 33 commits</title></rect>
+<rect class="fd" x="165.4" y="199.4" width="52.2" height="70.9" rx="3" fill="#5c1a22"><title>Smart Coupons customisation: 32 commits</title></rect>
+<rect class="fd" x="219.7" y="199.4" width="51.7" height="70.9" rx="3" fill="#5c1a22"><title>SKU-restricted coupons: 31 commits</title></rect>
+<rect class="fd" x="110.7" y="272.3" width="53.2" height="65.1" rx="3" fill="#5c1a22"><title>In-house Elementor widget suite: 26 commits</title></rect>
+<rect class="fd" x="110.7" y="339.4" width="53.2" height="50.3" rx="3" fill="#5c1a22"><title>Spending-limits extension: 11 commits</title></rect>
+<rect class="fd" x="165.8" y="272.3" width="54.8" height="48.8" rx="3" fill="#5c1a22"><title>Payment confirmation emails: 11 commits</title></rect>
+<rect class="fd" x="222.6" y="272.3" width="48.7" height="48.8" rx="3" fill="#3a1418"><title>Guest-checkout defaults: 7 commits</title></rect>
+<rect class="fd" x="165.8" y="323.2" width="34.3" height="66.5" rx="3" fill="#3a1418"><title>B2B export catalogue &amp; quotations: 6 commits</title></rect>
+<rect class="fd" x="202.1" y="323.2" width="34.3" height="66.5" rx="3" fill="#3a1418"><title>Shopee ↔ WooCommerce connector: 6 commits</title></rect>
+<rect class="fd" x="238.5" y="323.2" width="32.9" height="66.5" rx="3" fill="#3a1418"><title>AI shopping chatbot (client build): 5 commits</title></rect>
+<rect x="29.5" y="396.7" width="245.9" height="293.8" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="36.5" y="410.7" font-size="10.5" font-weight="700" class="m">Industry Platforms &amp; SaaS</text>
+<rect class="fd" x="33.5" y="417.7" width="123.3" height="93.3" rx="3" fill="#d4303d"><title>Civic organisation SuperApp: 539 commits</title></rect>
+<text x="38.5" y="431.7" font-size="10" font-weight="600" style="fill:#e6edf3">Civic organisation</text>
+<text x="38.5" y="443.7" font-size="10" font-weight="600" style="fill:#e6edf3">SuperApp</text>
+<text x="38.5" y="457.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">539</text>
+<rect class="fd" x="158.8" y="417.7" width="112.5" height="93.3" rx="3" fill="#d4303d"><title>Donation &amp; social-foundation platform: 439 commits</title></rect>
+<text x="163.8" y="431.7" font-size="10" font-weight="600" style="fill:#e6edf3">Donation &amp;</text>
+<text x="163.8" y="443.7" font-size="10" font-weight="600" style="fill:#e6edf3">social-foundation</text>
+<text x="163.8" y="455.7" font-size="10" font-weight="600" style="fill:#e6edf3">platform</text>
+<text x="163.8" y="469.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">439</text>
+<rect class="fd" x="33.5" y="513.1" width="108.8" height="94.4" rx="3" fill="#d4303d"><title>Lawyer-on-demand marketplace: 418 commits</title></rect>
+<text x="38.5" y="527.1" font-size="10" font-weight="600" style="fill:#e6edf3">Lawyer-on-demand</text>
+<text x="38.5" y="539.1" font-size="10" font-weight="600" style="fill:#e6edf3">marketplace</text>
+<text x="38.5" y="553.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">418</text>
+<rect class="fd" x="33.5" y="609.5" width="108.8" height="77.0" rx="3" fill="#d4303d"><title>Sign-language accessibility SaaS: 263 commits</title></rect>
+<text x="38.5" y="623.5" font-size="10" font-weight="600" style="fill:#e6edf3">Sign-language</text>
+<text x="38.5" y="635.5" font-size="10" font-weight="600" style="fill:#e6edf3">accessibility</text>
+<text x="38.5" y="647.5" font-size="10" font-weight="600" style="fill:#e6edf3">SaaS</text>
+<text x="38.5" y="661.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">263</text>
+<rect class="fd" x="144.3" y="513.1" width="65.1" height="78.0" rx="3" fill="#8f1d29"><title>Game top-up &amp; voucher platform: 77 commits</title></rect>
+<text x="149.3" y="527.1" font-size="10" font-weight="600" style="fill:#e6edf3">Game</text>
+<text x="149.3" y="539.1" font-size="10" font-weight="600" style="fill:#e6edf3">top-up &amp;</text>
+<text x="149.3" y="551.1" font-size="10" font-weight="600" style="fill:#e6edf3">voucher…</text>
+<text x="149.3" y="565.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">77</text>
+<rect class="fd" x="211.4" y="513.1" width="59.9" height="78.0" rx="3" fill="#8f1d29"><title>Grant-partner form portal: 62 commits</title></rect>
+<text x="216.4" y="527.1" font-size="10" font-weight="600" style="fill:#e6edf3">Grant-pa</text>
+<text x="216.4" y="539.1" font-size="10" font-weight="600" style="fill:#e6edf3">form</text>
+<text x="216.4" y="551.1" font-size="10" font-weight="600" style="fill:#e6edf3">portal</text>
+<text x="216.4" y="565.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">62</text>
+<rect class="fd" x="144.3" y="593.1" width="75.0" height="51.3" rx="3" fill="#5c1a22"><title>Telehealth &amp; wellness platform: 36 commits</title></rect>
+<text x="149.3" y="607.1" font-size="10" font-weight="600" style="fill:#e6edf3">Telehealth</text>
+<text x="149.3" y="619.1" font-size="10" font-weight="600" style="fill:#e6edf3">&amp; wellness…</text>
+<text x="149.3" y="633.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">36</text>
+<rect class="fd" x="144.3" y="646.3" width="75.0" height="40.2" rx="3" fill="#5c1a22"><title>Mining digital-twin 3D dashboard: 17 commits</title></rect>
+<text x="149.3" y="660.3" font-size="10" font-weight="600" style="fill:#e6edf3">Mining…</text>
+<text x="149.3" y="674.3" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">17</text>
+<rect class="fd" x="221.4" y="593.1" width="50.0" height="54.7" rx="3" fill="#5c1a22"><title>Binary MLM &amp; multi-store commerce: 12 commits</title></rect>
+<rect class="fd" x="221.4" y="649.8" width="50.0" height="36.7" rx="3" fill="#3a1418"><title>Cybersecurity services site: 2 commits</title></rect>
+<rect x="278.4" y="93.5" width="280.1" height="245.4" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="285.4" y="107.5" font-size="10.5" font-weight="700" class="m">AI, ML &amp; Automation</text>
+<rect class="fd" x="282.4" y="114.5" width="123.4" height="220.4" rx="3" fill="#ff8a93"><title>AI document automation &amp; ops hub: 3,487 commits</title></rect>
+<text x="287.4" y="128.5" font-size="10" font-weight="600" style="fill:#0d1117">AI document</text>
+<text x="287.4" y="140.5" font-size="10" font-weight="600" style="fill:#0d1117">automation &amp; ops</text>
+<text x="287.4" y="152.5" font-size="10" font-weight="600" style="fill:#0d1117">hub</text>
+<text x="287.4" y="166.5" font-size="10" class="n" style="fill:#0d1117;opacity:.85">3,487</text>
+<rect class="fd" x="407.8" y="114.5" width="79.3" height="106.9" rx="3" fill="#d4303d"><title>Ops knowledge base &amp; AI CV screening: 279 commits</title></rect>
+<text x="412.8" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Ops</text>
+<text x="412.8" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">knowledge</text>
+<text x="412.8" y="152.5" font-size="10" font-weight="600" style="fill:#e6edf3">base &amp; AI C…</text>
+<text x="412.8" y="166.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">279</text>
+<rect class="fd" x="489.1" y="114.5" width="65.4" height="106.9" rx="3" fill="#8f1d29"><title>Algorithmic crypto trading engine: 178 commits</title></rect>
+<text x="494.1" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Algorithm</text>
+<text x="494.1" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">crypto</text>
+<text x="494.1" y="152.5" font-size="10" font-weight="600" style="fill:#e6edf3">trading…</text>
+<text x="494.1" y="166.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">178</text>
+<rect class="fd" x="407.8" y="223.4" width="70.3" height="55.0" rx="3" fill="#5c1a22"><title>AI competency recommender: 38 commits</title></rect>
+<text x="412.8" y="237.4" font-size="10" font-weight="600" style="fill:#e6edf3">AI</text>
+<text x="412.8" y="249.4" font-size="10" font-weight="600" style="fill:#e6edf3">competenc…</text>
+<text x="412.8" y="263.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">38</text>
+<rect class="fd" x="407.8" y="280.4" width="70.3" height="54.5" rx="3" fill="#5c1a22"><title>RAG learning assistant: 37 commits</title></rect>
+<text x="412.8" y="294.4" font-size="10" font-weight="600" style="fill:#e6edf3">RAG</text>
+<text x="412.8" y="306.4" font-size="10" font-weight="600" style="fill:#e6edf3">learning…</text>
+<text x="412.8" y="320.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">37</text>
+<rect class="fd" x="480.0" y="223.4" width="74.5" height="46.7" rx="3" fill="#5c1a22"><title>Contact master-list automation: 28 commits</title></rect>
+<text x="485.0" y="237.4" font-size="10" font-weight="600" style="fill:#e6edf3">Contact</text>
+<text x="485.0" y="249.4" font-size="10" font-weight="600" style="fill:#e6edf3">master-lis…</text>
+<text x="485.0" y="263.4" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">28</text>
+<rect class="fd" x="480.0" y="272.1" width="43.8" height="62.7" rx="3" fill="#5c1a22"><title>AI incident-response platform: 13 commits</title></rect>
+<rect class="fd" x="525.9" y="272.1" width="28.6" height="62.7" rx="3" fill="#3a1418"><title>Mobile QA, social &amp; device-fleet workbench: 2 commits</title></rect>
+<rect x="561.5" y="93.5" width="269.0" height="245.4" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="568.5" y="107.5" font-size="10.5" font-weight="700" class="m">Government, ERP &amp; Enterprise Ops</text>
+<rect class="fd" x="565.5" y="114.5" width="141.5" height="140.6" rx="3" fill="#ff8a93"><title>Government testing-lab ERP / CRM: 1,815 commits</title></rect>
+<text x="570.5" y="128.5" font-size="10" font-weight="600" style="fill:#0d1117">Government testing-lab</text>
+<text x="570.5" y="140.5" font-size="10" font-weight="600" style="fill:#0d1117">ERP / CRM</text>
+<text x="570.5" y="154.5" font-size="10" class="n" style="fill:#0d1117;opacity:.85">1,815</text>
+<rect class="fd" x="565.5" y="257.1" width="141.5" height="77.8" rx="3" fill="#d4303d"><title>ISP modular ERP: 507 commits</title></rect>
+<text x="570.5" y="271.1" font-size="10" font-weight="600" style="fill:#e6edf3">ISP modular ERP</text>
+<text x="570.5" y="285.1" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">507</text>
+<rect class="fd" x="709.0" y="114.5" width="117.5" height="90.1" rx="3" fill="#d4303d"><title>Food supply-chain governance SaaS: 463 commits</title></rect>
+<text x="714.0" y="128.5" font-size="10" font-weight="600" style="fill:#e6edf3">Food supply-chain</text>
+<text x="714.0" y="140.5" font-size="10" font-weight="600" style="fill:#e6edf3">governance SaaS</text>
+<text x="714.0" y="154.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">463</text>
+<rect class="fd" x="709.0" y="206.6" width="68.6" height="57.3" rx="3" fill="#5c1a22"><title>CRM ↔ FluentCRM sync: 40 commits</title></rect>
+<text x="714.0" y="220.6" font-size="10" font-weight="600" style="fill:#e6edf3">CRM ↔</text>
+<text x="714.0" y="232.6" font-size="10" font-weight="600" style="fill:#e6edf3">FluentCRM…</text>
+<text x="714.0" y="246.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">40</text>
+<rect class="fd" x="779.6" y="206.6" width="46.9" height="57.3" rx="3" fill="#5c1a22"><title>Stock-exchange → CRM lead pipeline: 12 commits</title></rect>
+<rect class="fd" x="709.0" y="265.9" width="37.0" height="69.0" rx="3" fill="#5c1a22"><title>Textile-testing lab ERP / CRM: 10 commits</title></rect>
+<rect class="fd" x="748.0" y="265.9" width="53.2" height="36.5" rx="3" fill="#3a1418"><title>HRIS &amp; payroll suite: 3 commits</title></rect>
+<rect class="fd" x="748.0" y="304.3" width="53.2" height="30.5" rx="3" fill="#3a1418"><title>HR &amp; attendance suite + mobile app: 1 commits</title></rect>
+<rect class="fd" x="803.2" y="265.9" width="23.3" height="69.0" rx="3" fill="#3a1418"><title>Fleet &amp; vehicle booking PWA: 1 commits</title></rect>
+<rect x="278.4" y="341.9" width="247.3" height="194.8" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="285.4" y="355.9" font-size="10.5" font-weight="700" class="m">Higher-Education &amp; EdTech</text>
+<rect class="fd" x="282.4" y="362.9" width="92.4" height="95.8" rx="3" fill="#d4303d"><title>Admissions + finance + academic monorepo: 334 commits</title></rect>
+<text x="287.4" y="376.9" font-size="10" font-weight="600" style="fill:#e6edf3">Admissions +</text>
+<text x="287.4" y="388.9" font-size="10" font-weight="600" style="fill:#e6edf3">finance +</text>
+<text x="287.4" y="400.9" font-size="10" font-weight="600" style="fill:#e6edf3">academic…</text>
+<text x="287.4" y="414.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">334</text>
+<rect class="fd" x="282.4" y="460.7" width="92.4" height="71.9" rx="3" fill="#8f1d29"><title>Course registration &amp; enrolment: 171 commits</title></rect>
+<text x="287.4" y="474.7" font-size="10" font-weight="600" style="fill:#e6edf3">Course</text>
+<text x="287.4" y="486.7" font-size="10" font-weight="600" style="fill:#e6edf3">registration &amp;</text>
+<text x="287.4" y="498.7" font-size="10" font-weight="600" style="fill:#e6edf3">enrolment</text>
+<text x="287.4" y="512.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">171</text>
+<rect class="fd" x="376.7" y="362.9" width="87.4" height="67.1" rx="3" fill="#8f1d29"><title>University academic system (SIAKAD): 126 commits</title></rect>
+<text x="381.7" y="376.9" font-size="10" font-weight="600" style="fill:#e6edf3">University</text>
+<text x="381.7" y="388.9" font-size="10" font-weight="600" style="fill:#e6edf3">academic…</text>
+<text x="381.7" y="402.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">126</text>
+<rect class="fd" x="466.1" y="362.9" width="55.6" height="67.1" rx="3" fill="#5c1a22"><title>University LMS "AI Class": 38 commits</title></rect>
+<rect class="fd" x="376.7" y="431.9" width="64.4" height="49.7" rx="3" fill="#5c1a22"><title>University finance &amp; billing: 24 commits</title></rect>
+<text x="381.7" y="445.9" font-size="10" font-weight="600" style="fill:#e6edf3">Universit</text>
+<text x="381.7" y="457.9" font-size="10" font-weight="600" style="fill:#e6edf3">finance …</text>
+<text x="381.7" y="471.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">24</text>
+<rect class="fd" x="376.7" y="483.6" width="64.4" height="49.0" rx="3" fill="#5c1a22"><title>Computer-based admission exam (CAT): 23 commits</title></rect>
+<text x="381.7" y="497.6" font-size="10" font-weight="600" style="fill:#e6edf3">Computer-</text>
+<text x="381.7" y="509.6" font-size="10" font-weight="600" style="fill:#e6edf3">admissio…</text>
+<text x="381.7" y="523.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">23</text>
+<rect class="fd" x="443.1" y="431.9" width="78.6" height="38.8" rx="3" fill="#5c1a22"><title>LMS dynamic profile fields: 21 commits</title></rect>
+<text x="448.1" y="445.9" font-size="10" font-weight="600" style="fill:#e6edf3">LMS dynamic…</text>
+<text x="448.1" y="459.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">21</text>
+<rect class="fd" x="443.1" y="472.8" width="38.9" height="59.8" rx="3" fill="#3a1418"><title>School library management plugin: 8 commits</title></rect>
+<rect class="fd" x="484.0" y="472.8" width="37.6" height="59.8" rx="3" fill="#3a1418"><title>Higher-ed reporting feeder kit: 7 commits</title></rect>
+<rect x="278.4" y="539.6" width="247.3" height="150.9" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="285.4" y="553.6" font-size="10.5" font-weight="700" class="m">Logistics &amp; Shipping</text>
+<rect class="fd" x="282.4" y="560.6" width="123.8" height="125.9" rx="3" fill="#ff8a93"><title>Multi-tenant courier &amp; parcel SaaS: 1,277 commits</title></rect>
+<text x="287.4" y="574.6" font-size="10" font-weight="600" style="fill:#0d1117">Multi-tenant</text>
+<text x="287.4" y="586.6" font-size="10" font-weight="600" style="fill:#0d1117">courier &amp; parcel</text>
+<text x="287.4" y="598.6" font-size="10" font-weight="600" style="fill:#0d1117">SaaS</text>
+<text x="287.4" y="612.6" font-size="10" class="n" style="fill:#0d1117;opacity:.85">1,277</text>
+<rect class="fd" x="408.1" y="560.6" width="71.3" height="63.0" rx="3" fill="#8f1d29"><title>Freight-forwarder websites: 72 commits</title></rect>
+<text x="413.1" y="574.6" font-size="10" font-weight="600" style="fill:#e6edf3">Freight-fo</text>
+<text x="413.1" y="586.6" font-size="10" font-weight="600" style="fill:#e6edf3">websites</text>
+<text x="413.1" y="600.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">72</text>
+<rect class="fd" x="481.5" y="560.6" width="40.2" height="63.0" rx="3" fill="#5c1a22"><title>White-label shipping-rates plugin: 13 commits</title></rect>
+<rect class="fd" x="408.1" y="625.6" width="41.6" height="60.9" rx="3" fill="#5c1a22"><title>Hacked-site incident response: 13 commits</title></rect>
+<rect class="fd" x="451.8" y="625.6" width="35.3" height="60.9" rx="3" fill="#3a1418"><title>Multi-courier shipping stack: 7 commits</title></rect>
+<rect class="fd" x="489.1" y="625.6" width="32.6" height="60.9" rx="3" fill="#3a1418"><title>Courier-rate plugin + checkout bridge: 5 commits</title></rect>
+<rect x="528.7" y="341.9" width="152.5" height="194.9" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="535.7" y="355.9" font-size="10.5" font-weight="700" class="m">Membership, Events &amp; …</text>
+<rect class="fd" x="532.7" y="362.9" width="90.5" height="97.7" rx="3" fill="#d4303d"><title>Membership &amp; store-credit automation: 351 commits</title></rect>
+<text x="537.7" y="376.9" font-size="10" font-weight="600" style="fill:#e6edf3">Membership &amp;</text>
+<text x="537.7" y="388.9" font-size="10" font-weight="600" style="fill:#e6edf3">store-credit</text>
+<text x="537.7" y="400.9" font-size="10" font-weight="600" style="fill:#e6edf3">automation</text>
+<text x="537.7" y="414.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">351</text>
+<rect class="fd" x="625.1" y="362.9" width="52.0" height="97.7" rx="3" fill="#8f1d29"><title>Canva → FluentCRM importer: 94 commits</title></rect>
+<rect class="fd" x="532.7" y="462.6" width="41.3" height="70.2" rx="3" fill="#5c1a22"><title>Eventbrite integrations: 19 commits</title></rect>
+<rect class="fd" x="575.9" y="462.6" width="35.1" height="70.2" rx="3" fill="#5c1a22"><title>Branded membership email templates: 11 commits</title></rect>
+<rect class="fd" x="613.1" y="462.6" width="64.1" height="36.5" rx="3" fill="#3a1418"><title>Newsletter campaigns: 9 commits</title></rect>
+<text x="618.1" y="476.6" font-size="10" font-weight="600" style="fill:#e6edf3">Newslett…</text>
+<text x="618.1" y="490.6" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">9</text>
+<rect class="fd" x="613.1" y="501.1" width="64.1" height="31.6" rx="3" fill="#3a1418"><title>Recurring-events fix: 5 commits</title></rect>
+<text x="618.1" y="515.1" font-size="10" font-weight="600" style="fill:#e6edf3">Recurrin…</text>
+<rect x="684.1" y="341.9" width="146.4" height="194.9" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="691.1" y="355.9" font-size="10.5" font-weight="700" class="m">Talent Assessment &amp; …</text>
+<rect class="fd" x="688.1" y="362.9" width="138.4" height="90.4" rx="3" fill="#d4303d"><title>Enterprise talent discovery platform: 765 commits</title></rect>
+<text x="693.1" y="376.9" font-size="10" font-weight="600" style="fill:#e6edf3">Enterprise talent</text>
+<text x="693.1" y="388.9" font-size="10" font-weight="600" style="fill:#e6edf3">discovery platform</text>
+<text x="693.1" y="402.9" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">765</text>
+<rect class="fd" x="688.1" y="455.3" width="70.3" height="77.5" rx="3" fill="#8f1d29"><title>Corporate assessment platform: 112 commits</title></rect>
+<text x="693.1" y="469.3" font-size="10" font-weight="600" style="fill:#e6edf3">Corporate</text>
+<text x="693.1" y="481.3" font-size="10" font-weight="600" style="fill:#e6edf3">assessment</text>
+<text x="693.1" y="493.3" font-size="10" font-weight="600" style="fill:#e6edf3">platform</text>
+<text x="693.1" y="507.3" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">112</text>
+<rect class="fd" x="760.4" y="455.3" width="66.1" height="38.2" rx="3" fill="#5c1a22"><title>AI adaptive testing (CAT) engine: 12 commits</title></rect>
+<text x="765.4" y="469.3" font-size="10" font-weight="600" style="fill:#e6edf3">AI…</text>
+<text x="765.4" y="483.3" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">12</text>
+<rect class="fd" x="760.4" y="495.5" width="66.1" height="37.3" rx="3" fill="#5c1a22"><title>ATS screening pipeline &amp; test kit: 11 commits</title></rect>
+<text x="765.4" y="509.5" font-size="10" font-weight="600" style="fill:#e6edf3">ATS…</text>
+<text x="765.4" y="523.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">11</text>
+<rect x="528.7" y="539.7" width="169.3" height="150.8" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="535.7" y="553.7" font-size="10.5" font-weight="700" class="m">Payments, Accounting &amp; …</text>
+<rect class="fd" x="532.7" y="560.7" width="89.6" height="69.0" rx="3" fill="#8f1d29"><title>Sports-arena POS ecosystem: 167 commits</title></rect>
+<text x="537.7" y="574.7" font-size="10" font-weight="600" style="fill:#e6edf3">Sports-arena</text>
+<text x="537.7" y="586.7" font-size="10" font-weight="600" style="fill:#e6edf3">POS ecosystem</text>
+<text x="537.7" y="600.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">167</text>
+<rect class="fd" x="532.7" y="631.7" width="89.6" height="54.8" rx="3" fill="#8f1d29"><title>OpenPOS omnichannel add-ons: 95 commits</title></rect>
+<text x="537.7" y="645.7" font-size="10" font-weight="600" style="fill:#e6edf3">OpenPOS</text>
+<text x="537.7" y="657.7" font-size="10" font-weight="600" style="fill:#e6edf3">omnichannel…</text>
+<text x="537.7" y="671.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">95</text>
+<rect class="fd" x="624.3" y="560.7" width="69.7" height="49.7" rx="3" fill="#5c1a22"><title>Singapore PayNow QR gateway: 37 commits</title></rect>
+<text x="629.3" y="574.7" font-size="10" font-weight="600" style="fill:#e6edf3">Singapore</text>
+<text x="629.3" y="586.7" font-size="10" font-weight="600" style="fill:#e6edf3">PayNow QR…</text>
+<text x="629.3" y="600.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">37</text>
+<rect class="fd" x="624.3" y="612.5" width="69.7" height="43.0" rx="3" fill="#5c1a22"><title>WooCommerce ↔ Xero sync: 24 commits</title></rect>
+<text x="629.3" y="626.5" font-size="10" font-weight="600" style="fill:#e6edf3">WooCommer…</text>
+<text x="629.3" y="640.5" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">24</text>
+<rect class="fd" x="624.3" y="657.5" width="69.7" height="29.0" rx="3" fill="#3a1418"><title>Payment Fees Pro: 6 commits</title></rect>
+<text x="629.3" y="671.5" font-size="10" font-weight="600" style="fill:#e6edf3">Payment…</text>
+<rect x="700.9" y="539.7" width="129.6" height="150.8" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="707.9" y="553.7" font-size="10.5" font-weight="700" class="m">Corporate Web, CM…</text>
+<rect class="fd" x="704.9" y="560.7" width="77.3" height="72.3" rx="3" fill="#8f1d29"><title>Industrial-estate site &amp; native CMS: 136 commits</title></rect>
+<text x="709.9" y="574.7" font-size="10" font-weight="600" style="fill:#e6edf3">Industrial-</text>
+<text x="709.9" y="586.7" font-size="10" font-weight="600" style="fill:#e6edf3">site &amp;</text>
+<text x="709.9" y="598.7" font-size="10" font-weight="600" style="fill:#e6edf3">native CMS</text>
+<text x="709.9" y="612.7" font-size="10" class="n" style="fill:#e6edf3;opacity:.85">136</text>
+<rect class="fd" x="784.2" y="560.7" width="42.3" height="72.3" rx="3" fill="#5c1a22"><title>Corporate group website CMS: 27 commits</title></rect>
+<rect class="fd" x="704.9" y="635.0" width="46.5" height="51.5" rx="3" fill="#5c1a22"><title>WordPress plugin toolkit: 12 commits</title></rect>
+<rect class="fd" x="753.5" y="635.0" width="43.0" height="51.5" rx="3" fill="#3a1418"><title>Page &amp; media visibility control: 9 commits</title></rect>
+<rect class="fd" x="798.5" y="635.0" width="28.0" height="51.5" rx="3" fill="#3a1418"><title>WordPress audit hub: 1 commits</title></rect>
 <rect x="28" y="704" width="12" height="12" rx="2.5" fill="#3a1418"/>
 <text x="45" y="714" font-size="10.5" class="m">1–9</text>
 <rect x="82" y="704" width="12" height="12" rx="2.5" fill="#5c1a22"/>
