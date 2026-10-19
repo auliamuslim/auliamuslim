@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Render the profile README charts and project catalogue.
 
-Reads data/profile.json (aggregated stats) and data/projects.json (the
-anonymised project catalogue). Every chart is written twice
-(assets/<name>-light.svg and -dark.svg) so the README can swap them with
-<picture> to follow the viewer's GitHub theme, and the catalogue tables are
-regenerated between the PROJECTS markers in README.md.
+Reads data/profile.json (aggregated stats), data/projects.json (the
+anonymised project catalogue) and data/beyond.json (work outside GitHub).
+Every chart is written twice (assets/<name>-light.svg and -dark.svg) so the
+README can swap them with <picture> to follow the viewer's GitHub theme, and
+the generated sections are rewritten between their <!-- NAME:START/END -->
+markers in README.md.
 Only the Python standard library is used.
 
     python3 scripts/render_profile_assets.py
@@ -17,6 +18,8 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "profile.json").read_text())
+C = DATA["counts"]
+BEYOND = json.loads((ROOT / "data" / "beyond.json").read_text())
 OUT = ROOT / "assets"
 
 THEMES = {
@@ -459,7 +462,8 @@ def universe(t, mode, catalog):
     scale = tw * th / sum(cat_w)
     crects = squarify([v * scale for v in cat_w], x0, y0, tw, th)
     out = [heading(t, "Project universe — every project, grouped by domain",
-                   "Tile area grows with commits (square-root scale) · darker red = more commits · 76 catalogue entries, 93 repos")]
+                   f"Tile area grows with commits (square-root scale) · darker red = more commits · "
+                   f"{C['catalogue_rows']} catalogue entries, {C['project_repos']} repos")]
     for k, (cx, cy, cw, chh) in zip(cats, crects):
         g = 3
         cx, cy, cw, chh = cx + g / 2, cy + g / 2, cw - g, chh - g
@@ -757,9 +761,44 @@ def readme_stack_table():
                     f'<td align="right">{100 * r["value"] / total:.1f}%</td><td>{escape(r["examples"])}</td></tr>')
     rows.append(f'<tr><td><b>Total</b></td><td align="right"><b>{repos}</b></td>'
                 f'<td align="right"><b><code>{fmt(total)}</code></b></td><td align="right"><b>100%</b></td>'
-                f'<td><sub>All 93 project repos</sub></td></tr>')
+                f'<td><sub>All {C["project_repos"]} project repos</sub></td></tr>')
     rows += ["</tbody>", "</table>"]
     return "\n".join(rows)
+
+
+def beyond_spec():
+    rows = sorted((c for c in BEYOND["categories"] if "sessions" in c), key=lambda c: -c["sessions"])
+    return {"title": "Beyond the commit log — work that lives outside GitHub",
+            "subtitle": f'{BEYOND["non_code_sessions"]} of {BEYOND["sessions"]} Claude Code sessions since Nov 2025 '
+                        'produced a non-code deliverable · one session can count twice',
+            "rows": [{"label": c["short"], "tag": c["lives_in"], "value": c["sessions"],
+                      "display": f'{c["sessions"]} sessions'} for c in rows]}
+
+
+def readme_beyond():
+    spec = beyond_spec()
+    rows = ['<table>', '<thead><tr>',
+            '<th align="left" width="24%">Category</th>',
+            '<th align="left" width="26%">What I delivered</th>',
+            '<th align="left" width="40%">Examples</th>',
+            '<th align="right" width="10%">Volume</th>',
+            '</tr></thead>', '<tbody>']
+    for c in sorted(BEYOND["categories"], key=lambda c: -c.get("sessions", 0)):
+        vol = "<br/>".join(f'<code>{c[k]}</code>&nbsp;<sub>{k}</sub>' for k in ("sessions", "designs") if k in c)
+        rows.append(f'<tr><td valign="top"><b>{c["emoji"]} {escape(c["title"])}</b><br/><sub>{escape(c["lives_in"])}</sub></td>'
+                    f'<td valign="top">{escape(c["what"])}</td>'
+                    f'<td valign="top"><sub>{escape(c["examples"])}</sub></td>'
+                    f'<td valign="top" align="right">{vol}</td></tr>')
+    rows += ["</tbody>", "</table>"]
+    return "\n".join([
+        f'<sub>Not everything ships as a commit. Of <b>{BEYOND["sessions"]} Claude Code sessions</b> since Nov 2025 across '
+        f'{BEYOND["repos_touched"]} repositories, <b>{BEYOND["non_code_sessions"]}</b> produced something that lives outside '
+        'GitHub: decks, estimates, guides, compliance studies, server work, content and data operations. Design work '
+        'comes from Canva. Client names withheld.</sub>\n',
+        pic("beyond", "Beyond GitHub, sessions per deliverable type: "
+            + "; ".join(f'{r["label"]} {r["value"]}' for r in spec["rows"])),
+        "\n".join(rows),
+    ])
 
 
 def readme_tldr(catalog):
@@ -769,11 +808,13 @@ def readme_tldr(catalog):
     return (
         f'> **TL;DR** — {pr["name"]} is a {pr["role"].lower()} at {pr["company"]} ({pr["location"]}) who builds '
         f'business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, '
-        f'e-commerce and AI automation. Across **{len(cats)} domains** there are **108 repositories** '
-        f'(93 project repos, 65 in production) and **{fmt(t["commits"])} commits**, '
+        f'e-commerce and AI automation. Across **{len(cats)} domains** there are **{C["repositories"]} repositories** '
+        f'({C["project_repos"]} project repos, {C["live"]} in production) and **{fmt(t["commits"])} commits**, '
         f'{t["ai_share"]}% of them pair-programmed with Claude Code. Main stacks by commits: '
         + ", ".join(f'{r["label"]} ({fmt(r["value"])})' for r in stack[:5])
-        + f'. Since Dec 2025: {fmt(w["commits"])} commits on {w["active_days"]} active days.'
+        + f'. Since Dec 2025: {fmt(w["commits"])} commits on {w["active_days"]} active days. '
+        f'Beyond GitHub, {BEYOND["non_code_sessions"]} of {BEYOND["sessions"]} Claude Code sessions produced '
+        'decks, estimates, guides, compliance studies, server work, content and data operations.'
     )
 
 
@@ -786,7 +827,8 @@ def readme_ai_profile(catalog):
            f"company: {q(pr['company'])}", f"website: {pr['website']}", f"location: {pr['location']}",
            f"linkedin: {pr['linkedin']}", f"email: {pr['email']}", f"on_github_since: {pr['on_github_since']}",
            f"open_to: {pr['open_to']}", f"updated: {DATA['generated']}", "stats:",
-           "  repositories: 108", "  project_repos: 93", "  live_systems: 65",
+           f"  repositories: {C['repositories']}", f"  project_repos: {C['project_repos']}",
+           f"  live_systems: {C['live']}",
            f"  commits_total: {t['commits']}", f"  commits_ai_paired_pct: {t['ai_share']}",
            f"  repos_with_ai_pairing: {t['ai_repos']}", f"  active_days: {t['active_days']}",
            f"  window_since: {w['start']}", f"  window_commits: {w['commits']}",
@@ -802,6 +844,13 @@ def readme_ai_profile(catalog):
     out.append("main_stacks:")
     for r in DATA["stack_commits"]["rows"]:
         out.append(f"  - {{stack: {q(r['label'])}, repos: {r['repos']}, commits: {r['value']}}}")
+    out.append("beyond_github:")
+    out.append(f"  claude_code_sessions: {BEYOND['sessions']}")
+    out.append(f"  sessions_with_non_code_deliverables: {BEYOND['non_code_sessions']}")
+    out.append("  categories:")
+    for b in BEYOND["categories"]:
+        vol = ", ".join(f"{k}: {b[k]}" for k in ("sessions", "designs") if k in b)
+        out.append(f"    - {{name: {q(b['title'])}, {vol}, lives_in: {q(b['lives_in'])}}}")
     out.append("ai_in_products:")
     out += [f"  - {q(a)}" for a in pr["ai_in_products"]]
     out.append("top_projects_since_dec_2025:")
@@ -824,8 +873,8 @@ def readme_glance():
     t, ns = DATA["totals"], DATA["now_shipping"]
     impact = "; ".join(f'{i["value"]} {i["label"]} ({i["note"]})' for i in DATA["impact"])
     return "\n".join([
-        pic("stats", f'108 repositories, {fmt(t["commits"])} commits, {t["active_days"]} active days, '
-                     f'65 systems in production, {t["ai_share"]}% of commits paired with Claude Code'),
+        pic("stats", f'{C["repositories"]} repositories, {fmt(t["commits"])} commits, {t["active_days"]} active days, '
+                     f'{C["live"]} systems in production, {t["ai_share"]}% of commits paired with Claude Code'),
         pic("now-shipping", f'Now shipping, last 30 days: {fmt(ns["total"])} commits. Busiest: '
             + "; ".join(f'{r["name"]} {fmt(r["commits"])}' for r in ns["rows"])),
         pic("impact", "Impact highlights: " + impact),
@@ -873,12 +922,18 @@ def sync_numbers():
     subs = [
         (r"badge/Commits-[\d.]+k-", f'badge/Commits-{t["commits"] / 1000:.1f}k-'),
         (r'alt="[\d.]+k commits"', f'alt="{t["commits"] / 1000:.1f}k commits"'),
-        (r"Terminal intro: 108 repos, 93 projects, [\d,]+ commits, 65 live systems, \d+% AI-paired",
-         f'Terminal intro: 108 repos, 93 projects, {fmt(t["commits"])} commits, 65 live systems, {t["ai_share"]}% AI-paired'),
+        (r"Terminal intro: \d+ repos, \d+ projects, [\d,]+ commits, \d+ live systems, \d+% AI-paired",
+         f'Terminal intro: {C["repositories"]} repos, {C["project_repos"]} projects, {fmt(t["commits"])} commits, '
+         f'{C["live"]} live systems, {t["ai_share"]}% AI-paired'),
+        (r"badge/Repositories-\d+-", f'badge/Repositories-{C["repositories"]}-'),
+        (r'alt="\d+ repositories"', f'alt="{C["repositories"]} repositories"'),
+        (r"badge/Live_Systems-\d+-", f'badge/Live_Systems-{C["live"]}-'),
+        (r'alt="\d+ live systems"', f'alt="{C["live"]} live systems"'),
+        (r"\d+ repos · \d+ shipped projects · \d+ live", f'{C["repositories"]} repos · {C["project_repos"]} shipped projects · {C["live"]} live'),
         (r"\d+% of [\d,]+ commits paired with Claude Code across \d+ repositories",
          f'{t["ai_share"]}% of {fmt(t["commits"])} commits paired with Claude Code across {t["ai_repos"]} repositories'),
-        (r"add up to the [\d,]+ commits in the 93 project repos\. The remaining \d+ of the [\d,]+ total",
-         f'add up to the {fmt(stack_total)} commits in the 93 project repos. The remaining '
+        (r"add up to the [\d,]+ commits in the \d+ project repos\. The remaining \d+ of the [\d,]+ total",
+         f'add up to the {fmt(stack_total)} commits in the {C["project_repos"]} project repos. The remaining '
          f'{t["commits"] - stack_total} of the {fmt(t["commits"])} total'),
         (r'alt="Commits per main stack: [^"]*"',
          'alt="Commits per main stack: ' + alt_attr("; ".join(
@@ -913,6 +968,7 @@ def main():
         "stack-commits": lambda t: bars(t, DATA["stack_commits"]),
         "languages": lambda t: bars(t, DATA["languages"]),
         "timeline": timeline,
+        "beyond": lambda t: rank_bars(t, beyond_spec()),
     }
     total = len(catalog["categories"])
     for i, cat in enumerate(catalog["categories"], 1):
@@ -939,6 +995,7 @@ def main():
     inject_readme("ACTIVITY", readme_activity())
     inject_readme("PROJECTS", readme_projects(catalog))
     inject_readme("STACK", readme_stack_table())
+    inject_readme("BEYOND", readme_beyond())
     inject_readme("AI-PROFILE", readme_ai_profile(catalog))
     sync_numbers()
 

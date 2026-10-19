@@ -41,7 +41,8 @@
         {"name": "RAG learning assistant", "live": true, "function": "Answers students' questions from the campus knowledge base", "highlights": "OpenAI + ChromaDB retrieval · per-user memory · one-tag embed widget", "stack": "Flask · LangChain · ChromaDB", "year": 2026},
         {"name": "AI competency recommender", "live": true, "function": "Generates personal development plans per competency and level", "highlights": "GPT plans streamed over SSE · response caching · rate limiting", "stack": "PHP 8.1 · OpenAI", "year": 2025},
         {"name": "Ops knowledge base & AI CV screening", "live": false, "function": "Documents company operations and shortlists job applicants", "highlights": "44 guide volumes · 1,000+ CVs screened · auto Top-10 reports", "stack": "Python · Claude Code skills", "year": 2026},
-        {"name": "Contact master-list automation", "live": true, "function": "Keeps a community's contact lists in sync automatically", "highlights": "Hub-and-spoke Sheets sync · four Apps Script projects · event imports", "stack": "Google Apps Script", "year": 2026}
+        {"name": "Contact master-list automation", "live": true, "function": "Keeps a community's contact lists in sync automatically", "highlights": "Hub-and-spoke Sheets sync · four Apps Script projects · event imports", "stack": "Google Apps Script", "year": 2026},
+        {"name": "Mobile QA, social & device-fleet workbench", "live": false, "function": "Tests apps on real phones, schedules social posts and manages company devices from one console", "highlights": "3 modules · web dashboard + Android/iOS app · outbound device agents · human-approved AI replies · runs on cPanel", "stack": "TypeScript · Fastify · React · Expo", "year": 2026}
       ]
     },
     {

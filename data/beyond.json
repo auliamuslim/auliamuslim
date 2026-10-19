@@ -1,0 +1,82 @@
+{
+  "note": "Work that lives outside GitHub: decks, reports, guides, compliance studies, server work, content and data operations. Counted from Claude Code session titles (Nov 2025 onward) plus Canva design files. Client names are intentionally omitted; one session can count in two categories.",
+  "sessions": 370,
+  "since": "2025-11",
+  "non_code_sessions": 183,
+  "repos_touched": 79,
+  "categories": [
+    {
+      "emoji": "🧮",
+      "title": "Analysis, estimation & QA",
+      "short": "Analysis, estimation & QA",
+      "lives_in": "Reports · spreadsheets",
+      "what": "Sizing, auditing and checking work before and after it is built",
+      "examples": "Man-day estimates for a 5-codebase POS ecosystem · QA / PM reports per module · repository audits & development reports · billing, pro-rate & commission flow analysis for an ISP ERP · Flutter app test checklist · developer skill review",
+      "sessions": 46
+    },
+    {
+      "emoji": "📘",
+      "title": "Documentation, guides & training",
+      "short": "Docs, guides & training",
+      "lives_in": "PDF guides · Markdown · decks",
+      "what": "Docs that let clients run what was built on their own",
+      "examples": "Work-order user guide (PDF) · client hand-over & finalisation guides · system flows per user role · RBAC, ERD & API references · module tutorials & case studies · software-engineering course deck (28 slides)",
+      "sessions": 62
+    },
+    {
+      "emoji": "🖥️",
+      "title": "Infrastructure, hosting & incident response",
+      "short": "Infrastructure & incidents",
+      "lives_in": "Servers · hosting panels · DNS",
+      "what": "Keeping production up on whatever hosting the client runs",
+      "examples": "IPsec VPN gateway on a hosting panel · MariaDB / Galera dump errors · SMTP delivery on shared hosting · manual git deploys & server-log forensics · SSO group mapping (Authentik) · local-AI / GPU tuning · white-label domain roll-outs",
+      "sessions": 34
+    },
+    {
+      "emoji": "🗃️",
+      "title": "Data operations & support",
+      "short": "Data operations & support",
+      "lives_in": "Spreadsheets · databases",
+      "what": "Moving, cleaning and reconciling the data that systems depend on",
+      "examples": "Bulk product imports (3,000+ rows) · lead CSV & SQL client imports into an ERP · student-data reconciliation & duplicate-ID fixes · applicant exports & masterlist syncs · recruitment screening sheet",
+      "sessions": 20
+    },
+    {
+      "emoji": "📣",
+      "title": "Marketing, content & growth ops",
+      "short": "Marketing & content ops",
+      "lives_in": "Content calendars · CRM",
+      "what": "Helping brands reach people, not only shipping features",
+      "examples": "Social-media plans for three brands · writer roster for article production · newsletter & CRM email templates · SEO + generative-engine (GEO) optimisation · event & contact sheets for a members' club",
+      "sessions": 18
+    },
+    {
+      "emoji": "📊",
+      "title": "Strategy, proposals & pitch decks",
+      "short": "Strategy, proposals & decks",
+      "lives_in": "Decks · PDFs · Canva",
+      "what": "Turning a goal into a plan people can approve: research, proposals, roadmaps and budgets",
+      "examples": "CEO pitch from a portfolio review · VR safety-training proposal & internal deck · company-profile presentations · budget plan (RAB) + function audit for a civic super-app · PRD for an admissions email system · AI-companion & agency pitch decks (46 slides each)",
+      "sessions": 16,
+      "designs": 8
+    },
+    {
+      "emoji": "⚖️",
+      "title": "Government & regulatory know-how",
+      "short": "Government & regulatory",
+      "lives_in": "State portals · specs",
+      "what": "Making systems fit Indonesian rules and state platforms",
+      "examples": "LKPP / INAPROC procurement flows · electronic-system operator (PSE) registration · SIPPT & BIOS government APIs · PDDIKTI reporting reconciliation · tax formats in finance reports & e-procurement · scholarship tuition (UKT) rules · retail price-ceiling (HET) rules",
+      "sessions": 15
+    },
+    {
+      "emoji": "🎨",
+      "title": "Brand, design & event collateral",
+      "short": "Brand & event design",
+      "lives_in": "Canva",
+      "what": "Visuals for clients, hiring campaigns and live events",
+      "examples": "Hiring posters & social posts for engineering roles · event-venue signage: welcome, zoning & activity boards · company profiles & business cards · product presentation for an online store",
+      "designs": 15
+    }
+  ]
+}

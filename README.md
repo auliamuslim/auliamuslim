@@ -1,17 +1,17 @@
 <div align="center">
 <img width="100%" src="assets/banner-header.svg" alt="Aulia Muslim Hidayatullah — Software Engineer, ERP · SaaS · AI Automation, Indonesia"/>
-<img width="100%" src="assets/hero-terminal.svg" alt="Terminal intro: 108 repos, 93 projects, 13,946 commits, 65 live systems, 70% AI-paired"/><br/>
-<img src="https://img.shields.io/badge/Repositories-108-FFFFFF?style=for-the-badge&labelColor=E70011" alt="108 repositories"/>
-<img src="https://img.shields.io/badge/Commits-13.9k-FFFFFF?style=for-the-badge&labelColor=E70011" alt="13.9k commits"/>
+<img width="100%" src="assets/hero-terminal.svg" alt="Terminal intro: 109 repos, 94 projects, 14,129 commits, 65 live systems, 70% AI-paired"/><br/>
+<img src="https://img.shields.io/badge/Repositories-109-FFFFFF?style=for-the-badge&labelColor=E70011" alt="109 repositories"/>
+<img src="https://img.shields.io/badge/Commits-14.1k-FFFFFF?style=for-the-badge&labelColor=E70011" alt="14.1k commits"/>
 <img src="https://img.shields.io/badge/Live_Systems-65-FFFFFF?style=for-the-badge&labelColor=E70011" alt="65 live systems"/>
 <img src="https://img.shields.io/badge/AI--Paired-70%25-FFFFFF?style=for-the-badge&labelColor=7C3AED" alt="70% AI-paired"/>
 <img src="https://img.shields.io/badge/On_GitHub_Since-2013-FFFFFF?style=for-the-badge&labelColor=E70011" alt="On GitHub since 2013"/>
 <br/>
-<sub><a href="#-about-me">About</a> · <a href="#-portfolio-at-a-glance">At a glance</a> · <a href="#projects">Projects by category</a> · <a href="#-flagship-deep-dives">Flagships</a> · <a href="#-engineering-activity">Activity</a> · <a href="#-how-i-build">How I build</a> · <a href="#-tech-stack--integrations">Stack</a> · <a href="#-contact">Contact</a></sub>
+<sub><a href="#-about-me">About</a> · <a href="#-portfolio-at-a-glance">At a glance</a> · <a href="#projects">Projects by category</a> · <a href="#-flagship-deep-dives">Flagships</a> · <a href="#-beyond-github">Beyond GitHub</a> · <a href="#-engineering-activity">Activity</a> · <a href="#-how-i-build">How I build</a> · <a href="#-tech-stack--integrations">Stack</a> · <a href="#-contact">Contact</a></sub>
 </div>
 
 <!-- TLDR:START -->
-> **TL;DR** — Aulia Muslim Hidayatullah is a software engineer at Newtype (Indonesia) who builds business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation. Across **10 domains** there are **108 repositories** (93 project repos, 65 in production) and **13,946 commits**, 70% of them pair-programmed with Claude Code. Main stacks by commits: Laravel (3,470), n8n + Node.js automation (3,446), WordPress / WooCommerce (1,886), Perfex CRM / CodeIgniter (1,863), Native PHP + Vue / JS (1,829). Since Dec 2025: 13,095 commits on 275 active days.
+> **TL;DR** — Aulia Muslim Hidayatullah is a software engineer at Newtype (Indonesia) who builds business platforms end to end: government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation. Across **10 domains** there are **109 repositories** (94 project repos, 65 in production) and **14,129 commits**, 70% of them pair-programmed with Claude Code. Main stacks by commits: Laravel (3,503), n8n + Node.js automation (3,487), WordPress / WooCommerce (1,904), Perfex CRM / CodeIgniter (1,865), Native PHP + Vue / JS (1,840). Since Dec 2025: 13,278 commits on 277 active days. Beyond GitHub, 183 of 370 Claude Code sessions produced decks, estimates, guides, compliance studies, server work, content and data operations.
 <!-- TLDR:END -->
 
 ## 👋 About Me
@@ -27,7 +27,7 @@
       💼 <b>Role</b> — Software Engineer @ <a href="https://newtype.co.id">Newtype</a><br/>
       📍 <b>Base</b> — Indonesia 🇮🇩<br/>
       🗓️ <b>On GitHub</b> — since 2013 · research-lab roots (2016)<br/>
-      🧠 <b>Portfolio</b> — 108 repos · 93 shipped projects · 65 live<br/>
+      🧠 <b>Portfolio</b> — 109 repos · 94 shipped projects · 65 live<br/>
       🧪 <b>Quality</b> — 10k+ automated tests &amp; checks<br/>
       🎯 <b>Focus</b> — business platforms &amp; AI automation
     </td>
@@ -47,12 +47,12 @@
 <!-- GLANCE:START -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"/>
-  <img width="100%" alt="108 repositories, 13,946 commits, 411 active days, 65 systems in production, 70% of commits paired with Claude Code" src="assets/stats-light.svg"/>
+  <img width="100%" alt="109 repositories, 14,129 commits, 413 active days, 65 systems in production, 70% of commits paired with Claude Code" src="assets/stats-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/now-shipping-dark.svg"/>
-  <img width="100%" alt="Now shipping, last 30 days: 1,236 commits. Busiest: AI document automation &amp; ops hub 320; Loyalty &amp; brand-protection store 155; Admissions + finance + academic monorepo 133; Government testing-lab ERP / CRM 117" src="assets/now-shipping-light.svg"/>
+  <img width="100%" alt="Now shipping, last 30 days: 1,308 commits. Busiest: AI document automation &amp; ops hub 340; Loyalty &amp; brand-protection store 166; Government testing-lab ERP / CRM 97; Civic organisation SuperApp 92" src="assets/now-shipping-light.svg"/>
 </picture>
 
 <picture>
@@ -72,28 +72,28 @@
 ## 🗂️ Projects by Category
 
 <!-- PROJECTS:START -->
-<sub>93 project repositories in 10 categories. Each row leads with the project's <b>main function</b>, then what makes it notable. 🟢 in production · ⚪ delivered, internal or staging · ×N groups sibling repositories.</sub>
+<sub>94 project repositories in 10 categories. Each row leads with the project's <b>main function</b>, then what makes it notable. 🟢 in production · ⚪ delivered, internal or staging · ×N groups sibling repositories.</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/universe-dark.svg"/>
-  <img width="100%" alt="Project universe treemap: every catalogued project grouped by domain, tile area growing with commits. Largest: AI document automation &amp; ops hub 3,446; Government testing-lab ERP / CRM 1,813; Multi-tenant courier &amp; parcel SaaS 1,277; Enterprise talent discovery platform 765; ISP modular ERP 507; Civic organisation SuperApp 473; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 420" src="assets/universe-light.svg"/>
+  <img width="100%" alt="Project universe treemap: every catalogued project grouped by domain, tile area growing with commits. Largest: AI document automation &amp; ops hub 3,487; Government testing-lab ERP / CRM 1,815; Multi-tenant courier &amp; parcel SaaS 1,277; Enterprise talent discovery platform 765; Civic organisation SuperApp 539; ISP modular ERP 507; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 439" src="assets/universe-light.svg"/>
 </picture>
 
 <table>
 <tr>
-<td width="50%" valign="top"><a href="#cat-gov"><b>🏛️ Government, ERP &amp; Enterprise Ops</b></a><br/><sub>9 repos · 2,850 commits · 5 live</sub><br/>Back-office systems that run operations: work orders, billing, HR, fleet and procurement</td>
-<td width="50%" valign="top"><a href="#cat-edu"><b>🎓 Higher-Education &amp; EdTech</b></a><br/><sub>9 repos · 738 commits · 6 live</sub><br/>The student lifecycle, digitised: admission, academics, finance, exams and learning</td>
+<td width="50%" valign="top"><a href="#cat-gov"><b>🏛️ Government, ERP &amp; Enterprise Ops</b></a><br/><sub>9 repos · 2,852 commits · 5 live</sub><br/>Back-office systems that run operations: work orders, billing, HR, fleet and procurement</td>
+<td width="50%" valign="top"><a href="#cat-edu"><b>🎓 Higher-Education &amp; EdTech</b></a><br/><sub>9 repos · 752 commits · 6 live</sub><br/>The student lifecycle, digitised: admission, academics, finance, exams and learning</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-ai"><b>🤖 AI, ML &amp; Automation</b></a><br/><sub>7 repos · 4,009 commits · 5 live</sub><br/>LLMs, agents and machine learning put to work on real operations</td>
+<td width="50%" valign="top"><a href="#cat-ai"><b>🤖 AI, ML &amp; Automation</b></a><br/><sub>8 repos · 4,062 commits · 5 live</sub><br/>LLMs, agents and machine learning put to work on real operations</td>
 <td width="50%" valign="top"><a href="#cat-talent"><b>🧠 Talent Assessment &amp; Recruitment</b></a><br/><sub>4 repos · 900 commits · 2 live</sub><br/>Measuring, ranking and developing people with AI-assisted assessment</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-saas"><b>🧩 Industry Platforms &amp; SaaS</b></a><br/><sub>10 repos · 1,769 commits · 5 live</sub><br/>Vertical products for legal, health, civic, social impact, accessibility and gaming</td>
+<td width="50%" valign="top"><a href="#cat-saas"><b>🧩 Industry Platforms &amp; SaaS</b></a><br/><sub>10 repos · 1,865 commits · 5 live</sub><br/>Vertical products for legal, health, civic, social impact, accessibility and gaming</td>
 <td width="50%" valign="top"><a href="#cat-logi"><b>🚚 Logistics &amp; Shipping</b></a><br/><sub>8 repos · 1,387 commits · 5 live</sub><br/>Moving parcels: courier SaaS, live tracking and shipping-rate engines</td>
 </tr>
 <tr>
-<td width="50%" valign="top"><a href="#cat-shop"><b>🛒 E-Commerce &amp; WooCommerce</b></a><br/><sub>17 repos · 1,086 commits · 14 live</sub><br/>Selling more: loyalty, catalogues, checkout and storefront engineering</td>
+<td width="50%" valign="top"><a href="#cat-shop"><b>🛒 E-Commerce &amp; WooCommerce</b></a><br/><sub>17 repos · 1,104 commits · 14 live</sub><br/>Selling more: loyalty, catalogues, checkout and storefront engineering</td>
 <td width="50%" valign="top"><a href="#cat-pay"><b>💳 Payments, Accounting &amp; POS</b></a><br/><sub>14 repos · 329 commits · 11 live</sub><br/>Collecting money and keeping the books: gateways, accounting sync and point of sale</td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-gov-dark.svg"/>
-  <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,850 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
+  <img width="100%" alt="Government, ERP &amp; Enterprise Ops: 9 repositories, 2,852 commits, 5 live. Back-office systems that run operations: work orders, billing, HR, fleet and procurement" src="assets/cat-gov-light.svg"/>
 </picture>
 
 <table>
@@ -134,7 +134,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-edu-dark.svg"/>
-  <img width="100%" alt="Higher-Education &amp; EdTech: 9 repositories, 738 commits, 6 live. The student lifecycle, digitised: admission, academics, finance, exams and learning" src="assets/cat-edu-light.svg"/>
+  <img width="100%" alt="Higher-Education &amp; EdTech: 9 repositories, 752 commits, 6 live. The student lifecycle, digitised: admission, academics, finance, exams and learning" src="assets/cat-edu-light.svg"/>
 </picture>
 
 <table>
@@ -162,7 +162,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-ai-dark.svg"/>
-  <img width="100%" alt="AI, ML &amp; Automation: 7 repositories, 4,009 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
+  <img width="100%" alt="AI, ML &amp; Automation: 8 repositories, 4,062 commits, 5 live. LLMs, agents and machine learning put to work on real operations" src="assets/cat-ai-light.svg"/>
 </picture>
 
 <table>
@@ -179,6 +179,7 @@
 <tr><td valign="top"><b>AI competency recommender</b><br/>🟢 <sub>live</sub> <sub>· since 2025</sub><br/><code>PHP&nbsp;8.1</code> <code>OpenAI</code></td><td valign="top">Generates personal development plans per competency and level</td><td valign="top">GPT plans streamed over SSE · response caching · rate limiting</td></tr>
 <tr><td valign="top"><b>Ops knowledge base &amp; AI CV screening</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>Python</code> <code>Claude&nbsp;Code&nbsp;skills</code></td><td valign="top">Documents company operations and shortlists job applicants</td><td valign="top">44 guide volumes · 1,000+ CVs screened · auto Top-10 reports</td></tr>
 <tr><td valign="top"><b>Contact master-list automation</b><br/>🟢 <sub>live</sub> <sub>· since 2026</sub><br/><code>Google&nbsp;Apps&nbsp;Script</code></td><td valign="top">Keeps a community's contact lists in sync automatically</td><td valign="top">Hub-and-spoke Sheets sync · four Apps Script projects · event imports</td></tr>
+<tr><td valign="top"><b>Mobile QA, social &amp; device-fleet workbench</b><br/>⚪ <sub>delivered</sub> <sub>· since 2026</sub><br/><code>TypeScript</code> <code>Fastify</code> <code>React</code> <code>Expo</code></td><td valign="top">Tests apps on real phones, schedules social posts and manages company devices from one console</td><td valign="top">3 modules · web dashboard + Android/iOS app · outbound device agents · human-approved AI replies · runs on cPanel</td></tr>
 </tbody>
 </table>
 
@@ -211,7 +212,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-saas-dark.svg"/>
-  <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,769 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
+  <img width="100%" alt="Industry Platforms &amp; SaaS: 10 repositories, 1,865 commits, 5 live. Vertical products for legal, health, civic, social impact, accessibility and gaming" src="assets/cat-saas-light.svg"/>
 </picture>
 
 <table>
@@ -265,7 +266,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cat-shop-dark.svg"/>
-  <img width="100%" alt="E-Commerce &amp; WooCommerce: 17 repositories, 1,086 commits, 14 live. Selling more: loyalty, catalogues, checkout and storefront engineering" src="assets/cat-shop-light.svg"/>
+  <img width="100%" alt="E-Commerce &amp; WooCommerce: 17 repositories, 1,104 commits, 14 live. Selling more: loyalty, catalogues, checkout and storefront engineering" src="assets/cat-shop-light.svg"/>
 </picture>
 
 <table>
@@ -551,19 +552,49 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 </tr>
 </table>
 
+## 🧾 Beyond GitHub
+
+<!-- BEYOND:START -->
+<sub>Not everything ships as a commit. Of <b>370 Claude Code sessions</b> since Nov 2025 across 79 repositories, <b>183</b> produced something that lives outside GitHub: decks, estimates, guides, compliance studies, server work, content and data operations. Design work comes from Canva. Client names withheld.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/beyond-dark.svg"/>
+  <img width="100%" alt="Beyond GitHub, sessions per deliverable type: Docs, guides &amp; training 62; Analysis, estimation &amp; QA 46; Infrastructure &amp; incidents 34; Data operations &amp; support 20; Marketing &amp; content ops 18; Strategy, proposals &amp; decks 16; Government &amp; regulatory 15" src="assets/beyond-light.svg"/>
+</picture>
+
+<table>
+<thead><tr>
+<th align="left" width="24%">Category</th>
+<th align="left" width="26%">What I delivered</th>
+<th align="left" width="40%">Examples</th>
+<th align="right" width="10%">Volume</th>
+</tr></thead>
+<tbody>
+<tr><td valign="top"><b>📘 Documentation, guides &amp; training</b><br/><sub>PDF guides · Markdown · decks</sub></td><td valign="top">Docs that let clients run what was built on their own</td><td valign="top"><sub>Work-order user guide (PDF) · client hand-over &amp; finalisation guides · system flows per user role · RBAC, ERD &amp; API references · module tutorials &amp; case studies · software-engineering course deck (28 slides)</sub></td><td valign="top" align="right"><code>62</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>🧮 Analysis, estimation &amp; QA</b><br/><sub>Reports · spreadsheets</sub></td><td valign="top">Sizing, auditing and checking work before and after it is built</td><td valign="top"><sub>Man-day estimates for a 5-codebase POS ecosystem · QA / PM reports per module · repository audits &amp; development reports · billing, pro-rate &amp; commission flow analysis for an ISP ERP · Flutter app test checklist · developer skill review</sub></td><td valign="top" align="right"><code>46</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>🖥️ Infrastructure, hosting &amp; incident response</b><br/><sub>Servers · hosting panels · DNS</sub></td><td valign="top">Keeping production up on whatever hosting the client runs</td><td valign="top"><sub>IPsec VPN gateway on a hosting panel · MariaDB / Galera dump errors · SMTP delivery on shared hosting · manual git deploys &amp; server-log forensics · SSO group mapping (Authentik) · local-AI / GPU tuning · white-label domain roll-outs</sub></td><td valign="top" align="right"><code>34</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>🗃️ Data operations &amp; support</b><br/><sub>Spreadsheets · databases</sub></td><td valign="top">Moving, cleaning and reconciling the data that systems depend on</td><td valign="top"><sub>Bulk product imports (3,000+ rows) · lead CSV &amp; SQL client imports into an ERP · student-data reconciliation &amp; duplicate-ID fixes · applicant exports &amp; masterlist syncs · recruitment screening sheet</sub></td><td valign="top" align="right"><code>20</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>📣 Marketing, content &amp; growth ops</b><br/><sub>Content calendars · CRM</sub></td><td valign="top">Helping brands reach people, not only shipping features</td><td valign="top"><sub>Social-media plans for three brands · writer roster for article production · newsletter &amp; CRM email templates · SEO + generative-engine (GEO) optimisation · event &amp; contact sheets for a members' club</sub></td><td valign="top" align="right"><code>18</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>📊 Strategy, proposals &amp; pitch decks</b><br/><sub>Decks · PDFs · Canva</sub></td><td valign="top">Turning a goal into a plan people can approve: research, proposals, roadmaps and budgets</td><td valign="top"><sub>CEO pitch from a portfolio review · VR safety-training proposal &amp; internal deck · company-profile presentations · budget plan (RAB) + function audit for a civic super-app · PRD for an admissions email system · AI-companion &amp; agency pitch decks (46 slides each)</sub></td><td valign="top" align="right"><code>16</code>&nbsp;<sub>sessions</sub><br/><code>8</code>&nbsp;<sub>designs</sub></td></tr>
+<tr><td valign="top"><b>⚖️ Government &amp; regulatory know-how</b><br/><sub>State portals · specs</sub></td><td valign="top">Making systems fit Indonesian rules and state platforms</td><td valign="top"><sub>LKPP / INAPROC procurement flows · electronic-system operator (PSE) registration · SIPPT &amp; BIOS government APIs · PDDIKTI reporting reconciliation · tax formats in finance reports &amp; e-procurement · scholarship tuition (UKT) rules · retail price-ceiling (HET) rules</sub></td><td valign="top" align="right"><code>15</code>&nbsp;<sub>sessions</sub></td></tr>
+<tr><td valign="top"><b>🎨 Brand, design &amp; event collateral</b><br/><sub>Canva</sub></td><td valign="top">Visuals for clients, hiring campaigns and live events</td><td valign="top"><sub>Hiring posters &amp; social posts for engineering roles · event-venue signage: welcome, zoning &amp; activity boards · company profiles &amp; business cards · product presentation for an online store</sub></td><td valign="top" align="right"><code>15</code>&nbsp;<sub>designs</sub></td></tr>
+</tbody>
+</table>
+<!-- BEYOND:END -->
+
 ## 📈 Engineering Activity
 
 <!-- ACTIVITY:START -->
-<sub>Every chart counts all repositories I own or contribute to, private ones included: my own commits plus Claude Code sessions in my repositories. Upstream and other contributors are excluded. Window: <b>1 Dec 2025 → 16 Oct 2026</b>, times in WIB (UTC+7).</sub>
+<sub>Every chart counts all repositories I own or contribute to, private ones included: my own commits plus Claude Code sessions in my repositories. Upstream and other contributors are excluded. Window: <b>1 Dec 2025 → 19 Oct 2026</b>, times in WIB (UTC+7).</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg"/>
-  <img width="100%" alt="Weekly commits since December 2025, hand-written vs Claude Code: 13,095 commits, peak week of 741 starting 24 Aug 2026" src="assets/activity-light.svg"/>
+  <img width="100%" alt="Weekly commits since December 2025, hand-written vs Claude Code: 13,278 commits, peak week of 741 starting 24 Aug 2026" src="assets/activity-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg"/>
-  <img width="100%" alt="Daily commit calendar since December 2025: 13,095 commits on 275 of 320 days, longest streak 34 days, busiest day 27 Aug 2026 with 237 commits" src="assets/heatmap-light.svg"/>
+  <img width="100%" alt="Daily commit calendar since December 2025: 13,278 commits on 277 of 323 days, longest streak 34 days, busiest day 27 Aug 2026 with 237 commits" src="assets/heatmap-light.svg"/>
 </picture>
 
 <picture>
@@ -573,12 +604,12 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/top-projects-dark.svg"/>
-  <img width="100%" alt="Most active projects since December 2025: AI document automation &amp; ops hub 3,446; Government testing-lab ERP / CRM 1,783; Multi-tenant courier &amp; parcel SaaS 1,229; Enterprise talent discovery platform 621; ISP modular ERP 504; Civic organisation SuperApp 473; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 420; Lawyer-on-demand marketplace 407; Membership &amp; store-credit automation 351" src="assets/top-projects-light.svg"/>
+  <img width="100%" alt="Most active projects since December 2025: AI document automation &amp; ops hub 3,487; Government testing-lab ERP / CRM 1,785; Multi-tenant courier &amp; parcel SaaS 1,229; Enterprise talent discovery platform 621; Civic organisation SuperApp 539; ISP modular ERP 504; Food supply-chain governance SaaS 463; Donation &amp; social-foundation platform 439; Lawyer-on-demand marketplace 418; Loyalty &amp; brand-protection store 362" src="assets/top-projects-light.svg"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/domains-dark.svg"/>
-  <img width="100%" alt="All-time commits per domain: AI, ML &amp; Automation 4,009; Government, ERP &amp; Enterprise Ops 2,850; Industry Platforms &amp; SaaS 1,769; Logistics &amp; Shipping 1,387; E-Commerce &amp; WooCommerce 1,086; Talent Assessment &amp; Recruitment 900; Higher-Education &amp; EdTech 738; Membership, Events &amp; Email 489; Payments, Accounting &amp; POS 329; Corporate Web, CMS &amp; WP Tooling 185" src="assets/domains-light.svg"/>
+  <img width="100%" alt="All-time commits per domain: AI, ML &amp; Automation 4,062; Government, ERP &amp; Enterprise Ops 2,852; Industry Platforms &amp; SaaS 1,865; Logistics &amp; Shipping 1,387; E-Commerce &amp; WooCommerce 1,104; Talent Assessment &amp; Recruitment 900; Higher-Education &amp; EdTech 752; Membership, Events &amp; Email 489; Payments, Accounting &amp; POS 329; Corporate Web, CMS &amp; WP Tooling 185" src="assets/domains-light.svg"/>
 </picture>
 
 <!-- ACTIVITY:END -->
@@ -596,7 +627,7 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 | | |
 |---|---|
-| 🤖 **AI-native workflow** | 70% of 13,946 commits paired with Claude Code across 77 repositories; 37 repos carry `CLAUDE.md` / `AGENTS.md` specs, custom subagents and skills |
+| 🤖 **AI-native workflow** | 70% of 14,129 commits paired with Claude Code across 78 repositories; 37 repos carry `CLAUDE.md` / `AGENTS.md` specs, custom subagents and skills |
 | 🧠 **AI inside the product** | 15+ products ship AI: RAG tutors, GPT-4o reports, Claude summaries &amp; agents, LLM-adaptive testing, ML trading signals, speech-to-sign |
 | 🧪 **Tests before trust** | 10k+ automated tests and checks across the portfolio; CI on GitHub Actions; multi-round code and security reviews before launch |
 | 🔐 **Security by habit** | Webhook signature checks, idempotency keys, rate limits, CSP / SRI, PII-redacting logs, and audits of inherited codebases |
@@ -614,7 +645,7 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-commits-dark.svg"/>
-  <img width="100%" alt="Commits per main stack: Laravel 3,470 across 21 repos; n8n + Node.js automation 3,446 across 1 repo; WordPress / WooCommerce 1,886 across 39 repos; Perfex CRM / CodeIgniter 1,863 across 3 repos; Native PHP + Vue / JS 1,829 across 10 repos; TypeScript: Next.js, Node, Hono 605 across 7 repos; Python: ML, data, Flask 552 across 6 repos; Flutter / Dart 47 across 2 repos; Other: SQL, Apps Script, email 44 across 4 repos" src="assets/stack-commits-light.svg"/>
+  <img width="100%" alt="Commits per main stack: Laravel 3,503 across 21 repos; n8n + Node.js automation 3,487 across 1 repo; WordPress / WooCommerce 1,904 across 39 repos; Perfex CRM / CodeIgniter 1,865 across 3 repos; Native PHP + Vue / JS 1,840 across 10 repos; TypeScript: Next.js, Node, Hono 673 across 8 repos; Python: ML, data, Flask 562 across 6 repos; Flutter / Dart 47 across 2 repos; Other: SQL, Apps Script, email 44 across 4 repos" src="assets/stack-commits-light.svg"/>
 </picture>
 
 <!-- STACK:START -->
@@ -627,21 +658,21 @@ Doctor consultations, counselling, fitness and nutrition programmes.
 <th align="left" width="46%">Typical projects</th>
 </tr></thead>
 <tbody>
-<tr><td><b>Laravel</b></td><td align="right">21</td><td align="right"><code>3,470</code></td><td align="right">25.3%</td><td>Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite</td></tr>
-<tr><td><b>n8n + Node.js automation</b></td><td align="right">1</td><td align="right"><code>3,446</code></td><td align="right">25.1%</td><td>AI document automation &amp; ops hub</td></tr>
-<tr><td><b>WordPress / WooCommerce</b></td><td align="right">39</td><td align="right"><code>1,886</code></td><td align="right">13.7%</td><td>Loyalty store · product-authentication suite · membership automation</td></tr>
-<tr><td><b>Perfex CRM / CodeIgniter</b></td><td align="right">3</td><td align="right"><code>1,863</code></td><td align="right">13.6%</td><td>Two government lab ERPs · CRM ↔ FluentCRM sync</td></tr>
-<tr><td><b>Native PHP + Vue / JS</b></td><td align="right">10</td><td align="right"><code>1,829</code></td><td align="right">13.3%</td><td>Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS</td></tr>
-<tr><td><b>TypeScript: Next.js, Node, Hono</b></td><td align="right">7</td><td align="right"><code>605</code></td><td align="right">4.4%</td><td>Civic SuperApp · sports-arena POS backend &amp; admin · mining digital twin</td></tr>
-<tr><td><b>Python: ML, data, Flask</b></td><td align="right">6</td><td align="right"><code>552</code></td><td align="right">4.0%</td><td>AI CV screening · crypto trading engine · RAG tutor · catalogue import</td></tr>
+<tr><td><b>Laravel</b></td><td align="right">21</td><td align="right"><code>3,503</code></td><td align="right">25.2%</td><td>Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite</td></tr>
+<tr><td><b>n8n + Node.js automation</b></td><td align="right">1</td><td align="right"><code>3,487</code></td><td align="right">25.0%</td><td>AI document automation &amp; ops hub</td></tr>
+<tr><td><b>WordPress / WooCommerce</b></td><td align="right">39</td><td align="right"><code>1,904</code></td><td align="right">13.7%</td><td>Loyalty store · product-authentication suite · membership automation</td></tr>
+<tr><td><b>Perfex CRM / CodeIgniter</b></td><td align="right">3</td><td align="right"><code>1,865</code></td><td align="right">13.4%</td><td>Two government lab ERPs · CRM ↔ FluentCRM sync</td></tr>
+<tr><td><b>Native PHP + Vue / JS</b></td><td align="right">10</td><td align="right"><code>1,840</code></td><td align="right">13.2%</td><td>Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS</td></tr>
+<tr><td><b>TypeScript: Next.js, Node, Hono</b></td><td align="right">8</td><td align="right"><code>673</code></td><td align="right">4.8%</td><td>Civic SuperApp · sports-arena POS backend &amp; admin · mining digital twin</td></tr>
+<tr><td><b>Python: ML, data, Flask</b></td><td align="right">6</td><td align="right"><code>562</code></td><td align="right">4.0%</td><td>AI CV screening · crypto trading engine · RAG tutor · catalogue import</td></tr>
 <tr><td><b>Flutter / Dart</b></td><td align="right">2</td><td align="right"><code>47</code></td><td align="right">0.3%</td><td>Ice-rink member app · venue POS app</td></tr>
 <tr><td><b>Other: SQL, Apps Script, email</b></td><td align="right">4</td><td align="right"><code>44</code></td><td align="right">0.3%</td><td>Contact automation · reporting feeder kit · newsletters</td></tr>
-<tr><td><b>Total</b></td><td align="right"><b>93</b></td><td align="right"><b><code>13,742</code></b></td><td align="right"><b>100%</b></td><td><sub>All 93 project repos</sub></td></tr>
+<tr><td><b>Total</b></td><td align="right"><b>94</b></td><td align="right"><b><code>13,925</code></b></td><td align="right"><b>100%</b></td><td><sub>All 94 project repos</sub></td></tr>
 </tbody>
 </table>
 <!-- STACK:END -->
 
-<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,742 commits in the 93 project repos. The remaining 204 of the 13,946 total come from collaborations and plugin baselines.</sub>
+<sub>Each project repo is counted once, under its main stack, so the rows add up to the 13,925 commits in the 94 project repos. The remaining 204 of the 14,129 total come from collaborations and plugin baselines.</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg"/>
@@ -680,18 +711,18 @@ linkedin: https://www.linkedin.com/in/auliamuslim/
 email: auliamuslim@gmail.com
 on_github_since: 2013
 open_to: collaboration
-updated: 2026-10-16
+updated: 2026-10-19
 stats:
-  repositories: 108
-  project_repos: 93
+  repositories: 109
+  project_repos: 94
   live_systems: 65
-  commits_total: 13946
+  commits_total: 14129
   commits_ai_paired_pct: 70
-  repos_with_ai_pairing: 77
-  active_days: 411
+  repos_with_ai_pairing: 78
+  active_days: 413
   window_since: 2025-12-01
-  window_commits: 13095
-  window_active_days: 275
+  window_commits: 13278
+  window_active_days: 277
   window_longest_streak_days: 34
 focus:
   - "Government & enterprise ERP / CRM"
@@ -704,17 +735,17 @@ domains:
   - name: "Government, ERP & Enterprise Ops"
     repos: 9
     live: 5
-    commits: 2850
+    commits: 2852
     purpose: "Back-office systems that run operations: work orders, billing, HR, fleet and procurement"
   - name: "Higher-Education & EdTech"
     repos: 9
     live: 6
-    commits: 738
+    commits: 752
     purpose: "The student lifecycle, digitised: admission, academics, finance, exams and learning"
   - name: "AI, ML & Automation"
-    repos: 7
+    repos: 8
     live: 5
-    commits: 4009
+    commits: 4062
     purpose: "LLMs, agents and machine learning put to work on real operations"
   - name: "Talent Assessment & Recruitment"
     repos: 4
@@ -724,7 +755,7 @@ domains:
   - name: "Industry Platforms & SaaS"
     repos: 10
     live: 5
-    commits: 1769
+    commits: 1865
     purpose: "Vertical products for legal, health, civic, social impact, accessibility and gaming"
   - name: "Logistics & Shipping"
     repos: 8
@@ -734,7 +765,7 @@ domains:
   - name: "E-Commerce & WooCommerce"
     repos: 17
     live: 14
-    commits: 1086
+    commits: 1104
     purpose: "Selling more: loyalty, catalogues, checkout and storefront engineering"
   - name: "Payments, Accounting & POS"
     repos: 14
@@ -752,15 +783,27 @@ domains:
     commits: 185
     purpose: "Publishing and protecting: corporate sites, custom CMS and WordPress tooling"
 main_stacks:
-  - {stack: "Laravel", repos: 21, commits: 3470}
-  - {stack: "n8n + Node.js automation", repos: 1, commits: 3446}
-  - {stack: "WordPress / WooCommerce", repos: 39, commits: 1886}
-  - {stack: "Perfex CRM / CodeIgniter", repos: 3, commits: 1863}
-  - {stack: "Native PHP + Vue / JS", repos: 10, commits: 1829}
-  - {stack: "TypeScript: Next.js, Node, Hono", repos: 7, commits: 605}
-  - {stack: "Python: ML, data, Flask", repos: 6, commits: 552}
+  - {stack: "Laravel", repos: 21, commits: 3503}
+  - {stack: "n8n + Node.js automation", repos: 1, commits: 3487}
+  - {stack: "WordPress / WooCommerce", repos: 39, commits: 1904}
+  - {stack: "Perfex CRM / CodeIgniter", repos: 3, commits: 1865}
+  - {stack: "Native PHP + Vue / JS", repos: 10, commits: 1840}
+  - {stack: "TypeScript: Next.js, Node, Hono", repos: 8, commits: 673}
+  - {stack: "Python: ML, data, Flask", repos: 6, commits: 562}
   - {stack: "Flutter / Dart", repos: 2, commits: 47}
   - {stack: "Other: SQL, Apps Script, email", repos: 4, commits: 44}
+beyond_github:
+  claude_code_sessions: 370
+  sessions_with_non_code_deliverables: 183
+  categories:
+    - {name: "Analysis, estimation & QA", sessions: 46, lives_in: "Reports · spreadsheets"}
+    - {name: "Documentation, guides & training", sessions: 62, lives_in: "PDF guides · Markdown · decks"}
+    - {name: "Infrastructure, hosting & incident response", sessions: 34, lives_in: "Servers · hosting panels · DNS"}
+    - {name: "Data operations & support", sessions: 20, lives_in: "Spreadsheets · databases"}
+    - {name: "Marketing, content & growth ops", sessions: 18, lives_in: "Content calendars · CRM"}
+    - {name: "Strategy, proposals & pitch decks", sessions: 16, designs: 8, lives_in: "Decks · PDFs · Canva"}
+    - {name: "Government & regulatory know-how", sessions: 15, lives_in: "State portals · specs"}
+    - {name: "Brand, design & event collateral", designs: 15, lives_in: "Canva"}
 ai_in_products:
   - "RAG learning assistant"
   - "GPT-4o assessment reports"
@@ -769,16 +812,16 @@ ai_in_products:
   - "ML trading signals (LightGBM)"
   - "Speech-to-sign-language"
 top_projects_since_dec_2025:
-  - {name: "AI document automation & ops hub", domain: "AI & automation", commits: 3446}
-  - {name: "Government testing-lab ERP / CRM", domain: "Gov & ERP", commits: 1783}
+  - {name: "AI document automation & ops hub", domain: "AI & automation", commits: 3487}
+  - {name: "Government testing-lab ERP / CRM", domain: "Gov & ERP", commits: 1785}
   - {name: "Multi-tenant courier & parcel SaaS", domain: "Logistics", commits: 1229}
   - {name: "Enterprise talent discovery platform", domain: "Talent", commits: 621}
+  - {name: "Civic organisation SuperApp", domain: "SaaS platforms", commits: 539}
   - {name: "ISP modular ERP", domain: "Gov & ERP", commits: 504}
-  - {name: "Civic organisation SuperApp", domain: "SaaS platforms", commits: 473}
   - {name: "Food supply-chain governance SaaS", domain: "Gov & ERP", commits: 463}
-  - {name: "Donation & social-foundation platform", domain: "SaaS platforms", commits: 420}
-  - {name: "Lawyer-on-demand marketplace", domain: "SaaS platforms", commits: 407}
-  - {name: "Membership & store-credit automation", domain: "Membership & email", commits: 351}
+  - {name: "Donation & social-foundation platform", domain: "SaaS platforms", commits: 439}
+  - {name: "Lawyer-on-demand marketplace", domain: "SaaS platforms", commits: 418}
+  - {name: "Loyalty & brand-protection store", domain: "E-commerce", commits: 362}
 note: "Client names are withheld; most work is private client work under NDA."
 ```
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="376" viewBox="0 0 860 376" role="img" aria-label="Beyond the commit log — work that lives outside GitHub">
+<title>Beyond the commit log — work that lives outside GitHub</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#e6edf3}.m{fill:#9198a1}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
+<rect x="0.5" y="0.5" width="859" height="375" rx="12" fill="#0d1117" stroke="#3d444d"/>
+<text x="28" y="40" font-size="17" font-weight="700">Beyond the commit log — work that lives outside GitHub</text>
+<text x="28" y="62" font-size="12.5" class="m">183 of 370 Claude Code sessions since Nov 2025 produced a non-code deliverable · one session can count twice</text>
+
+<text x="28" y="106" font-size="11" font-weight="700" class="m n">01</text>
+<text x="52" y="106" font-size="13">Docs, guides &amp; training</text>
+<text x="52" y="121" font-size="10.5" class="m">PDF guides · Markdown · decks</text>
+<rect x="328" y="98" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.00s" x="328" y="98" width="414.6" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="111" font-size="12.5" font-weight="700" class="n">62 sessions</text>
+<text x="28" y="144" font-size="11" font-weight="700" class="m n">02</text>
+<text x="52" y="144" font-size="13">Analysis, estimation &amp; QA</text>
+<text x="52" y="159" font-size="10.5" class="m">Reports · spreadsheets</text>
+<rect x="328" y="136" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.05s" x="328" y="136" width="307.6" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="149" font-size="12.5" font-weight="700" class="n">46 sessions</text>
+<text x="28" y="182" font-size="11" font-weight="700" class="m n">03</text>
+<text x="52" y="182" font-size="13">Infrastructure &amp; incidents</text>
+<text x="52" y="197" font-size="10.5" class="m">Servers · hosting panels · DNS</text>
+<rect x="328" y="174" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.10s" x="328" y="174" width="227.4" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="187" font-size="12.5" font-weight="700" class="n">34 sessions</text>
+<text x="28" y="220" font-size="11" font-weight="700" class="m n">04</text>
+<text x="52" y="220" font-size="13">Data operations &amp; support</text>
+<text x="52" y="235" font-size="10.5" class="m">Spreadsheets · databases</text>
+<rect x="328" y="212" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.15s" x="328" y="212" width="133.7" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="225" font-size="12.5" font-weight="700" class="n">20 sessions</text>
+<text x="28" y="258" font-size="11" font-weight="700" class="m n">05</text>
+<text x="52" y="258" font-size="13">Marketing &amp; content ops</text>
+<text x="52" y="273" font-size="10.5" class="m">Content calendars · CRM</text>
+<rect x="328" y="250" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.20s" x="328" y="250" width="120.4" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="263" font-size="12.5" font-weight="700" class="n">18 sessions</text>
+<text x="28" y="296" font-size="11" font-weight="700" class="m n">06</text>
+<text x="52" y="296" font-size="13">Strategy, proposals &amp; decks</text>
+<text x="52" y="311" font-size="10.5" class="m">Decks · PDFs · Canva</text>
+<rect x="328" y="288" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.25s" x="328" y="288" width="107.0" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="301" font-size="12.5" font-weight="700" class="n">16 sessions</text>
+<text x="28" y="334" font-size="11" font-weight="700" class="m n">07</text>
+<text x="52" y="334" font-size="13">Government &amp; regulatory</text>
+<text x="52" y="349" font-size="10.5" class="m">State portals · specs</text>
+<rect x="328" y="326" width="414.6" height="16" rx="4" fill="#151b23"/>
+<rect class="bar" style="animation-delay:0.30s" x="328" y="326" width="100.3" height="16" rx="4" fill="#F2545B"/>
+<text x="754.6" y="339" font-size="12.5" font-weight="700" class="n">15 sessions</text></svg>
