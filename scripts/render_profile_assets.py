@@ -797,6 +797,49 @@ def timeline(t):
     return svg(height, "\n".join(out), t, "The journey")
 
 
+# --------------------------------------------------------------------- HORUS card
+def horus_card(t):
+    """Architecture sketch of HORUS: the live system is behind an admin login, so no screenshot."""
+    height = 404
+    out = [heading(t, "HORUS — a 3D global-intelligence war room",
+                   "How I self-hosted and hardened an open-source OSINT globe inside our AI operations hub "
+                   "· architecture sketch")]
+
+    def box(x, y, w, h, title, lines, accent):
+        out.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{t["track"]}" stroke="{t["border"]}"/>')
+        out.append(f'<rect x="{x+16}" y="{y+16}" width="24" height="3" rx="1.5" fill="{accent}"/>')
+        out.append(f'<text x="{x+16}" y="{y+40}" font-size="13.5" font-weight="700">{escape(title)}</text>')
+        for k, line in enumerate(lines):
+            out.append(f'<text x="{x+16}" y="{y+60+k*17}" font-size="11.5" class="m">{escape(line)}</text>')
+
+    def arrow(x1, x2, y):
+        out.append(f'<line x1="{x1}" x2="{x2-7}" y1="{y}" y2="{y}" stroke="{t["muted"]}" stroke-width="1.5"/>')
+        out.append(f'<path d="M{x2-8} {y-4.5}L{x2} {y}L{x2-8} {y+4.5}Z" fill="{t["muted"]}"/>')
+
+    y, h = 92, 112
+    box(28, y, 150, h, "Browser", ["Analyst opens", "/warroom in the hub"], t["muted"])
+    box(214, y, 300, h, "Hub gateway", ["Admin session + role check on every call",
+                                        "43 allow-listed API routes, nothing else",
+                                        "SSRF and ../ path tricks refused"], t["s1"])
+    box(550, y, 282, h, "HORUS app", ["Next.js 16 + MapLibre 3D globe",
+                                      "Open-source OSIRIS (MIT), pinned to",
+                                      "one reviewed commit, white-labelled"], t["s1"])
+    arrow(178, 214, y + h / 2)
+    arrow(514, 550, y + h / 2)
+    tiles = [("AI forecasts kept", ["Broken replies repaired,", "every run kept, Run again"], t["s2"]),
+             ("CCTV relay", ["City HLS cameras played", "through one origin"], t["s1"]),
+             ("Idle power saving", ["GPU 973 → 39 ms/s", "when nobody is watching"], t["s1"]),
+             ("White-label build", ["10 patch scripts, each", "fails if upstream drifts"], t["s1"])]
+    tw, gap, ty = (W - 56 - 3 * 14) / 4, 14, 232
+    for k, (title, lines, accent) in enumerate(tiles):
+        box(28 + k * (tw + gap), ty, tw, 104, title, lines, accent)
+    out.append(f'<text x="28" y="{ty + 136}" font-size="11.5" class="m">38 commits, Jul–Oct 2026. OSIRIS is '
+               'MIT-licensed; HORUS is my integration, security and white-label layer on top of it,</text>')
+    out.append(f'<text x="28" y="{ty + 154}" font-size="11.5" class="m">running inside the AI operations hub I build '
+               'at KOMINA, next to Juno 3D GIS and the document-automation tools.</text>')
+    return svg(height, "\n".join(out), t, "HORUS architecture")
+
+
 # ------------------------------------------------------------- category banner
 def live_total(projects):
     return sum(p.get("live_count", p.get("count", 1)) for p in projects if p["live"])
@@ -941,8 +984,8 @@ def readme_projects(catalog):
     cats = catalog["categories"]
     out = []
     total_repos = sum(repo_total(c["projects"]) for c in cats)
-    out.append(f"<sub>{total_repos} project repositories in {len(cats)} categories. Each row leads with the "
-               "project's <b>main function</b>, then what makes it notable. 🟢 in production · "
+    out.append(f"<sub>{total_repos} project repositories in {len(cats)} categories. Open a category to see each "
+               "project: what it does first, then what makes it interesting. 🟢 in production · "
                "⚪ delivered, internal or staging · ×N groups sibling repositories.</sub>\n")
     out.append(pic("universe", "Project universe treemap: every catalogued project grouped by domain, tile area "
                    "growing with commits. Largest: " + "; ".join(
@@ -964,7 +1007,9 @@ def readme_projects(catalog):
                f'{live_total(c["projects"])} live. {c["tagline"]}')
         out.append(f'<a id="cat-{c["key"]}"></a>\n')
         out.append(picture(f"cat-{c['key']}", alt) + "\n")
-        out.append(project_rows(c["projects"]) + "\n")
+        n = repo_total(c["projects"])
+        out.append(f'<details>\n<summary><b>See all {len(c["projects"])} projects</b> <sub>· {n} repos · '
+                   f'{live_total(c["projects"])} live</sub></summary>\n\n{project_rows(c["projects"])}\n\n</details>\n')
         out.append('<div align="right"><sub><a href="#projects">↑ back to categories</a></sub></div>\n')
     collab = catalog["collaborations"]
     out.append('<a id="cat-collab"></a>\n')
@@ -1099,26 +1144,94 @@ def readme_skills():
     return "\n".join(rows)
 
 
+GALLERY = json.loads((ROOT / "data" / "gallery.json").read_text())
+
+
+def readme_about():
+    """Reviewer-first card: who I am, what I do, the numbers and how to reach me."""
+    t = DATA["totals"]
+    now = [e for e in CV["experience"] if e["end"] is None]
+    short = lambda e: "Newtype" if "Newtype" in e["org"] else e.get("short", e["org"]).split(" · ")[0]
+    roles = escape(" · ".join(f'{e["role"].replace("Chief Technology Officer", "CTO")} @ {short(e)}' for e in reversed(now)))
+    facts = [
+        ("💼", "Role", f'{escape(CV["headline"])}'),
+        ("🏢", "Now", roles),
+        ("🗓️", "Experience", f'{CV["years"]} years · M.T., Institut Teknologi Bandung'),
+        ("📍", "Based in", f'{escape(CV["location"])} 🇮🇩 · clients in {", ".join(CV["markets"][:-1])} &amp; {CV["markets"][-1]}'),
+        ("🧰", "Daily tools", "Laravel · TypeScript &amp; Node · React &amp; Vue · Python · n8n · WordPress · Docker"),
+        ("📈", "Track record", f'{C["repositories"]} repos · {C["project_repos"]} projects · {C["live"]} live · '
+                              f'{fmt(t["commits"])} commits · 10k+ tests'),
+        ("🎯", "Looking for", escape(CV["open_to"]).replace(" · ", " — ")),
+    ]
+    rows = "<br/>\n      ".join(f'{e} <b>{k}</b> — {v}' for e, k, v in facts)
+    return f'''<table>
+  <tr>
+    <td width="150" align="center" valign="top">
+      <a href="https://github.com/auliamuslim"><img src="https://avatars.githubusercontent.com/u/5130100?v=4" width="128" alt="Aulia Muslim Hidayatullah"/></a><br/>
+      <sub><b>@auliamuslim</b></sub><br/>
+      <img src="https://img.shields.io/badge/Open_to-Senior_·_SRE_·_AI_roles-0CA30C?style=flat-square" alt="Open to senior full stack, SRE or AI automation roles"/>
+    </td>
+    <td valign="top">
+      I build the software that organisations actually run on: ERPs for government labs, complete university systems,
+      courier SaaS and online stores. Around them I build AI tools that turn meetings, forms and recordings into finished
+      documents. I also keep the servers running, and make sure the sites turn up in Google and in AI answers.<br/><br/>
+      {rows}<br/><br/>
+      🔒 Most of this is private client work under NDA, so names are left out here. <a href="mailto:auliamuslim@gmail.com">I'm happy to walk you through any of it.</a>
+    </td>
+  </tr>
+</table>'''
+
+
+def readme_gallery():
+    tiles = GALLERY["tiles"]
+    out = ['<table>']
+    row = []
+
+    def cell(tile, span):
+        if tile.get("picture"):
+            img = (f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/{tile["picture"]}-dark.svg"/>'
+                   f'<img width="100%" alt="{alt_attr(tile["title"] + ". " + tile["caption"])}" '
+                   f'src="assets/{tile["picture"]}-light.svg"/></picture>')
+        else:
+            img = f'<img width="100%" alt="{alt_attr(tile["title"] + ". " + tile["caption"])}" src="assets/{tile["img"]}"/>'
+        width = "" if span == 2 else ' width="50%"'
+        col = ' colspan="2"' if span == 2 else ""
+        return (f'<td{col}{width} valign="top">{img}<br/><b>{escape(tile["title"])}</b><br/>'
+                f'<sub>{escape(tile["caption"])}</sub></td>')
+
+    for tile in tiles:
+        if tile.get("wide"):
+            if row:
+                out.append("<tr>" + "".join(row) + "</tr>")
+                row = []
+            out.append("<tr>" + cell(tile, 2) + "</tr>")
+            continue
+        row.append(cell(tile, 1))
+        if len(row) == 2:
+            out.append("<tr>" + "".join(row) + "</tr>")
+            row = []
+    if row:
+        out.append("<tr>" + "".join(row) + "</tr>")
+    out.append("</table>")
+    return ("<sub>Ten things I've built, shown as they really look. Every screenshot comes from one of the repositories "
+            "(user guides, QA captures or test proofs). Client logos and names are blurred, and the data is demo or "
+            "synthetic.</sub>\n\n" + "\n".join(out))
+
+
 def readme_tldr(catalog):
-    t, w, pr = DATA["totals"], DATA["window"], DATA["profile"]
-    cats = catalog["categories"]
-    stack = DATA["stack_commits"]["rows"]
-    now = " and ".join(f'{e["role"].lower().replace("chief technology officer", "CTO").replace("r&d", "R&D").replace(" ai ", " AI ")} at '
-                       f'{e.get("short", e["org"]).split(" · ")[0]}' for e in CV["experience"] if e["end"] is None)
-    seo = CV["seo"]
+    t = DATA["totals"]
+    now = [e for e in CV["experience"] if e["end"] is None]
+    lead = next(e for e in now if "Officer" in e["role"])
+    ai = next(e for e in now if e is not lead)
     return (
-        f'> **TL;DR** — {pr["name"]} is a {CV["headline"].lower().replace("ai ", "AI ")} in {CV["location"]} with '
-        f'{CV["years"]} years of shipping software, currently {now}. Builds business platforms end to end: '
-        f'government and enterprise ERP/CRM, university systems, SaaS, logistics, e-commerce and AI automation, and runs '
-        f'the infrastructure behind them. Across **{len(cats)} domains** there are **{C["repositories"]} repositories** '
-        f'({C["project_repos"]} project repos, {C["live"]} in production) and **{fmt(t["commits"])} commits**, '
-        f'{t["ai_share"]}% of them pair-programmed with Claude Code. Main stacks by commits: '
-        + ", ".join(f'{r["label"]} ({fmt(r["value"])})' for r in stack[:5])
-        + f'. Since Dec 2025: {fmt(w["commits"])} commits on {w["active_days"]} active days. '
-        f'Beyond GitHub, {BEYOND["non_code_sessions"]} of {BEYOND["sessions"]} Claude Code sessions produced '
-        'decks, estimates, guides, compliance studies, server work, content and data operations, and SEO, GEO and AEO '
-        f'work covers {seo["brands"]} brands since {seo["since"]}. '
-        f'M.T. from Institut Teknologi Bandung. Open to {CV["open_to"][0].lower() + CV["open_to"][1:]}.'
+        f'> **TL;DR** — I\'m Aulia, a {CV["headline"].lower().replace("ai ", "AI ")} from {CV["location"]}. '
+        f'I\'ve been shipping software for {CV["years"]} years. These days I\'m CTO &amp; R&amp;D lead at Newtype '
+        f'(since {lead["start"][:4]}), and I build AI, GIS and 3D tools as a {ai["role"].lower().replace(" ai ", " AI ")} '
+        f'at {ai.get("short", ai["org"]).split(" · ")[0]}. '
+        f'On GitHub that comes to **{C["repositories"]} repositories**: {C["project_repos"]} real projects, '
+        f'{C["live"]} of them running in production, and **{fmt(t["commits"])} commits**. About {t["ai_share"]}% of '
+        f'those I wrote together with Claude Code. '
+        f'I\'m open to {CV["open_to"][0].lower() + CV["open_to"][1:].replace(" · ", ", ")}.'
     )
 
 
@@ -1180,6 +1293,11 @@ def readme_ai_profile(catalog):
     for b in BEYOND["categories"]:
         vol = ", ".join(f"{k}: {b[k]}" for k in ("sessions", "designs", "brands") if k in b)
         out.append(f"    - {{name: {q(b['title'])}, {vol}, lives_in: {q(b['lives_in'])}}}")
+    out.append("spotlight:")
+    out += ['  - {name: "HORUS", what: "Self-hosted, hardened and white-labelled 3D OSINT war-room globe (built on MIT-licensed OSIRIS) inside an AI operations hub", commits: 38, period: "2026-07..2026-10"}',
+            '  - {name: "Juno 3D GIS", what: "Map area to glTF 3D model; GeoLibre, QGIS, Unity, npm/CLI, CesiumJS and WordPress front ends", version: "5.21", releases: 173, commits: 335, test_suites: "150+"}']
+    out.append("featured_work:")
+    out += [f"  - {q(tile['title'])}" for tile in GALLERY["tiles"]]
     out.append("ai_in_products:")
     out += [f"  - {q(a)}" for a in pr["ai_in_products"]]
     out.append("top_projects_since_dec_2025:")
@@ -1259,7 +1377,6 @@ def sync_numbers():
         (r'alt="\d+ repositories"', f'alt="{C["repositories"]} repositories"'),
         (r"badge/Live_Systems-\d+-", f'badge/Live_Systems-{C["live"]}-'),
         (r'alt="\d+ live systems"', f'alt="{C["live"]} live systems"'),
-        (r"\d+ repos · \d+ shipped projects · \d+ live", f'{C["repositories"]} repos · {C["project_repos"]} shipped projects · {C["live"]} live'),
         (r"\d+% of [\d,]+ commits paired with Claude Code across \d+ repositories",
          f'{t["ai_share"]}% of {fmt(t["commits"])} commits paired with Claude Code across {t["ai_repos"]} repositories'),
         (r"add up to the [\d,]+ commits in the \d+ project repos\. The remaining \d+ of the [\d,]+ total",
@@ -1298,6 +1415,7 @@ def main():
         "stack-commits": lambda t: bars(t, DATA["stack_commits"], share=True),
         "growth": growth,
         "career": career,
+        "horus": horus_card,
         "languages": lambda t: bars(t, DATA["languages"]),
         "timeline": timeline,
         "beyond": lambda t: rank_bars(t, beyond_spec()),
@@ -1323,6 +1441,8 @@ def main():
     (OUT / "banner-footer.svg").write_text(banner_footer())
     print("wrote assets/hero-terminal.svg, banner-header.svg, banner-footer.svg")
     inject_readme("TLDR", readme_tldr(catalog))
+    inject_readme("ABOUT", readme_about())
+    inject_readme("GALLERY", readme_gallery())
     inject_readme("GLANCE", readme_glance())
     inject_readme("ACTIVITY", readme_activity())
     inject_readme("PROJECTS", readme_projects(catalog))

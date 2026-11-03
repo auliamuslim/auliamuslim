@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="404" viewBox="0 0 860 404" role="img" aria-label="HORUS architecture">
+<title>HORUS architecture</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#e6edf3}.m{fill:#9198a1}.n{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}@keyframes up{from{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes fade{from{opacity:0}to{opacity:1}}.col{transform-box:fill-box;transform-origin:bottom;animation:up .9s ease-out both}.bar{transform-box:fill-box;transform-origin:left;animation:grow .9s ease-out both}.fd{animation:fade 1s ease-out both}@media (prefers-reduced-motion:reduce){.col,.bar,.fd{animation:none}}</style>
+<rect x="0.5" y="0.5" width="859" height="403" rx="12" fill="#0d1117" stroke="#3d444d"/>
+<text x="28" y="40" font-size="17" font-weight="700">HORUS — a 3D global-intelligence war room</text>
+<text x="28" y="62" font-size="12.5" class="m">How I self-hosted and hardened an open-source OSINT globe inside our AI operations hub · architecture sketch</text>
+
+<rect x="28" y="92" width="150" height="112" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="44" y="108" width="24" height="3" rx="1.5" fill="#9198a1"/>
+<text x="44" y="132" font-size="13.5" font-weight="700">Browser</text>
+<text x="44" y="152" font-size="11.5" class="m">Analyst opens</text>
+<text x="44" y="169" font-size="11.5" class="m">/warroom in the hub</text>
+<rect x="214" y="92" width="300" height="112" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="230" y="108" width="24" height="3" rx="1.5" fill="#F2545B"/>
+<text x="230" y="132" font-size="13.5" font-weight="700">Hub gateway</text>
+<text x="230" y="152" font-size="11.5" class="m">Admin session + role check on every call</text>
+<text x="230" y="169" font-size="11.5" class="m">43 allow-listed API routes, nothing else</text>
+<text x="230" y="186" font-size="11.5" class="m">SSRF and ../ path tricks refused</text>
+<rect x="550" y="92" width="282" height="112" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="566" y="108" width="24" height="3" rx="1.5" fill="#F2545B"/>
+<text x="566" y="132" font-size="13.5" font-weight="700">HORUS app</text>
+<text x="566" y="152" font-size="11.5" class="m">Next.js 16 + MapLibre 3D globe</text>
+<text x="566" y="169" font-size="11.5" class="m">Open-source OSIRIS (MIT), pinned to</text>
+<text x="566" y="186" font-size="11.5" class="m">one reviewed commit, white-labelled</text>
+<line x1="178" x2="207" y1="148.0" y2="148.0" stroke="#9198a1" stroke-width="1.5"/>
+<path d="M206 143.5L214 148.0L206 152.5Z" fill="#9198a1"/>
+<line x1="514" x2="543" y1="148.0" y2="148.0" stroke="#9198a1" stroke-width="1.5"/>
+<path d="M542 143.5L550 148.0L542 152.5Z" fill="#9198a1"/>
+<rect x="28.0" y="232" width="190.5" height="104" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="44.0" y="248" width="24" height="3" rx="1.5" fill="#9B7BF0"/>
+<text x="44.0" y="272" font-size="13.5" font-weight="700">AI forecasts kept</text>
+<text x="44.0" y="292" font-size="11.5" class="m">Broken replies repaired,</text>
+<text x="44.0" y="309" font-size="11.5" class="m">every run kept, Run again</text>
+<rect x="232.5" y="232" width="190.5" height="104" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="248.5" y="248" width="24" height="3" rx="1.5" fill="#F2545B"/>
+<text x="248.5" y="272" font-size="13.5" font-weight="700">CCTV relay</text>
+<text x="248.5" y="292" font-size="11.5" class="m">City HLS cameras played</text>
+<text x="248.5" y="309" font-size="11.5" class="m">through one origin</text>
+<rect x="437.0" y="232" width="190.5" height="104" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="453.0" y="248" width="24" height="3" rx="1.5" fill="#F2545B"/>
+<text x="453.0" y="272" font-size="13.5" font-weight="700">Idle power saving</text>
+<text x="453.0" y="292" font-size="11.5" class="m">GPU 973 → 39 ms/s</text>
+<text x="453.0" y="309" font-size="11.5" class="m">when nobody is watching</text>
+<rect x="641.5" y="232" width="190.5" height="104" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="657.5" y="248" width="24" height="3" rx="1.5" fill="#F2545B"/>
+<text x="657.5" y="272" font-size="13.5" font-weight="700">White-label build</text>
+<text x="657.5" y="292" font-size="11.5" class="m">10 patch scripts, each</text>
+<text x="657.5" y="309" font-size="11.5" class="m">fails if upstream drifts</text>
+<text x="28" y="368" font-size="11.5" class="m">38 commits, Jul–Oct 2026. OSIRIS is MIT-licensed; HORUS is my integration, security and white-label layer on top of it,</text>
+<text x="28" y="386" font-size="11.5" class="m">running inside the AI operations hub I build at KOMINA, next to Juno 3D GIS and the document-automation tools.</text></svg>
