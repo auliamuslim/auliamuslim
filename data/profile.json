@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-19",
+  "generated": "2026-11-03",
   "note": "Aggregated from all repositories owned by or contributed to by @auliamuslim (private repos included). Counts only commits authored by Aulia or by Claude Code sessions in Aulia's own repositories; upstream and other collaborators are excluded. Client names are intentionally omitted.",
   "tiles": [
     {
       "label": "Repositories",
-      "value": "109",
+      "value": "110",
       "note": "94 with custom work"
     },
     {
       "label": "Commits",
-      "value": "14,192",
+      "value": "14,696",
       "note": "private repos included"
     },
     {
       "label": "Active days",
-      "value": "413",
+      "value": "424",
       "note": "days with ≥ 1 commit"
     },
     {
@@ -31,7 +31,7 @@
   ],
   "activity": {
     "title": "Weekly commits — Dec 2025 to now, every repository",
-    "subtitle": "13,341 commits in 47 weeks · 73% paired with Claude Code · current week is week-to-date"
+    "subtitle": "13,845 commits in 49 weeks · 73% paired with Claude Code · current week is week-to-date"
   },
   "domains": {
     "title": "Where the work goes",
@@ -39,23 +39,23 @@
     "rows": [
       {
         "label": "AI, ML & Automation",
-        "value": 4078,
-        "display": "4,078 commits · 8 repos"
+        "value": 4226,
+        "display": "4,226 commits · 8 repos"
       },
       {
         "label": "Government, ERP & Enterprise Ops",
-        "value": 2876,
-        "display": "2,876 commits · 9 repos"
+        "value": 3029,
+        "display": "3,029 commits · 9 repos"
       },
       {
         "label": "Industry Platforms & SaaS",
-        "value": 1883,
-        "display": "1,883 commits · 10 repos"
+        "value": 1889,
+        "display": "1,889 commits · 10 repos"
       },
       {
         "label": "Logistics & Shipping",
-        "value": 1387,
-        "display": "1,387 commits · 8 repos"
+        "value": 1405,
+        "display": "1,405 commits · 8 repos"
       },
       {
         "label": "E-Commerce & WooCommerce",
@@ -64,13 +64,13 @@
       },
       {
         "label": "Talent Assessment & Recruitment",
-        "value": 905,
-        "display": "905 commits · 4 repos"
+        "value": 913,
+        "display": "913 commits · 4 repos"
       },
       {
         "label": "Higher-Education & EdTech",
-        "value": 752,
-        "display": "752 commits · 9 repos"
+        "value": 886,
+        "display": "886 commits · 9 repos"
       },
       {
         "label": "Membership, Events & Email",
@@ -190,22 +190,22 @@
   ],
   "category_activity": {
     "gov": {
-      "commits": 2876
+      "commits": 3029
     },
     "edu": {
-      "commits": 752
+      "commits": 886
     },
     "ai": {
-      "commits": 4078
+      "commits": 4226
     },
     "talent": {
-      "commits": 905
+      "commits": 913
     },
     "saas": {
-      "commits": 1883
+      "commits": 1889
     },
     "logi": {
-      "commits": 1387
+      "commits": 1405
     },
     "shop": {
       "commits": 1104
@@ -222,7 +222,7 @@
   },
   "hero": {
     "title": "aulia@newtype: ~",
-    "alt": "Terminal: Aulia Muslim Hidayatullah, Senior Full Stack & AI Automation Engineer, Bandung, Indonesia. 109 repos, 94 projects, 14,192 commits, 65 live systems. Government ERP, campus systems, SaaS, logistics, commerce and AI. 70% of commits AI-paired across 78 repositories.",
+    "alt": "Terminal: Aulia Muslim Hidayatullah, Senior Full Stack & AI Automation Engineer, Bandung, Indonesia. 110 repos, 94 projects, 14,696 commits, 65 live systems. Government ERP, campus systems, SaaS, logistics, commerce and AI. 70% of commits AI-paired across 78 repositories.",
     "lines": [
       [
         "whoami",
@@ -230,7 +230,7 @@
       ],
       [
         "portfolio --summary",
-        "**109** repos · **94** projects · **14,192** commits · **65** live systems"
+        "**110** repos · **94** projects · **14,696** commits · **65** live systems"
       ],
       [
         "portfolio --domains",
@@ -248,21 +248,28 @@
   },
   "stack_commits": {
     "title": "Core stack — commits per project type",
-    "subtitle": "Each of the 94 project repos counted once, under its main stack · 13,988 commits",
+    "subtitle": "Each of the 94 project repos counted once, under its main stack · 14,455 commits",
     "rows": [
       {
         "label": "Laravel",
-        "value": 3511,
+        "value": 3779,
         "repos": 21,
         "examples": "Courier SaaS · ISP ERP · supply-chain SaaS · donation platform · campus suite",
-        "display": "3,511 commits · 21 repos"
+        "display": "3,779 commits · 21 repos"
       },
       {
         "label": "n8n + Node.js automation",
-        "value": 3503,
+        "value": 3644,
         "repos": 1,
         "examples": "AI document automation & ops hub",
-        "display": "3,503 commits · 1 repo"
+        "display": "3,644 commits · 1 repo"
+      },
+      {
+        "label": "Perfex CRM / CodeIgniter",
+        "value": 1918,
+        "repos": 3,
+        "examples": "Two government lab ERPs · CRM ↔ FluentCRM sync",
+        "display": "1,918 commits · 3 repos"
       },
       {
         "label": "WordPress / WooCommerce",
@@ -272,18 +279,11 @@
         "display": "1,904 commits · 39 repos"
       },
       {
-        "label": "Perfex CRM / CodeIgniter",
-        "value": 1881,
-        "repos": 3,
-        "examples": "Two government lab ERPs · CRM ↔ FluentCRM sync",
-        "display": "1,881 commits · 3 repos"
-      },
-      {
         "label": "Native PHP + Vue / JS",
-        "value": 1845,
+        "value": 1859,
         "repos": 10,
         "examples": "Talent assessment · lawyer marketplace · sign-language SaaS · estate CMS",
-        "display": "1,845 commits · 10 repos"
+        "display": "1,859 commits · 10 repos"
       },
       {
         "label": "TypeScript: Next.js, Node, Hono",
@@ -294,10 +294,10 @@
       },
       {
         "label": "Python: ML, data, Flask",
-        "value": 562,
+        "value": 569,
         "repos": 6,
         "examples": "AI CV screening · crypto trading engine · RAG tutor · catalogue import",
-        "display": "562 commits · 6 repos"
+        "display": "569 commits · 6 repos"
       },
       {
         "label": "Flutter / Dart",
@@ -316,23 +316,23 @@
     ]
   },
   "totals": {
-    "commits": 14192,
-    "human": 4261,
-    "ai": 9931,
-    "active_days": 413,
+    "commits": 14696,
+    "human": 4360,
+    "ai": 10336,
+    "active_days": 424,
     "ai_repos": 78,
     "ai_share": 70
   },
   "window": {
     "start": "2025-12-01",
-    "end": "2026-10-19",
-    "commits": 13341,
-    "ai": 9677,
-    "human": 3664,
-    "active_days": 277,
-    "days": 323,
+    "end": "2026-11-03",
+    "commits": 13845,
+    "ai": 10082,
+    "human": 3763,
+    "active_days": 288,
+    "days": 338,
     "longest_streak": 34,
-    "current_streak": 1,
+    "current_streak": 3,
     "busiest_day": "2026-08-27",
     "busiest_count": 237
   },
@@ -615,9 +615,21 @@
     },
     {
       "week": "2026-10-19",
-      "human": 33,
-      "ai": 39,
+      "human": 58,
+      "ai": 237,
       "label": null
+    },
+    {
+      "week": "2026-10-26",
+      "human": 43,
+      "ai": 162,
+      "label": null
+    },
+    {
+      "week": "2026-11-02",
+      "human": 31,
+      "ai": 45,
+      "label": "Nov"
     }
   ],
   "daily": [
@@ -943,7 +955,22 @@
     133,
     155,
     0,
-    72
+    80,
+    85,
+    69,
+    61,
+    0,
+    0,
+    0,
+    80,
+    39,
+    29,
+    17,
+    35,
+    0,
+    5,
+    30,
+    46
   ],
   "punchcard": [
     [
@@ -955,21 +982,21 @@
       27,
       58,
       125,
-      224,
-      284,
-      246,
-      218,
-      123,
-      155,
-      151,
-      161,
-      154,
-      99,
-      46,
-      28,
-      38,
-      20,
-      25,
+      226,
+      290,
+      255,
+      235,
+      130,
+      169,
+      162,
+      176,
+      165,
+      105,
+      50,
+      33,
+      44,
+      24,
+      26,
       55
     ],
     [
@@ -980,21 +1007,21 @@
       28,
       26,
       81,
-      166,
-      199,
-      184,
-      156,
-      176,
-      141,
-      207,
-      280,
-      228,
-      191,
-      99,
-      78,
+      171,
+      214,
+      196,
+      171,
+      185,
+      146,
+      224,
+      296,
+      259,
+      201,
       101,
-      56,
-      40,
+      84,
+      119,
+      63,
+      42,
       28,
       62
     ],
@@ -1005,22 +1032,22 @@
       1,
       24,
       53,
-      68,
-      166,
+      70,
+      176,
+      225,
       213,
-      204,
+      161,
+      165,
+      133,
       154,
-      156,
-      131,
-      148,
-      201,
-      171,
-      104,
-      91,
+      210,
+      188,
+      105,
+      94,
       32,
       39,
-      47,
-      33,
+      50,
+      41,
       63,
       84
     ],
@@ -1030,19 +1057,19 @@
       19,
       20,
       18,
-      17,
+      23,
       47,
       149,
-      217,
-      226,
-      211,
-      205,
-      191,
-      220,
-      221,
-      203,
-      156,
-      76,
+      222,
+      238,
+      222,
+      213,
+      207,
+      225,
+      227,
+      206,
+      160,
+      78,
       42,
       26,
       25,
@@ -1057,17 +1084,17 @@
       2,
       9,
       10,
-      61,
-      115,
-      162,
-      145,
+      63,
+      117,
+      163,
+      150,
       130,
       180,
-      132,
-      136,
-      199,
-      213,
-      123,
+      140,
+      140,
+      208,
+      214,
+      126,
       81,
       38,
       26,
@@ -1122,9 +1149,9 @@
       25,
       27,
       29,
-      30,
-      33,
-      24,
+      32,
+      35,
+      25,
       35,
       57
     ]
@@ -1136,38 +1163,38 @@
       {
         "label": "AI document automation & ops hub",
         "tag": "AI & automation",
-        "value": 3503,
-        "display": "3,503 commits"
+        "value": 3644,
+        "display": "3,644 commits"
       },
       {
         "label": "Government testing-lab ERP / CRM",
         "tag": "Gov & ERP",
-        "value": 1801,
-        "display": "1,801 commits"
+        "value": 1838,
+        "display": "1,838 commits"
       },
       {
         "label": "Multi-tenant courier & parcel SaaS",
         "tag": "Logistics",
-        "value": 1229,
-        "display": "1,229 commits"
+        "value": 1247,
+        "display": "1,247 commits"
       },
       {
         "label": "Enterprise talent discovery platform",
         "tag": "Talent",
-        "value": 625,
-        "display": "625 commits"
+        "value": 633,
+        "display": "633 commits"
+      },
+      {
+        "label": "ISP modular ERP",
+        "tag": "Gov & ERP",
+        "value": 628,
+        "display": "628 commits"
       },
       {
         "label": "Civic organisation SuperApp",
         "tag": "SaaS platforms",
         "value": 557,
         "display": "557 commits"
-      },
-      {
-        "label": "ISP modular ERP",
-        "tag": "Gov & ERP",
-        "value": 512,
-        "display": "512 commits"
       },
       {
         "label": "Food supply-chain governance SaaS",
@@ -1184,14 +1211,14 @@
       {
         "label": "Lawyer-on-demand marketplace",
         "tag": "SaaS platforms",
-        "value": 418,
-        "display": "418 commits"
+        "value": 424,
+        "display": "424 commits"
       },
       {
-        "label": "Loyalty & brand-protection store",
-        "tag": "E-commerce",
-        "value": 362,
-        "display": "362 commits"
+        "label": "University admissions + finance suite",
+        "tag": "Higher-ed",
+        "value": 414,
+        "display": "414 commits"
       }
     ]
   },
@@ -1242,7 +1269,9 @@
     "2026-09-28",
     "2026-10-05",
     "2026-10-12",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-26",
+    "2026-11-02"
   ],
   "category_weekly": {
     "gov": [
@@ -1292,7 +1321,9 @@
       48,
       32,
       37,
-      25
+      88,
+      36,
+      54
     ],
     "edu": [
       4,
@@ -1341,7 +1372,9 @@
       0,
       29,
       170,
-      3
+      69,
+      68,
+      0
     ],
     "ai": [
       0,
@@ -1390,7 +1423,9 @@
       60,
       38,
       223,
-      17
+      93,
+      69,
+      3
     ],
     "talent": [
       22,
@@ -1439,7 +1474,9 @@
       15,
       16,
       12,
-      5
+      5,
+      6,
+      2
     ],
     "saas": [
       0,
@@ -1488,7 +1525,9 @@
       15,
       63,
       131,
-      22
+      28,
+      0,
+      0
     ],
     "logi": [
       10,
@@ -1537,6 +1576,8 @@
       20,
       1,
       0,
+      12,
+      6,
       0
     ],
     "shop": [
@@ -1586,6 +1627,8 @@
       47,
       59,
       130,
+      0,
+      0,
       0
     ],
     "pay": [
@@ -1635,6 +1678,8 @@
       0,
       0,
       0,
+      0,
+      0,
       0
     ],
     "mkt": [
@@ -1654,6 +1699,8 @@
       9,
       62,
       49,
+      0,
+      0,
       0,
       0,
       0,
@@ -1733,6 +1780,8 @@
       0,
       0,
       0,
+      0,
+      0,
       0
     ]
   },
@@ -1777,7 +1826,7 @@
     {
       "cat": "gov",
       "name": "Government testing-lab ERP / CRM",
-      "commits": 1831,
+      "commits": 1868,
       "live": true
     },
     {
@@ -1789,7 +1838,7 @@
     {
       "cat": "gov",
       "name": "ISP modular ERP",
-      "commits": 515,
+      "commits": 631,
       "live": true
     },
     {
@@ -1831,13 +1880,13 @@
     {
       "cat": "edu",
       "name": "University academic system (SIAKAD)",
-      "commits": 126,
+      "commits": 171,
       "live": true
     },
     {
       "cat": "edu",
       "name": "Admissions + finance + academic monorepo",
-      "commits": 334,
+      "commits": 414,
       "live": true
     },
     {
@@ -1855,7 +1904,7 @@
     {
       "cat": "edu",
       "name": "University LMS \"AI Class\"",
-      "commits": 38,
+      "commits": 47,
       "live": true
     },
     {
@@ -1885,7 +1934,7 @@
     {
       "cat": "ai",
       "name": "AI document automation & ops hub",
-      "commits": 3503,
+      "commits": 3644,
       "live": true
     },
     {
@@ -1903,7 +1952,7 @@
     {
       "cat": "ai",
       "name": "RAG learning assistant",
-      "commits": 37,
+      "commits": 42,
       "live": true
     },
     {
@@ -1915,7 +1964,7 @@
     {
       "cat": "ai",
       "name": "Ops knowledge base & AI CV screening",
-      "commits": 279,
+      "commits": 281,
       "live": false
     },
     {
@@ -1933,7 +1982,7 @@
     {
       "cat": "talent",
       "name": "Enterprise talent discovery platform",
-      "commits": 769,
+      "commits": 777,
       "live": true
     },
     {
@@ -1957,7 +2006,7 @@
     {
       "cat": "saas",
       "name": "Lawyer-on-demand marketplace",
-      "commits": 418,
+      "commits": 424,
       "live": true
     },
     {
@@ -2017,7 +2066,7 @@
     {
       "cat": "logi",
       "name": "Multi-tenant courier & parcel SaaS",
-      "commits": 1277,
+      "commits": 1295,
       "live": true
     },
     {
@@ -2238,30 +2287,15 @@
     }
   ],
   "now_shipping": {
-    "start": "2026-09-20",
-    "end": "2026-10-19",
-    "total": 1371,
+    "start": "2026-10-05",
+    "end": "2026-11-03",
+    "total": 1480,
     "rows": [
       {
         "name": "AI document automation & ops hub",
         "tag": "AI & automation",
-        "commits": 356,
+        "commits": 375,
         "daily": [
-          0,
-          0,
-          15,
-          16,
-          0,
-          6,
-          10,
-          18,
-          14,
-          6,
-          10,
-          25,
-          2,
-          0,
-          0,
           3,
           14,
           3,
@@ -2276,66 +2310,103 @@
           39,
           38,
           0,
-          16
+          17,
+          24,
+          29,
+          15,
+          0,
+          0,
+          0,
+          17,
+          16,
+          9,
+          13,
+          14,
+          0,
+          0,
+          3,
+          0
         ]
       },
       {
-        "name": "Loyalty & brand-protection store",
-        "tag": "E-commerce",
-        "commits": 166,
+        "name": "Admissions + finance + academic monorepo",
+        "tag": "Higher-ed",
+        "commits": 134,
         "daily": [
           0,
           0,
-          0,
-          0,
-          0,
-          5,
-          0,
-          5,
-          7,
           2,
-          2,
-          5,
-          9,
-          0,
-          8,
-          20,
-          2,
-          7,
-          6,
-          0,
-          0,
-          0,
-          2,
-          0,
-          1,
-          52,
-          30,
           3,
+          0,
+          0,
+          0,
+          5,
+          29,
+          9,
+          1,
+          0,
+          3,
+          0,
+          2,
+          13,
+          9,
+          18,
+          0,
+          0,
+          0,
+          26,
+          1,
+          8,
+          1,
+          4,
+          0,
+          0,
           0,
           0
         ]
       },
       {
-        "name": "Government testing-lab ERP / CRM",
+        "name": "ISP modular ERP",
         "tag": "Gov & ERP",
-        "commits": 113,
+        "commits": 124,
         "daily": [
           0,
           0,
           0,
           0,
           0,
-          3,
-          0,
-          1,
-          0,
-          9,
-          8,
-          6,
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          16,
+          15,
+          16,
+          0,
+          0,
+          0,
+          7,
+          0,
+          2,
+          0,
+          7,
+          0,
+          5,
+          14,
+          27
+        ]
+      },
+      {
+        "name": "Government testing-lab ERP / CRM",
+        "tag": "Gov & ERP",
+        "commits": 123,
+        "daily": [
           9,
           6,
           5,
@@ -2350,44 +2421,22 @@
           10,
           1,
           0,
-          17
-        ]
-      },
-      {
-        "name": "Civic organisation SuperApp",
-        "tag": "SaaS platforms",
-        "commits": 110,
-        "daily": [
+          17,
+          5,
+          4,
           0,
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          4,
+          7,
           1,
+          3,
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
-          27,
-          60,
-          0,
-          22
+          11,
+          2
         ]
       }
     ]
@@ -2435,7 +2484,7 @@
     }
   ],
   "counts": {
-    "repositories": 109,
+    "repositories": 110,
     "project_repos": 94,
     "live": 65,
     "catalogue_rows": 77

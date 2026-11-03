@@ -27,15 +27,15 @@
 <text x="735.1" y="92" font-size="10.5" class="m n" text-anchor="middle">2024</text>
 <line x1="794.4" x2="794.4" y1="100" y2="618" stroke="#21262d"/>
 <text x="794.4" y="92" font-size="10.5" class="m n" text-anchor="middle">2026</text>
-<line x1="818.1" x2="818.1" y1="100" y2="618" stroke="#F2545B" stroke-opacity=".5"/>
+<line x1="819.3" x2="819.3" y1="100" y2="618" stroke="#F2545B" stroke-opacity=".5"/>
 <text x="28" y="125" font-size="12.5" font-weight="700">Full Stack &amp; AI Engineer</text>
 <text x="28" y="140" font-size="10.5" class="m">KOMINA · remote · Apr 2026 – now</text>
-<rect class="bar" style="animation-delay:0.00s" x="801.8" y="121" width="16.4" height="12" rx="6" fill="#F2545B"/>
-<circle cx="818.1" cy="127" r="5" fill="#F2545B" stroke="#0d1117" stroke-width="2"/><circle class="pulse" cx="818.1" cy="127" r="5" fill="none" stroke="#F2545B" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.00s" x="801.8" y="121" width="17.5" height="12" rx="6" fill="#F2545B"/>
+<circle cx="819.3" cy="127" r="5" fill="#F2545B" stroke="#0d1117" stroke-width="2"/><circle class="pulse" cx="819.3" cy="127" r="5" fill="none" stroke="#F2545B" stroke-width="2"/>
 <text x="28" y="159" font-size="12.5" font-weight="700">Chief Technology Officer &amp; R&amp;D Lead</text>
 <text x="28" y="174" font-size="10.5" class="m">PT Newtype Tekno Pioneer · Nov 2012 – now</text>
-<rect class="bar" style="animation-delay:0.06s" x="404.0" y="155" width="414.1" height="12" rx="6" fill="#F2545B"/>
-<circle cx="818.1" cy="161" r="5" fill="#F2545B" stroke="#0d1117" stroke-width="2"/><circle class="pulse" cx="818.1" cy="161" r="5" fill="none" stroke="#F2545B" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.06s" x="404.0" y="155" width="415.3" height="12" rx="6" fill="#F2545B"/>
+<circle cx="819.3" cy="161" r="5" fill="#F2545B" stroke="#0d1117" stroke-width="2"/><circle class="pulse" cx="819.3" cy="161" r="5" fill="none" stroke="#F2545B" stroke-width="2"/>
 <text x="28" y="193" font-size="12.5" font-weight="700">Full Stack Developer &amp; SEO Engineer</text>
 <text x="28" y="208" font-size="10.5" class="m">Peter &amp; Co · freelance · Jun 2021 – Oct 2026</text>
 <rect class="bar" style="animation-delay:0.12s" x="658.5" y="189" width="158.1" height="12" rx="6" fill="#F2545B"/>

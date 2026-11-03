@@ -1,0 +1,25 @@
+{
+  "note": "Featured-work gallery. Every screenshot comes from a real repository (user-guide captures, QA captures or test proofs). Client logos, names and URLs are blurred or removed; the data shown is demo or synthetic. HORUS is drawn as an architecture card because the live system sits behind an admin login.",
+  "tiles": [
+    {"picture": "horus", "wide": true, "title": "HORUS · 3D war room",
+     "caption": "An architecture sketch rather than a screenshot. The live system sits behind an admin login, so this shows how it's put together."},
+    {"img": "gallery/juno-coast.jpg", "title": "Juno 3D GIS · real map data",
+     "caption": "North Jakarta's coastline, islands and canals, built from 13,411 OpenStreetMap features in a single export."},
+    {"img": "gallery/juno-street.jpg", "title": "Juno 3D GIS · street detail",
+     "caption": "A row of shop-houses next to an office block. Doors face the street, and the water tanks and AC units sit on the roofs."},
+    {"img": "gallery/juno-globe.jpg", "title": "Juno 3D GIS · on a CesiumJS globe",
+     "caption": "The same export placed on real terrain and OpenStreetMap tiles. It works without a paid map account."},
+    {"img": "gallery/juno-clay.jpg", "title": "Juno 3D GIS · clay look",
+     "caption": "The city as a white architectural model with edge lines, which is easier to read in design reviews."},
+    {"img": "gallery/juno-generate-now.jpg", "wide": true, "title": "Juno 3D GIS · straight from WordPress",
+     "caption": "A site editor presses Generate now and follows the job until the model lands on the site. It uploads in small pieces so it fits on cheap hosting."},
+    {"img": "gallery/civic-dashboard.jpg", "title": "Civic organisation SuperApp",
+     "caption": "The admin overview: members, the verification queue, 12-month trends and quick actions. Synthetic data, branding blurred."},
+    {"img": "gallery/courier-dashboard.jpg", "title": "Courier & parcel SaaS",
+     "caption": "A branch dashboard showing parcel status and the 7-day trend. Every branch runs on its own subdomain. Branding blurred."},
+    {"img": "gallery/courier-tracking-widget.jpg", "title": "Courier SaaS · tracking widget",
+     "caption": "The tracking box that partner companies paste into their own websites, so their customers never leave the page."},
+    {"img": "gallery/campus-siakad.jpg", "title": "University academic system",
+     "caption": "Class scheduling with export, import and one-click copy to the next semester. Demo data, campus details blurred."}
+  ]
+}
